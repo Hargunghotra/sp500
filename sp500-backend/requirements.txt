@@ -4,6 +4,6 @@ yfinance
 pandas
 vaderSentiment
 numpy
-openai
+google-genai
 python-dotenv
 apscheduler

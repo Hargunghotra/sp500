@@ -1,4 +1,4 @@
-"""Autonomous OpenAI paper-trading agent."""
+"""Autonomous Gemini paper-trading agent."""
 
 from __future__ import annotations
 
@@ -13,11 +13,11 @@ from analyzer import analyze_ticker
 from config import (
     AGENT_WATCHLIST,
     ALLOW_AFTER_HOURS,
+    GEMINI_API_KEY,
+    GEMINI_MODEL,
     MAX_CASH_PCT_PER_BUY,
     MAX_OPEN_TICKERS,
     MIN_CONFIDENCE,
-    OPENAI_API_KEY,
-    OPENAI_MODEL,
 )
 from ledger import execute_trade, load_portfolio
 from reports import append_report
@@ -38,8 +38,9 @@ def get_status() -> dict[str, Any]:
     return {
         **_status,
         "watchlist": list(AGENT_WATCHLIST),
-        "model": OPENAI_MODEL,
-        "has_api_key": bool(OPENAI_API_KEY),
+        "model": GEMINI_MODEL,
+        "provider": "gemini",
+        "has_api_key": bool(GEMINI_API_KEY),
         "min_confidence": MIN_CONFIDENCE,
         "max_cash_pct_per_buy": MAX_CASH_PCT_PER_BUY,
         "max_open_tickers": MAX_OPEN_TICKERS,
@@ -72,20 +73,13 @@ def _extract_json(text: str) -> dict[str, Any]:
         return json.loads(match.group(0))
 
 
-def _decide_with_openai(
+def _build_prompt_payload(
     analysis: dict[str, Any],
     portfolio: dict[str, Any],
 ) -> dict[str, Any]:
-    if not OPENAI_API_KEY:
-        raise RuntimeError("OPENAI_API_KEY is not set")
-
-    from openai import OpenAI
-
-    client = OpenAI(api_key=OPENAI_API_KEY)
     owned = int(portfolio.get("positions", {}).get(analysis["ticker"], 0) or 0)
     open_tickers = len(portfolio.get("positions", {}))
-
-    compact = {
+    return {
         "ticker": analysis["ticker"],
         "current_price": analysis["current_price"],
         "sma50": analysis["sma50"],
@@ -113,42 +107,67 @@ def _decide_with_openai(
         },
     }
 
-    system = (
-        "You are a conservative paper-trading assistant for US equities. "
-        "Decide BUY, SELL, or HOLD for one ticker. Prefer HOLD unless the edge is clear. "
-        "Respect risk rules. Respond with ONLY valid JSON matching: "
-        '{"action":"BUY"|"SELL"|"HOLD","shares":number,"confidence":0-1,"reasoning":"string"}'
-    )
-    user = (
-        "Given this market snapshot and portfolio, choose an action.\n"
-        f"{json.dumps(compact, indent=2)}"
-    )
 
-    response = client.chat.completions.create(
-        model=OPENAI_MODEL,
-        temperature=0.2,
-        messages=[
-            {"role": "system", "content": system},
-            {"role": "user", "content": user},
-        ],
-        response_format={"type": "json_object"},
-    )
-    content = response.choices[0].message.content or "{}"
-    decision = _extract_json(content)
-
+def _normalize_decision(decision: dict[str, Any]) -> dict[str, Any]:
     action = str(decision.get("action", "HOLD")).upper()
     if action not in {"BUY", "SELL", "HOLD"}:
         action = "HOLD"
     shares = int(decision.get("shares") or 0)
     confidence = float(decision.get("confidence") or 0)
     reasoning = str(decision.get("reasoning") or "").strip() or "No reasoning provided."
-
     return {
         "action": action,
         "shares": max(0, shares),
         "confidence": max(0.0, min(1.0, confidence)),
         "reasoning": reasoning,
     }
+
+
+def _decide_with_gemini(
+    analysis: dict[str, Any],
+    portfolio: dict[str, Any],
+) -> dict[str, Any]:
+    if not GEMINI_API_KEY:
+        raise RuntimeError("GEMINI_API_KEY is not set")
+
+    from google import genai
+    from google.genai import types
+
+    client = genai.Client(api_key=GEMINI_API_KEY)
+    compact = _build_prompt_payload(analysis, portfolio)
+
+    system = (
+        "You are a conservative paper-trading assistant for US equities. "
+        "Decide BUY, SELL, or HOLD for one ticker. Prefer HOLD unless the edge is clear. "
+        "Respect risk rules."
+    )
+    user = (
+        "Given this market snapshot and portfolio, choose an action.\n"
+        f"{json.dumps(compact, indent=2)}"
+    )
+
+    response = client.models.generate_content(
+        model=GEMINI_MODEL,
+        contents=user,
+        config=types.GenerateContentConfig(
+            temperature=0.2,
+            system_instruction=system,
+            response_mime_type="application/json",
+            response_schema={
+                "type": "object",
+                "properties": {
+                    "action": {"type": "string", "enum": ["BUY", "SELL", "HOLD"]},
+                    "shares": {"type": "integer"},
+                    "confidence": {"type": "number"},
+                    "reasoning": {"type": "string"},
+                },
+                "required": ["action", "shares", "confidence", "reasoning"],
+            },
+        ),
+    )
+
+    content = response.text or "{}"
+    return _normalize_decision(_extract_json(content))
 
 
 def _apply_risk_caps(
@@ -232,9 +251,9 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
     decisions: list[dict[str, Any]] = []
 
     try:
-        if not OPENAI_API_KEY:
+        if not GEMINI_API_KEY:
             raise RuntimeError(
-                "OPENAI_API_KEY is not set. Add it to sp500-backend/.env"
+                "GEMINI_API_KEY is not set. Add it to sp500-backend/.env"
             )
 
         portfolio = load_portfolio()
@@ -253,7 +272,7 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
             }
             try:
                 analysis = analyze_ticker(ticker, include_series=False)
-                decision = _decide_with_openai(analysis, portfolio)
+                decision = _decide_with_gemini(analysis, portfolio)
                 adjusted, skip_reason = _apply_risk_caps(decision, analysis, portfolio)
                 item.update(
                     {

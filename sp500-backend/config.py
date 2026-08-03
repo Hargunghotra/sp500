@@ -14,8 +14,8 @@ REPORTS_PATH = DATA_DIR / "reports.jsonl"
 
 INITIAL_BALANCE = float(os.getenv("INITIAL_BALANCE", "100000"))
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
-OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
 
 AGENT_WATCHLIST = [
     t.strip().upper()

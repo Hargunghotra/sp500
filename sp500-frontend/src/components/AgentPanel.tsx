@@ -51,7 +51,7 @@ export default function AgentPanel() {
 
       {!status?.has_api_key && (
         <div className="text-xs font-mono text-[#f23645] border border-[#f23645]/30 bg-[#f23645]/10 rounded px-3 py-2">
-          Set OPENAI_API_KEY in sp500-backend/.env to enable autonomous trades.
+          Set GEMINI_API_KEY in sp500-backend/.env to enable autonomous trades.
         </div>
       )}
 
