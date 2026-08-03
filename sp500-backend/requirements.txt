@@ -4,3 +4,6 @@ yfinance
 pandas
 vaderSentiment
 numpy
+openai
+python-dotenv
+apscheduler

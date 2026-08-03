@@ -4,17 +4,35 @@ import { FormEvent, useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Activity, Search, TrendingDown, TrendingUp } from 'lucide-react'
 import AreaChartPlot from '@/components/AreaChartPlot'
+import AgentPanel from '@/components/AgentPanel'
 import NewsPanel from '@/components/NewsPanel'
 import SimulationTradingPanel from '@/components/SimulationTradingPanel'
+import TradeReportsPanel from '@/components/TradeReportsPanel'
+import { useAgentStore } from '@/store/useAgentStore'
 import { useAnalyzerStore } from '@/store/useAnalyzerStore'
+import { useTradingStore } from '@/store/useTradingStore'
 
 export default function Home() {
   const [ticker, setTicker] = useState('SPY')
   const { analysisData, loading, error, fetchAnalysis } = useAnalyzerStore()
+  const { fetchPortfolio } = useTradingStore()
+  const { fetchStatus, fetchReports } = useAgentStore()
 
   useEffect(() => {
     fetchAnalysis('SPY')
-  }, [fetchAnalysis])
+    fetchPortfolio()
+    fetchStatus()
+    fetchReports()
+  }, [fetchAnalysis, fetchPortfolio, fetchStatus, fetchReports])
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      fetchStatus()
+      fetchReports()
+      fetchPortfolio()
+    }, 20000)
+    return () => clearInterval(id)
+  }, [fetchStatus, fetchReports, fetchPortfolio])
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault()
@@ -38,7 +56,7 @@ export default function Home() {
                 S&amp;P 500 Simulator
               </h1>
               <p className="text-[11px] font-mono text-[#787b86] mt-1">
-                TradingView theme · paper trading · live Yahoo data
+                TradingView theme · AI paper trader · live Yahoo data
               </p>
             </div>
           </div>
@@ -120,7 +138,9 @@ export default function Home() {
               <div className="text-[10px] uppercase tracking-wider font-mono text-[#787b86]">
                 {stat.label}
               </div>
-              <div className={`mt-1 text-lg font-semibold font-mono flex items-center gap-1.5 ${stat.accent}`}>
+              <div
+                className={`mt-1 text-lg font-semibold font-mono flex items-center gap-1.5 ${stat.accent}`}
+              >
                 {stat.icon}
                 {stat.value}
               </div>
@@ -140,7 +160,9 @@ export default function Home() {
                 ) : null}
               </h2>
               <div className="text-[10px] font-mono text-[#787b86] flex gap-3">
-                <span className="text-[#089981]">Support {analysisData?.supportLevel?.toFixed(2) ?? '—'}</span>
+                <span className="text-[#089981]">
+                  Support {analysisData?.supportLevel?.toFixed(2) ?? '—'}
+                </span>
                 <span className="text-[#f23645]">
                   Resistance {analysisData?.resistanceLevel?.toFixed(2) ?? '—'}
                 </span>
@@ -162,6 +184,16 @@ export default function Home() {
             <div className="flex-1 overflow-y-auto pr-1">
               <NewsPanel />
             </div>
+          </div>
+        </section>
+
+        <section className="grid grid-cols-1 xl:grid-cols-3 gap-4">
+          <div className="rounded-xl border border-[#2a2e39] bg-[#1e222d] p-4">
+            <AgentPanel />
+          </div>
+          <div className="xl:col-span-2 rounded-xl border border-[#2a2e39] bg-[#1e222d] p-4">
+            <h2 className="text-sm font-semibold text-white mb-3">AI Trade Reports</h2>
+            <TradeReportsPanel />
           </div>
         </section>
 

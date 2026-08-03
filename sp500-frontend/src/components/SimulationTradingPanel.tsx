@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useTradingStore } from '@/store/useTradingStore'
 
 interface SimulationTradingPanelProps {
@@ -15,7 +15,13 @@ export default function SimulationTradingPanel({
   pattern = 'Unknown',
 }: SimulationTradingPanelProps) {
   const [shares, setShares] = useState(10)
-  const { balance, positions, trades, executeTrade } = useTradingStore()
+  const [busy, setBusy] = useState(false)
+  const { balance, positions, trades, error, executeTrade, fetchPortfolio } =
+    useTradingStore()
+
+  useEffect(() => {
+    fetchPortfolio()
+  }, [fetchPortfolio])
 
   if (!currentTicker || !currentPrice) {
     return (
@@ -25,8 +31,11 @@ export default function SimulationTradingPanel({
     )
   }
 
-  const handleTrade = (type: 'BUY' | 'SELL') => {
-    if (shares > 0) executeTrade(currentTicker, type, currentPrice, shares, pattern)
+  const handleTrade = async (type: 'BUY' | 'SELL') => {
+    if (shares <= 0 || busy) return
+    setBusy(true)
+    await executeTrade(currentTicker, type, currentPrice, shares, pattern)
+    setBusy(false)
   }
 
   const ownedShares = positions[currentTicker] || 0
@@ -48,6 +57,9 @@ export default function SimulationTradingPanel({
             Position: <span className="text-white">{ownedShares} shares</span>
           </span>
         </div>
+        {error && (
+          <div className="text-xs font-mono text-[#f23645]">{error}</div>
+        )}
         <div className="flex gap-2">
           <input
             type="number"
@@ -58,13 +70,15 @@ export default function SimulationTradingPanel({
           />
           <button
             onClick={() => handleTrade('BUY')}
-            className="flex-1 bg-[#089981] hover:bg-[#067c69] text-white py-2 rounded font-bold transition-colors"
+            disabled={busy}
+            className="flex-1 bg-[#089981] hover:bg-[#067c69] disabled:opacity-60 text-white py-2 rounded font-bold transition-colors"
           >
             BUY
           </button>
           <button
             onClick={() => handleTrade('SELL')}
-            className="flex-1 bg-[#f23645] hover:bg-[#c92a38] text-white py-2 rounded font-bold transition-colors"
+            disabled={busy}
+            className="flex-1 bg-[#f23645] hover:bg-[#c92a38] disabled:opacity-60 text-white py-2 rounded font-bold transition-colors"
           >
             SELL
           </button>
@@ -79,6 +93,7 @@ export default function SimulationTradingPanel({
               <th>TICKER</th>
               <th>PRICE</th>
               <th>SHARES</th>
+              <th>SRC</th>
             </tr>
           </thead>
           <tbody>
@@ -90,6 +105,7 @@ export default function SimulationTradingPanel({
                 <td>{t.ticker}</td>
                 <td>${t.price.toFixed(2)}</td>
                 <td>{t.shares}</td>
+                <td className="text-[#787b86]">{t.source || 'manual'}</td>
               </tr>
             ))}
           </tbody>
