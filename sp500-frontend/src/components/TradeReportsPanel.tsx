@@ -31,7 +31,7 @@ export default function TradeReportsPanel() {
       {reports.map((report) => (
         <article
           key={report.id}
-          className="rounded-lg border border-[#2a2e39] bg-[#131722] p-3 space-y-2"
+          className="rounded-xl border border-white/10 bg-black/20 p-3 space-y-2 backdrop-blur"
         >
           <div className="flex items-center justify-between gap-2 text-[10px] font-mono text-[#787b86]">
             <span>{fmt(report.timestamp)}</span>

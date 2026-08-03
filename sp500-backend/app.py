@@ -4,7 +4,8 @@ import os
 
 from agent import run_cycle
 from analyzer import analyze_ticker
-from ledger import execute_trade, load_portfolio
+from equity import list_equity, mark_to_market
+from ledger import execute_trade, load_portfolio, reset_portfolio
 from reports import list_reports
 from scheduler import start_agent, start_scheduler, status_payload, stop_agent
 
@@ -32,7 +33,24 @@ def analyze():
 
 @app.route("/api/portfolio", methods=["GET"])
 def portfolio():
-    return jsonify(load_portfolio())
+    book = load_portfolio()
+    mtm = mark_to_market(book)
+    return jsonify({**book, "equity": mtm["equity"], "positions_value": mtm["positions_value"], "mtm": mtm})
+
+
+@app.route("/api/portfolio/equity", methods=["GET"])
+def portfolio_equity():
+    limit = request.args.get("limit", 500, type=int)
+    limit = max(1, min(limit or 500, 2000))
+    history = list_equity(limit)
+    current = mark_to_market()
+    return jsonify({"history": history, "current": current})
+
+
+@app.route("/api/portfolio/reset", methods=["POST"])
+def portfolio_reset():
+    book = reset_portfolio()
+    return jsonify({"portfolio": book, "message": "Portfolio reset to starting capital"})
 
 
 @app.route("/api/trade", methods=["POST"])
@@ -95,7 +113,6 @@ def agent_reports():
 
 def _boot_scheduler() -> None:
     use_reloader = os.environ.get("USE_RELOADER", "1") != "0"
-    # With reloader: only the child process should start the scheduler.
     if not use_reloader or os.environ.get("WERKZEUG_RUN_MAIN") == "true":
         start_scheduler()
 

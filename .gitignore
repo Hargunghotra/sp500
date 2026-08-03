@@ -3,7 +3,11 @@ __pycache__/
 *.py[cod]
 venv/
 .env
-sp500-backend/data/
+sp500-backend/data/portfolio.json
+sp500-backend/data/reports.jsonl
+sp500-backend/data/equity.jsonl
+sp500-backend/data/screen_cache.json
+sp500-backend/data/strategy.json
 
 # Node
 node_modules/

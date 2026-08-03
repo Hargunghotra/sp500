@@ -24,6 +24,16 @@ export interface AiTradeReport {
   error?: string
 }
 
+export interface AgentStrategy {
+  thesis?: string
+  preferred_sectors?: string[]
+  styles?: string[]
+  risk_posture?: string
+  updated_at?: string
+  model?: string
+  error?: string
+}
+
 export interface AgentReport {
   id: string
   timestamp: string
@@ -34,6 +44,7 @@ export interface AgentReport {
   executed_count?: number
   decisions?: AgentDecision[]
   ai_report?: AiTradeReport | null
+  strategy?: AgentStrategy | null
   ok?: boolean
 }
 
@@ -43,11 +54,13 @@ export interface AgentStatus {
   last_run: string | null
   next_run: string | null
   last_error: string | null
-  watchlist: string[]
   model: string
   has_api_key: boolean
   interval_minutes: number
   scheduler_running: boolean
+  screened_count?: number
+  universe_size?: number
+  strategy?: AgentStrategy | null
   min_confidence?: number
   max_cash_pct_per_buy?: number
   max_open_tickers?: number

@@ -8,7 +8,7 @@ import uuid
 from datetime import datetime, timezone
 from typing import Any
 
-from config import INITIAL_BALANCE, PORTFOLIO_PATH
+from config import INITIAL_BALANCE, PORTFOLIO_PATH, REPORTS_PATH, STRATEGY_PATH
 
 _lock = threading.Lock()
 
@@ -39,6 +39,30 @@ def save_portfolio(portfolio: dict[str, Any]) -> None:
         PORTFOLIO_PATH.write_text(json.dumps(portfolio, indent=2), encoding="utf-8")
 
 
+def reset_portfolio() -> dict[str, Any]:
+    """Wipe book and restore starting capital."""
+    from equity import append_equity_snapshot, clear_equity
+
+    portfolio = _default_portfolio()
+    with _lock:
+        PORTFOLIO_PATH.write_text(json.dumps(portfolio, indent=2), encoding="utf-8")
+        if REPORTS_PATH.exists():
+            REPORTS_PATH.write_text("", encoding="utf-8")
+        if STRATEGY_PATH.exists():
+            STRATEGY_PATH.unlink()
+    clear_equity()
+    append_equity_snapshot(
+        {
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "equity": INITIAL_BALANCE,
+            "cash": INITIAL_BALANCE,
+            "positions_value": 0.0,
+            "positions": {},
+        }
+    )
+    return portfolio
+
+
 def execute_trade(
     ticker: str,
     side: str,
@@ -51,6 +75,8 @@ def execute_trade(
     source: str = "manual",
 ) -> dict[str, Any]:
     """Execute a paper trade. Returns updated portfolio or raises ValueError."""
+    from equity import append_equity_snapshot, mark_to_market
+
     ticker = ticker.upper().strip()
     side = side.upper().strip()
     if side not in {"BUY", "SELL"}:
@@ -108,4 +134,7 @@ def execute_trade(
         portfolio["positions"] = positions
         portfolio["trades"] = [trade, *portfolio["trades"]]
         PORTFOLIO_PATH.write_text(json.dumps(portfolio, indent=2), encoding="utf-8")
-        return {"portfolio": portfolio, "trade": trade}
+
+    snapshot = mark_to_market(portfolio)
+    append_equity_snapshot(snapshot)
+    return {"portfolio": portfolio, "trade": trade, "equity": snapshot}

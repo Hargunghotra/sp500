@@ -66,28 +66,28 @@ export default function SimulationTradingPanel({
             min="1"
             value={shares}
             onChange={(e) => setShares(Number(e.target.value))}
-            className="w-24 bg-[#1e222d] border border-[#2a2e39] rounded px-3 text-white font-mono focus:outline-none"
+            className="w-24 glass-input rounded-xl px-3 text-white font-mono focus:outline-none"
           />
           <button
             onClick={() => handleTrade('BUY')}
             disabled={busy}
-            className="flex-1 bg-[#089981] hover:bg-[#067c69] disabled:opacity-60 text-white py-2 rounded font-bold transition-colors"
+            className="flex-1 bg-[#089981]/90 hover:bg-[#089981] disabled:opacity-60 text-white py-2.5 rounded-xl font-bold transition-all"
           >
             BUY
           </button>
           <button
             onClick={() => handleTrade('SELL')}
             disabled={busy}
-            className="flex-1 bg-[#f23645] hover:bg-[#c92a38] disabled:opacity-60 text-white py-2 rounded font-bold transition-colors"
+            className="flex-1 bg-[#f23645]/90 hover:bg-[#f23645] disabled:opacity-60 text-white py-2.5 rounded-xl font-bold transition-all"
           >
             SELL
           </button>
         </div>
       </div>
 
-      <div className="h-32 overflow-y-auto border border-[#2a2e39] rounded bg-[#1e222d] p-2">
+      <div className="h-32 overflow-y-auto border border-white/10 rounded-xl bg-black/20 p-2 backdrop-blur">
         <table className="w-full text-xs font-mono text-left">
-          <thead className="text-[#787b86] sticky top-0 bg-[#1e222d]">
+          <thead className="text-[#787b86] sticky top-0 bg-[#131722]/90 backdrop-blur">
             <tr>
               <th>ACTION</th>
               <th>TICKER</th>

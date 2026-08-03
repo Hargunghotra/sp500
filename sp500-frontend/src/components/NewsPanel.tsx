@@ -22,7 +22,7 @@ export default function NewsPanel() {
           href={item.link}
           target="_blank"
           rel="noreferrer"
-          className="block p-3 bg-[#1e222d] hover:bg-[#2a2e39] border border-[#2a2e39] rounded-lg transition-colors group"
+          className="block p-3 bg-white/[0.03] hover:bg-white/[0.06] border border-white/10 rounded-xl transition-colors group"
         >
           <div className="flex items-start justify-between gap-2">
             <h3 className="text-sm text-[#d1d4dc] group-hover:text-white font-medium line-clamp-2 leading-snug">
