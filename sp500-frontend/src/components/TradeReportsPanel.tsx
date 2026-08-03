@@ -44,6 +44,49 @@ export default function TradeReportsPanel() {
             </span>
           </div>
 
+          {report.ai_report && (
+            <div className="rounded-md border border-[#2962ff]/30 bg-[#2962ff]/10 p-3 space-y-2">
+              <div className="flex items-center justify-between gap-2">
+                <h3 className="text-sm font-semibold text-white">
+                  {report.ai_report.headline}
+                </h3>
+                {report.ai_report.model ? (
+                  <span className="text-[10px] font-mono text-[#787b86]">
+                    {report.ai_report.model}
+                  </span>
+                ) : null}
+              </div>
+              {report.ai_report.summary && (
+                <p className="text-xs text-[#d1d4dc] leading-relaxed">
+                  {report.ai_report.summary}
+                </p>
+              )}
+              {report.ai_report.market_read && (
+                <p className="text-[11px] text-[#d1d4dc]">
+                  <span className="text-[#787b86] font-mono">Market: </span>
+                  {report.ai_report.market_read}
+                </p>
+              )}
+              {report.ai_report.risk_notes && (
+                <p className="text-[11px] text-[#d1d4dc]">
+                  <span className="text-[#787b86] font-mono">Risk: </span>
+                  {report.ai_report.risk_notes}
+                </p>
+              )}
+              {report.ai_report.outlook && (
+                <p className="text-[11px] text-[#d1d4dc]">
+                  <span className="text-[#787b86] font-mono">Outlook: </span>
+                  {report.ai_report.outlook}
+                </p>
+              )}
+              {report.ai_report.error && (
+                <p className="text-[10px] font-mono text-[#f23645]">
+                  {report.ai_report.error}
+                </p>
+              )}
+            </div>
+          )}
+
           {report.reason && (
             <p className="text-xs text-[#d1d4dc] font-mono">{report.reason}</p>
           )}

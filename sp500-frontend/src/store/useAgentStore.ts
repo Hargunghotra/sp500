@@ -14,6 +14,16 @@ export interface AgentDecision {
   pattern?: string
 }
 
+export interface AiTradeReport {
+  headline: string
+  summary: string
+  market_read: string
+  risk_notes: string
+  outlook: string
+  model?: string
+  error?: string
+}
+
 export interface AgentReport {
   id: string
   timestamp: string
@@ -23,6 +33,7 @@ export interface AgentReport {
   error?: string
   executed_count?: number
   decisions?: AgentDecision[]
+  ai_report?: AiTradeReport | null
   ok?: boolean
 }
 

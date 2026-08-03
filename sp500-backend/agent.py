@@ -123,17 +123,21 @@ def _normalize_decision(decision: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _gemini_client():
+    if not GEMINI_API_KEY:
+        raise RuntimeError("GEMINI_API_KEY is not set")
+    from google import genai
+
+    return genai.Client(api_key=GEMINI_API_KEY)
+
+
 def _decide_with_gemini(
     analysis: dict[str, Any],
     portfolio: dict[str, Any],
 ) -> dict[str, Any]:
-    if not GEMINI_API_KEY:
-        raise RuntimeError("GEMINI_API_KEY is not set")
-
-    from google import genai
     from google.genai import types
 
-    client = genai.Client(api_key=GEMINI_API_KEY)
+    client = _gemini_client()
     compact = _build_prompt_payload(analysis, portfolio)
 
     system = (
@@ -169,6 +173,82 @@ def _decide_with_gemini(
     content = response.text or "{}"
     return _normalize_decision(_extract_json(content))
 
+
+def _generate_ai_trade_report(
+    decisions: list[dict[str, Any]],
+    portfolio: dict[str, Any],
+) -> dict[str, Any]:
+    """Ask Gemini for a cycle briefing used in the AI Trade Reports panel."""
+    from google.genai import types
+
+    client = _gemini_client()
+    executed = [d for d in decisions if d.get("executed")]
+    payload = {
+        "executed_trades": executed,
+        "all_decisions": [
+            {
+                "ticker": d.get("ticker"),
+                "action": d.get("action"),
+                "shares": d.get("shares"),
+                "confidence": d.get("confidence"),
+                "executed": d.get("executed"),
+                "skip_reason": d.get("skip_reason"),
+                "reasoning": d.get("reasoning"),
+                "error": d.get("error"),
+            }
+            for d in decisions
+        ],
+        "portfolio_after": {
+            "balance": portfolio.get("balance"),
+            "positions": portfolio.get("positions", {}),
+        },
+    }
+
+    system = (
+        "You are a desk strategist writing a concise paper-trading cycle report. "
+        "Be specific about what was traded or held and why. No hype."
+    )
+    user = (
+        "Write an AI trade report for this autonomous paper-trading cycle.\n"
+        f"{json.dumps(payload, indent=2)}"
+    )
+
+    response = client.models.generate_content(
+        model=GEMINI_MODEL,
+        contents=user,
+        config=types.GenerateContentConfig(
+            temperature=0.3,
+            system_instruction=system,
+            response_mime_type="application/json",
+            response_schema={
+                "type": "object",
+                "properties": {
+                    "headline": {"type": "string"},
+                    "summary": {"type": "string"},
+                    "market_read": {"type": "string"},
+                    "risk_notes": {"type": "string"},
+                    "outlook": {"type": "string"},
+                },
+                "required": [
+                    "headline",
+                    "summary",
+                    "market_read",
+                    "risk_notes",
+                    "outlook",
+                ],
+            },
+        ),
+    )
+
+    report = _extract_json(response.text or "{}")
+    return {
+        "headline": str(report.get("headline") or "Cycle report").strip(),
+        "summary": str(report.get("summary") or "").strip(),
+        "market_read": str(report.get("market_read") or "").strip(),
+        "risk_notes": str(report.get("risk_notes") or "").strip(),
+        "outlook": str(report.get("outlook") or "").strip(),
+        "model": GEMINI_MODEL,
+    }
 
 def _apply_risk_caps(
     decision: dict[str, Any],
@@ -307,12 +387,28 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
 
             decisions.append(item)
 
+        ai_report: dict[str, Any] | None = None
+        try:
+            ai_report = _generate_ai_trade_report(decisions, portfolio)
+        except Exception as exc:  # noqa: BLE001
+            logger.exception("Failed to generate AI trade report")
+            ai_report = {
+                "headline": "Report generation failed",
+                "summary": str(exc),
+                "market_read": "",
+                "risk_notes": "",
+                "outlook": "",
+                "model": GEMINI_MODEL,
+                "error": str(exc),
+            }
+
         summary = {
             "ok": True,
             "skipped": False,
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "executed_count": sum(1 for d in decisions if d.get("executed")),
             "decisions": decisions,
+            "ai_report": ai_report,
         }
         _status["last_run"] = summary["timestamp"]
         _status["last_cycle_summary"] = summary
@@ -327,6 +423,7 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
             "error": str(exc),
             "timestamp": _status["last_run"],
             "decisions": decisions,
+            "ai_report": None,
         }
         append_report({"type": "cycle_error", **err_report})
         return err_report
