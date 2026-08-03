@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import logging
 import re
+import time
 from datetime import datetime, timezone
 from typing import Any
 from zoneinfo import ZoneInfo
@@ -73,41 +74,6 @@ def _extract_json(text: str) -> dict[str, Any]:
         return json.loads(match.group(0))
 
 
-def _build_prompt_payload(
-    analysis: dict[str, Any],
-    portfolio: dict[str, Any],
-) -> dict[str, Any]:
-    owned = int(portfolio.get("positions", {}).get(analysis["ticker"], 0) or 0)
-    open_tickers = len(portfolio.get("positions", {}))
-    return {
-        "ticker": analysis["ticker"],
-        "current_price": analysis["current_price"],
-        "sma50": analysis["sma50"],
-        "trend": analysis["trend"],
-        "score": analysis["score"],
-        "pattern": analysis["pattern"],
-        "sentiment": analysis["sentiment"],
-        "supportLevel": analysis["supportLevel"],
-        "resistanceLevel": analysis["resistanceLevel"],
-        "recent_closes": analysis.get("recent_closes", []),
-        "news_headlines": [
-            {"title": n["title"], "sentiment": n["sentiment"]}
-            for n in analysis.get("news", [])[:5]
-        ],
-        "portfolio": {
-            "balance": portfolio.get("balance"),
-            "owned_shares": owned,
-            "open_tickers": open_tickers,
-            "positions": portfolio.get("positions", {}),
-        },
-        "risk_rules": {
-            "max_cash_pct_per_buy": MAX_CASH_PCT_PER_BUY,
-            "max_open_tickers": MAX_OPEN_TICKERS,
-            "min_confidence": MIN_CONFIDENCE,
-        },
-    }
-
-
 def _normalize_decision(decision: dict[str, Any]) -> dict[str, Any]:
     action = str(decision.get("action", "HOLD")).upper()
     if action not in {"BUY", "SELL", "HOLD"}:
@@ -125,102 +91,143 @@ def _normalize_decision(decision: dict[str, Any]) -> dict[str, Any]:
 
 def _gemini_client():
     if not GEMINI_API_KEY:
-        raise RuntimeError("GEMINI_API_KEY is not set")
+        raise RuntimeError("GEMINI_API_KEY is not set. Add it to sp500-backend/.env")
     from google import genai
 
     return genai.Client(api_key=GEMINI_API_KEY)
 
 
-def _decide_with_gemini(
-    analysis: dict[str, Any],
-    portfolio: dict[str, Any],
+def _retry_delay_seconds(exc: Exception, attempt: int) -> float:
+    message = str(exc)
+    match = re.search(r"retry in ([0-9]+(?:\.[0-9]+)?)s", message, re.IGNORECASE)
+    if match:
+        return min(90.0, float(match.group(1)) + 1.0)
+    return min(60.0, 2 ** attempt)
+
+
+def _generate_content_with_retry(
+    *,
+    contents: str,
+    system: str,
+    response_schema: dict[str, Any],
+    temperature: float = 0.2,
+    max_attempts: int = 4,
 ) -> dict[str, Any]:
     from google.genai import types
+    from google.genai import errors as genai_errors
 
     client = _gemini_client()
-    compact = _build_prompt_payload(analysis, portfolio)
+    last_error: Exception | None = None
 
-    system = (
-        "You are a conservative paper-trading assistant for US equities. "
-        "Decide BUY, SELL, or HOLD for one ticker. Prefer HOLD unless the edge is clear. "
-        "Respect risk rules."
-    )
-    user = (
-        "Given this market snapshot and portfolio, choose an action.\n"
-        f"{json.dumps(compact, indent=2)}"
-    )
+    for attempt in range(1, max_attempts + 1):
+        try:
+            response = client.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=contents,
+                config=types.GenerateContentConfig(
+                    temperature=temperature,
+                    system_instruction=system,
+                    response_mime_type="application/json",
+                    response_schema=response_schema,
+                ),
+            )
+            return _extract_json(response.text or "{}")
+        except Exception as exc:  # noqa: BLE001
+            last_error = exc
+            status = getattr(exc, "status_code", None)
+            is_rate = status == 429 or "RESOURCE_EXHAUSTED" in str(exc)
+            is_busy = status in {503, 500} or "UNAVAILABLE" in str(exc)
+            if attempt >= max_attempts or not (is_rate or is_busy):
+                raise
+            delay = _retry_delay_seconds(exc, attempt)
+            logger.warning(
+                "Gemini attempt %s/%s failed (%s). Retrying in %.1fs",
+                attempt,
+                max_attempts,
+                type(exc).__name__,
+                delay,
+            )
+            # Keep genai_errors imported for clarity in logs / typing
+            _ = genai_errors
+            time.sleep(delay)
 
-    response = client.models.generate_content(
-        model=GEMINI_MODEL,
-        contents=user,
-        config=types.GenerateContentConfig(
-            temperature=0.2,
-            system_instruction=system,
-            response_mime_type="application/json",
-            response_schema={
-                "type": "object",
-                "properties": {
-                    "action": {"type": "string", "enum": ["BUY", "SELL", "HOLD"]},
-                    "shares": {"type": "integer"},
-                    "confidence": {"type": "number"},
-                    "reasoning": {"type": "string"},
-                },
-                "required": ["action", "shares", "confidence", "reasoning"],
-            },
-        ),
-    )
-
-    content = response.text or "{}"
-    return _normalize_decision(_extract_json(content))
+    assert last_error is not None
+    raise last_error
 
 
-def _generate_ai_trade_report(
-    decisions: list[dict[str, Any]],
-    portfolio: dict[str, Any],
-) -> dict[str, Any]:
-    """Ask Gemini for a cycle briefing used in the AI Trade Reports panel."""
-    from google.genai import types
-
-    client = _gemini_client()
-    executed = [d for d in decisions if d.get("executed")]
-    payload = {
-        "executed_trades": executed,
-        "all_decisions": [
-            {
-                "ticker": d.get("ticker"),
-                "action": d.get("action"),
-                "shares": d.get("shares"),
-                "confidence": d.get("confidence"),
-                "executed": d.get("executed"),
-                "skip_reason": d.get("skip_reason"),
-                "reasoning": d.get("reasoning"),
-                "error": d.get("error"),
-            }
-            for d in decisions
+def _compact_analysis(analysis: dict[str, Any], portfolio: dict[str, Any]) -> dict[str, Any]:
+    owned = int(portfolio.get("positions", {}).get(analysis["ticker"], 0) or 0)
+    return {
+        "ticker": analysis["ticker"],
+        "current_price": analysis["current_price"],
+        "sma50": analysis["sma50"],
+        "trend": analysis["trend"],
+        "score": analysis["score"],
+        "pattern": analysis["pattern"],
+        "sentiment": analysis["sentiment"],
+        "supportLevel": analysis["supportLevel"],
+        "resistanceLevel": analysis["resistanceLevel"],
+        "recent_closes": analysis.get("recent_closes", [])[-5:],
+        "news_headlines": [
+            {"title": n["title"], "sentiment": n["sentiment"]}
+            for n in analysis.get("news", [])[:3]
         ],
-        "portfolio_after": {
+        "owned_shares": owned,
+    }
+
+
+def _decide_watchlist_with_gemini(
+    analyses: list[dict[str, Any]],
+    portfolio: dict[str, Any],
+) -> tuple[dict[str, dict[str, Any]], dict[str, Any]]:
+    """
+    One Gemini call for the whole watchlist + cycle briefing.
+    Returns (decisions_by_ticker, ai_report).
+    """
+    snapshots = [_compact_analysis(a, portfolio) for a in analyses]
+    payload = {
+        "portfolio": {
             "balance": portfolio.get("balance"),
             "positions": portfolio.get("positions", {}),
+            "open_tickers": len(portfolio.get("positions", {})),
         },
+        "risk_rules": {
+            "max_cash_pct_per_buy": MAX_CASH_PCT_PER_BUY,
+            "max_open_tickers": MAX_OPEN_TICKERS,
+            "min_confidence": MIN_CONFIDENCE,
+        },
+        "tickers": snapshots,
     }
 
     system = (
-        "You are a desk strategist writing a concise paper-trading cycle report. "
-        "Be specific about what was traded or held and why. No hype."
+        "You are a conservative paper-trading assistant for US equities. "
+        "For EACH ticker, decide BUY, SELL, or HOLD. Prefer HOLD unless the edge is clear. "
+        "Respect risk rules across the whole portfolio (do not over-concentrate). "
+        "Also write a short cycle briefing in ai_report."
     )
     user = (
-        "Write an AI trade report for this autonomous paper-trading cycle.\n"
+        "Analyze this watchlist and return decisions for every ticker plus an ai_report.\n"
         f"{json.dumps(payload, indent=2)}"
     )
 
-    response = client.models.generate_content(
-        model=GEMINI_MODEL,
-        contents=user,
-        config=types.GenerateContentConfig(
-            temperature=0.3,
-            system_instruction=system,
-            response_mime_type="application/json",
-            response_schema={
+    schema = {
+        "type": "object",
+        "properties": {
+            "decisions": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "ticker": {"type": "string"},
+                        "action": {"type": "string", "enum": ["BUY", "SELL", "HOLD"]},
+                        "shares": {"type": "integer"},
+                        "confidence": {"type": "number"},
+                        "reasoning": {"type": "string"},
+                    },
+                    "required": ["ticker", "action", "shares", "confidence", "reasoning"],
+                },
+            },
+            "ai_report": {
                 "type": "object",
                 "properties": {
                     "headline": {"type": "string"},
@@ -237,18 +244,67 @@ def _generate_ai_trade_report(
                     "outlook",
                 ],
             },
-        ),
+        },
+        "required": ["decisions", "ai_report"],
+    }
+
+    raw = _generate_content_with_retry(
+        contents=user,
+        system=system,
+        response_schema=schema,
+        temperature=0.2,
     )
 
-    report = _extract_json(response.text or "{}")
-    return {
-        "headline": str(report.get("headline") or "Cycle report").strip(),
-        "summary": str(report.get("summary") or "").strip(),
-        "market_read": str(report.get("market_read") or "").strip(),
-        "risk_notes": str(report.get("risk_notes") or "").strip(),
-        "outlook": str(report.get("outlook") or "").strip(),
+    by_ticker: dict[str, dict[str, Any]] = {}
+    for item in raw.get("decisions") or []:
+        if not isinstance(item, dict):
+            continue
+        ticker = str(item.get("ticker") or "").upper().strip()
+        if not ticker:
+            continue
+        by_ticker[ticker] = _normalize_decision(item)
+
+    report_raw = raw.get("ai_report") or {}
+    ai_report = {
+        "headline": str(report_raw.get("headline") or "Cycle report").strip(),
+        "summary": str(report_raw.get("summary") or "").strip(),
+        "market_read": str(report_raw.get("market_read") or "").strip(),
+        "risk_notes": str(report_raw.get("risk_notes") or "").strip(),
+        "outlook": str(report_raw.get("outlook") or "").strip(),
         "model": GEMINI_MODEL,
     }
+    return by_ticker, ai_report
+
+
+def _fallback_ai_report(
+    decisions: list[dict[str, Any]],
+    portfolio: dict[str, Any],
+    *,
+    error: str | None = None,
+) -> dict[str, Any]:
+    executed = [d for d in decisions if d.get("executed")]
+    holds = [d for d in decisions if d.get("action") == "HOLD"]
+    if executed:
+        headline = f"Executed {len(executed)} trade(s)"
+        summary = "; ".join(
+            f"{d['action']} {d['shares']} {d['ticker']}" for d in executed
+        )
+    else:
+        headline = "No trades executed this cycle"
+        summary = (
+            f"Held {len(holds)} watchlist name(s). "
+            f"Cash ${float(portfolio.get('balance') or 0):,.2f}."
+        )
+    return {
+        "headline": headline,
+        "summary": summary,
+        "market_read": "Local fallback briefing (Gemini unavailable or rate-limited).",
+        "risk_notes": error or "Used deterministic summary without Gemini narrative.",
+        "outlook": "Retry after the free-tier quota window resets.",
+        "model": GEMINI_MODEL,
+        "error": error,
+    }
+
 
 def _apply_risk_caps(
     decision: dict[str, Any],
@@ -313,6 +369,7 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
             "reason": "Outside US regular market hours",
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "decisions": [],
+            "ai_report": None,
         }
         _status["last_run"] = summary["timestamp"]
         _status["last_cycle_summary"] = summary
@@ -322,6 +379,7 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
                 "skipped": True,
                 "reason": summary["reason"],
                 "decisions": [],
+                "ai_report": None,
             }
         )
         return summary
@@ -337,8 +395,36 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
             )
 
         portfolio = load_portfolio()
+        analyses: list[dict[str, Any]] = []
+        analysis_errors: dict[str, str] = {}
 
         for ticker in AGENT_WATCHLIST:
+            try:
+                analyses.append(analyze_ticker(ticker, include_series=False))
+            except Exception as exc:  # noqa: BLE001
+                logger.exception("Analysis failed for %s", ticker)
+                analysis_errors[ticker] = str(exc)
+
+        ai_report: dict[str, Any] | None = None
+        decisions_by_ticker: dict[str, dict[str, Any]] = {}
+        try:
+            decisions_by_ticker, ai_report = _decide_watchlist_with_gemini(
+                analyses, portfolio
+            )
+        except Exception as exc:  # noqa: BLE001
+            logger.exception("Batched Gemini cycle failed")
+            # Conservative fallback: HOLD everything so the cycle still completes.
+            for analysis in analyses:
+                decisions_by_ticker[analysis["ticker"]] = {
+                    "action": "HOLD",
+                    "shares": 0,
+                    "confidence": 0.0,
+                    "reasoning": f"Gemini unavailable this cycle: {exc}",
+                }
+            ai_report = _fallback_ai_report([], portfolio, error=str(exc))
+
+        for analysis in analyses:
+            ticker = analysis["ticker"]
             item: dict[str, Any] = {
                 "ticker": ticker,
                 "action": "HOLD",
@@ -349,10 +435,16 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
                 "trade_id": None,
                 "skip_reason": None,
                 "error": None,
+                "price": analysis["current_price"],
+                "pattern": analysis["pattern"],
             }
             try:
-                analysis = analyze_ticker(ticker, include_series=False)
-                decision = _decide_with_gemini(analysis, portfolio)
+                decision = decisions_by_ticker.get(ticker) or {
+                    "action": "HOLD",
+                    "shares": 0,
+                    "confidence": 0.0,
+                    "reasoning": "No model decision returned for ticker.",
+                }
                 adjusted, skip_reason = _apply_risk_caps(decision, analysis, portfolio)
                 item.update(
                     {
@@ -360,8 +452,6 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
                         "shares": adjusted["shares"],
                         "confidence": adjusted["confidence"],
                         "reasoning": adjusted["reasoning"],
-                        "price": analysis["current_price"],
-                        "pattern": analysis["pattern"],
                         "skip_reason": skip_reason,
                     }
                 )
@@ -380,27 +470,47 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
                     item["executed"] = True
                     item["trade_id"] = result["trade"]["id"]
                     portfolio = result["portfolio"]
-            except Exception as exc:  # noqa: BLE001 — per-ticker isolation
-                logger.exception("Agent failed on %s", ticker)
+            except Exception as exc:  # noqa: BLE001
+                logger.exception("Trade application failed on %s", ticker)
                 item["error"] = str(exc)
                 item["reasoning"] = item["reasoning"] or str(exc)
 
             decisions.append(item)
 
-        ai_report: dict[str, Any] | None = None
-        try:
-            ai_report = _generate_ai_trade_report(decisions, portfolio)
-        except Exception as exc:  # noqa: BLE001
-            logger.exception("Failed to generate AI trade report")
+        for ticker, err in analysis_errors.items():
+            decisions.append(
+                {
+                    "ticker": ticker,
+                    "action": "HOLD",
+                    "shares": 0,
+                    "confidence": 0,
+                    "reasoning": err,
+                    "executed": False,
+                    "trade_id": None,
+                    "skip_reason": "Analysis failed",
+                    "error": err,
+                }
+            )
+
+        if not ai_report:
+            ai_report = _fallback_ai_report(decisions, portfolio)
+        elif ai_report.get("error"):
+            # Keep Gemini error details but ensure summary fields exist.
             ai_report = {
-                "headline": "Report generation failed",
-                "summary": str(exc),
-                "market_read": "",
-                "risk_notes": "",
-                "outlook": "",
-                "model": GEMINI_MODEL,
-                "error": str(exc),
+                **_fallback_ai_report(decisions, portfolio, error=ai_report.get("error")),
+                **{k: v for k, v in ai_report.items() if v},
             }
+        else:
+            # Refresh summary after executions so report reflects fills.
+            executed = [d for d in decisions if d.get("executed")]
+            if executed and "Executed" not in (ai_report.get("headline") or ""):
+                ai_report["summary"] = (
+                    (ai_report.get("summary") or "")
+                    + " Executed: "
+                    + "; ".join(
+                        f"{d['action']} {d['shares']} {d['ticker']}" for d in executed
+                    )
+                ).strip()
 
         summary = {
             "ok": True,
@@ -423,7 +533,7 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
             "error": str(exc),
             "timestamp": _status["last_run"],
             "decisions": decisions,
-            "ai_report": None,
+            "ai_report": _fallback_ai_report(decisions, load_portfolio(), error=str(exc)),
         }
         append_report({"type": "cycle_error", **err_report})
         return err_report
