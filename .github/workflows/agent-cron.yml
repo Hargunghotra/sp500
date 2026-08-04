@@ -1,0 +1,137 @@
+# Autonomous agent cron — runs with PC offline via GitHub-hosted runners.
+# Persistence: ledger files live on the `agent-data` branch under data/.
+
+name: Agent cron
+
+on:
+  schedule:
+    # Mon–Fri, every 15m, 13:00–20:45 UTC (~US regular hours spanning EST/EDT).
+    # Agent uses force=false so exact NY session gate still applies.
+    - cron: "*/15 13-20 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Force run outside US market hours"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: agent-cron
+  cancel-in-progress: false
+
+jobs:
+  trade-cycle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: sp500-backend/requirements.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r sp500-backend/requirements.txt
+
+      - name: Restore ledger from agent-data branch
+        run: |
+          set -euo pipefail
+          mkdir -p sp500-backend/data
+          git fetch origin agent-data:agent-data 2>/dev/null || echo "No agent-data branch yet (first run)."
+          if git rev-parse --verify agent-data >/dev/null 2>&1; then
+            for f in portfolio.json equity.jsonl reports.jsonl strategy.json screen_cache.json sp500.json; do
+              if git cat-file -e "agent-data:data/$f" 2>/dev/null; then
+                git show "agent-data:data/$f" > "sp500-backend/data/$f"
+                echo "Restored data/$f"
+              fi
+            done
+          fi
+          ls -la sp500-backend/data || true
+
+      - name: Run agent cycle
+        working-directory: sp500-backend
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          ALLOW_AFTER_HOURS: ${{ vars.ALLOW_AFTER_HOURS }}
+          INITIAL_BALANCE: ${{ vars.INITIAL_BALANCE }}
+          PYTHONUNBUFFERED: "1"
+        run: |
+          set -euo pipefail
+          if [ -z "${GEMINI_API_KEY:-}" ]; then
+            echo "Missing GEMINI_API_KEY repository secret."
+            exit 1
+          fi
+          export GEMINI_MODEL="${GEMINI_MODEL:-gemini-flash-latest}"
+          export ALLOW_AFTER_HOURS="${ALLOW_AFTER_HOURS:-false}"
+          export INITIAL_BALANCE="${INITIAL_BALANCE:-50000}"
+          ARGS=()
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
+            ARGS+=(--force)
+          fi
+          python run_cycle.py "${ARGS[@]}"
+
+      - name: Upload ledger artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-ledger-${{ github.run_id }}
+          path: |
+            sp500-backend/data/portfolio.json
+            sp500-backend/data/equity.jsonl
+            sp500-backend/data/reports.jsonl
+            sp500-backend/data/strategy.json
+            sp500-backend/data/screen_cache.json
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Persist ledger to agent-data branch
+        if: success()
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          STAGE=$(mktemp -d)
+          for f in portfolio.json equity.jsonl reports.jsonl strategy.json screen_cache.json sp500.json; do
+            if [ -f "sp500-backend/data/$f" ]; then
+              cp "sp500-backend/data/$f" "$STAGE/$f"
+            fi
+          done
+
+          CODE_REF="${GITHUB_SHA}"
+          git fetch origin agent-data:agent-data 2>/dev/null || true
+
+          if git rev-parse --verify agent-data >/dev/null 2>&1; then
+            git switch --force agent-data
+          else
+            git switch --orphan agent-data
+            git rm -rf . >/dev/null 2>&1 || true
+          fi
+
+          mkdir -p data
+          rm -f data/portfolio.json data/equity.jsonl data/reports.jsonl data/strategy.json data/screen_cache.json data/sp500.json
+          cp -f "$STAGE"/* data/ 2>/dev/null || true
+          printf '%s\n' '# agent-data' '' 'Durable paper-trading ledger for GitHub Actions cron.' 'Do not store API keys here.' > README.md
+
+          git add data README.md
+          if git diff --staged --quiet; then
+            echo "No ledger changes to commit."
+          else
+            git commit -m "chore(agent-data): update ledger $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push origin HEAD:agent-data
+          fi
+
+          git switch --detach "$CODE_REF" >/dev/null 2>&1 || true
