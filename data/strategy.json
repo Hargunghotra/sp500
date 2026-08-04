@@ -1,0 +1,19 @@
+{
+  "thesis": "Focus on top-rated S&P 500 stocks exhibiting strong momentum above 50-day SMAs and consolidating near breakouts, prioritizing high opportunity scores while strictly managing position sizing amidst elevated market volatility.",
+  "preferred_sectors": [
+    "Industrials",
+    "Consumer Staples",
+    "Real Estate",
+    "Financials",
+    "Utilities",
+    "Technology"
+  ],
+  "styles": [
+    "Momentum",
+    "Quality",
+    "Breakout Consolidation"
+  ],
+  "risk_posture": "Moderate",
+  "updated_at": "2026-08-04T00:29:05.873135+00:00",
+  "model": "gemini-flash-latest"
+}
