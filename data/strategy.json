@@ -1,9 +1,9 @@
 {
-  "thesis": "Focus on high-quality S&P 500 equities displaying consolidated chart setups above their 50-day moving averages with positive sentiment catalysts. Capitalize on low distance-to-support setups to add high-opportunity positions while managing volatility risk.",
+  "thesis": "Focus on high-quality S&P 500 stocks exhibiting strong momentum and technical consolidation near key moving averages while strictly maintaining sector diversification and capital preservation.",
   "preferred_sectors": [
     "Healthcare",
     "Financials",
-    "Consumer Discretionary",
+    "Consumer Staples",
     "Industrials"
   ],
   "styles": [
@@ -11,7 +11,7 @@
     "Momentum",
     "Consolidation Breakout"
   ],
-  "risk_posture": "Moderate",
-  "updated_at": "2026-08-04T15:26:12.825928+00:00",
+  "risk_posture": "Moderate-Conservative",
+  "updated_at": "2026-08-04T17:14:19.585276+00:00",
   "model": "gemini-flash-latest"
 }
