@@ -1,19 +1,17 @@
 {
-  "thesis": "Focus on top-rated S&P 500 stocks exhibiting strong momentum above 50-day SMAs and consolidating near breakouts, prioritizing high opportunity scores while strictly managing position sizing amidst elevated market volatility.",
+  "thesis": "Focus on high-quality S&P 500 equities displaying consolidated chart setups above their 50-day moving averages with positive sentiment catalysts. Capitalize on low distance-to-support setups to add high-opportunity positions while managing volatility risk.",
   "preferred_sectors": [
-    "Industrials",
-    "Consumer Staples",
-    "Real Estate",
+    "Healthcare",
     "Financials",
-    "Utilities",
-    "Technology"
+    "Consumer Discretionary",
+    "Industrials"
   ],
   "styles": [
-    "Momentum",
     "Quality",
-    "Breakout Consolidation"
+    "Momentum",
+    "Consolidation Breakout"
   ],
   "risk_posture": "Moderate",
-  "updated_at": "2026-08-04T00:29:05.873135+00:00",
+  "updated_at": "2026-08-04T15:26:12.825928+00:00",
   "model": "gemini-flash-latest"
 }

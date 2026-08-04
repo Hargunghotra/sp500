@@ -1,15 +1,53 @@
 {
-  "balance": 28418.28,
+  "balance": 22448.89,
   "positions": {
     "AES": 271,
     "JCI": 25,
     "EA": 16,
-    "TECH": 43,
+    "TECH": 74,
     "CHD": 28,
     "INVH": 86,
-    "BRK-B": 4
+    "BRK-B": 4,
+    "PNC": 8,
+    "AIZ": 6
   },
   "trades": [
+    {
+      "id": "aae66f6ad29a",
+      "ticker": "AIZ",
+      "type": "BUY",
+      "price": 281.5,
+      "shares": 6,
+      "date": "2026-08-04T15:26:13.425309+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Consolidating structure near support with 9.9 score and solid 8.83 opportunity rating, within sector allocation goals. (shares capped to 6 by 8% cash rule)",
+      "confidence": 0.71,
+      "source": "ai"
+    },
+    {
+      "id": "3f45eb4f8b81",
+      "ticker": "PNC",
+      "type": "BUY",
+      "price": 255.7,
+      "shares": 8,
+      "date": "2026-08-04T15:26:13.073072+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Highest score candidate (10.0) with consolidation pattern, low distance to resistance, strong valuation metrics, and dividend catalyst.",
+      "confidence": 0.76,
+      "source": "ai"
+    },
+    {
+      "id": "47e7949836e4",
+      "ticker": "TECH",
+      "type": "BUY",
+      "price": 72.09,
+      "shares": 31,
+      "date": "2026-08-04T15:26:12.826499+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top opportunity score of 9.51 in a clean consolidating uptrend close to support (1.57%). Adding to existing position within risk limits.",
+      "confidence": 0.82,
+      "source": "ai"
+    },
     {
       "id": "a26c7fa43fa9",
       "ticker": "BRK-B",
