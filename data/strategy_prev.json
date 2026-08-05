@@ -1,0 +1,17 @@
+{
+  "thesis": "Maintain core portfolio holdings in high-quality S&P 500 leaders while honoring the 10-ticker max position cap amidst elevated market volatility.",
+  "preferred_sectors": [
+    "Financials",
+    "Healthcare",
+    "Consumer Staples",
+    "Industrials"
+  ],
+  "styles": [
+    "Quality Momentum",
+    "Consolidation Breakout",
+    "Value & Defensive"
+  ],
+  "risk_posture": "Moderate-Conservative",
+  "updated_at": "2026-08-05T18:24:19.865994+00:00",
+  "model": "gemini-flash-latest"
+}
