@@ -5,7 +5,8 @@ import os
 from agent import run_cycle
 from analyzer import analyze_ticker
 from equity import list_equity, mark_to_market
-from ledger import execute_trade, load_portfolio, reset_portfolio
+from assets import normalize_symbol
+from ledger import execute_trade, load_portfolio, reset_portfolio, update_position_levels
 from reports import list_reports
 from scheduler import start_agent, start_scheduler, status_payload, stop_agent
 
@@ -33,36 +34,82 @@ def analyze():
 
 @app.route("/api/portfolio", methods=["GET"])
 def portfolio():
-    book = load_portfolio()
-    mtm = mark_to_market(book)
-    return jsonify({**book, "equity": mtm["equity"], "positions_value": mtm["positions_value"], "mtm": mtm})
+    try:
+        book = load_portfolio()
+        mtm = mark_to_market(book)
+        return jsonify(
+            {
+                **book,
+                "equity": mtm["equity"],
+                "positions_value": mtm["positions_value"],
+                "unrealized_pnl": mtm["unrealized_pnl"],
+                "realized_pnl": mtm.get("realized_pnl", book.get("realized_pnl", 0)),
+                "total_pnl": mtm.get("total_pnl"),
+                "position_rows": mtm.get("position_rows") or [],
+                "mtm": mtm,
+            }
+        )
+    except Exception as e:  # noqa: BLE001
+        return jsonify({"error": str(e)}), 500
 
 
 @app.route("/api/portfolio/equity", methods=["GET"])
 def portfolio_equity():
-    limit = request.args.get("limit", 500, type=int)
-    limit = max(1, min(limit or 500, 2000))
-    history = list_equity(limit)
-    current = mark_to_market()
-    return jsonify({"history": history, "current": current})
+    try:
+        limit = request.args.get("limit", 500, type=int)
+        limit = max(1, min(limit or 500, 2000))
+        history = list_equity(limit)
+        current = mark_to_market()
+        return jsonify({"history": history, "current": current})
+    except Exception as e:  # noqa: BLE001
+        return jsonify({"error": str(e)}), 500
 
 
 @app.route("/api/portfolio/reset", methods=["POST"])
 def portfolio_reset():
-    book = reset_portfolio()
-    return jsonify({"portfolio": book, "message": "Portfolio reset to starting capital"})
+    try:
+        book = reset_portfolio()
+        return jsonify({"portfolio": book, "message": "Portfolio reset to starting capital"})
+    except Exception as e:  # noqa: BLE001
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route("/api/portfolio/position", methods=["PATCH"])
+def portfolio_position():
+    data = request.json or {}
+    try:
+        symbol = normalize_symbol(str(data.get("symbol") or data.get("ticker") or ""))
+        if not symbol:
+            raise ValueError("symbol is required")
+        stop_loss = data.get("stop_loss", None)
+        take_profit = data.get("take_profit", None)
+        if stop_loss is not None:
+            stop_loss = float(stop_loss)
+        if take_profit is not None:
+            take_profit = float(take_profit)
+        book = update_position_levels(
+            symbol, stop_loss=stop_loss, take_profit=take_profit
+        )
+        mtm = mark_to_market(book)
+        return jsonify({"portfolio": book, "position_rows": mtm.get("position_rows") or []})
+    except (TypeError, ValueError) as e:
+        return jsonify({"error": str(e)}), 400
+    except Exception as e:  # noqa: BLE001
+        return jsonify({"error": str(e)}), 500
 
 
 @app.route("/api/trade", methods=["POST"])
 def trade():
     data = request.json or {}
     try:
-        ticker = str(data.get("ticker", "")).upper()
+        ticker = normalize_symbol(str(data.get("ticker") or ""))
         side = str(data.get("type") or data.get("side") or "").upper()
         price = float(data.get("price"))
-        shares = int(data.get("shares"))
+        shares = float(data.get("shares"))
         pattern = str(data.get("pattern") or "")
         reasoning = str(data.get("reasoning") or "Manual trade")
+        stop_loss = data.get("stop_loss")
+        take_profit = data.get("take_profit")
         result = execute_trade(
             ticker,
             side,
@@ -72,6 +119,8 @@ def trade():
             reasoning=reasoning,
             confidence=None,
             source="manual",
+            stop_loss=float(stop_loss) if stop_loss is not None else None,
+            take_profit=float(take_profit) if take_profit is not None else None,
         )
         return jsonify(result)
     except (TypeError, ValueError) as e:

@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { useTradingStore } from '@/store/useTradingStore'
+import { positionQty, useTradingStore } from '@/store/useTradingStore'
 
 interface SimulationTradingPanelProps {
   currentTicker?: string
@@ -38,7 +38,7 @@ export default function SimulationTradingPanel({
     setBusy(false)
   }
 
-  const ownedShares = positions[currentTicker] || 0
+  const ownedShares = positionQty(positions, currentTicker)
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -63,10 +63,11 @@ export default function SimulationTradingPanel({
         <div className="flex gap-2">
           <input
             type="number"
-            min="1"
+            min="0.000001"
+            step="any"
             value={shares}
             onChange={(e) => setShares(Number(e.target.value))}
-            className="w-24 glass-input rounded-xl px-3 text-white font-mono focus:outline-none"
+            className="w-28 glass-input rounded-xl px-3 text-white font-mono focus:outline-none"
           />
           <button
             onClick={() => handleTrade('BUY')}

@@ -95,6 +95,21 @@ export default function AgentPanel() {
             S&amp;P {status?.universe_size || 500} · shortlist {status?.screened_count ?? '—'}
           </div>
         </div>
+        <div className="col-span-2">
+          Session
+          <div className="text-[#d1d4dc] mt-0.5 flex items-center gap-2">
+            <span>{status?.session_label ?? 'extended 4:00–20:00 ET'}</span>
+            <span
+              className={`text-[10px] px-1.5 py-0.5 rounded border ${
+                status?.in_session
+                  ? 'border-[#089981]/40 text-[#089981] bg-[#089981]/10'
+                  : 'border-white/15 text-[#787b86] bg-white/5'
+              }`}
+            >
+              {status?.in_session ? 'IN SESSION' : 'CLOSED'}
+            </span>
+          </div>
+        </div>
       </div>
 
       {strategy?.thesis && (

@@ -1,4 +1,5 @@
 import { create } from 'zustand'
+import { parseJsonResponse } from '@/lib/parseJson'
 
 export interface NewsItem {
   title: string
@@ -32,6 +33,7 @@ export interface AnalysisData {
   volume: VolumePoint[]
   news: NewsItem[]
   breakoutPoints: unknown[]
+  error?: string
 }
 
 interface AnalyzerState {
@@ -53,7 +55,7 @@ export const useAnalyzerStore = create<AnalyzerState>((set) => ({
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ticker }),
       })
-      const data = await res.json()
+      const data = await parseJsonResponse<AnalysisData>(res)
       if (!res.ok) throw new Error(data.error || 'Failed to fetch')
       set({ analysisData: data, loading: false })
     } catch (err: unknown) {

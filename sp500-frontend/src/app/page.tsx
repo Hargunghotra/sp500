@@ -7,6 +7,7 @@ import AreaChartPlot from '@/components/AreaChartPlot'
 import AgentPanel from '@/components/AgentPanel'
 import NewsPanel from '@/components/NewsPanel'
 import PortfolioEquityChart from '@/components/PortfolioEquityChart'
+import PositionsPanel from '@/components/PositionsPanel'
 import SimulationTradingPanel from '@/components/SimulationTradingPanel'
 import TradeReportsPanel from '@/components/TradeReportsPanel'
 import { useAgentStore } from '@/store/useAgentStore'
@@ -230,6 +231,15 @@ export default function Home() {
               trend={analysisData?.trend}
             />
           </div>
+        </motion.section>
+
+        <motion.section
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.13 }}
+          className="glass-panel p-4"
+        >
+          <PositionsPanel />
         </motion.section>
 
         <motion.section

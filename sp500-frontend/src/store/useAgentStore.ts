@@ -1,4 +1,5 @@
 import { create } from 'zustand'
+import { parseJsonResponse } from '@/lib/parseJson'
 
 export interface AgentDecision {
   ticker: string
@@ -65,11 +66,15 @@ export interface AgentStatus {
   max_cash_pct_per_buy?: number
   max_open_tickers?: number
   allow_after_hours?: boolean
+  trading_session?: string
+  session_label?: string
+  in_session?: boolean
   last_cycle_summary?: {
     executed_count?: number
     skipped?: boolean
     reason?: string
   } | null
+  error?: string
 }
 
 interface AgentState {
@@ -94,7 +99,7 @@ export const useAgentStore = create<AgentState>((set) => ({
   fetchStatus: async () => {
     try {
       const res = await fetch('/api/agent/status')
-      const data = await res.json()
+      const data = await parseJsonResponse<AgentStatus>(res)
       if (!res.ok) throw new Error(data.error || 'Failed to load agent status')
       set({ status: data, error: null })
     } catch (err: unknown) {
@@ -106,7 +111,7 @@ export const useAgentStore = create<AgentState>((set) => ({
     set({ loading: true })
     try {
       const res = await fetch('/api/agent/reports?limit=40')
-      const data = await res.json()
+      const data = await parseJsonResponse<{ reports?: AgentReport[]; error?: string }>(res)
       if (!res.ok) throw new Error(data.error || 'Failed to load reports')
       set({ reports: data.reports || [], loading: false, error: null })
     } catch (err: unknown) {
@@ -118,7 +123,7 @@ export const useAgentStore = create<AgentState>((set) => ({
     set({ acting: true, error: null })
     try {
       const res = await fetch('/api/agent/start', { method: 'POST' })
-      const data = await res.json()
+      const data = await parseJsonResponse<AgentStatus>(res)
       if (!res.ok) throw new Error(data.error || 'Failed to start agent')
       set({ status: data, acting: false })
     } catch (err: unknown) {
@@ -130,7 +135,7 @@ export const useAgentStore = create<AgentState>((set) => ({
     set({ acting: true, error: null })
     try {
       const res = await fetch('/api/agent/stop', { method: 'POST' })
-      const data = await res.json()
+      const data = await parseJsonResponse<AgentStatus>(res)
       if (!res.ok) throw new Error(data.error || 'Failed to stop agent')
       set({ status: data, acting: false })
     } catch (err: unknown) {
@@ -146,11 +151,15 @@ export const useAgentStore = create<AgentState>((set) => ({
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ force: true }),
       })
-      const data = await res.json()
+      const data = await parseJsonResponse<{
+        result?: { ok?: boolean; error?: string }
+        status?: AgentStatus
+        error?: string
+      }>(res)
       if (!res.ok) throw new Error(data.error || data.result?.error || 'Run failed')
       if (data.status) set({ status: data.status })
       const reportsRes = await fetch('/api/agent/reports?limit=40')
-      const reportsData = await reportsRes.json()
+      const reportsData = await parseJsonResponse<{ reports?: AgentReport[] }>(reportsRes)
       set({
         reports: reportsData.reports || [],
         acting: false,

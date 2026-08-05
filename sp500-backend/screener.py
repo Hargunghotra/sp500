@@ -1,4 +1,4 @@
-"""Local S&P 500 screener: technicals + patterns (news for shortlist only)."""
+"""Local multi-asset screener: S&P 500 + forex + crypto shortlist."""
 
 from __future__ import annotations
 
@@ -10,8 +10,12 @@ from typing import Any
 import pandas as pd
 import yfinance as yf
 
+from assets import asset_class_for, normalize_symbol
 from config import (
     AGENT_WATCHLIST,
+    CRYPTO_UNIVERSE,
+    FOREX_UNIVERSE,
+    FX_CRYPTO_TOP_N,
     SCREEN_BATCH_SIZE,
     SCREEN_CACHE_MINUTES,
     SCREEN_CACHE_PATH,
@@ -39,16 +43,15 @@ def _score_row(close: pd.Series) -> dict[str, Any] | None:
     dist_resist = (high_20 - current) / current if current else 0
     ret_20 = float(close.iloc[-1] / close.iloc[-21] - 1) if len(close) > 21 else 0.0
 
-    # Heuristic opportunity score (higher = more interesting for AI)
     opportunity = 0.0
     if trend == "UP":
         opportunity += 2.0
     else:
         opportunity += 0.5
     if pattern == "Consolidating" and dist_resist < 0.02:
-        opportunity += 2.5  # near breakout
+        opportunity += 2.5
     if pattern == "Consolidating" and dist_support < 0.02:
-        opportunity += 2.0  # near support bounce
+        opportunity += 2.0
     if 0.02 < dist_support < 0.08 and trend == "UP":
         opportunity += 1.5
     opportunity += max(0.0, min(2.0, score_to_high / 5))
@@ -65,7 +68,7 @@ def _score_row(close: pd.Series) -> dict[str, Any] | None:
         "dist_to_support_pct": round(dist_support * 100, 2),
         "dist_to_resistance_pct": round(dist_resist * 100, 2),
         "return_20d_pct": round(ret_20 * 100, 2),
-        "recent_closes": [round(float(x), 2) for x in close.tail(8).tolist()],
+        "recent_closes": [round(float(x), 6) for x in close.tail(8).tolist()],
         "opportunity_score": round(opportunity, 3),
     }
 
@@ -87,12 +90,61 @@ def _download_batch(tickers: list[str]) -> pd.DataFrame | None:
         return None
 
 
+def _score_universe(universe: list[str]) -> tuple[list[dict[str, Any]], int]:
+    scored: list[dict[str, Any]] = []
+    scanned = 0
+    for i in range(0, len(universe), SCREEN_BATCH_SIZE):
+        batch = [normalize_symbol(t) for t in universe[i : i + SCREEN_BATCH_SIZE]]
+        data = _download_batch(batch)
+        if data is None or data.empty:
+            continue
+        scanned += len(batch)
+
+        if len(batch) == 1:
+            ticker = batch[0]
+            try:
+                close = data["Close"]
+                feats = _score_row(close)
+                if feats:
+                    scored.append(
+                        {
+                            "ticker": ticker,
+                            "asset_class": asset_class_for(ticker),
+                            **feats,
+                        }
+                    )
+            except Exception:  # noqa: BLE001
+                continue
+            continue
+
+        for ticker in batch:
+            try:
+                close = data[ticker]["Close"]
+                feats = _score_row(close)
+                if feats:
+                    scored.append(
+                        {
+                            "ticker": ticker,
+                            "asset_class": asset_class_for(ticker),
+                            **feats,
+                        }
+                    )
+            except Exception:  # noqa: BLE001
+                continue
+    return scored, scanned
+
+
 def _enrich_news(candidates: list[dict[str, Any]]) -> None:
     """Attach light news sentiment to top candidates only."""
     from analyzer import _analyzer, _news_title
 
     for item in candidates:
         ticker = item["ticker"]
+        if item.get("asset_class") in {"forex", "crypto"}:
+            # Yahoo news is thin for FX pairs; skip to save time
+            item.setdefault("sentiment", "NEUTRAL")
+            item.setdefault("news_headlines", [])
+            continue
         try:
             raw = yf.Ticker(ticker).news or []
             scores = []
@@ -159,53 +211,32 @@ def screen_universe(
             return cached
 
     if AGENT_WATCHLIST:
-        universe = list(AGENT_WATCHLIST)
+        equity_universe = [normalize_symbol(t) for t in AGENT_WATCHLIST]
     else:
-        universe = get_sp500_tickers()
+        equity_universe = get_sp500_tickers()
 
-    scored: list[dict[str, Any]] = []
-    scanned = 0
+    equity_scored, equity_scanned = _score_universe(equity_universe)
+    fx_scored, fx_scanned = _score_universe(FOREX_UNIVERSE)
+    crypto_scored, crypto_scanned = _score_universe(CRYPTO_UNIVERSE)
 
-    for i in range(0, len(universe), SCREEN_BATCH_SIZE):
-        batch = universe[i : i + SCREEN_BATCH_SIZE]
-        data = _download_batch(batch)
-        if data is None or data.empty:
-            continue
-        scanned += len(batch)
+    equity_scored.sort(key=lambda x: x.get("opportunity_score", 0), reverse=True)
+    fx_scored.sort(key=lambda x: x.get("opportunity_score", 0), reverse=True)
+    crypto_scored.sort(key=lambda x: x.get("opportunity_score", 0), reverse=True)
 
-        if len(batch) == 1:
-            ticker = batch[0]
-            try:
-                close = data["Close"]
-                feats = _score_row(close)
-                if feats:
-                    scored.append({"ticker": ticker, **feats})
-            except Exception:  # noqa: BLE001
-                continue
-            continue
-
-        for ticker in batch:
-            try:
-                close = data[ticker]["Close"]
-                feats = _score_row(close)
-                if feats:
-                    scored.append({"ticker": ticker, **feats})
-            except Exception:  # noqa: BLE001
-                continue
-
-    scored.sort(key=lambda x: x.get("opportunity_score", 0), reverse=True)
-    # Always include currently held names if missing
     from ledger import load_portfolio
 
-    held = list((load_portfolio().get("positions") or {}).keys())
-    by_ticker = {c["ticker"]: c for c in scored}
-    for h in held:
-        if h not in by_ticker:
-            # leave out if no data; AI can still sell via portfolio-only prompt
-            continue
+    held = [
+        normalize_symbol(str(k))
+        for k in (load_portfolio().get("positions") or {}).keys()
+    ]
 
-    shortlist = scored[:top_n]
-    # Ensure held tickers appear in shortlist for SELL decisions
+    shortlist = equity_scored[:top_n]
+    shortlist.extend(fx_scored[:FX_CRYPTO_TOP_N])
+    shortlist.extend(crypto_scored[:FX_CRYPTO_TOP_N])
+
+    by_ticker = {
+        c["ticker"]: c for c in (*equity_scored, *fx_scored, *crypto_scored)
+    }
     for h in held:
         if h in by_ticker and all(c["ticker"] != h for c in shortlist):
             shortlist.append(by_ticker[h])
@@ -213,15 +244,23 @@ def screen_universe(
     _enrich_news(shortlist)
     shortlist.sort(key=lambda x: x.get("opportunity_score", 0), reverse=True)
 
-    sector_hint: dict[str, int] = {"UP_trend": 0, "DOWN_trend": 0, "Consolidating": 0, "Volatile": 0}
-    for c in scored[:100]:
+    sector_hint: dict[str, int] = {
+        "UP_trend": 0,
+        "DOWN_trend": 0,
+        "Consolidating": 0,
+        "Volatile": 0,
+        "forex_candidates": len(fx_scored[:FX_CRYPTO_TOP_N]),
+        "crypto_candidates": len(crypto_scored[:FX_CRYPTO_TOP_N]),
+    }
+    for c in equity_scored[:100]:
         sector_hint["UP_trend" if c["trend"] == "UP" else "DOWN_trend"] += 1
         sector_hint[c["pattern"]] = sector_hint.get(c["pattern"], 0) + 1
 
+    universe_size = len(equity_universe) + len(FOREX_UNIVERSE) + len(CRYPTO_UNIVERSE)
     payload = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
-        "universe_size": len(universe),
-        "scanned": scanned,
+        "universe_size": universe_size,
+        "scanned": equity_scanned + fx_scanned + crypto_scanned,
         "candidates": shortlist,
         "market_breadth": sector_hint,
     }

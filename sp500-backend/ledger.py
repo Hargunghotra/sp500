@@ -1,4 +1,4 @@
-"""Persistent paper-trading ledger."""
+"""Persistent paper-trading ledger with rich positions (avg / SL / TP)."""
 
 from __future__ import annotations
 
@@ -8,7 +8,15 @@ import uuid
 from datetime import datetime, timezone
 from typing import Any
 
-from config import INITIAL_BALANCE, PORTFOLIO_PATH, REPORTS_PATH, STRATEGY_PATH
+from assets import asset_class_for, normalize_symbol
+from config import (
+    DEFAULT_SL_PCT,
+    DEFAULT_TP_PCT,
+    INITIAL_BALANCE,
+    PORTFOLIO_PATH,
+    REPORTS_PATH,
+    STRATEGY_PATH,
+)
 
 _lock = threading.Lock()
 
@@ -18,7 +26,76 @@ def _default_portfolio() -> dict[str, Any]:
         "balance": INITIAL_BALANCE,
         "positions": {},
         "trades": [],
+        "realized_pnl": 0.0,
     }
+
+
+def _is_legacy_qty(value: Any) -> bool:
+    return isinstance(value, (int, float)) and not isinstance(value, bool)
+
+
+def _migrate_positions(
+    raw_positions: dict[str, Any],
+    trades: list[dict[str, Any]],
+) -> dict[str, dict[str, Any]]:
+    """Upgrade {ticker: shares} → rich position objects."""
+    migrated: dict[str, dict[str, Any]] = {}
+    for key, value in (raw_positions or {}).items():
+        symbol = normalize_symbol(str(key))
+        if isinstance(value, dict) and "quantity" in value:
+            pos = dict(value)
+            pos["symbol"] = normalize_symbol(str(pos.get("symbol") or symbol))
+            pos["asset_class"] = pos.get("asset_class") or asset_class_for(pos["symbol"])
+            pos["side"] = pos.get("side") or "LONG"
+            pos["quantity"] = float(pos.get("quantity") or 0)
+            pos["avg_price"] = float(pos.get("avg_price") or 0)
+            pos["stop_loss"] = pos.get("stop_loss")
+            pos["take_profit"] = pos.get("take_profit")
+            pos["opened_at"] = pos.get("opened_at") or datetime.now(timezone.utc).isoformat()
+            avg = float(pos.get("avg_price") or 0)
+            if avg > 0 and (pos["stop_loss"] is None or pos["take_profit"] is None):
+                d_sl, d_tp = _default_stops(pos["asset_class"], avg)
+                if pos["stop_loss"] is None:
+                    pos["stop_loss"] = d_sl
+                if pos["take_profit"] is None:
+                    pos["take_profit"] = d_tp
+            if pos["quantity"] > 0:
+                migrated[pos["symbol"]] = pos
+            continue
+        if _is_legacy_qty(value):
+            qty = float(value)
+            if qty <= 0:
+                continue
+            avg = None
+            for t in trades:
+                if (
+                    normalize_symbol(str(t.get("ticker") or "")) == symbol
+                    and str(t.get("type") or "").upper() == "BUY"
+                ):
+                    avg = float(t.get("price") or 0)
+                    break
+            avg_f = float(avg or 0)
+            cls = asset_class_for(symbol)
+            sl, tp = (None, None)
+            if avg_f > 0:
+                sl, tp = _default_stops(cls, avg_f)
+            migrated[symbol] = {
+                "symbol": symbol,
+                "asset_class": cls,
+                "side": "LONG",
+                "quantity": qty,
+                "avg_price": avg_f,
+                "stop_loss": sl,
+                "take_profit": tp,
+                "opened_at": datetime.now(timezone.utc).isoformat(),
+            }
+    return migrated
+
+
+def _default_stops(asset_class: str, price: float) -> tuple[float, float]:
+    sl_pct = DEFAULT_SL_PCT.get(asset_class, 0.03)
+    tp_pct = DEFAULT_TP_PCT.get(asset_class, 0.06)
+    return round(price * (1 - sl_pct), 6), round(price * (1 + tp_pct), 6)
 
 
 def load_portfolio() -> dict[str, Any]:
@@ -29,8 +106,19 @@ def load_portfolio() -> dict[str, Any]:
             return portfolio
         data = json.loads(PORTFOLIO_PATH.read_text(encoding="utf-8"))
         data.setdefault("balance", INITIAL_BALANCE)
-        data.setdefault("positions", {})
         data.setdefault("trades", [])
+        data.setdefault("realized_pnl", 0.0)
+        raw = data.get("positions") or {}
+        # Detect legacy qty map or missing SL/TP on rich positions
+        needs_migrate = any(_is_legacy_qty(v) for v in raw.values()) or any(
+            isinstance(v, dict)
+            and "quantity" in v
+            and (v.get("stop_loss") is None or v.get("take_profit") is None)
+            for v in raw.values()
+        )
+        data["positions"] = _migrate_positions(raw, data.get("trades") or [])
+        if needs_migrate:
+            PORTFOLIO_PATH.write_text(json.dumps(data, indent=2), encoding="utf-8")
         return data
 
 
@@ -39,8 +127,16 @@ def save_portfolio(portfolio: dict[str, Any]) -> None:
         PORTFOLIO_PATH.write_text(json.dumps(portfolio, indent=2), encoding="utf-8")
 
 
+def get_position_qty(portfolio: dict[str, Any], symbol: str) -> float:
+    pos = (portfolio.get("positions") or {}).get(normalize_symbol(symbol))
+    if not pos:
+        return 0.0
+    if _is_legacy_qty(pos):
+        return float(pos)
+    return float(pos.get("quantity") or 0)
+
+
 def reset_portfolio() -> dict[str, Any]:
-    """Wipe book and restore starting capital."""
     from equity import append_equity_snapshot, clear_equity
 
     portfolio = _default_portfolio()
@@ -57,28 +153,57 @@ def reset_portfolio() -> dict[str, Any]:
             "equity": INITIAL_BALANCE,
             "cash": INITIAL_BALANCE,
             "positions_value": 0.0,
+            "unrealized_pnl": 0.0,
             "positions": {},
         }
     )
     return portfolio
 
 
+def update_position_levels(
+    symbol: str,
+    *,
+    stop_loss: float | None = None,
+    take_profit: float | None = None,
+) -> dict[str, Any]:
+    symbol = normalize_symbol(symbol)
+    with _lock:
+        portfolio = json.loads(PORTFOLIO_PATH.read_text(encoding="utf-8")) if PORTFOLIO_PATH.exists() else _default_portfolio()
+        portfolio["positions"] = _migrate_positions(
+            portfolio.get("positions") or {}, portfolio.get("trades") or []
+        )
+        pos = portfolio["positions"].get(symbol)
+        if not pos:
+            raise ValueError(f"No open position for {symbol}")
+        if stop_loss is not None:
+            pos["stop_loss"] = float(stop_loss)
+        if take_profit is not None:
+            pos["take_profit"] = float(take_profit)
+        portfolio["positions"][symbol] = pos
+        PORTFOLIO_PATH.write_text(json.dumps(portfolio, indent=2), encoding="utf-8")
+        return portfolio
+
+
 def execute_trade(
     ticker: str,
     side: str,
     price: float,
-    shares: int,
+    shares: float,
     *,
     pattern: str = "",
     reasoning: str = "",
     confidence: float | None = None,
     source: str = "manual",
+    stop_loss: float | None = None,
+    take_profit: float | None = None,
+    asset_class: str | None = None,
 ) -> dict[str, Any]:
-    """Execute a paper trade. Returns updated portfolio or raises ValueError."""
+    """Execute a paper trade against rich positions."""
     from equity import append_equity_snapshot, mark_to_market
 
-    ticker = ticker.upper().strip()
+    ticker = normalize_symbol(ticker)
     side = side.upper().strip()
+    shares = float(shares)
     if side not in {"BUY", "SELL"}:
         raise ValueError("side must be BUY or SELL")
     if shares <= 0:
@@ -86,48 +211,92 @@ def execute_trade(
     if price <= 0:
         raise ValueError("price must be positive")
 
+    cls = asset_class or asset_class_for(ticker)
+
     with _lock:
         if PORTFOLIO_PATH.exists():
             portfolio = json.loads(PORTFOLIO_PATH.read_text(encoding="utf-8"))
         else:
             portfolio = _default_portfolio()
         portfolio.setdefault("balance", INITIAL_BALANCE)
-        portfolio.setdefault("positions", {})
         portfolio.setdefault("trades", [])
+        portfolio.setdefault("realized_pnl", 0.0)
+        portfolio["positions"] = _migrate_positions(
+            portfolio.get("positions") or {}, portfolio.get("trades") or []
+        )
 
-        cost = price * shares
-        positions: dict[str, int] = {
-            k: int(v) for k, v in portfolio["positions"].items()
-        }
+        positions: dict[str, dict[str, Any]] = portfolio["positions"]
         balance = float(portfolio["balance"])
+        cost = price * shares
 
         if side == "BUY" and balance < cost:
             raise ValueError("Insufficient funds")
-        if side == "SELL" and positions.get(ticker, 0) < shares:
+        owned = float((positions.get(ticker) or {}).get("quantity") or 0)
+        if side == "SELL" and owned < shares - 1e-9:
             raise ValueError("Insufficient shares")
 
+        realized_delta = 0.0
         if side == "BUY":
             balance -= cost
-            positions[ticker] = positions.get(ticker, 0) + shares
+            existing = positions.get(ticker)
+            if existing:
+                old_qty = float(existing["quantity"])
+                old_avg = float(existing["avg_price"] or price)
+                new_qty = old_qty + shares
+                new_avg = ((old_avg * old_qty) + (price * shares)) / new_qty
+                existing["quantity"] = new_qty
+                existing["avg_price"] = round(new_avg, 6)
+                if stop_loss is not None:
+                    existing["stop_loss"] = float(stop_loss)
+                if take_profit is not None:
+                    existing["take_profit"] = float(take_profit)
+                positions[ticker] = existing
+            else:
+                sl, tp = stop_loss, take_profit
+                if sl is None or tp is None:
+                    d_sl, d_tp = _default_stops(cls, price)
+                    sl = float(sl if sl is not None else d_sl)
+                    tp = float(tp if tp is not None else d_tp)
+                positions[ticker] = {
+                    "symbol": ticker,
+                    "asset_class": cls,
+                    "side": "LONG",
+                    "quantity": shares,
+                    "avg_price": round(price, 6),
+                    "stop_loss": sl,
+                    "take_profit": tp,
+                    "opened_at": datetime.now(timezone.utc).isoformat(),
+                }
         else:
+            existing = positions[ticker]
+            avg = float(existing.get("avg_price") or price)
+            realized_delta = (price - avg) * shares
+            portfolio["realized_pnl"] = round(
+                float(portfolio.get("realized_pnl") or 0) + realized_delta, 2
+            )
             balance += cost
-            remaining = positions.get(ticker, 0) - shares
-            if remaining <= 0:
+            remaining = float(existing["quantity"]) - shares
+            if remaining <= 1e-9:
                 positions.pop(ticker, None)
             else:
-                positions[ticker] = remaining
+                existing["quantity"] = remaining
+                positions[ticker] = existing
 
         trade = {
             "id": uuid.uuid4().hex[:12],
             "ticker": ticker,
             "type": side,
-            "price": round(price, 4),
+            "price": round(price, 6),
             "shares": shares,
             "date": datetime.now(timezone.utc).isoformat(),
             "pattern": pattern,
             "reasoning": reasoning,
             "confidence": confidence,
             "source": source,
+            "asset_class": cls,
+            "stop_loss": stop_loss,
+            "take_profit": take_profit,
+            "realized_pnl": round(realized_delta, 2) if side == "SELL" else None,
         }
 
         portfolio["balance"] = round(balance, 2)

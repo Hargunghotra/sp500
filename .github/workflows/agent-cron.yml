@@ -5,13 +5,16 @@ name: Agent cron
 
 on:
   schedule:
-    # Mon–Fri, every 15m, 13:00–20:45 UTC (~US regular hours spanning EST/EDT).
-    # Agent uses force=false so exact NY session gate still applies.
-    - cron: "*/15 13-20 * * 1-5"
+    # Mon–Fri, every 15m, covering US extended hours (~4:00–20:00 ET).
+    # 08:00–23:45 UTC covers EDT pre-market through after-hours; overnight 00:00–00:45 UTC
+    # covers the last EDT after-hours slice when clocks are EDT (UTC-4).
+    # Agent uses force=false so TRADING_SESSION=extended still gates weekends/off-hours.
+    - cron: "*/15 8-23 * * 1-5"
+    - cron: "*/15 0 * * 2-6"
   workflow_dispatch:
     inputs:
       force:
-        description: "Force run outside US market hours"
+        description: "Force run outside US extended market hours"
         type: boolean
         default: false
 
@@ -66,6 +69,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           ALLOW_AFTER_HOURS: ${{ vars.ALLOW_AFTER_HOURS }}
+          TRADING_SESSION: ${{ vars.TRADING_SESSION }}
           INITIAL_BALANCE: ${{ vars.INITIAL_BALANCE }}
           PYTHONUNBUFFERED: "1"
         run: |
@@ -76,6 +80,7 @@ jobs:
           fi
           export GEMINI_MODEL="${GEMINI_MODEL:-gemini-flash-latest}"
           export ALLOW_AFTER_HOURS="${ALLOW_AFTER_HOURS:-false}"
+          export TRADING_SESSION="${TRADING_SESSION:-extended}"
           export INITIAL_BALANCE="${INITIAL_BALANCE:-50000}"
           ARGS=()
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then

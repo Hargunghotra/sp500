@@ -10,6 +10,7 @@ import {
   XAxis,
   YAxis,
 } from 'recharts'
+import { parseJsonResponse } from '@/lib/parseJson'
 
 interface EquityPoint {
   timestamp: string
@@ -21,6 +22,7 @@ interface EquityPoint {
 interface EquityResponse {
   history: EquityPoint[]
   current: EquityPoint
+  error?: string
 }
 
 const tooltipStyle = {
@@ -41,8 +43,8 @@ export default function PortfolioEquityChart() {
   const load = async () => {
     try {
       const res = await fetch('/api/portfolio/equity?limit=500')
-      const data: EquityResponse = await res.json()
-      if (!res.ok) throw new Error((data as { error?: string }).error || 'Failed')
+      const data = await parseJsonResponse<EquityResponse>(res)
+      if (!res.ok) throw new Error(data.error || 'Failed')
       setHistory(data.history || [])
       setCurrent(data.current || null)
       setError(null)

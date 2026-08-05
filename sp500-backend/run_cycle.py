@@ -14,7 +14,13 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from agent import run_cycle  # noqa: E402
-from config import ALLOW_AFTER_HOURS, DATA_DIR, GEMINI_API_KEY, INITIAL_BALANCE  # noqa: E402
+from config import (  # noqa: E402
+    ALLOW_AFTER_HOURS,
+    DATA_DIR,
+    GEMINI_API_KEY,
+    INITIAL_BALANCE,
+    TRADING_SESSION,
+)
 
 
 def main() -> int:
@@ -42,6 +48,7 @@ def main() -> int:
 
     print(
         f"Agent cycle starting (force={args.force}, "
+        f"trading_session={TRADING_SESSION}, "
         f"allow_after_hours={ALLOW_AFTER_HOURS}, "
         f"has_gemini_key={bool(GEMINI_API_KEY)}, "
         f"initial_balance={INITIAL_BALANCE})"

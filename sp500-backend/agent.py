@@ -1,4 +1,4 @@
-"""Autonomous Gemini paper-trading agent over S&P 500 screen."""
+"""Autonomous Gemini paper-trading agent over multi-asset screen."""
 
 from __future__ import annotations
 
@@ -10,17 +10,25 @@ from datetime import datetime, timezone
 from typing import Any
 from zoneinfo import ZoneInfo
 
+from assets import asset_class_for, normalize_symbol
 from config import (
     ALLOW_AFTER_HOURS,
+    DEFAULT_SL_PCT,
+    DEFAULT_TP_PCT,
+    EXTENDED_SESSION_END_MIN,
+    EXTENDED_SESSION_START_MIN,
     GEMINI_API_KEY,
     GEMINI_MODEL,
     MAX_CASH_PCT_PER_BUY,
     MAX_OPEN_TICKERS,
     MIN_CONFIDENCE,
+    REGULAR_SESSION_END_MIN,
+    REGULAR_SESSION_START_MIN,
     STRATEGY_PATH,
+    TRADING_SESSION,
 )
 from equity import append_equity_snapshot, mark_to_market
-from ledger import execute_trade, load_portfolio
+from ledger import execute_trade, get_position_qty, load_portfolio
 from reports import append_report
 from screener import screen_universe
 
@@ -56,6 +64,17 @@ def get_status() -> dict[str, Any]:
         "max_cash_pct_per_buy": MAX_CASH_PCT_PER_BUY,
         "max_open_tickers": MAX_OPEN_TICKERS,
         "allow_after_hours": ALLOW_AFTER_HOURS,
+        "trading_session": TRADING_SESSION,
+        "session_label": (
+            "24x7 (ALLOW_AFTER_HOURS)"
+            if ALLOW_AFTER_HOURS
+            else (
+                "extended 4:00–20:00 ET"
+                if TRADING_SESSION == "extended"
+                else "regular 9:30–16:00 ET"
+            )
+        ),
+        "in_session": is_trading_session(),
     }
 
 
@@ -64,12 +83,33 @@ def set_enabled(enabled: bool) -> None:
 
 
 def is_us_regular_session(now: datetime | None = None) -> bool:
+    """Legacy helper: US regular cash session 9:30–16:00 ET weekdays."""
     et = ZoneInfo("America/New_York")
     now = now.astimezone(et) if now else datetime.now(et)
     if now.weekday() >= 5:
         return False
     minutes = now.hour * 60 + now.minute
-    return 9 * 60 + 30 <= minutes < 16 * 60
+    return REGULAR_SESSION_START_MIN <= minutes < REGULAR_SESSION_END_MIN
+
+
+def is_trading_session(now: datetime | None = None) -> bool:
+    """True when the agent is allowed to trade under current session config."""
+    if ALLOW_AFTER_HOURS:
+        return True
+    et = ZoneInfo("America/New_York")
+    now = now.astimezone(et) if now else datetime.now(et)
+    if now.weekday() >= 5:
+        return False
+    minutes = now.hour * 60 + now.minute
+    if TRADING_SESSION == "regular":
+        return REGULAR_SESSION_START_MIN <= minutes < REGULAR_SESSION_END_MIN
+    return EXTENDED_SESSION_START_MIN <= minutes < EXTENDED_SESSION_END_MIN
+
+
+def _session_skip_reason() -> str:
+    if TRADING_SESSION == "regular":
+        return "Outside US regular market hours"
+    return "Outside US extended market hours"
 
 
 def _extract_json(text: str) -> dict[str, Any]:
@@ -87,15 +127,103 @@ def _normalize_decision(decision: dict[str, Any]) -> dict[str, Any]:
     action = str(decision.get("action", "HOLD")).upper()
     if action not in {"BUY", "SELL", "HOLD"}:
         action = "HOLD"
-    shares = int(decision.get("shares") or 0)
+    shares = float(decision.get("shares") or 0)
     confidence = float(decision.get("confidence") or 0)
     reasoning = str(decision.get("reasoning") or "").strip() or "No reasoning provided."
+    stop_loss = decision.get("stop_loss")
+    take_profit = decision.get("take_profit")
+    try:
+        stop_loss = float(stop_loss) if stop_loss is not None else None
+    except (TypeError, ValueError):
+        stop_loss = None
+    try:
+        take_profit = float(take_profit) if take_profit is not None else None
+    except (TypeError, ValueError):
+        take_profit = None
     return {
         "action": action,
-        "shares": max(0, shares),
+        "shares": max(0.0, shares),
         "confidence": max(0.0, min(1.0, confidence)),
         "reasoning": reasoning,
+        "stop_loss": stop_loss,
+        "take_profit": take_profit,
     }
+
+
+def _open_positions_payload(portfolio: dict[str, Any]) -> list[dict[str, Any]]:
+    mtm = mark_to_market(portfolio)
+    return mtm.get("position_rows") or []
+
+
+def _process_stop_exits(portfolio: dict[str, Any]) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    """Force SELL when last price breaches stop-loss or take-profit."""
+    exits: list[dict[str, Any]] = []
+    mtm = mark_to_market(portfolio)
+    for row in mtm.get("position_rows") or []:
+        symbol = normalize_symbol(str(row["symbol"]))
+        qty = float(row.get("quantity") or 0)
+        last = float(row.get("last_price") or 0)
+        if qty <= 0 or last <= 0:
+            continue
+        sl = row.get("stop_loss")
+        tp = row.get("take_profit")
+        reason = None
+        source = "ai"
+        if sl is not None and last <= float(sl):
+            reason = f"Stop-loss hit @ {last} (SL {sl})"
+            source = "stop_loss"
+        elif tp is not None and last >= float(tp):
+            reason = f"Take-profit hit @ {last} (TP {tp})"
+            source = "take_profit"
+        if not reason:
+            continue
+        try:
+            result = execute_trade(
+                symbol,
+                "SELL",
+                last,
+                qty,
+                pattern="SL/TP exit",
+                reasoning=reason,
+                confidence=1.0,
+                source=source,
+            )
+            portfolio = result["portfolio"]
+            exits.append(
+                {
+                    "ticker": symbol,
+                    "action": "SELL",
+                    "shares": qty,
+                    "confidence": 1.0,
+                    "reasoning": reason,
+                    "executed": True,
+                    "trade_id": result["trade"]["id"],
+                    "skip_reason": None,
+                    "error": None,
+                    "price": last,
+                    "pattern": "SL/TP exit",
+                    "source": source,
+                }
+            )
+        except Exception as exc:  # noqa: BLE001
+            logger.exception("SL/TP exit failed for %s", symbol)
+            exits.append(
+                {
+                    "ticker": symbol,
+                    "action": "SELL",
+                    "shares": qty,
+                    "confidence": 1.0,
+                    "reasoning": reason,
+                    "executed": False,
+                    "trade_id": None,
+                    "skip_reason": None,
+                    "error": str(exc),
+                    "price": last,
+                    "pattern": "SL/TP exit",
+                    "source": source,
+                }
+            )
+    return portfolio, exits
 
 
 def _gemini_client():
@@ -167,11 +295,14 @@ def _strategy_cycle_with_gemini(
     market_breadth: dict[str, Any],
 ) -> tuple[dict[str, dict[str, Any]], dict[str, Any], dict[str, Any]]:
     """One Gemini call: strategy + decisions + ai_report."""
+    open_rows = _open_positions_payload(portfolio)
     compact_candidates = []
     for c in candidates:
+        ticker = normalize_symbol(str(c["ticker"]))
         compact_candidates.append(
             {
-                "ticker": c["ticker"],
+                "ticker": ticker,
+                "asset_class": c.get("asset_class") or asset_class_for(ticker),
                 "current_price": c.get("current_price"),
                 "sma50": c.get("sma50"),
                 "trend": c.get("trend"),
@@ -183,38 +314,43 @@ def _strategy_cycle_with_gemini(
                 "return_20d_pct": c.get("return_20d_pct"),
                 "opportunity_score": c.get("opportunity_score"),
                 "news_headlines": c.get("news_headlines", [])[:3],
-                "owned_shares": int(
-                    (portfolio.get("positions") or {}).get(c["ticker"], 0) or 0
-                ),
+                "owned_quantity": get_position_qty(portfolio, ticker),
             }
         )
 
     payload = {
         "portfolio": {
             "balance": portfolio.get("balance"),
-            "positions": portfolio.get("positions", {}),
-            "open_tickers": len(portfolio.get("positions") or {}),
+            "open_positions": open_rows,
+            "open_tickers": len(open_rows),
+            "realized_pnl": portfolio.get("realized_pnl", 0),
         },
         "risk_rules": {
             "max_cash_pct_per_buy": MAX_CASH_PCT_PER_BUY,
             "max_open_tickers": MAX_OPEN_TICKERS,
             "min_confidence": MIN_CONFIDENCE,
+            "default_sl_pct": DEFAULT_SL_PCT,
+            "default_tp_pct": DEFAULT_TP_PCT,
+            "long_only": True,
         },
         "market_breadth": market_breadth,
         "candidates": compact_candidates,
     }
 
     system = (
-        "You are an autonomous US equity paper-trading strategist. "
-        "First form a portfolio strategy (preferred sectors/industries, stock styles such as "
-        "momentum/quality/mean-reversion, risk posture). "
-        "Use historical structure (SMA trend, support/resistance, consolidations/breakouts), "
-        "proved technical patterns, and current news sentiment. "
-        "Then decide BUY/SELL/HOLD for each candidate. Prefer HOLD unless edge is clear. "
-        "Respect risk rules. Also write ai_report."
+        "You are an autonomous multi-asset paper-trading strategist for equities, "
+        "forex (Yahoo =X pairs), and crypto (Yahoo -USD). Long-only cash book. "
+        "Form a portfolio strategy across asset classes, then decide BUY/SELL/HOLD. "
+        "Be an ACTIVE manager: review every open position and SELL when thesis breaks, "
+        "momentum fades, resistance rejects, or you need to free cash / cut losers. "
+        "Do not accumulate buy-only books — rotate and take profits. "
+        "Every BUY must include stop_loss and take_profit absolute prices "
+        "(use asset-class defaults if unsure: equity ~3%/6%, forex ~1%/2%, crypto ~5%/10%). "
+        "Quantity may be fractional for forex/crypto. Respect risk rules. Write ai_report."
     )
     user = (
-        "Build strategy and trade decisions for this screened S&P 500 shortlist.\n"
+        "Build strategy and trade decisions for this multi-asset shortlist. "
+        "Prioritize managing open_positions with SELL when appropriate.\n"
         f"{json.dumps(payload, indent=2)}"
     )
 
@@ -241,9 +377,11 @@ def _strategy_cycle_with_gemini(
                     "properties": {
                         "ticker": {"type": "string"},
                         "action": {"type": "string", "enum": ["BUY", "SELL", "HOLD"]},
-                        "shares": {"type": "integer"},
+                        "shares": {"type": "number"},
                         "confidence": {"type": "number"},
                         "reasoning": {"type": "string"},
+                        "stop_loss": {"type": "number"},
+                        "take_profit": {"type": "number"},
                     },
                     "required": [
                         "ticker",
@@ -251,6 +389,8 @@ def _strategy_cycle_with_gemini(
                         "shares",
                         "confidence",
                         "reasoning",
+                        "stop_loss",
+                        "take_profit",
                     ],
                 },
             },
@@ -286,7 +426,7 @@ def _strategy_cycle_with_gemini(
     for item in raw.get("decisions") or []:
         if not isinstance(item, dict):
             continue
-        ticker = str(item.get("ticker") or "").upper().strip()
+        ticker = normalize_symbol(str(item.get("ticker") or ""))
         if not ticker:
             continue
         by_ticker[ticker] = _normalize_decision(item)
@@ -341,19 +481,26 @@ def _fallback_ai_report(
     }
 
 
+def _default_levels(asset_class: str, price: float) -> tuple[float, float]:
+    sl_pct = DEFAULT_SL_PCT.get(asset_class, 0.03)
+    tp_pct = DEFAULT_TP_PCT.get(asset_class, 0.06)
+    return round(price * (1 - sl_pct), 6), round(price * (1 + tp_pct), 6)
+
+
 def _apply_risk_caps(
     decision: dict[str, Any],
     candidate: dict[str, Any],
     portfolio: dict[str, Any],
 ) -> tuple[dict[str, Any], str | None]:
     action = decision["action"]
-    shares = decision["shares"]
+    shares = float(decision["shares"])
     confidence = decision["confidence"]
     price = float(candidate["current_price"])
     balance = float(portfolio["balance"])
     positions = portfolio.get("positions", {})
-    ticker = candidate["ticker"]
-    owned = int(positions.get(ticker, 0) or 0)
+    ticker = normalize_symbol(str(candidate["ticker"]))
+    owned = get_position_qty(portfolio, ticker)
+    asset_class = candidate.get("asset_class") or asset_class_for(ticker)
 
     if action == "HOLD" or shares <= 0:
         return {**decision, "action": "HOLD", "shares": 0}, "HOLD or zero shares"
@@ -370,14 +517,28 @@ def _apply_risk_caps(
                 f"Already at max open tickers ({MAX_OPEN_TICKERS})"
             )
         max_notional = balance * MAX_CASH_PCT_PER_BUY
-        max_shares = int(max_notional // price) if price > 0 else 0
+        max_shares = (max_notional / price) if price > 0 else 0.0
+        if asset_class == "equity":
+            max_shares = float(int(max_shares))
+        else:
+            max_shares = round(max_shares, 6)
         if max_shares <= 0:
             return {**decision, "action": "HOLD", "shares": 0}, "Insufficient cash for min lot"
         if shares > max_shares:
             decision = {**decision, "shares": max_shares}
             decision["reasoning"] += (
-                f" (shares capped to {max_shares} by {MAX_CASH_PCT_PER_BUY:.0%} cash rule)"
+                f" (qty capped to {max_shares} by {MAX_CASH_PCT_PER_BUY:.0%} cash rule)"
             )
+        sl = decision.get("stop_loss")
+        tp = decision.get("take_profit")
+        if sl is None or tp is None or sl <= 0 or tp <= 0 or sl >= price or tp <= price:
+            d_sl, d_tp = _default_levels(asset_class, price)
+            decision = {
+                **decision,
+                "stop_loss": float(sl) if sl and sl < price else d_sl,
+                "take_profit": float(tp) if tp and tp > price else d_tp,
+            }
+            decision["reasoning"] += " (SL/TP filled from asset-class defaults)"
         return decision, None
 
     if action == "SELL":
@@ -385,7 +546,7 @@ def _apply_risk_caps(
             return {**decision, "action": "HOLD", "shares": 0}, "No position to sell"
         if shares > owned:
             decision = {**decision, "shares": owned}
-            decision["reasoning"] += f" (shares capped to owned {owned})"
+            decision["reasoning"] += f" (qty capped to owned {owned})"
         return decision, None
 
     return {**decision, "action": "HOLD", "shares": 0}, "Unknown action"
@@ -395,11 +556,11 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
     if _status["running"]:
         return {"ok": False, "error": "Cycle already running"}
 
-    if not force and not ALLOW_AFTER_HOURS and not is_us_regular_session():
+    if not force and not is_trading_session():
         summary = {
             "ok": True,
             "skipped": True,
-            "reason": "Outside US regular market hours",
+            "reason": _session_skip_reason(),
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "decisions": [],
             "ai_report": None,
@@ -421,6 +582,9 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
             )
 
         portfolio = load_portfolio()
+        portfolio, auto_exits = _process_stop_exits(portfolio)
+        decisions.extend(auto_exits)
+
         screen = screen_universe(force=force)
         candidates = screen.get("candidates") or []
         _status["screened_count"] = len(candidates)
@@ -441,11 +605,13 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
         except Exception as exc:  # noqa: BLE001
             logger.exception("Gemini strategy cycle failed")
             for c in candidates:
-                by_ticker[c["ticker"]] = {
+                by_ticker[normalize_symbol(c["ticker"])] = {
                     "action": "HOLD",
                     "shares": 0,
                     "confidence": 0.0,
                     "reasoning": f"Gemini unavailable this cycle: {exc}",
+                    "stop_loss": None,
+                    "take_profit": None,
                 }
             strategy = {
                 "thesis": "Fallback: hold existing risk until Gemini recovers.",
@@ -457,9 +623,20 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
                 "error": str(exc),
             }
             _status["strategy"] = strategy
-            ai_report = _fallback_ai_report([], portfolio, error=str(exc))
+            ai_report = _fallback_ai_report(decisions, portfolio, error=str(exc))
 
-        cand_map = {c["ticker"]: c for c in candidates}
+        cand_map = {normalize_symbol(c["ticker"]): c for c in candidates}
+        # Also allow SELL-only decisions on open positions missing from screen
+        for row in _open_positions_payload(portfolio):
+            sym = normalize_symbol(str(row["symbol"]))
+            if sym not in cand_map:
+                cand_map[sym] = {
+                    "ticker": sym,
+                    "asset_class": row.get("asset_class") or asset_class_for(sym),
+                    "current_price": row.get("last_price"),
+                    "pattern": "Open position",
+                }
+
         for ticker, candidate in cand_map.items():
             item: dict[str, Any] = {
                 "ticker": ticker,
@@ -473,6 +650,8 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
                 "error": None,
                 "price": candidate.get("current_price"),
                 "pattern": candidate.get("pattern"),
+                "stop_loss": None,
+                "take_profit": None,
             }
             try:
                 decision = by_ticker.get(ticker) or {
@@ -480,7 +659,21 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
                     "shares": 0,
                     "confidence": 0.0,
                     "reasoning": "No model decision returned for ticker.",
+                    "stop_loss": None,
+                    "take_profit": None,
                 }
+                # Skip Gemini SELL if already auto-exited this cycle
+                if any(
+                    d.get("ticker") == ticker and d.get("executed") and d.get("source") in {
+                        "stop_loss",
+                        "take_profit",
+                    }
+                    for d in auto_exits
+                ):
+                    item["skip_reason"] = "Already exited via SL/TP this cycle"
+                    decisions.append(item)
+                    continue
+
                 adjusted, skip_reason = _apply_risk_caps(decision, candidate, portfolio)
                 item.update(
                     {
@@ -489,6 +682,8 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
                         "confidence": adjusted["confidence"],
                         "reasoning": adjusted["reasoning"],
                         "skip_reason": skip_reason,
+                        "stop_loss": adjusted.get("stop_loss"),
+                        "take_profit": adjusted.get("take_profit"),
                     }
                 )
                 if not skip_reason and adjusted["action"] in {"BUY", "SELL"}:
@@ -496,11 +691,14 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
                         ticker,
                         adjusted["action"],
                         float(candidate["current_price"]),
-                        int(adjusted["shares"]),
+                        float(adjusted["shares"]),
                         pattern=str(candidate.get("pattern") or ""),
                         reasoning=adjusted["reasoning"],
                         confidence=adjusted["confidence"],
                         source="ai",
+                        stop_loss=adjusted.get("stop_loss"),
+                        take_profit=adjusted.get("take_profit"),
+                        asset_class=candidate.get("asset_class"),
                     )
                     item["executed"] = True
                     item["trade_id"] = result["trade"]["id"]
@@ -523,7 +721,6 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
                 )
             ).strip()
 
-        # Equity snapshot even if no fills (MTM drift)
         if not executed:
             append_equity_snapshot(mark_to_market(portfolio))
 
@@ -532,6 +729,7 @@ def run_cycle(*, force: bool = False) -> dict[str, Any]:
             "skipped": False,
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "executed_count": len(executed),
+            "auto_exits": len(auto_exits),
             "universe_size": _status["universe_size"],
             "screened_count": _status["screened_count"],
             "strategy": strategy,
