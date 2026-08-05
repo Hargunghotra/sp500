@@ -1,17 +1,17 @@
 {
-  "thesis": "Active multi-asset portfolio rotation prioritizing profit taking at resistance levels and reallocating capital into high opportunity score consolidations across equities and forex.",
+  "thesis": "Deploy idle cash into top opportunity-score candidates showing breakout or consolidation momentum near resistance while holding intact trend positions across equities and major forex pairs.",
   "preferred_sectors": [
     "Financials",
-    "Healthcare",
-    "Consumer Staples",
-    "Forex"
+    "Industrials",
+    "Communication Services",
+    "Consumer Staples"
   ],
   "styles": [
-    "Momentum",
-    "Swing Trading",
-    "Quality Growth"
+    "Momentum Breakout",
+    "Multi-Asset Trend Following",
+    "Opportunity Score Rotation"
   ],
-  "risk_posture": "Moderate-Aggressive",
-  "updated_at": "2026-08-05T21:12:11.599670+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-05T21:40:52.060891+00:00",
   "model": "gemini-flash-latest"
 }

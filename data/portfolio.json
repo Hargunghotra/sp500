@@ -1,5 +1,5 @@
 {
-  "balance": 26646.35,
+  "balance": 16234.86,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -80,9 +80,113 @@
       "stop_loss": 0.69861,
       "take_profit": 0.71978,
       "opened_at": "2026-08-05T21:12:12.171790+00:00"
+    },
+    "PH": {
+      "symbol": "PH",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 3.0,
+      "avg_price": 996.900024,
+      "stop_loss": 966.99,
+      "take_profit": 1056.71,
+      "opened_at": "2026-08-05T21:40:52.322815+00:00"
+    },
+    "EA": {
+      "symbol": "EA",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 13.0,
+      "avg_price": 209.699997,
+      "stop_loss": 203.41,
+      "take_profit": 222.28,
+      "opened_at": "2026-08-05T21:40:53.861140+00:00"
+    },
+    "EURUSD=X": {
+      "symbol": "EURUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 2173.240861,
+      "avg_price": 1.155668,
+      "stop_loss": 1.14411,
+      "take_profit": 1.17878,
+      "opened_at": "2026-08-05T21:40:55.269740+00:00"
+    },
+    "USB": {
+      "symbol": "USB",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 34.0,
+      "avg_price": 64.209999,
+      "stop_loss": 62.28,
+      "take_profit": 68.06,
+      "opened_at": "2026-08-05T21:40:58.347859+00:00"
     }
   },
   "trades": [
+    {
+      "id": "e3658976fd26",
+      "ticker": "USB",
+      "type": "BUY",
+      "price": 64.209999,
+      "shares": 34.0,
+      "date": "2026-08-05T21:40:58.347890+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Robust regional bank momentum with 10.0 composite score and +5.26% 20-day return. (qty capped to 34.0 by 12% cash rule)",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 62.28,
+      "take_profit": 68.06,
+      "realized_pnl": null
+    },
+    {
+      "id": "ba6846c84a70",
+      "ticker": "EURUSD=X",
+      "type": "BUY",
+      "price": 1.155668,
+      "shares": 2173.240861,
+      "date": "2026-08-05T21:40:55.269776+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top forex candidate with 9.7 technical rating and uptrend above SMA50. (qty capped to 2173.240861 by 12% cash rule)",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.14411,
+      "take_profit": 1.17878,
+      "realized_pnl": null
+    },
+    {
+      "id": "de93cc9ee5ce",
+      "ticker": "EA",
+      "type": "BUY",
+      "price": 209.699997,
+      "shares": 13.0,
+      "date": "2026-08-05T21:40:53.861193+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Perfect composite score of 10.0 and strong 9.007 opportunity score trading 0.1% off resistance. (qty capped to 13.0 by 12% cash rule)",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 203.41,
+      "take_profit": 222.28,
+      "realized_pnl": null
+    },
+    {
+      "id": "b75d0c488d1e",
+      "ticker": "PH",
+      "type": "BUY",
+      "price": 996.900024,
+      "shares": 3.0,
+      "date": "2026-08-05T21:40:52.322843+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top industrial setup with 9.8 score and 9.375 opportunity score pushing key technical resistance.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 966.99,
+      "take_profit": 1056.71,
+      "realized_pnl": null
+    },
     {
       "id": "95c0d079a25e",
       "ticker": "JCI",
