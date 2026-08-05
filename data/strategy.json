@@ -1,17 +1,17 @@
 {
-  "thesis": "Focus on high-quality S&P 500 consolidations near key support levels while maintaining disciplined allocation limits and cash reserves amidst a volatile broader market.",
+  "thesis": "Capitalize on high-quality S&P 500 uptrends by selectively adding to top consolidating holdings while maintaining risk discipline across a highly volatile market landscape.",
   "preferred_sectors": [
-    "Healthcare",
     "Financials",
-    "Utilities",
-    "Consumer Staples"
+    "Healthcare",
+    "Consumer Staples",
+    "Industrials"
   ],
   "styles": [
     "Quality",
     "Momentum",
-    "Breakout Consolidation"
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Cautious Optimism",
-  "updated_at": "2026-08-05T15:15:51.733481+00:00",
+  "risk_posture": "Moderate-Conservative",
+  "updated_at": "2026-08-05T16:56:28.977915+00:00",
   "model": "gemini-flash-latest"
 }

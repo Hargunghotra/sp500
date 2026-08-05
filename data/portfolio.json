@@ -1,5 +1,5 @@
 {
-  "balance": 19118.83,
+  "balance": 17842.73,
   "positions": {
     "AES": 271,
     "JCI": 25,
@@ -8,11 +8,23 @@
     "CHD": 28,
     "INVH": 86,
     "BRK-B": 4,
-    "PNC": 8,
+    "PNC": 13,
     "AIZ": 6,
     "CL": 19
   },
   "trades": [
+    {
+      "id": "9dfb62c8f572",
+      "ticker": "PNC",
+      "type": "BUY",
+      "price": 255.22,
+      "shares": 5,
+      "date": "2026-08-05T16:56:28.978547+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Adding 5 shares ($1,276.10) within 8% cash limit ($1,529.50); strong financial momentum and clean consolidation setup.",
+      "confidence": 0.75,
+      "source": "ai"
+    },
     {
       "id": "0c0ce8eb0696",
       "ticker": "TECH",
