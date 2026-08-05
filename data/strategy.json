@@ -1,5 +1,5 @@
 {
-  "thesis": "Capitalize on high-quality S&P 500 uptrends by selectively adding to top consolidating holdings while maintaining risk discipline across a highly volatile market landscape.",
+  "thesis": "Maintain core portfolio holdings in high-quality S&P 500 leaders while honoring the 10-ticker max position cap amidst elevated market volatility.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
@@ -7,11 +7,11 @@
     "Industrials"
   ],
   "styles": [
-    "Quality",
-    "Momentum",
-    "Consolidation Breakout"
+    "Quality Momentum",
+    "Consolidation Breakout",
+    "Value & Defensive"
   ],
   "risk_posture": "Moderate-Conservative",
-  "updated_at": "2026-08-05T16:56:28.977915+00:00",
+  "updated_at": "2026-08-05T18:24:19.865994+00:00",
   "model": "gemini-flash-latest"
 }
