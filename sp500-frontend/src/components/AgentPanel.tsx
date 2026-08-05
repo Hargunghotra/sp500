@@ -112,6 +112,13 @@ export default function AgentPanel() {
         </div>
       </div>
 
+      {status?.source === 'github-agent-data' && status?.can_dispatch === false && (
+        <div className="text-[11px] font-mono text-[#787b86] border border-white/10 rounded-xl px-3 py-2">
+          Run once needs a <code className="text-[#d1d4dc]">GITHUB_TOKEN</code> on Vercel
+          (repo Actions write). Scheduled cron still runs without it.
+        </div>
+      )}
+
       {strategy?.thesis && (
         <div className="rounded-xl border border-[#2962ff]/25 bg-[#2962ff]/10 p-3 space-y-2">
           <div className="text-[10px] uppercase tracking-wider font-mono text-[#787b86]">

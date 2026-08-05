@@ -68,13 +68,15 @@ export interface AgentStatus {
   allow_after_hours?: boolean
   trading_session?: string
   session_label?: string
-  in_session?: boolean
+  in_session?: boolean | null
+  can_dispatch?: boolean
   last_cycle_summary?: {
     executed_count?: number
     skipped?: boolean
     reason?: string
   } | null
   error?: string
+  source?: string
 }
 
 interface AgentState {
@@ -101,7 +103,8 @@ export const useAgentStore = create<AgentState>((set) => ({
       const res = await fetch('/api/agent/status')
       const data = await parseJsonResponse<AgentStatus>(res)
       if (!res.ok) throw new Error(data.error || 'Failed to load agent status')
-      set({ status: data, error: null })
+      // Preserve action errors (e.g. Run once) — only refresh status fields
+      set((state) => ({ status: { ...state.status, ...data }, error: state.error }))
     } catch (err: unknown) {
       const message = err instanceof Error ? err.message : 'Failed to load agent status'
       set({ error: message })
@@ -152,18 +155,24 @@ export const useAgentStore = create<AgentState>((set) => ({
         body: JSON.stringify({ force: true }),
       })
       const data = await parseJsonResponse<{
-        result?: { ok?: boolean; error?: string }
+        result?: { ok?: boolean; error?: string; message?: string }
         status?: AgentStatus
         error?: string
       }>(res)
       if (!res.ok) throw new Error(data.error || data.result?.error || 'Run failed')
-      if (data.status) set({ status: data.status })
+      // Refresh full status (next_run, etc.) instead of replacing with a partial object
+      const statusRes = await fetch('/api/agent/status')
+      const fullStatus = await parseJsonResponse<AgentStatus>(statusRes)
       const reportsRes = await fetch('/api/agent/reports?limit=40')
       const reportsData = await parseJsonResponse<{ reports?: AgentReport[] }>(reportsRes)
       set({
+        status: fullStatus,
         reports: reportsData.reports || [],
         acting: false,
-        error: data.result?.ok === false ? data.result?.error || 'Cycle failed' : null,
+        error:
+          data.result?.ok === false
+            ? data.result?.error || 'Cycle failed'
+            : null,
       })
     } catch (err: unknown) {
       const message = err instanceof Error ? err.message : 'Run failed'
