@@ -1,17 +1,17 @@
 {
-  "thesis": "Deploy idle cash into top opportunity-score candidates showing breakout or consolidation momentum near resistance while holding intact trend positions across equities and major forex pairs.",
+  "thesis": "Aggressively rotate cash and lower-edge holdings into high-opportunity score leaders across equities and FX while holding top-tier momentum consolidations.",
   "preferred_sectors": [
     "Financials",
+    "Healthcare",
     "Industrials",
-    "Communication Services",
-    "Consumer Staples"
+    "Forex"
   ],
   "styles": [
-    "Momentum Breakout",
-    "Multi-Asset Trend Following",
-    "Opportunity Score Rotation"
+    "Momentum",
+    "Trend-Following",
+    "Breakout"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-05T21:40:52.060891+00:00",
+  "risk_posture": "Aggressive",
+  "updated_at": "2026-08-05T22:41:30.710307+00:00",
   "model": "gemini-flash-latest"
 }
