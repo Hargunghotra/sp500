@@ -1,5 +1,5 @@
 {
-  "balance": 19882.67,
+  "balance": 15508.89,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -100,9 +100,61 @@
       "stop_loss": 62.28,
       "take_profit": 68.06,
       "opened_at": "2026-08-05T21:40:58.347859+00:00"
+    },
+    "AUDUSD=X": {
+      "symbol": "AUDUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 3200.0,
+      "avg_price": 0.705916,
+      "stop_loss": 0.69886,
+      "take_profit": 0.72003,
+      "opened_at": "2026-08-05T23:35:56.514420+00:00"
+    },
+    "GBPUSD=X": {
+      "symbol": "GBPUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 1570.317426,
+      "avg_price": 1.346765,
+      "stop_loss": 1.3333,
+      "take_profit": 1.3737,
+      "opened_at": "2026-08-05T23:35:57.939748+00:00"
     }
   },
   "trades": [
+    {
+      "id": "70fe81ed4a5b",
+      "ticker": "GBPUSD=X",
+      "type": "BUY",
+      "price": 1.346765,
+      "shares": 1570.317426,
+      "date": "2026-08-05T23:35:57.939782+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong 9.9 technical score currency pair in steady UP trend; deploy cash reserve to hit maximum 12 open tickers. (qty capped to 1570.317426 by 12% cash rule)",
+      "confidence": 0.81,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.3333,
+      "take_profit": 1.3737,
+      "realized_pnl": null
+    },
+    {
+      "id": "c6e213374ce6",
+      "ticker": "AUDUSD=X",
+      "type": "BUY",
+      "price": 0.705916,
+      "shares": 3200.0,
+      "date": "2026-08-05T23:35:56.514449+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High-ranking forex candidate (8.617 opportunity score) in clean UP trend near support with low risk profile.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.69886,
+      "take_profit": 0.72003,
+      "realized_pnl": null
+    },
     {
       "id": "4e3b64fb461e",
       "ticker": "BRK-B",
