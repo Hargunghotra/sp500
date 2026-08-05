@@ -71,6 +71,10 @@ jobs:
           ALLOW_AFTER_HOURS: ${{ vars.ALLOW_AFTER_HOURS }}
           TRADING_SESSION: ${{ vars.TRADING_SESSION }}
           INITIAL_BALANCE: ${{ vars.INITIAL_BALANCE }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          DIGEST_TO: ${{ secrets.DIGEST_TO }}
+          TRADE_ALERT_ENABLED: ${{ vars.TRADE_ALERT_ENABLED }}
           PYTHONUNBUFFERED: "1"
         run: |
           set -euo pipefail
@@ -82,6 +86,8 @@ jobs:
           export ALLOW_AFTER_HOURS="${ALLOW_AFTER_HOURS:-false}"
           export TRADING_SESSION="${TRADING_SESSION:-extended}"
           export INITIAL_BALANCE="${INITIAL_BALANCE:-50000}"
+          export DIGEST_TO="${DIGEST_TO:-hargung123456@gmail.com}"
+          export TRADE_ALERT_ENABLED="${TRADE_ALERT_ENABLED:-true}"
           ARGS=()
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
             ARGS+=(--force)

@@ -23,6 +23,31 @@ npm run dev
 
 Open http://localhost:3000
 
+## Phone / public dashboard (Vercel)
+
+Host the Next.js UI on **Vercel** to open it on your phone with the PC off. API routes read the paper book from the GitHub **`agent-data`** branch (the same ledger Actions updates). Local Flask is still preferred when it is reachable.
+
+### Deploy
+
+```bash
+cd sp500-frontend
+npx vercel login
+npx vercel link
+npx vercel --prod
+```
+
+Optional Vercel env vars:
+
+| Var | Purpose |
+|-----|---------|
+| `GITHUB_DATA_REPO` | default `Hargunghotra/sp500` |
+| `GITHUB_DATA_BRANCH` | default `agent-data` |
+| `GITHUB_TOKEN` | needed for private repos and for **Run once** to dispatch Agent cron |
+| `GITHUB_WORKFLOW_REF` | branch for workflow_dispatch (default `cursor/sp500-trading-simulator`) |
+| `BACKEND_URL` | optional live Flask base URL if you host one later |
+
+On Vercel without Flask: portfolio, equity, reports, and strategy load from `agent-data`. Ticker **Analyze** / manual trades need local Flask or `BACKEND_URL`.
+
 One-shot cycle / digest (same as Actions):
 
 ```bash
@@ -93,6 +118,14 @@ The workflow [`.github/workflows/daily-digest.yml`](.github/workflows/daily-dige
 4. Optional variable or secret: `DIGEST_TO=hargung123456@gmail.com` (defaults to that address if unset).
 5. Optional variable: `DIGEST_ENABLED=true`.
 6. **Actions → Daily digest → Run workflow** once to verify inbox delivery (leave dry-run unchecked for a real send).
+
+#### Per-trade email alerts
+
+Every filled paper trade (BUY/SELL from Actions or local Flask) can email you immediately using the same Gmail SMTP secrets.
+
+1. Keep `SMTP_USER` / `SMTP_PASSWORD` / `DIGEST_TO` set (already used for the daily digest).
+2. Optional variable: `TRADE_ALERT_ENABLED=true` (default on in code; set `false` to silence).
+3. Agent cron passes SMTP env into `run_cycle.py` so cloud fills also notify you.
 
 #### Schedule (digest)
 

@@ -306,4 +306,11 @@ def execute_trade(
 
     snapshot = mark_to_market(portfolio)
     append_equity_snapshot(snapshot)
+    try:
+        from emailer import send_trade_alert
+
+        send_trade_alert(trade, equity=snapshot)
+    except Exception:  # noqa: BLE001
+        # Never block fills on email issues
+        pass
     return {"portfolio": portfolio, "trade": trade, "equity": snapshot}

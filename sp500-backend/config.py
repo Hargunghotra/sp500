@@ -64,6 +64,14 @@ SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "")
 SMTP_HOST = os.getenv("SMTP_HOST", "smtp.gmail.com")
 SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
 
+# Email after every filled paper trade (BUY/SELL)
+TRADE_ALERT_ENABLED = os.getenv("TRADE_ALERT_ENABLED", "true").lower() in {
+    "1",
+    "true",
+    "yes",
+    "on",
+}
+
 SECTOR_ETFS = [
     "XLK",
     "XLF",
