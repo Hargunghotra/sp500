@@ -1,17 +1,17 @@
 {
-  "thesis": "Maintain core portfolio holdings in high-quality S&P 500 leaders while honoring the 10-ticker max position cap amidst elevated market volatility.",
+  "thesis": "Active multi-asset portfolio rotation prioritizing profit taking at resistance levels and reallocating capital into high opportunity score consolidations across equities and forex.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
     "Consumer Staples",
-    "Industrials"
+    "Forex"
   ],
   "styles": [
-    "Quality Momentum",
-    "Consolidation Breakout",
-    "Value & Defensive"
+    "Momentum",
+    "Swing Trading",
+    "Quality Growth"
   ],
-  "risk_posture": "Moderate-Conservative",
-  "updated_at": "2026-08-05T18:24:19.865994+00:00",
+  "risk_posture": "Moderate-Aggressive",
+  "updated_at": "2026-08-05T21:12:11.599670+00:00",
   "model": "gemini-flash-latest"
 }
