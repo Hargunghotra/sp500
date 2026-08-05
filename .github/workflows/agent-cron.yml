@@ -54,7 +54,7 @@ jobs:
           mkdir -p sp500-backend/data
           git fetch origin agent-data:agent-data 2>/dev/null || echo "No agent-data branch yet (first run)."
           if git rev-parse --verify agent-data >/dev/null 2>&1; then
-            for f in portfolio.json equity.jsonl reports.jsonl strategy.json screen_cache.json sp500.json; do
+            for f in portfolio.json equity.jsonl reports.jsonl strategy.json strategy_prev.json screen_cache.json sp500.json; do
               if git cat-file -e "agent-data:data/$f" 2>/dev/null; then
                 git show "agent-data:data/$f" > "sp500-backend/data/$f"
                 echo "Restored data/$f"
@@ -110,7 +110,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           STAGE=$(mktemp -d)
-          for f in portfolio.json equity.jsonl reports.jsonl strategy.json screen_cache.json sp500.json; do
+          for f in portfolio.json equity.jsonl reports.jsonl strategy.json strategy_prev.json screen_cache.json sp500.json; do
             if [ -f "sp500-backend/data/$f" ]; then
               cp "sp500-backend/data/$f" "$STAGE/$f"
             fi
@@ -127,7 +127,7 @@ jobs:
           fi
 
           mkdir -p data
-          rm -f data/portfolio.json data/equity.jsonl data/reports.jsonl data/strategy.json data/screen_cache.json data/sp500.json
+          rm -f data/portfolio.json data/equity.jsonl data/reports.jsonl data/strategy.json data/strategy_prev.json data/screen_cache.json data/sp500.json
           cp -f "$STAGE"/* data/ 2>/dev/null || true
           printf '%s\n' '# agent-data' '' 'Durable paper-trading ledger for GitHub Actions cron.' 'Do not store API keys here.' > README.md
 

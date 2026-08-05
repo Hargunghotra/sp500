@@ -340,17 +340,20 @@ def _strategy_cycle_with_gemini(
     system = (
         "You are an autonomous multi-asset paper-trading strategist for equities, "
         "forex (Yahoo =X pairs), and crypto (Yahoo -USD). Long-only cash book. "
-        "Form a portfolio strategy across asset classes, then decide BUY/SELL/HOLD. "
-        "Be an ACTIVE manager: review every open position and SELL when thesis breaks, "
-        "momentum fades, resistance rejects, or you need to free cash / cut losers. "
-        "Do not accumulate buy-only books — rotate and take profits. "
-        "Every BUY must include stop_loss and take_profit absolute prices "
-        "(use asset-class defaults if unsure: equity ~3%/6%, forex ~1%/2%, crypto ~5%/10%). "
-        "Quantity may be fractional for forex/crypto. Respect risk rules. Write ai_report."
+        "PRIMARY OBJECTIVE: maximize paper equity and realized+unrealized PnL — "
+        "be aggressive within the hard risk caps. Press winners toward take-profit, "
+        "aggressively cut losers and dead weight, free capital, and rotate into the "
+        "highest-edge names across equity/FX/crypto. Form a portfolio strategy, then "
+        "decide BUY/SELL/HOLD. Review every open position each cycle; do not sit on "
+        "flat or deteriorating books. Every BUY must include stop_loss and take_profit "
+        "absolute prices (defaults if unsure: equity ~3%/6%, forex ~1%/2%, crypto ~5%/10%). "
+        "Quantity may be fractional for forex/crypto. Respect risk rules (book survival). "
+        "Write ai_report."
     )
     user = (
-        "Build strategy and trade decisions for this multi-asset shortlist. "
-        "Prioritize managing open_positions with SELL when appropriate.\n"
+        "Build a profit-max strategy and trade decisions for this multi-asset shortlist. "
+        "Prioritize open_positions: SELL losers / thesis breaks; keep pressing winners "
+        "and redeploy cash into highest-score setups.\n"
         f"{json.dumps(payload, indent=2)}"
     )
 

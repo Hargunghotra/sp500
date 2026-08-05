@@ -15,6 +15,7 @@ EQUITY_PATH = DATA_DIR / "equity.jsonl"
 SP500_CACHE_PATH = DATA_DIR / "sp500.json"
 SCREEN_CACHE_PATH = DATA_DIR / "screen_cache.json"
 STRATEGY_PATH = DATA_DIR / "strategy.json"
+STRATEGY_PREV_PATH = DATA_DIR / "strategy_prev.json"
 
 INITIAL_BALANCE = float(os.getenv("INITIAL_BALANCE", "50000"))
 
@@ -40,15 +41,41 @@ SCREEN_CACHE_MINUTES = int(os.getenv("SCREEN_CACHE_MINUTES", "30"))
 SCREEN_BATCH_SIZE = int(os.getenv("SCREEN_BATCH_SIZE", "40"))
 FX_CRYPTO_TOP_N = int(os.getenv("FX_CRYPTO_TOP_N", "8"))
 
-MAX_CASH_PCT_PER_BUY = float(os.getenv("MAX_CASH_PCT_PER_BUY", "0.08"))
-MAX_OPEN_TICKERS = int(os.getenv("MAX_OPEN_TICKERS", "10"))
-MIN_CONFIDENCE = float(os.getenv("MIN_CONFIDENCE", "0.65"))
+MAX_CASH_PCT_PER_BUY = float(os.getenv("MAX_CASH_PCT_PER_BUY", "0.12"))
+MAX_OPEN_TICKERS = int(os.getenv("MAX_OPEN_TICKERS", "12"))
+MIN_CONFIDENCE = float(os.getenv("MIN_CONFIDENCE", "0.55"))
 ALLOW_AFTER_HOURS = os.getenv("ALLOW_AFTER_HOURS", "false").lower() in {
     "1",
     "true",
     "yes",
     "on",
 }
+
+# Daily digest email (Gmail SMTP)
+DIGEST_ENABLED = os.getenv("DIGEST_ENABLED", "true").lower() in {
+    "1",
+    "true",
+    "yes",
+    "on",
+}
+DIGEST_TO = os.getenv("DIGEST_TO", "hargung123456@gmail.com")
+SMTP_USER = os.getenv("SMTP_USER", "")
+SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "")
+SMTP_HOST = os.getenv("SMTP_HOST", "smtp.gmail.com")
+SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
+
+SECTOR_ETFS = [
+    "XLK",
+    "XLF",
+    "XLE",
+    "XLV",
+    "XLY",
+    "XLI",
+    "XLP",
+    "XLU",
+    "XLB",
+    "XLRE",
+]
 
 # regular | extended (default) — ALLOW_AFTER_HOURS overrides to 24x7 including weekends
 _raw_session = os.getenv("TRADING_SESSION", "extended").strip().lower()
