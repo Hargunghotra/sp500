@@ -1,17 +1,18 @@
 {
-  "thesis": "Maintain core portfolio holdings in high-quality S&P 500 leaders while honoring the 10-ticker max position cap amidst elevated market volatility.",
+  "thesis": "Capitalize on market-wide upward trends by maintaining strong momentum equity positions while expanding forex exposure into top-tier opportunity score currency pairs to maximize risk-adjusted equity gains.",
   "preferred_sectors": [
     "Financials",
-    "Healthcare",
+    "Industrials",
+    "Technology",
     "Consumer Staples",
-    "Industrials"
+    "Forex"
   ],
   "styles": [
-    "Quality Momentum",
-    "Consolidation Breakout",
-    "Value & Defensive"
+    "Trend Following",
+    "Momentum Expansion",
+    "Breakout Trading"
   ],
-  "risk_posture": "Moderate-Conservative",
-  "updated_at": "2026-08-05T18:24:19.865994+00:00",
+  "risk_posture": "AGGRESSIVE_GROWTH",
+  "updated_at": "2026-08-05T23:35:56.231945+00:00",
   "model": "gemini-flash-latest"
 }
