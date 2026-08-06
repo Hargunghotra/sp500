@@ -1,5 +1,5 @@
 {
-  "balance": 15508.89,
+  "balance": 16944.92,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -81,16 +81,6 @@
       "take_profit": 222.28,
       "opened_at": "2026-08-05T21:40:53.861140+00:00"
     },
-    "EURUSD=X": {
-      "symbol": "EURUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 2173.240861,
-      "avg_price": 1.155668,
-      "stop_loss": 1.14411,
-      "take_profit": 1.17878,
-      "opened_at": "2026-08-05T21:40:55.269740+00:00"
-    },
     "USB": {
       "symbol": "USB",
       "asset_class": "equity",
@@ -101,16 +91,6 @@
       "take_profit": 68.06,
       "opened_at": "2026-08-05T21:40:58.347859+00:00"
     },
-    "AUDUSD=X": {
-      "symbol": "AUDUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 3200.0,
-      "avg_price": 0.705916,
-      "stop_loss": 0.69886,
-      "take_profit": 0.72003,
-      "opened_at": "2026-08-05T23:35:56.514420+00:00"
-    },
     "GBPUSD=X": {
       "symbol": "GBPUSD=X",
       "asset_class": "forex",
@@ -120,9 +100,93 @@
       "stop_loss": 1.3333,
       "take_profit": 1.3737,
       "opened_at": "2026-08-05T23:35:57.939748+00:00"
+    },
+    "EXPD": {
+      "symbol": "EXPD",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 9.0,
+      "avg_price": 181.410004,
+      "stop_loss": 175.9677,
+      "take_profit": 192.2946,
+      "opened_at": "2026-08-06T10:23:47.918918+00:00"
+    },
+    "A": {
+      "symbol": "A",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 12.0,
+      "avg_price": 141.110001,
+      "stop_loss": 136.8767,
+      "take_profit": 149.5766,
+      "opened_at": "2026-08-06T10:23:49.198045+00:00"
     }
   },
   "trades": [
+    {
+      "id": "acde3d9454a9",
+      "ticker": "A",
+      "type": "BUY",
+      "price": 141.110001,
+      "shares": 12.0,
+      "date": "2026-08-06T10:23:49.198079+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Buying perfect 10.0 score healthcare/tech stock with strong 9.33% 20-day return momentum.",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 136.8767,
+      "take_profit": 149.5766,
+      "realized_pnl": null
+    },
+    {
+      "id": "a31b2fdadf3c",
+      "ticker": "EXPD",
+      "type": "BUY",
+      "price": 181.410004,
+      "shares": 9.0,
+      "date": "2026-08-06T10:23:47.918954+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Initiating long position in high-momentum logistics stock showing 10.37% 20-day return and 9.9 technical rating.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 175.9677,
+      "take_profit": 192.2946,
+      "realized_pnl": null
+    },
+    {
+      "id": "62f99d06f624",
+      "ticker": "EURUSD=X",
+      "type": "SELL",
+      "price": 1.154201,
+      "shares": 2173.240861,
+      "date": "2026-08-06T10:23:46.780198+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Liquidating underperforming FX position to eliminate unrealized PnL drag and redeploy cash into top-scoring equity breakouts.",
+      "confidence": 0.7,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.14411,
+      "take_profit": 1.17878,
+      "realized_pnl": -3.19
+    },
+    {
+      "id": "a01eba9c6743",
+      "ticker": "AUDUSD=X",
+      "type": "SELL",
+      "price": 0.704275,
+      "shares": 3200.0,
+      "date": "2026-08-06T10:23:44.975140+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Exiting losing forex position displaying negative drift to cut drag and free up a ticker slot for high-momentum equity allocation.",
+      "confidence": 0.72,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.69886,
+      "take_profit": 0.72003,
+      "realized_pnl": -5.25
+    },
     {
       "id": "70fe81ed4a5b",
       "ticker": "GBPUSD=X",
@@ -504,5 +568,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 423.93
+  "realized_pnl": 415.49
 }
