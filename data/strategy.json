@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively optimize equity capital by exiting non-performing forex positions showing negative unrealized drift and reallocating freed capital into top-tier momentum and high-scoring equity candidates. Maintain existing core equity winners and consolidate holdings into high-conviction momentum names.",
+  "thesis": "Prune low-opportunity and bearish sentiment positions to deploy capital into high-score FX pairs exhibiting clean uptrends and low volatility consolidation.",
   "preferred_sectors": [
-    "Technology",
-    "Healthcare",
-    "Industrials",
-    "Financials"
+    "Financials",
+    "Consumer Staples",
+    "Forex",
+    "Technology"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Quality Growth"
+    "Mean Reversion"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-06T10:23:44.668586+00:00",
+  "risk_posture": "Aggressive",
+  "updated_at": "2026-08-06T12:24:51.177114+00:00",
   "model": "gemini-flash-latest"
 }

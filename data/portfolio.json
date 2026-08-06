@@ -1,5 +1,5 @@
 {
-  "balance": 16944.92,
+  "balance": 23261.63,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -61,16 +61,6 @@
       "take_profit": 56.021,
       "opened_at": "2026-08-05T21:12:11.800827+00:00"
     },
-    "PH": {
-      "symbol": "PH",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 3.0,
-      "avg_price": 996.900024,
-      "stop_loss": 966.99,
-      "take_profit": 1056.71,
-      "opened_at": "2026-08-05T21:40:52.322815+00:00"
-    },
     "EA": {
       "symbol": "EA",
       "asset_class": "equity",
@@ -100,29 +90,57 @@
       "stop_loss": 1.3333,
       "take_profit": 1.3737,
       "opened_at": "2026-08-05T23:35:57.939748+00:00"
-    },
-    "EXPD": {
-      "symbol": "EXPD",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 9.0,
-      "avg_price": 181.410004,
-      "stop_loss": 175.9677,
-      "take_profit": 192.2946,
-      "opened_at": "2026-08-06T10:23:47.918918+00:00"
-    },
-    "A": {
-      "symbol": "A",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 12.0,
-      "avg_price": 141.110001,
-      "stop_loss": 136.8767,
-      "take_profit": 149.5766,
-      "opened_at": "2026-08-06T10:23:49.198045+00:00"
     }
   },
   "trades": [
+    {
+      "id": "0150fa535d76",
+      "ticker": "A",
+      "type": "SELL",
+      "price": 141.110001,
+      "shares": 12.0,
+      "date": "2026-08-06T12:24:56.456590+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Volatile technical pattern and low relative opportunity score. Exiting position.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 136.8767,
+      "take_profit": 149.5766,
+      "realized_pnl": -0.0
+    },
+    {
+      "id": "68f5256b61b9",
+      "ticker": "EXPD",
+      "type": "SELL",
+      "price": 181.410004,
+      "shares": 9.0,
+      "date": "2026-08-06T12:24:54.370458+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Volatile pattern and lagging opportunity score. Selling to free slot for higher-edge FX setups.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 175.9677,
+      "take_profit": 192.2946,
+      "realized_pnl": -0.0
+    },
+    {
+      "id": "ca3721e4d6af",
+      "ticker": "PH",
+      "type": "SELL",
+      "price": 996.900024,
+      "shares": 3.0,
+      "date": "2026-08-06T12:24:51.611787+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Bearish news sentiment and lower opportunity score relative to shortlisted FX setups. Exiting to recycle capital.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 966.99,
+      "take_profit": 1056.71,
+      "realized_pnl": 0.0
+    },
     {
       "id": "acde3d9454a9",
       "ticker": "A",
