@@ -1,5 +1,5 @@
 {
-  "balance": 23261.63,
+  "balance": 16061.58,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -90,9 +90,87 @@
       "stop_loss": 1.3333,
       "take_profit": 1.3737,
       "opened_at": "2026-08-05T23:35:57.939748+00:00"
+    },
+    "MTB": {
+      "symbol": "MTB",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 10.0,
+      "avg_price": 252.095001,
+      "stop_loss": 244.53,
+      "take_profit": 267.22,
+      "opened_at": "2026-08-06T14:43:34.318318+00:00"
+    },
+    "AUDUSD=X": {
+      "symbol": "AUDUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 3534.211826,
+      "avg_price": 0.704225,
+      "stop_loss": 0.69718,
+      "take_profit": 0.71831,
+      "opened_at": "2026-08-06T14:43:36.159927+00:00"
+    },
+    "EURUSD=X": {
+      "symbol": "EURUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 1898.260171,
+      "avg_price": 1.153802,
+      "stop_loss": 1.14226,
+      "take_profit": 1.17688,
+      "opened_at": "2026-08-06T14:43:38.494814+00:00"
     }
   },
   "trades": [
+    {
+      "id": "4abcd9cf569b",
+      "ticker": "EURUSD=X",
+      "type": "BUY",
+      "price": 1.153802,
+      "shares": 1898.260171,
+      "date": "2026-08-06T14:43:38.494886+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong FX opportunity score of 8.542 in steady uptrend, providing cross-asset currency diversification. (qty capped to 1898.260171 by 12% cash rule)",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.14226,
+      "take_profit": 1.17688,
+      "realized_pnl": null
+    },
+    {
+      "id": "1dfd1573821e",
+      "ticker": "AUDUSD=X",
+      "type": "BUY",
+      "price": 0.704225,
+      "shares": 3534.211826,
+      "date": "2026-08-06T14:43:36.159967+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High-scoring FX candidate (8.593) trading right above key SMA50 support with upward momentum. (qty capped to 3534.211826 by 12% cash rule)",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.69718,
+      "take_profit": 0.71831,
+      "realized_pnl": null
+    },
+    {
+      "id": "e3f059d80ac2",
+      "ticker": "MTB",
+      "type": "BUY",
+      "price": 252.095001,
+      "shares": 10.0,
+      "date": "2026-08-06T14:43:34.318346+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top non-owned equity setup with 9.375 opportunity score, bullish dividend sentiment, and strong 20-day return.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 244.53,
+      "take_profit": 267.22,
+      "realized_pnl": null
+    },
     {
       "id": "0150fa535d76",
       "ticker": "A",
