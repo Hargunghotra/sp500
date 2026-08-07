@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively cycle out of lower opportunity forex holdings into top-ranked equity setups in financial and biotech sectors to maximize portfolio equity.",
+  "thesis": "Capitalize on broad market momentum by maintaining winning positions in elite-rated consolidating equities and FX, while deploying fresh capital into top-tier financial and forex breakout setups.",
   "preferred_sectors": [
     "Financials",
-    "Healthcare",
+    "Technology",
     "Consumer Staples",
-    "Industrials"
+    "Forex"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Consolidation Breakout"
+    "Swing Trading"
   ],
   "risk_posture": "Aggressive",
-  "updated_at": "2026-08-07T16:31:57.863940+00:00",
+  "updated_at": "2026-08-07T17:31:49.974604+00:00",
   "model": "gemini-flash-latest"
 }
