@@ -1,18 +1,18 @@
 {
-  "thesis": "Maximize portfolio returns by retaining top-scoring, upward-trending positions across high-momentum equities and key forex pairs while maintaining strict risk management caps.",
+  "thesis": "Capitalize on high-conviction momentum leaders in equity and FX markets while systematically scaling into top opportunity scores and maintaining strict risk limits.",
   "preferred_sectors": [
-    "Technology",
-    "Financials",
     "Healthcare",
-    "Utilities",
-    "Forex"
+    "Financials",
+    "Materials",
+    "Consumer Staples",
+    "Utilities"
   ],
   "styles": [
-    "Momentum",
     "Trend Following",
-    "Quality Growth"
+    "Momentum",
+    "Consolidation Breakout"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-07T22:03:32.369872+00:00",
+  "updated_at": "2026-08-07T23:23:08.992706+00:00",
   "model": "gemini-flash-latest"
 }
