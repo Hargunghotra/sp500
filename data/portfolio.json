@@ -1,5 +1,5 @@
 {
-  "balance": 21189.47,
+  "balance": 16481.54,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -100,9 +100,61 @@
       "stop_loss": 29.46,
       "take_profit": 32.19,
       "opened_at": "2026-08-07T20:56:25.323045+00:00"
+    },
+    "TFC": {
+      "symbol": "TFC",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 47.0,
+      "avg_price": 52.349998,
+      "stop_loss": 50.78,
+      "take_profit": 55.49,
+      "opened_at": "2026-08-07T21:26:22.925138+00:00"
+    },
+    "USDCHF=X": {
+      "symbol": "USDCHF=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 2781.881876,
+      "avg_price": 0.8079,
+      "stop_loss": 0.7998,
+      "take_profit": 0.8241,
+      "opened_at": "2026-08-07T21:26:24.934795+00:00"
     }
   },
   "trades": [
+    {
+      "id": "a396d3137162",
+      "ticker": "USDCHF=X",
+      "type": "BUY",
+      "price": 0.8079,
+      "shares": 2781.881876,
+      "date": "2026-08-07T21:26:24.934836+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Forex pair consolidating near support with 9.9 score, expanding multi-asset portfolio balance. (qty capped to 2781.881876 by 12% cash rule)",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.7998,
+      "take_profit": 0.8241,
+      "realized_pnl": null
+    },
+    {
+      "id": "ad5e5b5368ed",
+      "ticker": "TFC",
+      "type": "BUY",
+      "price": 52.349998,
+      "shares": 47.0,
+      "date": "2026-08-07T21:26:22.925170+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top unowned regional bank candidate with 9.7 score and strong bullish momentum.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 50.78,
+      "take_profit": 55.49,
+      "realized_pnl": null
+    },
     {
       "id": "69c7956bdb32",
       "ticker": "NZDUSD=X",

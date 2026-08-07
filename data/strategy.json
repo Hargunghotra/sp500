@@ -1,17 +1,17 @@
 {
-  "thesis": "Rotate capital out of underperforming/flat assets into high-opportunity breakout candidates showing robust momentum and consolidation near technical support within a broad market uptrend.",
+  "thesis": "Capitalize on strong uptrends across equities and forex while optimizing cash utilization up to the 12-ticker limit.",
   "preferred_sectors": [
     "Financials",
-    "Real Estate",
-    "Healthcare",
-    "Consumer Discretionary"
+    "Technology",
+    "Utilities",
+    "Forex"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Breakout Swing"
+    "Swing Trading"
   ],
-  "risk_posture": "Aggressive",
-  "updated_at": "2026-08-07T20:56:24.513738+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-07T21:26:22.541784+00:00",
   "model": "gemini-flash-latest"
 }
