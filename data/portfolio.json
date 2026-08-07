@@ -1,5 +1,5 @@
 {
-  "balance": 19610.96,
+  "balance": 17258.96,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -110,9 +110,35 @@
       "stop_loss": 0.802217,
       "take_profit": 0.826526,
       "opened_at": "2026-08-07T10:33:22.818532+00:00"
+    },
+    "AES": {
+      "symbol": "AES",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 160.0,
+      "avg_price": 14.7,
+      "stop_loss": 14.259,
+      "take_profit": 15.582,
+      "opened_at": "2026-08-07T11:30:06.508628+00:00"
     }
   },
   "trades": [
+    {
+      "id": "9d1e2e4f4d55",
+      "ticker": "AES",
+      "type": "BUY",
+      "price": 14.7,
+      "shares": 160.0,
+      "date": "2026-08-07T11:30:06.508658+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score of 9.139, strong UP trend in consolidation phase right near resistance, offering excellent risk-reward upside.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 14.259,
+      "take_profit": 15.582,
+      "realized_pnl": null
+    },
     {
       "id": "6097c0ebc60e",
       "ticker": "EURUSD=X",

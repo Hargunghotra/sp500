@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressive rotation out of low-upside dead weight and near-resistance laggards into high opportunity-score financial equities and pristine forex consolidation patterns to maximize risk-adjusted portfolio returns.",
+  "thesis": "Maximize risk-adjusted returns by holding top-performing consolidating uptrend assets while deploying available capital into high-opportunity breakouts to reach full portfolio utilization across equities and forex.",
   "preferred_sectors": [
-    "Financial Services",
-    "Healthcare",
-    "Consumer Non-Cyclical",
-    "Forex"
+    "Technology",
+    "Financials",
+    "Utilities",
+    "Consumer Staples"
   ],
   "styles": [
-    "Momentum",
-    "Trend-Following",
-    "Breakout"
+    "Trend Following",
+    "Breakout Momentum",
+    "Swing Trading"
   ],
-  "risk_posture": "Aggressive",
-  "updated_at": "2026-08-07T10:33:14.185270+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-07T11:30:06.160434+00:00",
   "model": "gemini-flash-latest"
 }
