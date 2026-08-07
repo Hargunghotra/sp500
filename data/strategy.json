@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively rotate capital out of weak regional financials into top-scoring equity consolidators and strong forex trends to maximize paper equity.",
+  "thesis": "Capitalize on high market breadth strength (99 UP trend assets) by maintaining profitable positions and aggressively scaling into high opportunity financial and forex trend-following setups.",
   "preferred_sectors": [
+    "Financials",
     "Technology",
-    "Utilities",
-    "Healthcare",
-    "Forex"
+    "Forex",
+    "Consumer Staples"
   ],
   "styles": [
     "Momentum",
-    "Breakout",
-    "Trend Following"
+    "Trend Following",
+    "Consolidation Breakout"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-07T13:35:38.414410+00:00",
+  "updated_at": "2026-08-07T14:38:51.104942+00:00",
   "model": "gemini-flash-latest"
 }

@@ -1,5 +1,5 @@
 {
-  "balance": 25499.3,
+  "balance": 15656.54,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -80,9 +80,113 @@
       "stop_loss": 14.27,
       "take_profit": 15.59,
       "opened_at": "2026-08-07T13:35:38.682779+00:00"
+    },
+    "PNC": {
+      "symbol": "PNC",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 11.0,
+      "avg_price": 252.509995,
+      "stop_loss": 244.93,
+      "take_profit": 267.66,
+      "opened_at": "2026-08-07T14:38:51.443372+00:00"
+    },
+    "MTB": {
+      "symbol": "MTB",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 10.0,
+      "avg_price": 250.619995,
+      "stop_loss": 243.1,
+      "take_profit": 265.66,
+      "opened_at": "2026-08-07T14:38:52.813032+00:00"
+    },
+    "TFC": {
+      "symbol": "TFC",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 46.0,
+      "avg_price": 52.695,
+      "stop_loss": 51.11,
+      "take_profit": 55.86,
+      "opened_at": "2026-08-07T14:38:54.135852+00:00"
+    },
+    "GBPUSD=X": {
+      "symbol": "GBPUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 1582.299483,
+      "avg_price": 1.349291,
+      "stop_loss": 1.3358,
+      "take_profit": 1.37628,
+      "opened_at": "2026-08-07T14:38:55.362936+00:00"
     }
   },
   "trades": [
+    {
+      "id": "79967c84c752",
+      "ticker": "GBPUSD=X",
+      "type": "BUY",
+      "price": 1.349291,
+      "shares": 1582.299483,
+      "date": "2026-08-07T14:38:55.362974+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong trend and high composite score (9.9) in forex major pairs, expanding multi-asset diversification. (qty capped to 1582.299483 by 12% cash rule)",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.3358,
+      "take_profit": 1.37628,
+      "realized_pnl": null
+    },
+    {
+      "id": "f86ff1026882",
+      "ticker": "TFC",
+      "type": "BUY",
+      "price": 52.695,
+      "shares": 46.0,
+      "date": "2026-08-07T14:38:54.135891+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Highly rated financial ticker consolidating near support with strong risk/reward entry point. (qty capped to 46.0 by 12% cash rule)",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 51.11,
+      "take_profit": 55.86,
+      "realized_pnl": null
+    },
+    {
+      "id": "b78f2dc7bb38",
+      "ticker": "MTB",
+      "type": "BUY",
+      "price": 250.619995,
+      "shares": 10.0,
+      "date": "2026-08-07T14:38:52.813074+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong banking sector earnings momentum and dividend score with opportunity score of 9.122. (qty capped to 10.0 by 12% cash rule)",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 243.1,
+      "take_profit": 265.66,
+      "realized_pnl": null
+    },
+    {
+      "id": "11f72fdd0a0b",
+      "ticker": "PNC",
+      "type": "BUY",
+      "price": 252.509995,
+      "shares": 11.0,
+      "date": "2026-08-07T14:38:51.443408+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High composite score (9.9) and opportunity score (9.384) in regional financial sector. Tightly consolidating near support.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 244.93,
+      "take_profit": 267.66,
+      "realized_pnl": null
+    },
     {
       "id": "5d3c2c448fcc",
       "ticker": "TFC",
