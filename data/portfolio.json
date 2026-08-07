@@ -1,5 +1,5 @@
 {
-  "balance": 17378.52,
+  "balance": 25499.3,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -21,16 +21,6 @@
       "take_profit": 32.3194,
       "opened_at": "2026-08-05T21:06:49.812894+00:00"
     },
-    "PNC": {
-      "symbol": "PNC",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 13.0,
-      "avg_price": 255.22,
-      "stop_loss": 247.5634,
-      "take_profit": 270.5332,
-      "opened_at": "2026-08-05T21:06:49.812905+00:00"
-    },
     "CL": {
       "symbol": "CL",
       "asset_class": "equity",
@@ -50,16 +40,6 @@
       "stop_loss": 203.41,
       "take_profit": 222.28,
       "opened_at": "2026-08-05T21:40:53.861140+00:00"
-    },
-    "MTB": {
-      "symbol": "MTB",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 10.0,
-      "avg_price": 252.095001,
-      "stop_loss": 244.53,
-      "take_profit": 267.22,
-      "opened_at": "2026-08-06T14:43:34.318318+00:00"
     },
     "AUDUSD=X": {
       "symbol": "AUDUSD=X",
@@ -81,16 +61,6 @@
       "take_profit": 317.92,
       "opened_at": "2026-08-07T09:41:49.755519+00:00"
     },
-    "TFC": {
-      "symbol": "TFC",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 40.0,
-      "avg_price": 52.59,
-      "stop_loss": 51.0123,
-      "take_profit": 55.7454,
-      "opened_at": "2026-08-07T10:33:18.704845+00:00"
-    },
     "EURUSD=X": {
       "symbol": "EURUSD=X",
       "asset_class": "forex",
@@ -101,18 +71,98 @@
       "take_profit": 1.177,
       "opened_at": "2026-08-07T12:09:21.290845+00:00"
     },
-    "BAC": {
-      "symbol": "BAC",
+    "AES": {
+      "symbol": "AES",
       "asset_class": "equity",
       "side": "LONG",
-      "quantity": 37.0,
-      "avg_price": 63.0,
-      "stop_loss": 61.11,
-      "take_profit": 66.78,
-      "opened_at": "2026-08-07T12:09:26.809066+00:00"
+      "quantity": 136.0,
+      "avg_price": 14.71,
+      "stop_loss": 14.27,
+      "take_profit": 15.59,
+      "opened_at": "2026-08-07T13:35:38.682779+00:00"
     }
   },
   "trades": [
+    {
+      "id": "5d3c2c448fcc",
+      "ticker": "TFC",
+      "type": "SELL",
+      "price": 52.080002,
+      "shares": 40.0,
+      "date": "2026-08-07T13:35:45.090470+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Closing underperforming financial position to raise cash for higher opportunity setups.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 51.0123,
+      "take_profit": 55.7454,
+      "realized_pnl": -20.4
+    },
+    {
+      "id": "84e8ff59aee0",
+      "ticker": "MTB",
+      "type": "SELL",
+      "price": 247.714996,
+      "shares": 10.0,
+      "date": "2026-08-07T13:35:43.700707+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Pruning weak regional bank position losing money to unlock liquidity for higher-ranked candidates.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 244.53,
+      "take_profit": 267.22,
+      "realized_pnl": -43.8
+    },
+    {
+      "id": "244fd7d43a90",
+      "ticker": "PNC",
+      "type": "SELL",
+      "price": 249.770004,
+      "shares": 13.0,
+      "date": "2026-08-07T13:35:42.197595+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Cutting losing bank position with low opportunity score to rotate capital into top setups.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 247.5634,
+      "take_profit": 270.5332,
+      "realized_pnl": -70.85
+    },
+    {
+      "id": "1a6ebed50451",
+      "ticker": "BAC",
+      "type": "SELL",
+      "price": 62.540001,
+      "shares": 37.0,
+      "date": "2026-08-07T13:35:40.511614+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Liquidating lagging financial holding to concentrate portfolio into top momentum names.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 61.11,
+      "take_profit": 66.78,
+      "realized_pnl": -17.02
+    },
+    {
+      "id": "d9f8cfb04644",
+      "ticker": "AES",
+      "type": "BUY",
+      "price": 14.71,
+      "shares": 136.0,
+      "date": "2026-08-07T13:35:38.682806+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score clean energy utility consolidating near support with bullish sentiment.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 14.27,
+      "take_profit": 15.59,
+      "realized_pnl": null
+    },
     {
       "id": "be3bb05b19a4",
       "ticker": "BAC",
@@ -910,5 +960,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 384.87
+  "realized_pnl": 232.8
 }

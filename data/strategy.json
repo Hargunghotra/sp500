@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively prune lagging forex and underperforming equities to reallocate capital into breakout equity momentum and top cross-asset opportunities.",
+  "thesis": "Aggressively rotate capital out of weak regional financials into top-scoring equity consolidators and strong forex trends to maximize paper equity.",
   "preferred_sectors": [
-    "Financials",
-    "Consumer Staples",
     "Technology",
+    "Utilities",
+    "Healthcare",
     "Forex"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Quality Growth"
+    "Breakout",
+    "Trend Following"
   ],
-  "risk_posture": "Aggressive",
-  "updated_at": "2026-08-07T12:09:16.509473+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-07T13:35:38.414410+00:00",
   "model": "gemini-flash-latest"
 }
