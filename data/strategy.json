@@ -1,10 +1,10 @@
 {
-  "thesis": "Prune underperforming and dead-weight positions (INVH, TFC, EA) to recycle capital aggressively into high-opportunity breakout candidates (SBUX, USB, NZDUSD=X) while pressing winners in resilient uptrends.",
+  "thesis": "Aggressively prune lagging positions with declining opportunity scores and rotate capital into top-ranked trend-following setups with strong momentum and support levels.",
   "preferred_sectors": [
-    "Consumer Cyclical",
-    "Financial Services",
-    "Healthcare",
-    "Forex"
+    "Technology",
+    "Communication Services",
+    "Real Estate",
+    "Financials"
   ],
   "styles": [
     "Momentum",
@@ -12,6 +12,6 @@
     "Trend Following"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-07T19:28:43.275632+00:00",
+  "updated_at": "2026-08-07T20:05:41.720960+00:00",
   "model": "gemini-flash-latest"
 }

@@ -1,5 +1,5 @@
 {
-  "balance": 19583.66,
+  "balance": 19388.56,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -81,16 +81,6 @@
       "take_profit": 1.3767,
       "opened_at": "2026-08-07T17:31:52.437220+00:00"
     },
-    "SBUX": {
-      "symbol": "SBUX",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 20.0,
-      "avg_price": 106.635002,
-      "stop_loss": 103.435,
-      "take_profit": 113.033,
-      "opened_at": "2026-08-07T19:28:47.855211+00:00"
-    },
     "USB": {
       "symbol": "USB",
       "asset_class": "equity",
@@ -110,9 +100,51 @@
       "stop_loss": 0.5843,
       "take_profit": 0.602,
       "opened_at": "2026-08-07T19:28:51.234842+00:00"
+    },
+    "EA": {
+      "symbol": "EA",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 11.0,
+      "avg_price": 209.699997,
+      "stop_loss": 203.41,
+      "take_profit": 222.28,
+      "opened_at": "2026-08-07T20:05:42.256286+00:00"
     }
   },
   "trades": [
+    {
+      "id": "8ef45d21f163",
+      "ticker": "SBUX",
+      "type": "SELL",
+      "price": 105.580002,
+      "shares": 20.0,
+      "date": "2026-08-07T20:05:44.427236+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Underperforming trade with negative PnL (-0.99%) and declining opportunity score (6.199). Liquidating to free capital for top-ranked momentum candidates.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 103.435,
+      "take_profit": 113.033,
+      "realized_pnl": -21.1
+    },
+    {
+      "id": "62719f11d7ba",
+      "ticker": "EA",
+      "type": "BUY",
+      "price": 209.699997,
+      "shares": 11.0,
+      "date": "2026-08-07T20:05:42.256313+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Perfect composite technical score (10.0) with an opportunity score of 9.104 and uptrend continuation pattern above SMA50.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 203.41,
+      "take_profit": 222.28,
+      "realized_pnl": null
+    },
     {
       "id": "1dd7463b5777",
       "ticker": "NZDUSD=X",
@@ -1262,5 +1294,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 220.45
+  "realized_pnl": 199.35
 }
