@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize risk-adjusted returns by holding top-performing consolidating uptrend assets while deploying available capital into high-opportunity breakouts to reach full portfolio utilization across equities and forex.",
+  "thesis": "Aggressively prune lagging forex and underperforming equities to reallocate capital into breakout equity momentum and top cross-asset opportunities.",
   "preferred_sectors": [
-    "Technology",
     "Financials",
-    "Utilities",
-    "Consumer Staples"
+    "Consumer Staples",
+    "Technology",
+    "Forex"
   ],
   "styles": [
+    "Momentum",
     "Trend Following",
-    "Breakout Momentum",
-    "Swing Trading"
+    "Quality Growth"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-07T11:30:06.160434+00:00",
+  "risk_posture": "Aggressive",
+  "updated_at": "2026-08-07T12:09:16.509473+00:00",
   "model": "gemini-flash-latest"
 }
