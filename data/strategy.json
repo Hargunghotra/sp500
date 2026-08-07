@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize risk-adjusted momentum and multi-asset exposure by holding core equity and forex winners while selectively adding high-opportunity setups in banking and major forex pairs to fill book capacity.",
+  "thesis": "Rotate capital from lower opportunity setups into top-ranked equity candidates showing strong trend consolidation and bullish news momentum while retaining winning and high-score holdings.",
   "preferred_sectors": [
+    "Technology",
     "Financials",
-    "Healthcare",
-    "Consumer Staples",
-    "Forex"
+    "Basic Materials",
+    "Consumer Staples"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Consolidation Breakout"
+    "Quality Growth"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-06T14:43:33.832208+00:00",
+  "updated_at": "2026-08-07T08:44:35.539715+00:00",
   "model": "gemini-flash-latest"
 }
