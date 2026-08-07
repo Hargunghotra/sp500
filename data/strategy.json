@@ -1,17 +1,17 @@
 {
-  "thesis": "Rotate capital from lower opportunity setups into top-ranked equity candidates showing strong trend consolidation and bullish news momentum while retaining winning and high-score holdings.",
+  "thesis": "Prune underperforming positions and dead-weight currency pairs to reallocate capital into high-score breakout equities and top-rated forex trend setups while riding current winners.",
   "preferred_sectors": [
-    "Technology",
-    "Financials",
     "Basic Materials",
+    "Financials",
+    "Technology",
     "Consumer Staples"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Quality Growth"
+    "Trend-Following",
+    "Relative Strength"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-07T08:44:35.539715+00:00",
+  "risk_posture": "Aggressive",
+  "updated_at": "2026-08-07T09:41:47.455573+00:00",
   "model": "gemini-flash-latest"
 }
