@@ -1,17 +1,18 @@
 {
-  "thesis": "Capitalize on strong uptrends across equities and forex while optimizing cash utilization up to the 12-ticker limit.",
+  "thesis": "Maximize portfolio returns by retaining top-scoring, upward-trending positions across high-momentum equities and key forex pairs while maintaining strict risk management caps.",
   "preferred_sectors": [
-    "Financials",
     "Technology",
+    "Financials",
+    "Healthcare",
     "Utilities",
     "Forex"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Swing Trading"
+    "Quality Growth"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-07T21:26:22.541784+00:00",
+  "updated_at": "2026-08-07T22:03:32.369872+00:00",
   "model": "gemini-flash-latest"
 }
