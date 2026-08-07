@@ -1,5 +1,5 @@
 {
-  "balance": 15656.54,
+  "balance": 16259.11,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -101,16 +101,6 @@
       "take_profit": 265.66,
       "opened_at": "2026-08-07T14:38:52.813032+00:00"
     },
-    "TFC": {
-      "symbol": "TFC",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 46.0,
-      "avg_price": 52.695,
-      "stop_loss": 51.11,
-      "take_profit": 55.86,
-      "opened_at": "2026-08-07T14:38:54.135852+00:00"
-    },
     "GBPUSD=X": {
       "symbol": "GBPUSD=X",
       "asset_class": "forex",
@@ -120,9 +110,51 @@
       "stop_loss": 1.3358,
       "take_profit": 1.37628,
       "opened_at": "2026-08-07T14:38:55.362936+00:00"
+    },
+    "SBUX": {
+      "symbol": "SBUX",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 17.0,
+      "avg_price": 106.464996,
+      "stop_loss": 103.27,
+      "take_profit": 112.85,
+      "opened_at": "2026-08-07T15:34:02.409856+00:00"
     }
   },
   "trades": [
+    {
+      "id": "26d54093bef0",
+      "ticker": "SBUX",
+      "type": "BUY",
+      "price": 106.464996,
+      "shares": 17.0,
+      "date": "2026-08-07T15:34:02.409892+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Entering top-rated consumer discretionary momentum setup (score 9.8, opp score 8.803) within cash limits.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 103.27,
+      "take_profit": 112.85,
+      "realized_pnl": null
+    },
+    {
+      "id": "51df23dd4b6e",
+      "ticker": "TFC",
+      "type": "SELL",
+      "price": 52.445,
+      "shares": 46.0,
+      "date": "2026-08-07T15:34:00.094226+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Pruning lagging position showing negative PnL to free cash and slot for SBUX.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 51.11,
+      "take_profit": 55.86,
+      "realized_pnl": -11.5
+    },
     {
       "id": "79967c84c752",
       "ticker": "GBPUSD=X",
@@ -1064,5 +1096,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 232.8
+  "realized_pnl": 221.3
 }

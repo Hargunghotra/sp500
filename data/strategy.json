@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on high market breadth strength (99 UP trend assets) by maintaining profitable positions and aggressively scaling into high opportunity financial and forex trend-following setups.",
+  "thesis": "Maximize return profile across equities and FX by actively churning underperforming holdings into highest opportunity score setups consolidating near key moving averages.",
   "preferred_sectors": [
-    "Financials",
     "Technology",
-    "Forex",
-    "Consumer Staples"
+    "Financials",
+    "Consumer Staples",
+    "Consumer Discretionary"
   ],
   "styles": [
-    "Momentum",
+    "Momentum Breakout",
     "Trend Following",
-    "Consolidation Breakout"
+    "Swing Trading"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-07T14:38:51.104942+00:00",
+  "risk_posture": "Aggressive",
+  "updated_at": "2026-08-07T15:33:59.505060+00:00",
   "model": "gemini-flash-latest"
 }
