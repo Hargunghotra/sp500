@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively prune lagging positions with declining opportunity scores and rotate capital into top-ranked trend-following setups with strong momentum and support levels.",
+  "thesis": "Rotate capital out of underperforming/flat assets into high-opportunity breakout candidates showing robust momentum and consolidation near technical support within a broad market uptrend.",
   "preferred_sectors": [
-    "Technology",
-    "Communication Services",
+    "Financials",
     "Real Estate",
-    "Financials"
+    "Healthcare",
+    "Consumer Discretionary"
   ],
   "styles": [
     "Momentum",
-    "Breakout",
-    "Trend Following"
+    "Trend Following",
+    "Breakout Swing"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-07T20:05:41.720960+00:00",
+  "risk_posture": "Aggressive",
+  "updated_at": "2026-08-07T20:56:24.513738+00:00",
   "model": "gemini-flash-latest"
 }
