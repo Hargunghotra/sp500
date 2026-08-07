@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on broad market momentum by maintaining winning positions in elite-rated consolidating equities and FX, while deploying fresh capital into top-tier financial and forex breakout setups.",
+  "thesis": "Aggressively optimize capital efficiency by liquidating deadweight holdings with weak relative opportunity scores and reallocating cash into high-momentum, high-opportunity equity leaders while maintaining strict risk controls.",
   "preferred_sectors": [
-    "Financials",
     "Technology",
-    "Consumer Staples",
-    "Forex"
+    "Healthcare",
+    "Financials",
+    "Utilities"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Swing Trading"
+    "Quality Growth"
   ],
-  "risk_posture": "Aggressive",
-  "updated_at": "2026-08-07T17:31:49.974604+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-07T18:29:18.203107+00:00",
   "model": "gemini-flash-latest"
 }

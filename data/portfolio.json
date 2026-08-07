@@ -1,5 +1,5 @@
 {
-  "balance": 16209.0,
+  "balance": 18014.4,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -91,16 +91,6 @@
       "take_profit": 265.66,
       "opened_at": "2026-08-07T14:38:52.813032+00:00"
     },
-    "SBUX": {
-      "symbol": "SBUX",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 17.0,
-      "avg_price": 106.464996,
-      "stop_loss": 103.27,
-      "take_profit": 112.85,
-      "opened_at": "2026-08-07T15:34:02.409856+00:00"
-    },
     "TFC": {
       "symbol": "TFC",
       "asset_class": "equity",
@@ -123,6 +113,22 @@
     }
   },
   "trades": [
+    {
+      "id": "46ec2b55acdc",
+      "ticker": "SBUX",
+      "type": "SELL",
+      "price": 106.199997,
+      "shares": 17.0,
+      "date": "2026-08-07T18:29:18.761766+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Underperforming position with lowest opportunity score (6.278) among equity holdings; closing to release capital and open ticker slot.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 103.27,
+      "take_profit": 112.85,
+      "realized_pnl": -4.5
+    },
     {
       "id": "970fc23114c1",
       "ticker": "GBPUSD=X",
@@ -1160,5 +1166,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 231.25
+  "realized_pnl": 226.75
 }
