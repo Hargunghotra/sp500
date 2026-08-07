@@ -1,17 +1,17 @@
 {
-  "thesis": "Prune underperforming positions and dead-weight currency pairs to reallocate capital into high-score breakout equities and top-rated forex trend setups while riding current winners.",
+  "thesis": "Aggressive rotation out of low-upside dead weight and near-resistance laggards into high opportunity-score financial equities and pristine forex consolidation patterns to maximize risk-adjusted portfolio returns.",
   "preferred_sectors": [
-    "Basic Materials",
-    "Financials",
-    "Technology",
-    "Consumer Staples"
+    "Financial Services",
+    "Healthcare",
+    "Consumer Non-Cyclical",
+    "Forex"
   ],
   "styles": [
     "Momentum",
     "Trend-Following",
-    "Relative Strength"
+    "Breakout"
   ],
   "risk_posture": "Aggressive",
-  "updated_at": "2026-08-07T09:41:47.455573+00:00",
+  "updated_at": "2026-08-07T10:33:14.185270+00:00",
   "model": "gemini-flash-latest"
 }
