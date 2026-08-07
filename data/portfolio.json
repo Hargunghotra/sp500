@@ -1,5 +1,5 @@
 {
-  "balance": 16259.11,
+  "balance": 20892.93,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -40,16 +40,6 @@
       "stop_loss": 203.41,
       "take_profit": 222.28,
       "opened_at": "2026-08-05T21:40:53.861140+00:00"
-    },
-    "AUDUSD=X": {
-      "symbol": "AUDUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 3534.211826,
-      "avg_price": 0.704225,
-      "stop_loss": 0.69718,
-      "take_profit": 0.71831,
-      "opened_at": "2026-08-06T14:43:36.159927+00:00"
     },
     "APD": {
       "symbol": "APD",
@@ -101,16 +91,6 @@
       "take_profit": 265.66,
       "opened_at": "2026-08-07T14:38:52.813032+00:00"
     },
-    "GBPUSD=X": {
-      "symbol": "GBPUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 1582.299483,
-      "avg_price": 1.349291,
-      "stop_loss": 1.3358,
-      "take_profit": 1.37628,
-      "opened_at": "2026-08-07T14:38:55.362936+00:00"
-    },
     "SBUX": {
       "symbol": "SBUX",
       "asset_class": "equity",
@@ -123,6 +103,38 @@
     }
   },
   "trades": [
+    {
+      "id": "7798d8a8dfce",
+      "ticker": "AUDUSD=X",
+      "type": "SELL",
+      "price": 0.706714,
+      "shares": 3534.211826,
+      "date": "2026-08-07T16:32:00.026152+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Closing long AUDUSD position to harvest gains and free up a ticker slot for higher opportunity score equity setups.",
+      "confidence": 0.75,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.69718,
+      "take_profit": 0.71831,
+      "realized_pnl": 8.8
+    },
+    {
+      "id": "57c32b9fa166",
+      "ticker": "GBPUSD=X",
+      "type": "SELL",
+      "price": 1.35002,
+      "shares": 1582.299483,
+      "date": "2026-08-07T16:31:58.156585+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Closing long GBPUSD position to rotate capital into top-ranked biotech candidate VRTX.",
+      "confidence": 0.72,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.3358,
+      "take_profit": 1.37628,
+      "realized_pnl": 1.15
+    },
     {
       "id": "26d54093bef0",
       "ticker": "SBUX",
@@ -1096,5 +1108,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 221.3
+  "realized_pnl": 231.25
 }

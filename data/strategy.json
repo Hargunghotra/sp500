@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize return profile across equities and FX by actively churning underperforming holdings into highest opportunity score setups consolidating near key moving averages.",
+  "thesis": "Aggressively cycle out of lower opportunity forex holdings into top-ranked equity setups in financial and biotech sectors to maximize portfolio equity.",
   "preferred_sectors": [
-    "Technology",
     "Financials",
+    "Healthcare",
     "Consumer Staples",
-    "Consumer Discretionary"
+    "Industrials"
   ],
   "styles": [
-    "Momentum Breakout",
+    "Momentum",
     "Trend Following",
-    "Swing Trading"
+    "Consolidation Breakout"
   ],
   "risk_posture": "Aggressive",
-  "updated_at": "2026-08-07T15:33:59.505060+00:00",
+  "updated_at": "2026-08-07T16:31:57.863940+00:00",
   "model": "gemini-flash-latest"
 }
