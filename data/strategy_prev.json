@@ -1,18 +1,17 @@
 {
-  "thesis": "Capitalize on market-wide upward trends by maintaining strong momentum equity positions while expanding forex exposure into top-tier opportunity score currency pairs to maximize risk-adjusted equity gains.",
+  "thesis": "Maximize risk-adjusted momentum and multi-asset exposure by holding core equity and forex winners while selectively adding high-opportunity setups in banking and major forex pairs to fill book capacity.",
   "preferred_sectors": [
     "Financials",
-    "Industrials",
-    "Technology",
+    "Healthcare",
     "Consumer Staples",
     "Forex"
   ],
   "styles": [
+    "Momentum",
     "Trend Following",
-    "Momentum Expansion",
-    "Breakout Trading"
+    "Consolidation Breakout"
   ],
-  "risk_posture": "AGGRESSIVE_GROWTH",
-  "updated_at": "2026-08-05T23:35:56.231945+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-06T14:43:33.832208+00:00",
   "model": "gemini-flash-latest"
 }
