@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize total portfolio equity by aggressively holding top-ranked trend leaders in technology, industrials, and financials, while liquidating redundant bank exposure to reallocate capital into high opportunity score forex momentum setups.",
+  "thesis": "Aggressively harvest momentum and high opportunity scores across multi-asset shortlist while systematically recycling capital out of lower-scoring positions into top-tier G10 FX consolidations and leading financial/technology equities.",
   "preferred_sectors": [
-    "Technology",
     "Financials",
-    "Industrials",
-    "Forex"
+    "Technology",
+    "Forex",
+    "Consumer Staples"
   ],
   "styles": [
+    "Momentum",
     "Trend Following",
-    "Momentum Breakout",
-    "High Probability Rotation"
+    "Swing Trading"
   ],
-  "risk_posture": "AGGRESSIVE",
-  "updated_at": "2026-08-10T21:56:37.773425+00:00",
+  "risk_posture": "Aggressive Growth within Rules",
+  "updated_at": "2026-08-10T22:24:24.119219+00:00",
   "model": "gemini-flash-latest"
 }
