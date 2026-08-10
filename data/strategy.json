@@ -1,17 +1,18 @@
 {
-  "thesis": "Aggressive rotation out of underperforming assets into high opportunity score momentum equities and forex pairs while enforcing tight risk controls.",
+  "thesis": "Aggressively cycle capital into highest opportunity-score consolidated equity and forex trend-followers while ruthlessly exiting non-performing positions.",
   "preferred_sectors": [
     "Technology",
+    "Real Estate",
     "Financials",
-    "Industrials",
+    "Materials",
     "Forex"
   ],
   "styles": [
-    "Momentum",
     "Trend Following",
-    "Swing Trading"
+    "Breakout Momentum",
+    "Mean Reversion"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-10T13:56:13.753499+00:00",
+  "risk_posture": "Aggressive",
+  "updated_at": "2026-08-10T14:49:49.374234+00:00",
   "model": "gemini-flash-latest"
 }

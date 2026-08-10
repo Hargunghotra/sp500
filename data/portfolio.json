@@ -1,5 +1,5 @@
 {
-  "balance": 15124.62,
+  "balance": 15803.46,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -51,16 +51,6 @@
       "take_profit": 15.59,
       "opened_at": "2026-08-07T13:35:38.682779+00:00"
     },
-    "PNC": {
-      "symbol": "PNC",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 17.0,
-      "avg_price": 252.527643,
-      "stop_loss": 244.98,
-      "take_profit": 267.71,
-      "opened_at": "2026-08-07T14:38:51.443372+00:00"
-    },
     "EA": {
       "symbol": "EA",
       "asset_class": "equity",
@@ -110,9 +100,77 @@
       "stop_loss": 310.57,
       "take_profit": 339.39,
       "opened_at": "2026-08-10T13:56:16.197421+00:00"
+    },
+    "INVH": {
+      "symbol": "INVH",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 60.0,
+      "avg_price": 29.92,
+      "stop_loss": 29.02,
+      "take_profit": 31.72,
+      "opened_at": "2026-08-10T14:49:51.781667+00:00"
+    },
+    "GBPUSD=X": {
+      "symbol": "GBPUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 1340.0,
+      "avg_price": 1.352997,
+      "stop_loss": 1.3395,
+      "take_profit": 1.3801,
+      "opened_at": "2026-08-10T14:49:53.860250+00:00"
     }
   },
   "trades": [
+    {
+      "id": "272067f719eb",
+      "ticker": "GBPUSD=X",
+      "type": "BUY",
+      "price": 1.352997,
+      "shares": 1340.0,
+      "date": "2026-08-10T14:49:53.860282+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top opportunity score currency pair exhibiting strong uptrend alignment.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.3395,
+      "take_profit": 1.3801,
+      "realized_pnl": null
+    },
+    {
+      "id": "638d954997ac",
+      "ticker": "INVH",
+      "type": "BUY",
+      "price": 29.92,
+      "shares": 60.0,
+      "date": "2026-08-10T14:49:51.781707+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score REIT consolidating near support with strong bullish sentiment.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 29.02,
+      "take_profit": 31.72,
+      "realized_pnl": null
+    },
+    {
+      "id": "42b19edb6328",
+      "ticker": "PNC",
+      "type": "SELL",
+      "price": 252.179993,
+      "shares": 17.0,
+      "date": "2026-08-10T14:49:49.836926+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Sell underperforming position showing negative unrealized PnL to free cash and slot capacity for higher opportunity score targets.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 244.98,
+      "take_profit": 267.71,
+      "realized_pnl": -5.91
+    },
     {
       "id": "4cbe620bd9ef",
       "ticker": "TFC",
@@ -1678,5 +1736,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 148.6
+  "realized_pnl": 142.69
 }
