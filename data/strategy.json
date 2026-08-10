@@ -1,17 +1,17 @@
 {
-  "thesis": "Rotate capital out of non-performing forex positions into high-opportunity consolidating equity leaders with strong momentum and top-tier opportunity scores.",
+  "thesis": "Capitalize on high-scoring momentum setups across equities and forex while maintaining tight stop loss parameters and harvesting cross-asset momentum.",
   "preferred_sectors": [
     "Technology",
     "Financials",
-    "Consumer Staples",
-    "Industrials"
+    "Utilities",
+    "Forex"
   ],
   "styles": [
-    "Momentum",
     "Trend Following",
-    "Quality Growth"
+    "Momentum",
+    "Breakout"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-07T23:55:06.288969+00:00",
+  "updated_at": "2026-08-10T09:05:05.752316+00:00",
   "model": "gemini-flash-latest"
 }

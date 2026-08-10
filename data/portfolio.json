@@ -1,5 +1,5 @@
 {
-  "balance": 13705.38,
+  "balance": 12084.98,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -110,9 +110,35 @@
       "stop_loss": 62.02,
       "take_profit": 67.78,
       "opened_at": "2026-08-07T23:55:09.499776+00:00"
+    },
+    "GBPUSD=X": {
+      "symbol": "GBPUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 1200.0,
+      "avg_price": 1.35033,
+      "stop_loss": 1.3368,
+      "take_profit": 1.3773,
+      "opened_at": "2026-08-10T09:05:06.473793+00:00"
     }
   },
   "trades": [
+    {
+      "id": "e191e8fd821b",
+      "ticker": "GBPUSD=X",
+      "type": "BUY",
+      "price": 1.35033,
+      "shares": 1200.0,
+      "date": "2026-08-10T09:05:06.473822+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score forex setup with score 9.9 in solid consolidation uptrend.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.3368,
+      "take_profit": 1.3773,
+      "realized_pnl": null
+    },
     {
       "id": "16947add8895",
       "ticker": "USB",
