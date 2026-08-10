@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on high-scoring momentum setups across equities and forex while maintaining tight stop loss parameters and harvesting cross-asset momentum.",
+  "thesis": "Aggressively prune non-performing and stagnant positions to liberate slots and capital, rotating into top-ranked momentum equities and high-conviction forex consolidation setups.",
   "preferred_sectors": [
-    "Technology",
     "Financials",
-    "Utilities",
+    "Technology",
+    "Industrials",
     "Forex"
   ],
   "styles": [
-    "Trend Following",
     "Momentum",
-    "Breakout"
+    "Trend Following",
+    "Breakout Swing"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-10T09:05:05.752316+00:00",
+  "risk_posture": "Aggressive",
+  "updated_at": "2026-08-10T10:36:11.767326+00:00",
   "model": "gemini-flash-latest"
 }

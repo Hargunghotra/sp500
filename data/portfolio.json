@@ -1,5 +1,5 @@
 {
-  "balance": 12084.98,
+  "balance": 12608.5,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -61,16 +61,6 @@
       "take_profit": 267.71,
       "opened_at": "2026-08-07T14:38:51.443372+00:00"
     },
-    "MTB": {
-      "symbol": "MTB",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 10.0,
-      "avg_price": 250.619995,
-      "stop_loss": 243.1,
-      "take_profit": 265.66,
-      "opened_at": "2026-08-07T14:38:52.813032+00:00"
-    },
     "EA": {
       "symbol": "EA",
       "asset_class": "equity",
@@ -111,18 +101,92 @@
       "take_profit": 67.78,
       "opened_at": "2026-08-07T23:55:09.499776+00:00"
     },
-    "GBPUSD=X": {
-      "symbol": "GBPUSD=X",
+    "USDCHF=X": {
+      "symbol": "USDCHF=X",
       "asset_class": "forex",
       "side": "LONG",
-      "quantity": 1200.0,
-      "avg_price": 1.35033,
-      "stop_loss": 1.3368,
-      "take_profit": 1.3773,
-      "opened_at": "2026-08-10T09:05:06.473793+00:00"
+      "quantity": 2406.679833,
+      "avg_price": 0.80823,
+      "stop_loss": 0.80015,
+      "take_profit": 0.82439,
+      "opened_at": "2026-08-10T10:36:16.680790+00:00"
+    },
+    "AMP": {
+      "symbol": "AMP",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 3.0,
+      "avg_price": 551.97998,
+      "stop_loss": 535.42,
+      "take_profit": 585.1,
+      "opened_at": "2026-08-10T10:36:18.777585+00:00"
     }
   },
   "trades": [
+    {
+      "id": "e61ea6dbcc30",
+      "ticker": "AMP",
+      "type": "BUY",
+      "price": 551.97998,
+      "shares": 3.0,
+      "date": "2026-08-10T10:36:18.777618+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Outstanding financial sector momentum leader with +9.26% 20-day return and strong bullish headlines.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 535.42,
+      "take_profit": 585.1,
+      "realized_pnl": null
+    },
+    {
+      "id": "b66f31908b1b",
+      "ticker": "USDCHF=X",
+      "type": "BUY",
+      "price": 0.80823,
+      "shares": 2406.679833,
+      "date": "2026-08-10T10:36:16.680824+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top forex candidate with score 9.9 in uptrend consolidation offering attractive entry. (qty capped to 2406.679833 by 12% cash rule)",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.80015,
+      "take_profit": 0.82439,
+      "realized_pnl": null
+    },
+    {
+      "id": "c761832d324e",
+      "ticker": "GBPUSD=X",
+      "type": "SELL",
+      "price": 1.350093,
+      "shares": 1200.0,
+      "date": "2026-08-10T10:36:14.758026+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Slightly negative trade (-0.02%) in underperforming forex pair; releasing capital for USDCHF=X setup.",
+      "confidence": 0.7,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.3368,
+      "take_profit": 1.3773,
+      "realized_pnl": -0.28
+    },
+    {
+      "id": "6204782e1e3a",
+      "ticker": "MTB",
+      "type": "SELL",
+      "price": 250.449997,
+      "shares": 10.0,
+      "date": "2026-08-10T10:36:12.579377+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Cutting minor loss position (-0.07%) to free portfolio capacity for higher-edge candidates.",
+      "confidence": 0.75,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 243.1,
+      "take_profit": 265.66,
+      "realized_pnl": -1.7
+    },
     {
       "id": "e191e8fd821b",
       "ticker": "GBPUSD=X",
@@ -1512,5 +1576,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 193.4
+  "realized_pnl": 191.42
 }
