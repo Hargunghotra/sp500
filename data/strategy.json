@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively rotate capital out of stagnant positions into high-momentum sector leaders and strong trend FX setups. Maintain tight risk controls while maximizing upside exposure across financials, energy, and high-scoring equities.",
+  "thesis": "Capitalize on market-wide bullish trend breadth across financials, industrials, consumer staples, and major forex pairs by maintaining core winning consolidation positions and adding high-opportunity financial leaders.",
   "preferred_sectors": [
     "Financials",
-    "Energy",
-    "Technology",
-    "Industrials"
+    "Industrials",
+    "Consumer Staples",
+    "Forex"
   ],
   "styles": [
-    "Momentum Breakout",
     "Trend Following",
-    "Quality Growth"
+    "Breakout",
+    "Momentum"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-10T20:21:41.397438+00:00",
+  "updated_at": "2026-08-10T21:09:32.787816+00:00",
   "model": "gemini-flash-latest"
 }
