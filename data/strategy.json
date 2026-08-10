@@ -1,16 +1,17 @@
 {
-  "thesis": "Aggressively prune underperforming dead weight and low-momentum assets to channel capital into high-momentum 52-week high breakout leaders across industrials and financials.",
+  "thesis": "Maximize return by cutting lagging positions and rotating capital into high-scoring uptrend forex pairs and consolidate top-performing equity holdings.",
   "preferred_sectors": [
-    "Industrials",
     "Financials",
+    "Forex",
+    "Industrials",
     "Healthcare"
   ],
   "styles": [
-    "Momentum Breakout",
     "Trend Following",
-    "High Opportunity Score"
+    "Momentum",
+    "Swing Trading"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-10T17:34:04.348754+00:00",
+  "updated_at": "2026-08-10T18:31:30.651077+00:00",
   "model": "gemini-flash-latest"
 }

@@ -1,5 +1,5 @@
 {
-  "balance": 16984.77,
+  "balance": 16755.56,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -101,18 +101,50 @@
       "take_profit": 266.64,
       "opened_at": "2026-08-10T16:41:42.556593+00:00"
     },
-    "AME": {
-      "symbol": "AME",
-      "asset_class": "equity",
+    "AUDUSD=X": {
+      "symbol": "AUDUSD=X",
+      "asset_class": "forex",
       "side": "LONG",
-      "quantity": 7.0,
-      "avg_price": 253.539993,
-      "stop_loss": 245.93,
-      "take_profit": 268.75,
-      "opened_at": "2026-08-10T17:34:06.433626+00:00"
+      "quantity": 2833.6,
+      "avg_price": 0.705816,
+      "stop_loss": 0.69876,
+      "take_profit": 0.71993,
+      "opened_at": "2026-08-10T18:31:31.000863+00:00"
     }
   },
   "trades": [
+    {
+      "id": "626c76d857f7",
+      "ticker": "AME",
+      "type": "SELL",
+      "price": 252.970001,
+      "shares": 7.0,
+      "date": "2026-08-10T18:31:33.212425+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Underperforming equity position with low opportunity score (7.179) compared to available candidates; harvesting cash to reallocate.",
+      "confidence": 0.75,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 245.93,
+      "take_profit": 268.75,
+      "realized_pnl": -3.99
+    },
+    {
+      "id": "a42d3e53e3b2",
+      "ticker": "AUDUSD=X",
+      "type": "BUY",
+      "price": 0.705816,
+      "shares": 2833.6,
+      "date": "2026-08-10T18:31:31.000890+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong uptrend forex pair with opportunity score of 8.607 and low distance to support.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.69876,
+      "take_profit": 0.71993,
+      "realized_pnl": null
+    },
     {
       "id": "0a95cb51b3c1",
       "ticker": "INVH",
@@ -1838,5 +1870,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 153.61
+  "realized_pnl": 149.62
 }
