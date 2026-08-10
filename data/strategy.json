@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively prune non-performing and stagnant positions to liberate slots and capital, rotating into top-ranked momentum equities and high-conviction forex consolidation setups.",
+  "thesis": "Aggressively rotate capital from lower opportunity score and volatile positions into top-ranked consolidating uptrend leaders across equities and forex.",
   "preferred_sectors": [
     "Financials",
     "Technology",
-    "Industrials",
-    "Forex"
+    "Materials",
+    "Consumer Staples"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Breakout Swing"
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Aggressive",
-  "updated_at": "2026-08-10T10:36:11.767326+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-10T11:33:47.058251+00:00",
   "model": "gemini-flash-latest"
 }
