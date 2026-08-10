@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on high market breadth strength (99 UP trends) by deploying cash into top-ranked, consolidating equities with high opportunity scores while retaining profitable core holdings.",
+  "thesis": "Aggressive rotation out of underperforming assets into high opportunity score momentum equities and forex pairs while enforcing tight risk controls.",
   "preferred_sectors": [
-    "Financial Services",
-    "Healthcare",
-    "Utilities",
-    "Consumer Staples"
+    "Technology",
+    "Financials",
+    "Industrials",
+    "Forex"
   ],
   "styles": [
     "Momentum",
-    "Consolidation Breakout",
-    "Quality Growth"
+    "Trend Following",
+    "Swing Trading"
   ],
-  "risk_posture": "Aggressive Growth within Hard Caps",
-  "updated_at": "2026-08-10T12:30:25.366533+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-10T13:56:13.753499+00:00",
   "model": "gemini-flash-latest"
 }
