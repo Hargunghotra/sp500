@@ -1,17 +1,18 @@
 {
-  "thesis": "Aggressively harvest momentum and high opportunity scores across multi-asset shortlist while systematically recycling capital out of lower-scoring positions into top-tier G10 FX consolidations and leading financial/technology equities.",
+  "thesis": "Rotate capital out of stagnant forex legs into top-ranked momentum equities and strong consolidating currency pairs to maximize multi-asset total portfolio return.",
   "preferred_sectors": [
-    "Financials",
     "Technology",
-    "Forex",
-    "Consumer Staples"
+    "Financials",
+    "Industrials",
+    "Energy",
+    "Forex"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Swing Trading"
+    "Trend-Following",
+    "Breakout"
   ],
-  "risk_posture": "Aggressive Growth within Rules",
-  "updated_at": "2026-08-10T22:24:24.119219+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-10T23:03:30.181947+00:00",
   "model": "gemini-flash-latest"
 }

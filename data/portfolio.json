@@ -1,5 +1,5 @@
 {
-  "balance": 18656.54,
+  "balance": 16405.28,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -51,16 +51,6 @@
       "take_profit": 222.28,
       "opened_at": "2026-08-07T20:05:42.256286+00:00"
     },
-    "USDCHF=X": {
-      "symbol": "USDCHF=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 2406.679833,
-      "avg_price": 0.80823,
-      "stop_loss": 0.80015,
-      "take_profit": 0.82439,
-      "opened_at": "2026-08-10T10:36:16.680790+00:00"
-    },
     "MTB": {
       "symbol": "MTB",
       "asset_class": "equity",
@@ -110,9 +100,77 @@
       "stop_loss": 0.698659,
       "take_profit": 0.71983,
       "opened_at": "2026-08-10T22:24:24.428865+00:00"
+    },
+    "NZDUSD=X": {
+      "symbol": "NZDUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 3700.0,
+      "avg_price": 0.588582,
+      "stop_loss": 0.582695,
+      "take_profit": 0.600353,
+      "opened_at": "2026-08-10T23:03:30.563048+00:00"
+    },
+    "AME": {
+      "symbol": "AME",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 8.0,
+      "avg_price": 252.880005,
+      "stop_loss": 245.29,
+      "take_profit": 268.05,
+      "opened_at": "2026-08-10T23:03:35.552295+00:00"
     }
   },
   "trades": [
+    {
+      "id": "e6156a15278a",
+      "ticker": "AME",
+      "type": "BUY",
+      "price": 252.880005,
+      "shares": 8.0,
+      "date": "2026-08-10T23:03:35.552327+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Outstanding industrial momentum stock boasting 8.95% 20-day return, strong bullish sentiment, and breaking out towards new highs.",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 245.29,
+      "take_profit": 268.05,
+      "realized_pnl": null
+    },
+    {
+      "id": "4dc3f99421e8",
+      "ticker": "USDCHF=X",
+      "type": "SELL",
+      "price": 0.81005,
+      "shares": 2406.679833,
+      "date": "2026-08-10T23:03:33.367600+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Lacks upward traction with a negative 20-day return (-0.57%). Selling to recycle capital into higher-momentum setups.",
+      "confidence": 0.75,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.80015,
+      "take_profit": 0.82439,
+      "realized_pnl": 4.38
+    },
+    {
+      "id": "ffe024ffc2d2",
+      "ticker": "NZDUSD=X",
+      "type": "BUY",
+      "price": 0.588582,
+      "shares": 3700.0,
+      "date": "2026-08-10T23:03:30.563077+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top unowned forex candidate with score 9.7, 20d return of +2.12%, and excellent risk/reward consolidation near support.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.582695,
+      "take_profit": 0.600353,
+      "realized_pnl": null
+    },
     {
       "id": "3ba6058c96d0",
       "ticker": "APD",
@@ -1998,5 +2056,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 229.57
+  "realized_pnl": 233.95
 }
