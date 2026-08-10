@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on market-wide bullish trend breadth across financials, industrials, consumer staples, and major forex pairs by maintaining core winning consolidation positions and adding high-opportunity financial leaders.",
+  "thesis": "Maximize total portfolio equity by aggressively holding top-ranked trend leaders in technology, industrials, and financials, while liquidating redundant bank exposure to reallocate capital into high opportunity score forex momentum setups.",
   "preferred_sectors": [
+    "Technology",
     "Financials",
     "Industrials",
-    "Consumer Staples",
     "Forex"
   ],
   "styles": [
     "Trend Following",
-    "Breakout",
-    "Momentum"
+    "Momentum Breakout",
+    "High Probability Rotation"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-10T21:09:32.787816+00:00",
+  "risk_posture": "AGGRESSIVE",
+  "updated_at": "2026-08-10T21:56:37.773425+00:00",
   "model": "gemini-flash-latest"
 }

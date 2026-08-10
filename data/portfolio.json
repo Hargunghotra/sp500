@@ -1,5 +1,5 @@
 {
-  "balance": 15018.24,
+  "balance": 16997.9,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -110,19 +110,25 @@
       "stop_loss": 1.33733,
       "take_profit": 1.37786,
       "opened_at": "2026-08-10T20:21:44.217675+00:00"
-    },
-    "BAC": {
-      "symbol": "BAC",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 31.0,
-      "avg_price": 63.860001,
-      "stop_loss": 61.94,
-      "take_profit": 67.69,
-      "opened_at": "2026-08-10T21:09:33.407989+00:00"
     }
   },
   "trades": [
+    {
+      "id": "be49dbb9957c",
+      "ticker": "BAC",
+      "type": "SELL",
+      "price": 63.860001,
+      "shares": 31.0,
+      "date": "2026-08-10T21:56:38.432997+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Trimming redundant financial exposure (lowest opportunity score among held banks) to free a slot for higher-edge forex opportunity.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 61.94,
+      "take_profit": 67.69,
+      "realized_pnl": -0.0
+    },
     {
       "id": "9cc828126e15",
       "ticker": "BAC",
