@@ -1,5 +1,5 @@
 {
-  "balance": 16755.56,
+  "balance": 14751.92,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -110,9 +110,35 @@
       "stop_loss": 0.69876,
       "take_profit": 0.71993,
       "opened_at": "2026-08-10T18:31:31.000863+00:00"
+    },
+    "INVH": {
+      "symbol": "INVH",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 67.0,
+      "avg_price": 29.905001,
+      "stop_loss": 29.01,
+      "take_profit": 31.7,
+      "opened_at": "2026-08-10T19:32:24.241023+00:00"
     }
   },
   "trades": [
+    {
+      "id": "797dca1fe4ae",
+      "ticker": "INVH",
+      "type": "BUY",
+      "price": 29.905001,
+      "shares": 67.0,
+      "date": "2026-08-10T19:32:24.241049+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top unowned equity candidate with opportunity score 9.192, bullish sentiment, and tight consolidation pattern.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 29.01,
+      "take_profit": 31.7,
+      "realized_pnl": null
+    },
     {
       "id": "626c76d857f7",
       "ticker": "AME",

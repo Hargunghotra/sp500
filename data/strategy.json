@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize return by cutting lagging positions and rotating capital into high-scoring uptrend forex pairs and consolidate top-performing equity holdings.",
+  "thesis": "Maximize paper returns by maintaining core high-conviction momentum and breakout positions across equities and forex while expanding into top-scoring consolidating opportunities.",
   "preferred_sectors": [
+    "Healthcare",
     "Financials",
-    "Forex",
     "Industrials",
-    "Healthcare"
+    "Forex"
   ],
   "styles": [
     "Trend Following",
-    "Momentum",
-    "Swing Trading"
+    "Breakout Momentum",
+    "Core Quality"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-10T18:31:30.651077+00:00",
+  "risk_posture": "Aggressive Growth with Strict Risk Caps",
+  "updated_at": "2026-08-10T19:32:23.889651+00:00",
   "model": "gemini-flash-latest"
 }
