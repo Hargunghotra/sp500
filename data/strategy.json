@@ -1,18 +1,17 @@
 {
-  "thesis": "Aggressively cycle capital into highest opportunity-score consolidated equity and forex trend-followers while ruthlessly exiting non-performing positions.",
+  "thesis": "Capitalize on high opportunity scores and momentum across equities and forex while ruthlessly prunning lower-ranked positions and lagging assets to free capital for top-tier candidates.",
   "preferred_sectors": [
-    "Technology",
-    "Real Estate",
     "Financials",
-    "Materials",
-    "Forex"
+    "Technology",
+    "Industrials",
+    "Healthcare"
   ],
   "styles": [
-    "Trend Following",
-    "Breakout Momentum",
-    "Mean Reversion"
+    "Momentum",
+    "Trend-Following",
+    "Quality Growth"
   ],
-  "risk_posture": "Aggressive",
-  "updated_at": "2026-08-10T14:49:49.374234+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-10T15:48:05.909725+00:00",
   "model": "gemini-flash-latest"
 }

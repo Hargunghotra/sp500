@@ -1,5 +1,5 @@
 {
-  "balance": 15803.46,
+  "balance": 19220.56,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -91,26 +91,6 @@
       "take_profit": 67.78,
       "opened_at": "2026-08-10T12:30:27.842172+00:00"
     },
-    "FDX": {
-      "symbol": "FDX",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 5.0,
-      "avg_price": 320.179993,
-      "stop_loss": 310.57,
-      "take_profit": 339.39,
-      "opened_at": "2026-08-10T13:56:16.197421+00:00"
-    },
-    "INVH": {
-      "symbol": "INVH",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 60.0,
-      "avg_price": 29.92,
-      "stop_loss": 29.02,
-      "take_profit": 31.72,
-      "opened_at": "2026-08-10T14:49:51.781667+00:00"
-    },
     "GBPUSD=X": {
       "symbol": "GBPUSD=X",
       "asset_class": "forex",
@@ -123,6 +103,38 @@
     }
   },
   "trades": [
+    {
+      "id": "00295c3b7a57",
+      "ticker": "FDX",
+      "type": "SELL",
+      "price": 324.679993,
+      "shares": 5.0,
+      "date": "2026-08-10T15:48:09.592104+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Taking profit (+1.36%) on lower opportunity score position (6.569) to rotate cash into top unowned opportunity PNC.",
+      "confidence": 0.75,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 310.57,
+      "take_profit": 339.39,
+      "realized_pnl": 22.5
+    },
+    {
+      "id": "8e0a21e2d2dd",
+      "ticker": "INVH",
+      "type": "SELL",
+      "price": 29.895,
+      "shares": 60.0,
+      "date": "2026-08-10T15:48:06.659306+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Cutting laggard with negative 20-day return (-0.71%) and lower opportunity score (6.689) to release capital and open a position slot.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 29.02,
+      "take_profit": 31.72,
+      "realized_pnl": -1.5
+    },
     {
       "id": "272067f719eb",
       "ticker": "GBPUSD=X",
@@ -1736,5 +1748,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 142.69
+  "realized_pnl": 163.69
 }
