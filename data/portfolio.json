@@ -1,5 +1,5 @@
 {
-  "balance": 14923.07,
+  "balance": 16984.77,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -91,16 +91,6 @@
       "take_profit": 67.78,
       "opened_at": "2026-08-10T12:30:27.842172+00:00"
     },
-    "GBPUSD=X": {
-      "symbol": "GBPUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 1340.0,
-      "avg_price": 1.352997,
-      "stop_loss": 1.3395,
-      "take_profit": 1.3801,
-      "opened_at": "2026-08-10T14:49:53.860250+00:00"
-    },
     "PNC": {
       "symbol": "PNC",
       "asset_class": "equity",
@@ -111,18 +101,66 @@
       "take_profit": 266.64,
       "opened_at": "2026-08-10T16:41:42.556593+00:00"
     },
-    "INVH": {
-      "symbol": "INVH",
+    "AME": {
+      "symbol": "AME",
       "asset_class": "equity",
       "side": "LONG",
-      "quantity": 68.0,
-      "avg_price": 29.905001,
-      "stop_loss": 29.01,
-      "take_profit": 31.7,
-      "opened_at": "2026-08-10T16:41:44.590173+00:00"
+      "quantity": 7.0,
+      "avg_price": 253.539993,
+      "stop_loss": 245.93,
+      "take_profit": 268.75,
+      "opened_at": "2026-08-10T17:34:06.433626+00:00"
     }
   },
   "trades": [
+    {
+      "id": "0a95cb51b3c1",
+      "ticker": "INVH",
+      "type": "SELL",
+      "price": 29.795,
+      "shares": 68.0,
+      "date": "2026-08-10T17:34:07.866864+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Closing underperforming position with negative 20d return (-1.05%) and unrealized loss to free up ticker slot for high-momentum leaders.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 29.01,
+      "take_profit": 31.7,
+      "realized_pnl": -7.48
+    },
+    {
+      "id": "9331d62a469c",
+      "ticker": "AME",
+      "type": "BUY",
+      "price": 253.539993,
+      "shares": 7.0,
+      "date": "2026-08-10T17:34:06.433665+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Initiating long position in top momentum industrial leader (+9.24% 20d return) featuring a perfect 10.0 score.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 245.93,
+      "take_profit": 268.75,
+      "realized_pnl": null
+    },
+    {
+      "id": "e793ac078087",
+      "ticker": "GBPUSD=X",
+      "type": "SELL",
+      "price": 1.351059,
+      "shares": 1340.0,
+      "date": "2026-08-10T17:34:04.710879+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Exiting negative PnL forex trade to eliminate currency drag and reallocate cash into top-scoring equity momentum plays.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.3395,
+      "take_profit": 1.3801,
+      "realized_pnl": -2.6
+    },
     {
       "id": "7b680a0cfea3",
       "ticker": "INVH",
@@ -1800,5 +1838,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 163.69
+  "realized_pnl": 153.61
 }

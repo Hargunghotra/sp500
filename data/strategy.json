@@ -1,18 +1,16 @@
 {
-  "thesis": "Capitalize on broad bullish market breadth by maintaining top-performing consolidating equities and forex positions while aggressively deploying available cash into top-ranked consolidated momentum setups (PNC, INVH).",
+  "thesis": "Aggressively prune underperforming dead weight and low-momentum assets to channel capital into high-momentum 52-week high breakout leaders across industrials and financials.",
   "preferred_sectors": [
+    "Industrials",
     "Financials",
-    "Real Estate",
-    "Healthcare",
-    "Materials",
-    "Utilities"
+    "Healthcare"
   ],
   "styles": [
-    "Momentum",
+    "Momentum Breakout",
     "Trend Following",
-    "Breakout Swing"
+    "High Opportunity Score"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-10T16:41:42.111470+00:00",
+  "updated_at": "2026-08-10T17:34:04.348754+00:00",
   "model": "gemini-flash-latest"
 }

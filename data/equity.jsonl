@@ -110,3 +110,6 @@
 {"timestamp": "2026-08-10T15:48:10.252735+00:00", "equity": 50250.22, "cash": 19220.56, "positions_value": 31029.66, "unrealized_pnl": 88.46}
 {"timestamp": "2026-08-10T16:41:43.055880+00:00", "equity": 50251.86, "cash": 16956.61, "positions_value": 33295.25, "unrealized_pnl": 90.1}
 {"timestamp": "2026-08-10T16:41:45.274747+00:00", "equity": 50251.42, "cash": 14923.07, "positions_value": 35328.35, "unrealized_pnl": 89.66}
+{"timestamp": "2026-08-10T17:34:05.151753+00:00", "equity": 50220.55, "cash": 16733.49, "positions_value": 33487.06, "unrealized_pnl": 61.38}
+{"timestamp": "2026-08-10T17:34:06.764929+00:00", "equity": 50220.45, "cash": 14958.71, "positions_value": 35261.74, "unrealized_pnl": 61.28}
+{"timestamp": "2026-08-10T17:34:08.321612+00:00", "equity": 50221.2, "cash": 16984.77, "positions_value": 33236.43, "unrealized_pnl": 69.51}
