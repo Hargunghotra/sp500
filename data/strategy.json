@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize paper returns by maintaining core high-conviction momentum and breakout positions across equities and forex while expanding into top-scoring consolidating opportunities.",
+  "thesis": "Aggressively rotate capital out of stagnant positions into high-momentum sector leaders and strong trend FX setups. Maintain tight risk controls while maximizing upside exposure across financials, energy, and high-scoring equities.",
   "preferred_sectors": [
-    "Healthcare",
     "Financials",
-    "Industrials",
-    "Forex"
+    "Energy",
+    "Technology",
+    "Industrials"
   ],
   "styles": [
+    "Momentum Breakout",
     "Trend Following",
-    "Breakout Momentum",
-    "Core Quality"
+    "Quality Growth"
   ],
-  "risk_posture": "Aggressive Growth with Strict Risk Caps",
-  "updated_at": "2026-08-10T19:32:23.889651+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-10T20:21:41.397438+00:00",
   "model": "gemini-flash-latest"
 }
