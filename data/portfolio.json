@@ -1,5 +1,5 @@
 {
-  "balance": 15351.42,
+  "balance": 11999.77,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -100,9 +100,61 @@
       "stop_loss": 0.80015,
       "take_profit": 0.82439,
       "opened_at": "2026-08-10T10:36:16.680790+00:00"
+    },
+    "MTB": {
+      "symbol": "MTB",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 7.0,
+      "avg_price": 250.449997,
+      "stop_loss": 242.94,
+      "take_profit": 265.48,
+      "opened_at": "2026-08-10T12:30:25.674130+00:00"
+    },
+    "USB": {
+      "symbol": "USB",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 25.0,
+      "avg_price": 63.939999,
+      "stop_loss": 62.02,
+      "take_profit": 67.78,
+      "opened_at": "2026-08-10T12:30:27.842172+00:00"
     }
   },
   "trades": [
+    {
+      "id": "d0c70b9d2a8f",
+      "ticker": "USB",
+      "type": "BUY",
+      "price": 63.939999,
+      "shares": 25.0,
+      "date": "2026-08-10T12:30:27.842213+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score (9.025) regional bank stock trading near high, consolidating with bullish sentiment. (qty capped to 25.0 by 12% cash rule)",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 62.02,
+      "take_profit": 67.78,
+      "realized_pnl": null
+    },
+    {
+      "id": "774ec9f933f0",
+      "ticker": "MTB",
+      "type": "BUY",
+      "price": 250.449997,
+      "shares": 7.0,
+      "date": "2026-08-10T12:30:25.674158+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top unowned opportunity candidate (score 9.115) with 9.9 score, consolidating near buy point with strong banking earnings momentum.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 242.94,
+      "take_profit": 265.48,
+      "realized_pnl": null
+    },
     {
       "id": "165dea4a67d1",
       "ticker": "AMP",
