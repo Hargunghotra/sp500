@@ -1,5 +1,5 @@
 {
-  "balance": 16405.28,
+  "balance": 18428.32,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -110,19 +110,25 @@
       "stop_loss": 0.582695,
       "take_profit": 0.600353,
       "opened_at": "2026-08-10T23:03:30.563048+00:00"
-    },
-    "AME": {
-      "symbol": "AME",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 8.0,
-      "avg_price": 252.880005,
-      "stop_loss": 245.29,
-      "take_profit": 268.05,
-      "opened_at": "2026-08-10T23:03:35.552295+00:00"
     }
   },
   "trades": [
+    {
+      "id": "a0ed4613dc1e",
+      "ticker": "AME",
+      "type": "SELL",
+      "price": 252.880005,
+      "shares": 8.0,
+      "date": "2026-08-10T23:49:36.703931+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Pruning volatile lowest-score equity (7.175) to free ticker slot and rotate capital into higher edge setup.",
+      "confidence": 0.75,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 245.29,
+      "take_profit": 268.05,
+      "realized_pnl": -0.0
+    },
     {
       "id": "e6156a15278a",
       "ticker": "AME",

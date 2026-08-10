@@ -1,18 +1,17 @@
 {
-  "thesis": "Rotate capital out of stagnant forex legs into top-ranked momentum equities and strong consolidating currency pairs to maximize multi-asset total portfolio return.",
+  "thesis": "Aggressive capital rotation into high opportunity score assets, pruning volatile lower-score equities and maximizing exposure to consolidating breakout trends across equities and forex.",
   "preferred_sectors": [
-    "Technology",
+    "Healthcare",
     "Financials",
-    "Industrials",
-    "Energy",
+    "Utilities",
     "Forex"
   ],
   "styles": [
     "Momentum",
-    "Trend-Following",
-    "Breakout"
+    "Trend Following",
+    "Quality Growth"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-10T23:03:30.181947+00:00",
+  "risk_posture": "Aggressive",
+  "updated_at": "2026-08-10T23:49:36.352884+00:00",
   "model": "gemini-flash-latest"
 }
