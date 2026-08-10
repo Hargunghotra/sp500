@@ -1,5 +1,5 @@
 {
-  "balance": 19220.56,
+  "balance": 14923.07,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -100,9 +100,61 @@
       "stop_loss": 1.3395,
       "take_profit": 1.3801,
       "opened_at": "2026-08-10T14:49:53.860250+00:00"
+    },
+    "PNC": {
+      "symbol": "PNC",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 9.0,
+      "avg_price": 251.550003,
+      "stop_loss": 244.0,
+      "take_profit": 266.64,
+      "opened_at": "2026-08-10T16:41:42.556593+00:00"
+    },
+    "INVH": {
+      "symbol": "INVH",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 68.0,
+      "avg_price": 29.905001,
+      "stop_loss": 29.01,
+      "take_profit": 31.7,
+      "opened_at": "2026-08-10T16:41:44.590173+00:00"
     }
   },
   "trades": [
+    {
+      "id": "7b680a0cfea3",
+      "ticker": "INVH",
+      "type": "BUY",
+      "price": 29.905001,
+      "shares": 68.0,
+      "date": "2026-08-10T16:41:44.590207+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score 9.192 in real estate sector, score 9.8, UP trend consolidating cleanly near support. (qty capped to 68.0 by 12% cash rule)",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 29.01,
+      "take_profit": 31.7,
+      "realized_pnl": null
+    },
+    {
+      "id": "99d0fbe1fb4f",
+      "ticker": "PNC",
+      "type": "BUY",
+      "price": 251.550003,
+      "shares": 9.0,
+      "date": "2026-08-10T16:41:42.556648+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Highest non-owned equity opportunity score (9.308), score 9.9, UP trend consolidating near breakout level with bank sector tailwinds. (qty capped to 9.0 by 12% cash rule)",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 244.0,
+      "take_profit": 266.64,
+      "realized_pnl": null
+    },
     {
       "id": "00295c3b7a57",
       "ticker": "FDX",

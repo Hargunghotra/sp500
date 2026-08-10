@@ -1,17 +1,18 @@
 {
-  "thesis": "Capitalize on high opportunity scores and momentum across equities and forex while ruthlessly prunning lower-ranked positions and lagging assets to free capital for top-tier candidates.",
+  "thesis": "Capitalize on broad bullish market breadth by maintaining top-performing consolidating equities and forex positions while aggressively deploying available cash into top-ranked consolidated momentum setups (PNC, INVH).",
   "preferred_sectors": [
     "Financials",
-    "Technology",
-    "Industrials",
-    "Healthcare"
+    "Real Estate",
+    "Healthcare",
+    "Materials",
+    "Utilities"
   ],
   "styles": [
     "Momentum",
-    "Trend-Following",
-    "Quality Growth"
+    "Trend Following",
+    "Breakout Swing"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-10T15:48:05.909725+00:00",
+  "updated_at": "2026-08-10T16:41:42.111470+00:00",
   "model": "gemini-flash-latest"
 }
