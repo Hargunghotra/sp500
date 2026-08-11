@@ -1,17 +1,15 @@
 {
-  "thesis": "Aggressively rotate capital away from lagging FX pairs and dead weight into high-momentum financial and real estate equities exhibiting strong opportunity scores, high sentiment, and upside consolidation setups.",
+  "thesis": "Capitalize on high breadth in momentum equities and bullish forex pairs by holding profitable consolidating positions and deploying cash into top-ranked candidates.",
   "preferred_sectors": [
     "Financials",
-    "Real Estate",
     "Technology",
-    "Consumer Staples"
+    "Forex"
   ],
   "styles": [
-    "Momentum",
-    "Breakout Growth",
-    "Trend Following"
+    "Momentum Trend-Following",
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Aggressive",
-  "updated_at": "2026-08-11T13:38:56.769028+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-11T14:42:28.855343+00:00",
   "model": "gemini-flash-latest"
 }
