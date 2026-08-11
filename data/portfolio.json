@@ -1,5 +1,5 @@
 {
-  "balance": 24468.44,
+  "balance": 21543.14,
   "positions": {
     "EA": {
       "symbol": "EA",
@@ -110,9 +110,35 @@
       "stop_loss": 103.46,
       "take_profit": 113.06,
       "opened_at": "2026-08-11T20:24:46.757318+00:00"
+    },
+    "AES": {
+      "symbol": "AES",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 199.0,
+      "avg_price": 14.7,
+      "stop_loss": 14.26,
+      "take_profit": 15.58,
+      "opened_at": "2026-08-11T21:11:32.820107+00:00"
     }
   },
   "trades": [
+    {
+      "id": "5d90ae5f5236",
+      "ticker": "AES",
+      "type": "BUY",
+      "price": 14.7,
+      "shares": 199.0,
+      "date": "2026-08-11T21:11:32.820139+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Deploying available slot into top-ranked unowned equity candidate with strong technical setup and 9.09 opportunity score.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 14.26,
+      "take_profit": 15.58,
+      "realized_pnl": null
+    },
     {
       "id": "e6e88a3c8179",
       "ticker": "SBUX",

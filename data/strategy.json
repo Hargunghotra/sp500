@@ -1,16 +1,17 @@
 {
-  "thesis": "Aggressively prune negative and stagnant positions while cycling liquidity into top-tier opportunity scores in healthcare, financials, and consumer staples exhibiting solid consolidation near breakout levels.",
+  "thesis": "Capitalize on high-scoring equity momentum and selective forex strength while utilizing remaining cash capacity to initiate disciplined long positions in consolidating setups.",
   "preferred_sectors": [
-    "Healthcare",
     "Financials",
-    "Consumer Cyclical"
+    "Healthcare",
+    "Utilities",
+    "Consumer Discretionary"
   ],
   "styles": [
     "Momentum",
-    "Trend-Following",
-    "Breakout Consolidation"
+    "Trend Following",
+    "Quality Growth"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-11T20:24:41.738460+00:00",
+  "updated_at": "2026-08-11T21:11:32.539475+00:00",
   "model": "gemini-flash-latest"
 }
