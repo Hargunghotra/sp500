@@ -1,16 +1,17 @@
 {
-  "thesis": "Aggressively prune stagnant underperforming assets to free up capital and portfolio slots, rotating directly into top-ranked financial and consumer staple momentum plays with high opportunity scores and clean consolidation patterns.",
+  "thesis": "Aggressively prune stagnant forex holdings with negative momentum to reallocate cash into top-ranked equity momentum and consolidations with high opportunity scores.",
   "preferred_sectors": [
     "Financials",
-    "Consumer Staples",
-    "Healthcare"
+    "Real Estate",
+    "Technology",
+    "Consumer Cyclical"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Consolidation Breakout"
+    "Breakout"
   ],
-  "risk_posture": "AGGRESSIVE",
-  "updated_at": "2026-08-11T16:32:11.954360+00:00",
+  "risk_posture": "Aggressive",
+  "updated_at": "2026-08-11T17:37:41.543168+00:00",
   "model": "gemini-flash-latest"
 }
