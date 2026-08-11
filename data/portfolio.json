@@ -1,5 +1,5 @@
 {
-  "balance": 18428.32,
+  "balance": 16656.89,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -101,18 +101,76 @@
       "take_profit": 0.71983,
       "opened_at": "2026-08-10T22:24:24.428865+00:00"
     },
-    "NZDUSD=X": {
-      "symbol": "NZDUSD=X",
-      "asset_class": "forex",
+    "AME": {
+      "symbol": "AME",
+      "asset_class": "equity",
       "side": "LONG",
-      "quantity": 3700.0,
-      "avg_price": 0.588582,
-      "stop_loss": 0.582695,
-      "take_profit": 0.600353,
-      "opened_at": "2026-08-10T23:03:30.563048+00:00"
+      "quantity": 8.0,
+      "avg_price": 252.880005,
+      "stop_loss": 245.29,
+      "take_profit": 268.05,
+      "opened_at": "2026-08-11T08:42:41.645571+00:00"
+    },
+    "MPC": {
+      "symbol": "MPC",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 6.0,
+      "avg_price": 320.320007,
+      "stop_loss": 310.71,
+      "take_profit": 339.54,
+      "opened_at": "2026-08-11T08:42:43.842996+00:00"
     }
   },
   "trades": [
+    {
+      "id": "afd5dad8cdff",
+      "ticker": "MPC",
+      "type": "BUY",
+      "price": 320.320007,
+      "shares": 6.0,
+      "date": "2026-08-11T08:42:43.843028+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Refining giant featuring perfect 10.0 score, Q2 earnings beat, and +7.90% 20-day price momentum.",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 310.71,
+      "take_profit": 339.54,
+      "realized_pnl": null
+    },
+    {
+      "id": "8e327598fa28",
+      "ticker": "AME",
+      "type": "BUY",
+      "price": 252.880005,
+      "shares": 8.0,
+      "date": "2026-08-11T08:42:41.645608+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Top industrial momentum score (9.9) with +8.95% 20-day return breaking out into new highs.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 245.29,
+      "take_profit": 268.05,
+      "realized_pnl": null
+    },
+    {
+      "id": "53f492a96245",
+      "ticker": "NZDUSD=X",
+      "type": "SELL",
+      "price": 0.587441,
+      "shares": 3700.0,
+      "date": "2026-08-11T08:42:39.132219+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Pruning weakest forex position (-0.19% drag) to eliminate dead weight and free capital for top-ranked equity momentum breakouts.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.582695,
+      "take_profit": 0.600353,
+      "realized_pnl": -4.22
+    },
     {
       "id": "a0ed4613dc1e",
       "ticker": "AME",
@@ -2062,5 +2120,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 233.95
+  "realized_pnl": 229.73
 }

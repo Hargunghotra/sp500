@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressive capital rotation into high opportunity score assets, pruning volatile lower-score equities and maximizing exposure to consolidating breakout trends across equities and forex.",
+  "thesis": "Maximize capital growth by aggressively holding high-opportunity momentum winners across financials, industrials, and energy while liquidating underperforming forex drag and reallocating cash into high-momentum equity breakouts.",
   "preferred_sectors": [
-    "Healthcare",
     "Financials",
-    "Utilities",
-    "Forex"
+    "Industrials",
+    "Energy",
+    "Consumer Discretionary"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Quality Growth"
+    "Breakout"
   ],
   "risk_posture": "Aggressive",
-  "updated_at": "2026-08-10T23:49:36.352884+00:00",
+  "updated_at": "2026-08-11T08:42:38.787185+00:00",
   "model": "gemini-flash-latest"
 }
