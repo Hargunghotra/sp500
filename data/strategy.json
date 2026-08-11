@@ -1,17 +1,18 @@
 {
-  "thesis": "Systematically harvest yield and trend continuation by trimming volatile, lower-opportunity holdings and reallocating capital into top-ranked consolidating bullish trends across equities and forex.",
+  "thesis": "Aggressively capitalize on high-opportunity trend consolidations across equities and forex while maintaining tight risk controls and full portfolio capacity.",
   "preferred_sectors": [
     "Technology",
     "Financials",
+    "Utilities",
     "Consumer Staples",
     "Forex"
   ],
   "styles": [
-    "Momentum",
     "Trend Following",
+    "Momentum",
     "Consolidation Breakout"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-11T11:27:43.727796+00:00",
+  "updated_at": "2026-08-11T12:06:06.118371+00:00",
   "model": "gemini-flash-latest"
 }
