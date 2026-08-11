@@ -1,5 +1,5 @@
 {
-  "balance": 15829.33,
+  "balance": 19742.31,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -71,16 +71,6 @@
       "take_profit": 266.64,
       "opened_at": "2026-08-10T16:41:42.556593+00:00"
     },
-    "GBPUSD=X": {
-      "symbol": "GBPUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 1300.0,
-      "avg_price": 1.35084,
-      "stop_loss": 1.33733,
-      "take_profit": 1.37786,
-      "opened_at": "2026-08-10T20:21:44.217675+00:00"
-    },
     "AUDUSD=X": {
       "symbol": "AUDUSD=X",
       "asset_class": "forex",
@@ -110,19 +100,41 @@
       "stop_loss": 1.142527,
       "take_profit": 1.177149,
       "opened_at": "2026-08-11T12:06:06.569871+00:00"
-    },
-    "USDCHF=X": {
-      "symbol": "USDCHF=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 2662.635903,
-      "avg_price": 0.81068,
-      "stop_loss": 0.802573,
-      "take_profit": 0.826894,
-      "opened_at": "2026-08-11T12:06:15.090864+00:00"
     }
   },
   "trades": [
+    {
+      "id": "23d685fa4fd2",
+      "ticker": "USDCHF=X",
+      "type": "SELL",
+      "price": 0.81037,
+      "shares": 2662.635903,
+      "date": "2026-08-11T13:38:58.829897+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Negative 20-day return (-0.54%) and unrealized loss; closing to rotate capital into top-ranked equity breakout candidates.",
+      "confidence": 0.72,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.802573,
+      "take_profit": 0.826894,
+      "realized_pnl": -0.83
+    },
+    {
+      "id": "fe5d4cf1aac7",
+      "ticker": "GBPUSD=X",
+      "type": "SELL",
+      "price": 1.350202,
+      "shares": 1300.0,
+      "date": "2026-08-11T13:38:57.229041+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Negative unrealized performance and lower opportunity score relative to equity candidates; liquidating to free portfolio slot.",
+      "confidence": 0.7,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.33733,
+      "take_profit": 1.37786,
+      "realized_pnl": -0.83
+    },
     {
       "id": "2440764b5d0e",
       "ticker": "USDCHF=X",
@@ -2216,5 +2228,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 229.25
+  "realized_pnl": 227.59
 }
