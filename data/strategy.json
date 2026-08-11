@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize capital growth by aggressively holding high-opportunity momentum winners across financials, industrials, and energy while liquidating underperforming forex drag and reallocating cash into high-momentum equity breakouts.",
+  "thesis": "Aggressively maintain capital in high opportunity score equities and forex momentum trends while pruning lower edge underperforming positions to maximize risk-adjusted portfolio growth.",
   "preferred_sectors": [
     "Financials",
-    "Industrials",
+    "Healthcare",
     "Energy",
-    "Consumer Discretionary"
+    "Forex"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
     "Breakout"
   ],
-  "risk_posture": "Aggressive",
-  "updated_at": "2026-08-11T08:42:38.787185+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-11T09:40:59.132302+00:00",
   "model": "gemini-flash-latest"
 }
