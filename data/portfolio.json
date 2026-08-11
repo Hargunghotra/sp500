@@ -1,5 +1,5 @@
 {
-  "balance": 23596.88,
+  "balance": 26250.42,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -71,16 +71,6 @@
       "take_profit": 77.4,
       "opened_at": "2026-08-11T16:32:12.380902+00:00"
     },
-    "INVH": {
-      "symbol": "INVH",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 89.0,
-      "avg_price": 29.91,
-      "stop_loss": 29.01,
-      "take_profit": 31.7,
-      "opened_at": "2026-08-11T17:37:41.921825+00:00"
-    },
     "TFC": {
       "symbol": "TFC",
       "asset_class": "equity",
@@ -123,6 +113,22 @@
     }
   },
   "trades": [
+    {
+      "id": "b7a134f4e8e1",
+      "ticker": "INVH",
+      "type": "SELL",
+      "price": 29.815001,
+      "shares": 89.0,
+      "date": "2026-08-11T19:44:19.105885+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Cutting underperforming real estate position with negative 20-day return and low opportunity score to free capital and open a position slot.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 29.01,
+      "take_profit": 31.7,
+      "realized_pnl": -8.45
+    },
     {
       "id": "4f99d42c5f89",
       "ticker": "GBPUSD=X",
@@ -2536,5 +2542,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 171.54
+  "realized_pnl": 163.09
 }
