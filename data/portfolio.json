@@ -1,5 +1,5 @@
 {
-  "balance": 19981.19,
+  "balance": 22403.14,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -91,28 +91,66 @@
       "take_profit": 1.3775,
       "opened_at": "2026-08-11T14:42:29.173040+00:00"
     },
-    "SBUX": {
-      "symbol": "SBUX",
+    "CFG": {
+      "symbol": "CFG",
       "asset_class": "equity",
       "side": "LONG",
-      "quantity": 23.0,
-      "avg_price": 106.559998,
-      "stop_loss": 103.36,
-      "take_profit": 112.95,
-      "opened_at": "2026-08-11T15:36:30.510775+00:00"
-    },
-    "USDCHF=X": {
-      "symbol": "USDCHF=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 2849.0,
-      "avg_price": 0.81153,
-      "stop_loss": 0.8034,
-      "take_profit": 0.8277,
-      "opened_at": "2026-08-11T15:36:34.837597+00:00"
+      "quantity": 32.0,
+      "avg_price": 73.014999,
+      "stop_loss": 70.82,
+      "take_profit": 77.4,
+      "opened_at": "2026-08-11T16:32:12.380902+00:00"
     }
   },
   "trades": [
+    {
+      "id": "f1cc7e76bec8",
+      "ticker": "USDCHF=X",
+      "type": "SELL",
+      "price": 0.811,
+      "shares": 2849.0,
+      "date": "2026-08-11T16:32:15.535070+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Negative 20-day return (-0.46%) and lowest opportunity score among open holdings. Exiting to free position slot and reallocate capital into higher-edge equity momentum.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.8034,
+      "take_profit": 0.8277,
+      "realized_pnl": -1.51
+    },
+    {
+      "id": "e454b9028692",
+      "ticker": "SBUX",
+      "type": "SELL",
+      "price": 106.43,
+      "shares": 23.0,
+      "date": "2026-08-11T16:32:14.043972+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Lagging performance with negative unrealized PnL and flat 20-day return (+0.24%). Selling to rotate capital into higher-scoring candidates.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 103.36,
+      "take_profit": 112.95,
+      "realized_pnl": -2.99
+    },
+    {
+      "id": "a98f470c73d7",
+      "ticker": "CFG",
+      "type": "BUY",
+      "price": 73.014999,
+      "shares": 32.0,
+      "date": "2026-08-11T16:32:12.380933+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top non-owned candidate with 9.231 opportunity score, 9.9 technical score, solid 4.51% 20-day return, and bullish consolidation pattern in regional banking.",
+      "confidence": 0.87,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 70.82,
+      "take_profit": 77.4,
+      "realized_pnl": null
+    },
     {
       "id": "76b1b27d210e",
       "ticker": "PYPL",
@@ -2350,5 +2388,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 184.12
+  "realized_pnl": 179.62
 }
