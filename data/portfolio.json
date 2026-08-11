@@ -1,16 +1,6 @@
 {
-  "balance": 26250.42,
+  "balance": 24468.44,
   "positions": {
-    "AES": {
-      "symbol": "AES",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 136.0,
-      "avg_price": 14.71,
-      "stop_loss": 14.27,
-      "take_profit": 15.59,
-      "opened_at": "2026-08-07T13:35:38.682779+00:00"
-    },
     "EA": {
       "symbol": "EA",
       "asset_class": "equity",
@@ -91,16 +81,6 @@
       "take_profit": 62.43,
       "opened_at": "2026-08-11T17:37:47.853593+00:00"
     },
-    "CL": {
-      "symbol": "CL",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 25.0,
-      "avg_price": 92.57,
-      "stop_loss": 89.79,
-      "take_profit": 98.12,
-      "opened_at": "2026-08-11T18:33:18.073359+00:00"
-    },
     "GBPUSD=X": {
       "symbol": "GBPUSD=X",
       "asset_class": "forex",
@@ -110,9 +90,93 @@
       "stop_loss": 1.33648,
       "take_profit": 1.37698,
       "opened_at": "2026-08-11T18:33:20.234634+00:00"
+    },
+    "TECH": {
+      "symbol": "TECH",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 43.0,
+      "avg_price": 72.150002,
+      "stop_loss": 69.99,
+      "take_profit": 76.48,
+      "opened_at": "2026-08-11T20:24:42.091259+00:00"
+    },
+    "SBUX": {
+      "symbol": "SBUX",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 28.0,
+      "avg_price": 106.660004,
+      "stop_loss": 103.46,
+      "take_profit": 113.06,
+      "opened_at": "2026-08-11T20:24:46.757318+00:00"
     }
   },
   "trades": [
+    {
+      "id": "e6e88a3c8179",
+      "ticker": "SBUX",
+      "type": "BUY",
+      "price": 106.660004,
+      "shares": 28.0,
+      "date": "2026-08-11T20:24:46.757350+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong candidate score of 9.8 and high opportunity score (8.806); entering consumer discretionary consolidation pattern.",
+      "confidence": 0.81,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 103.46,
+      "take_profit": 113.06,
+      "realized_pnl": null
+    },
+    {
+      "id": "a32b2f7bfd9b",
+      "ticker": "CL",
+      "type": "SELL",
+      "price": 92.309998,
+      "shares": 25.0,
+      "date": "2026-08-11T20:24:44.932841+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Trimming losing equity position facing commodity news friction to optimize capital efficiency.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 89.79,
+      "take_profit": 98.12,
+      "realized_pnl": -6.5
+    },
+    {
+      "id": "4175e22aae7a",
+      "ticker": "AES",
+      "type": "SELL",
+      "price": 14.7,
+      "shares": 136.0,
+      "date": "2026-08-11T20:24:43.677826+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Selling lower-performing asset with negative unrealized PnL to free up capital for highest-ranked opportunities.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 14.27,
+      "take_profit": 15.59,
+      "realized_pnl": -1.36
+    },
+    {
+      "id": "82702cb3f615",
+      "ticker": "TECH",
+      "type": "BUY",
+      "price": 72.150002,
+      "shares": 43.0,
+      "date": "2026-08-11T20:24:42.091286+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Highest opportunity score candidate (9.429) with bullish sentiment, 10.0 score, and tight consolidation near breakout point.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 69.99,
+      "take_profit": 76.48,
+      "realized_pnl": null
+    },
     {
       "id": "b7a134f4e8e1",
       "ticker": "INVH",
@@ -2542,5 +2606,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 163.09
+  "realized_pnl": 155.23
 }
