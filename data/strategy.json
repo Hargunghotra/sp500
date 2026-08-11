@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on pristine market breadth (100% UP trend) by maintaining maximum exposure to top-ranked opportunity score equities and trend-aligned forex pairs.",
+  "thesis": "Maximize portfolio risk-adjusted return by active capital rotation out of flat/lower-rated holdings into top-tier momentum and quality setups across Financials, Healthcare, Consumer Staples, and Forex.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
-    "Consumer Discretionary",
-    "Utilities"
+    "Consumer Staples",
+    "Forex"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Consolidation Breakout"
+    "Trend-Following",
+    "Quality-Value"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-11T22:02:35.982588+00:00",
+  "updated_at": "2026-08-11T23:00:15.019595+00:00",
   "model": "gemini-flash-latest"
 }
