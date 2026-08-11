@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on high-scoring equity momentum and selective forex strength while utilizing remaining cash capacity to initiate disciplined long positions in consolidating setups.",
+  "thesis": "Capitalize on pristine market breadth (100% UP trend) by maintaining maximum exposure to top-ranked opportunity score equities and trend-aligned forex pairs.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
-    "Utilities",
-    "Consumer Discretionary"
+    "Consumer Discretionary",
+    "Utilities"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Quality Growth"
+    "Consolidation Breakout"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-11T21:11:32.539475+00:00",
+  "updated_at": "2026-08-11T22:02:35.982588+00:00",
   "model": "gemini-flash-latest"
 }
