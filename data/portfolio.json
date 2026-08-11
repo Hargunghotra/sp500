@@ -1,5 +1,5 @@
 {
-  "balance": 18736.07,
+  "balance": 16489.54,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -110,9 +110,35 @@
       "stop_loss": 310.71,
       "take_profit": 339.54,
       "opened_at": "2026-08-11T08:42:43.842996+00:00"
+    },
+    "NZDUSD=X": {
+      "symbol": "NZDUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 3820.0,
+      "avg_price": 0.588097,
+      "stop_loss": 0.582216,
+      "take_profit": 0.599859,
+      "opened_at": "2026-08-11T10:32:08.630691+00:00"
     }
   },
   "trades": [
+    {
+      "id": "834238fedcae",
+      "ticker": "NZDUSD=X",
+      "type": "BUY",
+      "price": 0.588097,
+      "shares": 3820.0,
+      "date": "2026-08-11T10:32:08.630723+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score FX consolidation setup in UP trend. Trade size kept strictly below 12 percent cash limit.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.582216,
+      "take_profit": 0.599859,
+      "realized_pnl": null
+    },
     {
       "id": "cd785b41b4b1",
       "ticker": "EURUSD=X",
