@@ -1,5 +1,5 @@
 {
-  "balance": 15368.81,
+  "balance": 19981.19,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -10,16 +10,6 @@
       "stop_loss": 70.12,
       "take_profit": 76.63,
       "opened_at": "2026-08-05T21:06:49.812881+00:00"
-    },
-    "CL": {
-      "symbol": "CL",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 55.0,
-      "avg_price": 92.629999,
-      "stop_loss": 90.47,
-      "take_profit": 98.87,
-      "opened_at": "2026-08-05T21:06:49.812915+00:00"
     },
     "AES": {
       "symbol": "AES",
@@ -81,16 +71,6 @@
       "take_profit": 0.71983,
       "opened_at": "2026-08-10T22:24:24.428865+00:00"
     },
-    "NZDUSD=X": {
-      "symbol": "NZDUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 3820.0,
-      "avg_price": 0.588097,
-      "stop_loss": 0.582216,
-      "take_profit": 0.599859,
-      "opened_at": "2026-08-11T10:32:08.630691+00:00"
-    },
     "EURUSD=X": {
       "symbol": "EURUSD=X",
       "asset_class": "forex",
@@ -111,18 +91,108 @@
       "take_profit": 1.3775,
       "opened_at": "2026-08-11T14:42:29.173040+00:00"
     },
-    "PYPL": {
-      "symbol": "PYPL",
+    "SBUX": {
+      "symbol": "SBUX",
       "asset_class": "equity",
       "side": "LONG",
-      "quantity": 35.0,
-      "avg_price": 59.360001,
-      "stop_loss": 57.58,
-      "take_profit": 62.92,
-      "opened_at": "2026-08-11T14:42:30.704896+00:00"
+      "quantity": 23.0,
+      "avg_price": 106.559998,
+      "stop_loss": 103.36,
+      "take_profit": 112.95,
+      "opened_at": "2026-08-11T15:36:30.510775+00:00"
+    },
+    "USDCHF=X": {
+      "symbol": "USDCHF=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 2849.0,
+      "avg_price": 0.81153,
+      "stop_loss": 0.8034,
+      "take_profit": 0.8277,
+      "opened_at": "2026-08-11T15:36:34.837597+00:00"
     }
   },
   "trades": [
+    {
+      "id": "76b1b27d210e",
+      "ticker": "PYPL",
+      "type": "SELL",
+      "price": 58.9105,
+      "shares": 35.0,
+      "date": "2026-08-11T15:36:37.061060+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Underperforming holding with negative unrealized PnL and high volatility pattern. Liquidating to free up capital and ticker capacity.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 57.58,
+      "take_profit": 62.92,
+      "realized_pnl": -15.73
+    },
+    {
+      "id": "8b7e085145f6",
+      "ticker": "USDCHF=X",
+      "type": "BUY",
+      "price": 0.81153,
+      "shares": 2849.0,
+      "date": "2026-08-11T15:36:34.837631+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top opportunity score forex candidate (8.441) with high baseline score of 9.9 in consolidation phase.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.8034,
+      "take_profit": 0.8277,
+      "realized_pnl": null
+    },
+    {
+      "id": "08a93c77e704",
+      "ticker": "NZDUSD=X",
+      "type": "SELL",
+      "price": 0.588028,
+      "shares": 3820.0,
+      "date": "2026-08-11T15:36:32.667203+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Flat performance and lower momentum relative to newly qualified forex candidate USDCHF=X.",
+      "confidence": 0.75,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.582216,
+      "take_profit": 0.599859,
+      "realized_pnl": -0.26
+    },
+    {
+      "id": "0ecc2bd6576b",
+      "ticker": "SBUX",
+      "type": "BUY",
+      "price": 106.559998,
+      "shares": 23.0,
+      "date": "2026-08-11T15:36:30.510811+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High score of 8.797, consolidation setup above 50-day moving average with high upside potential. (qty capped to 23.0 by 12% cash rule)",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 103.36,
+      "take_profit": 112.95,
+      "realized_pnl": null
+    },
+    {
+      "id": "0b27c22a63b6",
+      "ticker": "CL",
+      "type": "SELL",
+      "price": 92.130402,
+      "shares": 55.0,
+      "date": "2026-08-11T15:36:27.934627+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Showing minor drag with negative PnL and lower relative opportunity score compared to fresh banking opportunities.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 90.47,
+      "take_profit": 98.87,
+      "realized_pnl": -27.48
+    },
     {
       "id": "0e536005dadc",
       "ticker": "PYPL",
@@ -2280,5 +2350,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 227.59
+  "realized_pnl": 184.12
 }
