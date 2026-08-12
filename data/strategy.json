@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively cut underperforming holdings and rotate capital into top-ranked technical momentum leaders showing strong bullish sentiment and clean consolidation patterns.",
+  "thesis": "Capitalize on high-opportunity multi-asset trend setups across equities and forex while maintaining disciplined stop losses and taking advantage of remaining cash reserves.",
   "preferred_sectors": [
-    "Financial Services",
+    "Financials",
     "Healthcare",
-    "Industrials",
-    "Technology"
+    "Technology",
+    "Forex"
   ],
   "styles": [
     "Momentum",
     "Trend-Following",
     "Breakout"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-12T09:56:20.195025+00:00",
+  "risk_posture": "Aggressive",
+  "updated_at": "2026-08-12T10:49:21.277609+00:00",
   "model": "gemini-flash-latest"
 }
