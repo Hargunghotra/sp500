@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on 100% bullish market breadth by holding profitable consolidating equity and forex positions while aggressively allocating available cash into top-ranked momentum candidates like PRU.",
+  "thesis": "Aggressively rotate capital away from lower-scoring or bearish-sentiment positions into high-opportunity consolidating uptrends across equities and forex.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
-    "Consumer Discretionary",
-    "Utilities"
+    "Consumer Cyclical",
+    "Forex"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Quality Growth"
+    "Breakout Swing",
+    "Trend Following"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-12T14:53:02.066488+00:00",
+  "updated_at": "2026-08-12T15:49:21.265470+00:00",
   "model": "gemini-flash-latest"
 }
