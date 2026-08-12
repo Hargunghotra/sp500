@@ -1,17 +1,18 @@
 {
-  "thesis": "Capitalize on high-scoring equity and forex momentum by locking in gains on lower-relative-opportunity volatile holdings and rotating into tight consolidation breakouts with high opportunity scores.",
+  "thesis": "Maximize return by holding strong multi-asset momentum winners across regional banking, healthcare, consumer staples, and forex while deploying remaining cash reserve into top-ranked consolidation breakouts like AES.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
     "Utilities",
-    "Consumer Staples"
+    "Consumer Staples",
+    "Forex"
   ],
   "styles": [
     "Trend Following",
-    "Consolidation Breakout",
-    "Relative Strength"
+    "Momentum",
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Aggressive Growth within strict cash and ticker limits",
-  "updated_at": "2026-08-11T23:37:41.517840+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-12T08:58:28.422396+00:00",
   "model": "gemini-flash-latest"
 }
