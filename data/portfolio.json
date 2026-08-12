@@ -1,5 +1,5 @@
 {
-  "balance": 19445.76,
+  "balance": 22098.1,
   "positions": {
     "EA": {
       "symbol": "EA",
@@ -110,19 +110,25 @@
       "stop_loss": 119.06,
       "take_profit": 130.1,
       "opened_at": "2026-08-12T20:30:06.703562+00:00"
-    },
-    "GBPUSD=X": {
-      "symbol": "GBPUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 1965.409177,
-      "avg_price": 1.349182,
-      "stop_loss": 1.3357,
-      "take_profit": 1.3762,
-      "opened_at": "2026-08-12T20:30:09.077991+00:00"
     }
   },
   "trades": [
+    {
+      "id": "b28b1980b3c3",
+      "ticker": "GBPUSD=X",
+      "type": "SELL",
+      "price": 1.349509,
+      "shares": 1965.409177,
+      "date": "2026-08-12T21:14:01.494097+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Liquidating flat FX position to free open position slot and reallocate into higher opportunity FX pair AUDUSD=X.",
+      "confidence": 0.75,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.3357,
+      "take_profit": 1.3762,
+      "realized_pnl": 0.64
+    },
     {
       "id": "4e5dfbd6d388",
       "ticker": "GBPUSD=X",
@@ -3016,5 +3022,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 148.04
+  "realized_pnl": 148.68
 }

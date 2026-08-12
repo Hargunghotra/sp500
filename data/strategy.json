@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on high-conviction bullish momentum across financial, consumer, and FX assets while deploying fresh cash into top-ranked breakout opportunities.",
+  "thesis": "Capitalize on high-opportunity consolidation breakouts across financial, healthcare, and consumer stocks while conducting tactical rotations in FX to optimize expected risk-adjusted return.",
   "preferred_sectors": [
-    "Financial Services",
-    "Consumer Cyclical",
+    "Financials",
     "Healthcare",
-    "Forex"
+    "Consumer Cyclical",
+    "Utilities"
   ],
   "styles": [
     "Momentum",
-    "Breakout",
-    "Trend-Following"
+    "Trend Following",
+    "Quality Value"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-12T20:30:06.416667+00:00",
+  "updated_at": "2026-08-12T21:14:01.194731+00:00",
   "model": "gemini-flash-latest"
 }
