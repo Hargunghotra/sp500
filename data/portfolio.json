@@ -1,5 +1,5 @@
 {
-  "balance": 22611.94,
+  "balance": 22433.68,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -101,18 +101,50 @@
       "take_profit": 0.72044,
       "opened_at": "2026-08-12T22:02:51.504560+00:00"
     },
-    "ROST": {
-      "symbol": "ROST",
+    "CFG": {
+      "symbol": "CFG",
       "asset_class": "equity",
       "side": "LONG",
-      "quantity": 10.0,
-      "avg_price": 248.25,
-      "stop_loss": 240.8,
-      "take_profit": 263.15,
-      "opened_at": "2026-08-12T22:02:53.498580+00:00"
+      "quantity": 36.0,
+      "avg_price": 73.910004,
+      "stop_loss": 71.69,
+      "take_profit": 78.34,
+      "opened_at": "2026-08-12T23:35:33.009885+00:00"
     }
   },
   "trades": [
+    {
+      "id": "f03c828cc94c",
+      "ticker": "ROST",
+      "type": "SELL",
+      "price": 248.25,
+      "shares": 10.0,
+      "date": "2026-08-12T23:35:35.911597+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Pruning flat position with lower opportunity score (6.052) and wide support gap to deploy into higher efficiency trades.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 240.8,
+      "take_profit": 263.15,
+      "realized_pnl": 0.0
+    },
+    {
+      "id": "ce46172a4766",
+      "ticker": "CFG",
+      "type": "BUY",
+      "price": 73.910004,
+      "shares": 36.0,
+      "date": "2026-08-12T23:35:33.009919+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top unowned opportunity score (9.26) with perfect score 10.0, tight consolidation right on resistance ready to break out.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 71.69,
+      "take_profit": 78.34,
+      "realized_pnl": null
+    },
     {
       "id": "9165952b44ec",
       "ticker": "CFG",

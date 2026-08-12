@@ -1,17 +1,17 @@
 {
-  "thesis": "Rotate capital out of lower-opportunity holdings into top-ranked breakout momentum setups while preserving winning positions across Financials, Healthcare, and Consumer Discretionary.",
+  "thesis": "Capitalize on strong market breadth by reallocating capital from flat, lower-opportunity positions into top-ranked consolidated uptrends across regional banking and communication services.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
-    "Technology",
-    "Consumer Discretionary"
+    "Consumer Discretionary",
+    "Communication Services"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Quality Growth"
+    "Breakout Growth",
+    "Trend Following"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-12T22:58:52.993817+00:00",
+  "risk_posture": "AGGRESSIVE",
+  "updated_at": "2026-08-12T23:35:32.363595+00:00",
   "model": "gemini-flash-latest"
 }
