@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on high-opportunity multi-asset trend setups across equities and forex while maintaining disciplined stop losses and taking advantage of remaining cash reserves.",
+  "thesis": "Maximize portfolio growth by trimming low-beta FX holdings to free ticker capacity and cash, systematically rotating into highest-scoring equity momentum and financial sector leaders.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
     "Technology",
-    "Forex"
+    "Consumer Cyclicals"
   ],
   "styles": [
     "Momentum",
-    "Trend-Following",
+    "Trend Following",
     "Breakout"
   ],
-  "risk_posture": "Aggressive",
-  "updated_at": "2026-08-12T10:49:21.277609+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-12T11:37:32.264649+00:00",
   "model": "gemini-flash-latest"
 }
