@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively optimize cash flow by trimming underperforming volatile positions, locking in portfolio capacity, and reallocating capital into highest-opportunity uptrending multi-asset candidates.",
+  "thesis": "Capitalize on 100% bullish market breadth by holding profitable consolidating equity and forex positions while aggressively allocating available cash into top-ranked momentum candidates like PRU.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
-    "Consumer Defensive",
-    "Forex"
+    "Consumer Discretionary",
+    "Utilities"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Breakout"
+    "Quality Growth"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-12T13:58:25.463268+00:00",
+  "updated_at": "2026-08-12T14:53:02.066488+00:00",
   "model": "gemini-flash-latest"
 }
