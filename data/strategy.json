@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively rotate capital away from lower-scoring or bearish-sentiment positions into high-opportunity consolidating uptrends across equities and forex.",
+  "thesis": "Capitalize on strong momentum and consolidation patterns in large-cap equities while maintaining multi-asset diversification across financials, healthcare, consumer discretionary, and forex. Hold existing profitable positions that are trending above key moving averages, and deploy remaining cash into top-ranked non-owned growth and value candidates.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
-    "Consumer Cyclical",
-    "Forex"
+    "Consumer Discretionary",
+    "Real Estate"
   ],
   "styles": [
     "Momentum",
-    "Breakout Swing",
-    "Trend Following"
+    "Trend Following",
+    "Consolidation Breakout"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-12T15:49:21.265470+00:00",
+  "updated_at": "2026-08-12T16:44:30.641120+00:00",
   "model": "gemini-flash-latest"
 }

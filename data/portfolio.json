@@ -1,5 +1,5 @@
 {
-  "balance": 25775.16,
+  "balance": 20212.12,
   "positions": {
     "EA": {
       "symbol": "EA",
@@ -100,9 +100,61 @@
       "stop_loss": 70.8,
       "take_profit": 77.37,
       "opened_at": "2026-08-12T12:31:16.818564+00:00"
+    },
+    "LYV": {
+      "symbol": "LYV",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 16.0,
+      "avg_price": 184.960007,
+      "stop_loss": 179.41,
+      "take_profit": 196.06,
+      "opened_at": "2026-08-12T16:44:31.253570+00:00"
+    },
+    "PSA": {
+      "symbol": "PSA",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 8.0,
+      "avg_price": 325.459991,
+      "stop_loss": 315.7,
+      "take_profit": 344.99,
+      "opened_at": "2026-08-12T16:44:33.593963+00:00"
     }
   },
   "trades": [
+    {
+      "id": "407c4fbbe25e",
+      "ticker": "PSA",
+      "type": "BUY",
+      "price": 325.459991,
+      "shares": 8.0,
+      "date": "2026-08-12T16:44:33.594003+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score (8.913) backed by strong 2026 guidance raise and upward consolidation structure. (qty capped to 8.0 by 12% cash rule)",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 315.7,
+      "take_profit": 344.99,
+      "realized_pnl": null
+    },
+    {
+      "id": "16b01e37fef2",
+      "ticker": "LYV",
+      "type": "BUY",
+      "price": 184.960007,
+      "shares": 16.0,
+      "date": "2026-08-12T16:44:31.253604+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top unowned opportunity candidate (9.068 score) with high fan growth sentiment, strong consolidation, and uptrend momentum.",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 179.41,
+      "take_profit": 196.06,
+      "realized_pnl": null
+    },
     {
       "id": "0d526ffbec01",
       "ticker": "PRU",
