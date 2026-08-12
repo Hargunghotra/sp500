@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on broad market uptrend across financials and high-momentum equities while diversifying into forex trends to maximize capital efficiency.",
+  "thesis": "Rotate capital out of lower-opportunity holdings into top-ranked breakout momentum setups while preserving winning positions across Financials, Healthcare, and Consumer Discretionary.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
-    "Consumer Discretionary",
-    "Forex"
+    "Technology",
+    "Consumer Discretionary"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Value Breakthrough"
+    "Quality Growth"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-12T22:02:48.715709+00:00",
+  "updated_at": "2026-08-12T22:58:52.993817+00:00",
   "model": "gemini-flash-latest"
 }
