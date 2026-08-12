@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize portfolio growth by trimming low-beta FX holdings to free ticker capacity and cash, systematically rotating into highest-scoring equity momentum and financial sector leaders.",
+  "thesis": "Aggressive cross-asset momentum and breakout strategy targeting top-tier technical momentum and bullish catalysts while strictly adhering to capital allocation caps.",
   "preferred_sectors": [
     "Financials",
-    "Healthcare",
     "Technology",
-    "Consumer Cyclicals"
+    "Consumer Discretionary",
+    "Utilities"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
     "Breakout"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-12T11:37:32.264649+00:00",
+  "risk_posture": "Aggressive",
+  "updated_at": "2026-08-12T12:31:16.418223+00:00",
   "model": "gemini-flash-latest"
 }
