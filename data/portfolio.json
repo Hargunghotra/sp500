@@ -1,5 +1,5 @@
 {
-  "balance": 20212.12,
+  "balance": 25776.06,
   "positions": {
     "EA": {
       "symbol": "EA",
@@ -100,29 +100,41 @@
       "stop_loss": 70.8,
       "take_profit": 77.37,
       "opened_at": "2026-08-12T12:31:16.818564+00:00"
-    },
-    "LYV": {
-      "symbol": "LYV",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 16.0,
-      "avg_price": 184.960007,
-      "stop_loss": 179.41,
-      "take_profit": 196.06,
-      "opened_at": "2026-08-12T16:44:31.253570+00:00"
-    },
-    "PSA": {
-      "symbol": "PSA",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 8.0,
-      "avg_price": 325.459991,
-      "stop_loss": 315.7,
-      "take_profit": 344.99,
-      "opened_at": "2026-08-12T16:44:33.593963+00:00"
     }
   },
   "trades": [
+    {
+      "id": "1791345d6504",
+      "ticker": "PSA",
+      "type": "SELL",
+      "price": 325.3125,
+      "shares": 8.0,
+      "date": "2026-08-12T17:42:46.552345+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Underperforming relative risk profile; recycling capital into top setups.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 315.7,
+      "take_profit": 344.99,
+      "realized_pnl": -1.18
+    },
+    {
+      "id": "14bd53a53246",
+      "ticker": "LYV",
+      "type": "SELL",
+      "price": 185.089996,
+      "shares": 16.0,
+      "date": "2026-08-12T17:42:44.161740+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Lower relative opportunity score; exiting to liberate ticker slot.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 179.41,
+      "take_profit": 196.06,
+      "realized_pnl": 2.08
+    },
     {
       "id": "407c4fbbe25e",
       "ticker": "PSA",
@@ -2888,5 +2900,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 149.3
+  "realized_pnl": 150.2
 }

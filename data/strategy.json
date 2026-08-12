@@ -1,17 +1,16 @@
 {
-  "thesis": "Capitalize on strong momentum and consolidation patterns in large-cap equities while maintaining multi-asset diversification across financials, healthcare, consumer discretionary, and forex. Hold existing profitable positions that are trending above key moving averages, and deploy remaining cash into top-ranked non-owned growth and value candidates.",
+  "thesis": "Rotate capital out of lower-ranked holdings into top-scoring momentum setups while retaining high-performing positions.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
-    "Consumer Discretionary",
-    "Real Estate"
+    "Consumer Discretionary"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Consolidation Breakout"
+    "Capital Rotation"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-12T16:44:30.641120+00:00",
+  "risk_posture": "Aggressive Expansion",
+  "updated_at": "2026-08-12T17:42:43.802669+00:00",
   "model": "gemini-flash-latest"
 }
