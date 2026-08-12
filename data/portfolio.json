@@ -1,5 +1,5 @@
 {
-  "balance": 25776.06,
+  "balance": 20020.35,
   "positions": {
     "EA": {
       "symbol": "EA",
@@ -100,9 +100,61 @@
       "stop_loss": 70.8,
       "take_profit": 77.37,
       "opened_at": "2026-08-12T12:31:16.818564+00:00"
+    },
+    "MCD": {
+      "symbol": "MCD",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 11.0,
+      "avg_price": 275.060089,
+      "stop_loss": 266.81,
+      "take_profit": 291.56,
+      "opened_at": "2026-08-12T18:34:42.010252+00:00"
+    },
+    "AUDUSD=X": {
+      "symbol": "AUDUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 3863.563973,
+      "avg_price": 0.706614,
+      "stop_loss": 0.69955,
+      "take_profit": 0.72075,
+      "opened_at": "2026-08-12T18:34:43.912025+00:00"
     }
   },
   "trades": [
+    {
+      "id": "b9b9d923cd8a",
+      "ticker": "AUDUSD=X",
+      "type": "BUY",
+      "price": 0.706614,
+      "shares": 3863.563973,
+      "date": "2026-08-12T18:34:43.912062+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top unowned forex pair with opp score 8.568, score 9.7 in UP trend trading just 1.51% above support. (qty capped to 3863.563973 by 12% cash rule)",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.69955,
+      "take_profit": 0.72075,
+      "realized_pnl": null
+    },
+    {
+      "id": "f36524bf074e",
+      "ticker": "MCD",
+      "type": "BUY",
+      "price": 275.060089,
+      "shares": 11.0,
+      "date": "2026-08-12T18:34:42.010282+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top unowned equity setup with opp score 8.822, score 8.2 in UP trend with bullish product expansion momentum.",
+      "confidence": 0.87,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 266.81,
+      "take_profit": 291.56,
+      "realized_pnl": null
+    },
     {
       "id": "1791345d6504",
       "ticker": "PSA",
