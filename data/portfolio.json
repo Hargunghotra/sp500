@@ -1,5 +1,5 @@
 {
-  "balance": 25043.21,
+  "balance": 19445.76,
   "positions": {
     "EA": {
       "symbol": "EA",
@@ -100,9 +100,61 @@
       "stop_loss": 266.81,
       "take_profit": 291.56,
       "opened_at": "2026-08-12T18:34:42.010252+00:00"
+    },
+    "PRU": {
+      "symbol": "PRU",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 24.0,
+      "avg_price": 122.739998,
+      "stop_loss": 119.06,
+      "take_profit": 130.1,
+      "opened_at": "2026-08-12T20:30:06.703562+00:00"
+    },
+    "GBPUSD=X": {
+      "symbol": "GBPUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 1965.409177,
+      "avg_price": 1.349182,
+      "stop_loss": 1.3357,
+      "take_profit": 1.3762,
+      "opened_at": "2026-08-12T20:30:09.077991+00:00"
     }
   },
   "trades": [
+    {
+      "id": "4e5dfbd6d388",
+      "ticker": "GBPUSD=X",
+      "type": "BUY",
+      "price": 1.349182,
+      "shares": 1965.409177,
+      "date": "2026-08-12T20:30:09.078026+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top forex candidate with 9.9 technical score and uptrend momentum in consolidating pattern. (qty capped to 1965.409177 by 12% cash rule)",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.3357,
+      "take_profit": 1.3762,
+      "realized_pnl": null
+    },
+    {
+      "id": "01458e2c7c68",
+      "ticker": "PRU",
+      "type": "BUY",
+      "price": 122.739998,
+      "shares": 24.0,
+      "date": "2026-08-12T20:30:06.703592+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Highest unowned opportunity score (9.449), strong bullish sentiment, robust buyback catalyst, and rate yield tailwinds.",
+      "confidence": 0.89,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 119.06,
+      "take_profit": 130.1,
+      "realized_pnl": null
+    },
     {
       "id": "34bf58257918",
       "ticker": "GBPUSD=X",
