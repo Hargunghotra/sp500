@@ -1,17 +1,16 @@
 {
-  "thesis": "Capitalize on high market breadth (100 UP trend) by maintaining winner equity positions in financials and consumer discretionary while expanding multi-asset exposure into top-opportunity setup MCD and high-scoring forex pair AUDUSD=X.",
+  "thesis": "Aggressively trim stagnant forex assets showing flat performance to recycle capital into top-performing, high-opportunity score financial and technology equities showing bullish momentum.",
   "preferred_sectors": [
     "Financials",
-    "Consumer Discretionary",
-    "Healthcare",
-    "Forex"
+    "Technology",
+    "Consumer Cyclical"
   ],
   "styles": [
+    "Momentum",
     "Trend Following",
-    "Momentum Breakout",
-    "Multi-Asset Rotation"
+    "Quality Growth"
   ],
-  "risk_posture": "AGGRESSIVE",
-  "updated_at": "2026-08-12T18:34:41.570130+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-12T19:46:55.436262+00:00",
   "model": "gemini-flash-latest"
 }
