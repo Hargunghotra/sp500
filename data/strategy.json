@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressive cross-asset momentum and breakout strategy targeting top-tier technical momentum and bullish catalysts while strictly adhering to capital allocation caps.",
+  "thesis": "Aggressively optimize cash flow by trimming underperforming volatile positions, locking in portfolio capacity, and reallocating capital into highest-opportunity uptrending multi-asset candidates.",
   "preferred_sectors": [
     "Financials",
-    "Technology",
-    "Consumer Discretionary",
-    "Utilities"
+    "Healthcare",
+    "Consumer Defensive",
+    "Forex"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
     "Breakout"
   ],
-  "risk_posture": "Aggressive",
-  "updated_at": "2026-08-12T12:31:16.418223+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-12T13:58:25.463268+00:00",
   "model": "gemini-flash-latest"
 }

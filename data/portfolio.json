@@ -1,5 +1,5 @@
 {
-  "balance": 20716.42,
+  "balance": 23171.74,
   "positions": {
     "EA": {
       "symbol": "EA",
@@ -101,16 +101,6 @@
       "take_profit": 15.58,
       "opened_at": "2026-08-12T08:58:28.671632+00:00"
     },
-    "PYPL": {
-      "symbol": "PYPL",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 42.0,
-      "avg_price": 59.0,
-      "stop_loss": 57.23,
-      "take_profit": 62.54,
-      "opened_at": "2026-08-12T11:37:35.845468+00:00"
-    },
     "CFG": {
       "symbol": "CFG",
       "asset_class": "equity",
@@ -123,6 +113,22 @@
     }
   },
   "trades": [
+    {
+      "id": "28c1ef4f9cfb",
+      "ticker": "PYPL",
+      "type": "SELL",
+      "price": 58.459999,
+      "shares": 42.0,
+      "date": "2026-08-12T13:58:26.044368+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Cut underperforming position with negative PnL and lower opportunity score (7.76) to free capital and open position slot.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 57.23,
+      "take_profit": 62.54,
+      "realized_pnl": -22.68
+    },
     {
       "id": "312d49129da9",
       "ticker": "CFG",
@@ -2792,5 +2798,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 153.24
+  "realized_pnl": 130.56
 }
