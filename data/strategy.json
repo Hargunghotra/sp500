@@ -1,18 +1,17 @@
 {
-  "thesis": "Maximize return by holding strong multi-asset momentum winners across regional banking, healthcare, consumer staples, and forex while deploying remaining cash reserve into top-ranked consolidation breakouts like AES.",
+  "thesis": "Aggressively cut underperforming holdings and rotate capital into top-ranked technical momentum leaders showing strong bullish sentiment and clean consolidation patterns.",
   "preferred_sectors": [
-    "Financials",
+    "Financial Services",
     "Healthcare",
-    "Utilities",
-    "Consumer Staples",
-    "Forex"
+    "Industrials",
+    "Technology"
   ],
   "styles": [
-    "Trend Following",
     "Momentum",
-    "Consolidation Breakout"
+    "Trend-Following",
+    "Breakout"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-12T08:58:28.422396+00:00",
+  "updated_at": "2026-08-12T09:56:20.195025+00:00",
   "model": "gemini-flash-latest"
 }
