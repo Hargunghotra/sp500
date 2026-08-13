@@ -1,18 +1,18 @@
 {
-  "thesis": "Maximize total return by maintaining profitable momentum holdings across financial, defensive, and technology sectors while deploying idle capital into top-ranking consolidating breakout candidates with strong technical support.",
+  "thesis": "Capitalize on high-momentum consolidating leaders in financials, technology, and defensive consumer/utility plays while maintaining tight risk parameters at capacity.",
   "preferred_sectors": [
     "Financials",
+    "Technology",
     "Healthcare",
-    "Consumer Non-Cyclical",
-    "Utilities",
-    "Forex"
+    "Consumer Staples",
+    "Utilities"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Breakout"
+    "Consolidation Breakout",
+    "Trend Following"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-08-13T19:18:03.223456+00:00",
+  "risk_posture": "Controlled Aggressive",
+  "updated_at": "2026-08-13T20:04:05.589578+00:00",
   "model": "gemini-flash-latest"
 }
