@@ -1,5 +1,5 @@
 {
-  "balance": 21484.62,
+  "balance": 18910.47,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -110,9 +110,35 @@
       "stop_loss": 0.80512,
       "take_profit": 0.82952,
       "opened_at": "2026-08-13T17:11:21.326454+00:00"
+    },
+    "KVUE": {
+      "symbol": "KVUE",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 134.0,
+      "avg_price": 19.2101,
+      "stop_loss": 18.63,
+      "take_profit": 20.36,
+      "opened_at": "2026-08-13T19:18:03.530368+00:00"
     }
   },
   "trades": [
+    {
+      "id": "98a1f024da04",
+      "ticker": "KVUE",
+      "type": "BUY",
+      "price": 19.2101,
+      "shares": 134.0,
+      "date": "2026-08-13T19:18:03.530401+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score (8.973), bullish sentiment, clear consolidation pattern with 2.70% support buffer and upside runway to resistance.",
+      "confidence": 0.87,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 18.63,
+      "take_profit": 20.36,
+      "realized_pnl": null
+    },
     {
       "id": "f3e44727ad53",
       "ticker": "AUDUSD=X",

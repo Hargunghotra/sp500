@@ -1,17 +1,18 @@
 {
-  "thesis": "Aggressively trim stagnant forex positions to stay under open ticker limits and redeploy available capital into top-ranked bullish equity setups with high opportunity scores.",
+  "thesis": "Maximize total return by maintaining profitable momentum holdings across financial, defensive, and technology sectors while deploying idle capital into top-ranking consolidating breakout candidates with strong technical support.",
   "preferred_sectors": [
     "Financials",
-    "Real Estate",
     "Healthcare",
-    "Utilities"
+    "Consumer Non-Cyclical",
+    "Utilities",
+    "Forex"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Quality Value"
+    "Breakout"
   ],
-  "risk_posture": "Aggressive",
-  "updated_at": "2026-08-13T18:05:37.247200+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-08-13T19:18:03.223456+00:00",
   "model": "gemini-flash-latest"
 }
