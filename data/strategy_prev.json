@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on high-scoring equity and forex momentum by locking in gains on lower-relative-opportunity volatile holdings and rotating into tight consolidation breakouts with high opportunity scores.",
+  "thesis": "Capitalize on strong market breadth by reallocating capital from flat, lower-opportunity positions into top-ranked consolidated uptrends across regional banking and communication services.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
-    "Utilities",
-    "Consumer Staples"
+    "Consumer Discretionary",
+    "Communication Services"
   ],
   "styles": [
-    "Trend Following",
-    "Consolidation Breakout",
-    "Relative Strength"
+    "Momentum",
+    "Breakout Growth",
+    "Trend Following"
   ],
-  "risk_posture": "Aggressive Growth within strict cash and ticker limits",
-  "updated_at": "2026-08-11T23:37:41.517840+00:00",
+  "risk_posture": "AGGRESSIVE",
+  "updated_at": "2026-08-12T23:35:32.363595+00:00",
   "model": "gemini-flash-latest"
 }
