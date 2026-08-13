@@ -1,17 +1,16 @@
 {
-  "thesis": "Aggressively trim underperforming forex and flat equity holdings to concentrate capital into high-momentum 10/10 setup equities across Financials, Technology, Consumer Discretionary, and Defense.",
+  "thesis": "Maximize portfolio growth by maintaining top-performing financial and tech equities while taking profits on lower-conviction holdings to fund high-opportunity utility breakouts and forex pairs.",
   "preferred_sectors": [
     "Financials",
     "Technology",
-    "Consumer Discretionary",
-    "Aerospace & Defense"
+    "Utilities",
+    "Forex"
   ],
   "styles": [
     "Momentum",
-    "Trend-Following",
-    "Breakout"
+    "Breakout Trend Following"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-13T09:00:33.924579+00:00",
+  "updated_at": "2026-08-13T10:03:15.585678+00:00",
   "model": "gemini-flash-latest"
 }
