@@ -1,18 +1,17 @@
 {
-  "thesis": "Capitalize on market strength across equities and forex by holding profitable uptrending positions and deploying available cash into top-rated opportunity candidates. Maintain strict risk management through precise stop-loss and take-profit targets.",
+  "thesis": "Maximize total portfolio return by cycling capital out of stagnant forex trades into high-opportunity bullish equities showing strong earnings upside and upward trend momentum.",
   "preferred_sectors": [
     "Financials",
-    "Technology",
     "Healthcare",
-    "Utilities",
-    "Forex"
+    "Consumer Staples",
+    "Utilities"
   ],
   "styles": [
-    "Trend Following",
     "Momentum",
-    "Breakout"
+    "Breakout",
+    "Value"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-13T12:47:02.975776+00:00",
+  "risk_posture": "Aggressive",
+  "updated_at": "2026-08-13T14:14:27.610555+00:00",
   "model": "gemini-flash-latest"
 }
