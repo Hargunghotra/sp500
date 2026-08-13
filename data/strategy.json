@@ -1,16 +1,17 @@
 {
-  "thesis": "Maximize portfolio growth by maintaining top-performing financial and tech equities while taking profits on lower-conviction holdings to fund high-opportunity utility breakouts and forex pairs.",
+  "thesis": "Maximize equity growth by holding high-performing financial and healthcare momentum winners while expanding multi-asset diversification into top-tier forex trends.",
   "preferred_sectors": [
     "Financials",
-    "Technology",
+    "Healthcare",
     "Utilities",
     "Forex"
   ],
   "styles": [
-    "Momentum",
-    "Breakout Trend Following"
+    "Momentum Trend-Following",
+    "Quality Growth",
+    "Cross-Asset Rotation"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-13T10:03:15.585678+00:00",
+  "updated_at": "2026-08-13T11:10:35.163738+00:00",
   "model": "gemini-flash-latest"
 }
