@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on high-opportunity consolidation setups in trending equities and forex, aggressively rotating capital out of underperforming assets into top-tier opportunity scores.",
+  "thesis": "Capitalize on strong market breadth by rotating out of dead-weight or capped upside holdings into top-ranked REITs and FX momentum pairs, while holding high-performing financial and tech equities.",
   "preferred_sectors": [
     "Financials",
     "Real Estate",
-    "Technology",
+    "Healthcare",
     "Utilities"
   ],
   "styles": [
     "Momentum",
     "Breakout",
-    "Trend Following"
+    "Quality Growth"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-13T15:14:36.653200+00:00",
+  "updated_at": "2026-08-13T16:09:57.448166+00:00",
   "model": "gemini-flash-latest"
 }

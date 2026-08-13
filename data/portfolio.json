@@ -1,5 +1,5 @@
 {
-  "balance": 20172.93,
+  "balance": 20884.88,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -51,16 +51,6 @@
       "take_profit": 76.57,
       "opened_at": "2026-08-11T20:24:42.091259+00:00"
     },
-    "EA": {
-      "symbol": "EA",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 13.0,
-      "avg_price": 209.699997,
-      "stop_loss": 203.41,
-      "take_profit": 222.28,
-      "opened_at": "2026-08-13T09:00:35.999552+00:00"
-    },
     "AES": {
       "symbol": "AES",
       "asset_class": "equity",
@@ -91,16 +81,6 @@
       "take_profit": 0.72003,
       "opened_at": "2026-08-13T12:47:04.770306+00:00"
     },
-    "EURUSD=X": {
-      "symbol": "EURUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 2305.165195,
-      "avg_price": 1.153669,
-      "stop_loss": 1.14213,
-      "take_profit": 1.17674,
-      "opened_at": "2026-08-13T12:47:06.049409+00:00"
-    },
     "PRU": {
       "symbol": "PRU",
       "asset_class": "equity",
@@ -110,9 +90,93 @@
       "stop_loss": 119.71,
       "take_profit": 130.81,
       "opened_at": "2026-08-13T15:14:37.052583+00:00"
+    },
+    "PSA": {
+      "symbol": "PSA",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 7.0,
+      "avg_price": 326.890015,
+      "stop_loss": 317.08,
+      "take_profit": 346.5,
+      "opened_at": "2026-08-13T16:09:59.202318+00:00"
+    },
+    "INVH": {
+      "symbol": "INVH",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 79.0,
+      "avg_price": 30.190001,
+      "stop_loss": 29.28,
+      "take_profit": 32.0,
+      "opened_at": "2026-08-13T16:10:00.374533+00:00"
     }
   },
   "trades": [
+    {
+      "id": "b46e5d4182fe",
+      "ticker": "EURUSD=X",
+      "type": "SELL",
+      "price": 1.153536,
+      "shares": 2305.165195,
+      "date": "2026-08-13T16:10:01.724998+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Flat PnL and lower relative score compared to equity breakout candidates. Freeing up position slot.",
+      "confidence": 0.75,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.14213,
+      "take_profit": 1.17674,
+      "realized_pnl": -0.31
+    },
+    {
+      "id": "c902edd5c94f",
+      "ticker": "INVH",
+      "type": "BUY",
+      "price": 30.190001,
+      "shares": 79.0,
+      "date": "2026-08-13T16:10:00.374566+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top housing REIT setup with 8.704 opportunity score and 9.9 candidate score.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 29.28,
+      "take_profit": 32.0,
+      "realized_pnl": null
+    },
+    {
+      "id": "fc3da76ac3ed",
+      "ticker": "PSA",
+      "type": "BUY",
+      "price": 326.890015,
+      "shares": 7.0,
+      "date": "2026-08-13T16:09:59.202364+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score 8.936 in self-storage REIT sector, consolidated trend near support.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 317.08,
+      "take_profit": 346.5,
+      "realized_pnl": null
+    },
+    {
+      "id": "de56e20569ee",
+      "ticker": "EA",
+      "type": "SELL",
+      "price": 209.699997,
+      "shares": 13.0,
+      "date": "2026-08-13T16:09:57.808719+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Closed go-private buyout limits further upside potential; rotating capital into active momentum setups.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 203.41,
+      "take_profit": 222.28,
+      "realized_pnl": -0.0
+    },
     {
       "id": "3737c2402218",
       "ticker": "MCD",
@@ -3390,5 +3454,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 218.83
+  "realized_pnl": 218.52
 }
