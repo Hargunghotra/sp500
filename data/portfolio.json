@@ -1,5 +1,5 @@
 {
-  "balance": 22433.68,
+  "balance": 22005.32,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -61,16 +61,6 @@
       "take_profit": 113.06,
       "opened_at": "2026-08-11T20:24:46.757318+00:00"
     },
-    "AES": {
-      "symbol": "AES",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 200.0,
-      "avg_price": 14.7,
-      "stop_loss": 14.26,
-      "take_profit": 15.58,
-      "opened_at": "2026-08-12T08:58:28.671632+00:00"
-    },
     "MCD": {
       "symbol": "MCD",
       "asset_class": "equity",
@@ -91,16 +81,6 @@
       "take_profit": 130.1,
       "opened_at": "2026-08-12T20:30:06.703562+00:00"
     },
-    "AUDUSD=X": {
-      "symbol": "AUDUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 3000.0,
-      "avg_price": 0.706314,
-      "stop_loss": 0.69925,
-      "take_profit": 0.72044,
-      "opened_at": "2026-08-12T22:02:51.504560+00:00"
-    },
     "CFG": {
       "symbol": "CFG",
       "asset_class": "equity",
@@ -110,9 +90,93 @@
       "stop_loss": 71.69,
       "take_profit": 78.34,
       "opened_at": "2026-08-12T23:35:33.009885+00:00"
+    },
+    "EA": {
+      "symbol": "EA",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 13.0,
+      "avg_price": 209.699997,
+      "stop_loss": 203.41,
+      "take_profit": 222.28,
+      "opened_at": "2026-08-13T09:00:35.999552+00:00"
+    },
+    "GD": {
+      "symbol": "GD",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 7.0,
+      "avg_price": 394.209991,
+      "stop_loss": 382.38,
+      "take_profit": 417.86,
+      "opened_at": "2026-08-13T09:00:38.989004+00:00"
     }
   },
   "trades": [
+    {
+      "id": "2b8a3cbcfe59",
+      "ticker": "GD",
+      "type": "BUY",
+      "price": 394.209991,
+      "shares": 7.0,
+      "date": "2026-08-13T09:00:38.989041+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Top defense sector leader with perfect 10.0 technical score and strong bullish sentiment on defense budget expansion.",
+      "confidence": 0.83,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 382.38,
+      "take_profit": 417.86,
+      "realized_pnl": null
+    },
+    {
+      "id": "4abf61d78228",
+      "ticker": "AUDUSD=X",
+      "type": "SELL",
+      "price": 0.705069,
+      "shares": 3000.0,
+      "date": "2026-08-13T09:00:37.550779+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Cutting losing forex exposure showing negative return to free capital for higher-conviction equity momentum setups.",
+      "confidence": 0.72,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.69925,
+      "take_profit": 0.72044,
+      "realized_pnl": -3.73
+    },
+    {
+      "id": "2d1cb0973a57",
+      "ticker": "EA",
+      "type": "BUY",
+      "price": 209.699997,
+      "shares": 13.0,
+      "date": "2026-08-13T09:00:35.999589+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Score 10.0 bullish equity setup consolidating right at breakout level with strong 20-day return momentum.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 203.41,
+      "take_profit": 222.28,
+      "realized_pnl": null
+    },
+    {
+      "id": "6567842e3e76",
+      "ticker": "AES",
+      "type": "SELL",
+      "price": 14.71,
+      "shares": 200.0,
+      "date": "2026-08-13T09:00:34.281337+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Exiting stagnant utility holding with minimal return to redeploy cash into top-ranked trend leaders.",
+      "confidence": 0.68,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 14.26,
+      "take_profit": 15.58,
+      "realized_pnl": 2.0
+    },
     {
       "id": "f03c828cc94c",
       "ticker": "ROST",
@@ -3118,5 +3182,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 183.64
+  "realized_pnl": 181.91
 }

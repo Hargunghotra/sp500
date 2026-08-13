@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on strong market breadth by reallocating capital from flat, lower-opportunity positions into top-ranked consolidated uptrends across regional banking and communication services.",
+  "thesis": "Aggressively trim underperforming forex and flat equity holdings to concentrate capital into high-momentum 10/10 setup equities across Financials, Technology, Consumer Discretionary, and Defense.",
   "preferred_sectors": [
     "Financials",
-    "Healthcare",
+    "Technology",
     "Consumer Discretionary",
-    "Communication Services"
+    "Aerospace & Defense"
   ],
   "styles": [
     "Momentum",
-    "Breakout Growth",
-    "Trend Following"
+    "Trend-Following",
+    "Breakout"
   ],
-  "risk_posture": "AGGRESSIVE",
-  "updated_at": "2026-08-12T23:35:32.363595+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-13T09:00:33.924579+00:00",
   "model": "gemini-flash-latest"
 }
