@@ -1,18 +1,18 @@
 {
-  "thesis": "Capitalize on high-momentum consolidating leaders in financials, technology, and defensive consumer/utility plays while maintaining tight risk parameters at capacity.",
+  "thesis": "Maintain disciplined momentum posture across top-ranked consolidating equities and FX while allowing existing high-conviction winners to run toward defined profit targets.",
   "preferred_sectors": [
     "Financials",
     "Technology",
     "Healthcare",
-    "Consumer Staples",
-    "Utilities"
+    "Utilities",
+    "Consumer Non-Cyclical"
   ],
   "styles": [
     "Momentum",
-    "Consolidation Breakout",
-    "Trend Following"
+    "Trend-Following",
+    "Consolidation Breakout"
   ],
   "risk_posture": "Controlled Aggressive",
-  "updated_at": "2026-08-13T20:04:05.589578+00:00",
+  "updated_at": "2026-08-13T21:00:32.338439+00:00",
   "model": "gemini-flash-latest"
 }
