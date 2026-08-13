@@ -1,17 +1,18 @@
 {
-  "thesis": "Aggressively trim lower-tier opportunity score holdings to free up slots and recycle capital into top-performing equity winners and high-scoring forex momentum setups.",
+  "thesis": "Capitalize on market strength across equities and forex by holding profitable uptrending positions and deploying available cash into top-rated opportunity candidates. Maintain strict risk management through precise stop-loss and take-profit targets.",
   "preferred_sectors": [
     "Financials",
-    "Healthcare",
     "Technology",
+    "Healthcare",
+    "Utilities",
     "Forex"
   ],
   "styles": [
-    "Momentum Trend Following",
-    "Capital Recycling",
-    "Multi-Asset Aggressive Alpha"
+    "Trend Following",
+    "Momentum",
+    "Breakout"
   ],
-  "risk_posture": "AGGRESSIVE",
-  "updated_at": "2026-08-13T11:58:03.749684+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-13T12:47:02.975776+00:00",
   "model": "gemini-flash-latest"
 }

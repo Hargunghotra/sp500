@@ -1,5 +1,5 @@
 {
-  "balance": 28583.54,
+  "balance": 19502.24,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -90,9 +90,87 @@
       "stop_loss": 0.8039,
       "take_profit": 0.8282,
       "opened_at": "2026-08-13T11:10:35.489410+00:00"
+    },
+    "CFG": {
+      "symbol": "CFG",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 46.0,
+      "avg_price": 73.910004,
+      "stop_loss": 71.69,
+      "take_profit": 78.34,
+      "opened_at": "2026-08-13T12:47:03.318181+00:00"
+    },
+    "AUDUSD=X": {
+      "symbol": "AUDUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 4281.024144,
+      "avg_price": 0.705916,
+      "stop_loss": 0.69886,
+      "take_profit": 0.72003,
+      "opened_at": "2026-08-13T12:47:04.770306+00:00"
+    },
+    "EURUSD=X": {
+      "symbol": "EURUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 2305.165195,
+      "avg_price": 1.153669,
+      "stop_loss": 1.14213,
+      "take_profit": 1.17674,
+      "opened_at": "2026-08-13T12:47:06.049409+00:00"
     }
   },
   "trades": [
+    {
+      "id": "b48d80c77004",
+      "ticker": "EURUSD=X",
+      "type": "BUY",
+      "price": 1.153669,
+      "shares": 2305.165195,
+      "date": "2026-08-13T12:47:06.049440+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong forex pair consolidating above 50 SMA with high score (9.7) and clean risk/reward profile. (qty capped to 2305.165195 by 12% cash rule)",
+      "confidence": 0.81,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.14213,
+      "take_profit": 1.17674,
+      "realized_pnl": null
+    },
+    {
+      "id": "0bca461d022d",
+      "ticker": "AUDUSD=X",
+      "type": "BUY",
+      "price": 0.705916,
+      "shares": 4281.024144,
+      "date": "2026-08-13T12:47:04.770341+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Leading FX candidate with high opportunity score (8.513) and solid bullish SMA50 alignment. (qty capped to 4281.024144 by 12% cash rule)",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.69886,
+      "take_profit": 0.72003,
+      "realized_pnl": null
+    },
+    {
+      "id": "2e0cd75cef58",
+      "ticker": "CFG",
+      "type": "BUY",
+      "price": 73.910004,
+      "shares": 46.0,
+      "date": "2026-08-13T12:47:03.318211+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top unowned equity candidate with perfect score 10.0 and opportunity score 9.26 in strong financial sector uptrend.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 71.69,
+      "take_profit": 78.34,
+      "realized_pnl": null
+    },
     {
       "id": "81e41f64516c",
       "ticker": "PRU",
