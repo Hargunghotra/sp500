@@ -1,18 +1,18 @@
 {
-  "thesis": "Maintain disciplined momentum posture across top-ranked consolidating equities and FX while allowing existing high-conviction winners to run toward defined profit targets.",
+  "thesis": "Maintain full exposure across high-conviction trending equities, consolidating financials, and defensive FX while allowing profitable breakout momentum to advance toward target take-profits.",
   "preferred_sectors": [
     "Financials",
-    "Technology",
     "Healthcare",
+    "Technology",
     "Utilities",
     "Consumer Non-Cyclical"
   ],
   "styles": [
-    "Momentum",
-    "Trend-Following",
-    "Consolidation Breakout"
+    "Momentum Trend-Following",
+    "Consolidation Breakout",
+    "Multi-Asset Systematic"
   ],
-  "risk_posture": "Controlled Aggressive",
-  "updated_at": "2026-08-13T21:00:32.338439+00:00",
+  "risk_posture": "Aggressive Growth within Hard Risk Caps",
+  "updated_at": "2026-08-13T21:43:43.587834+00:00",
   "model": "gemini-flash-latest"
 }
