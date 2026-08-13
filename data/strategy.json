@@ -1,18 +1,18 @@
 {
-  "thesis": "Maintain full exposure across high-conviction trending equities, consolidating financials, and defensive FX while allowing profitable breakout momentum to advance toward target take-profits.",
+  "thesis": "Maintain full exposure across top-decile momentum and consolidation leaders with superior opportunity scores across financials, healthcare technology, consumer, and real estate, letting profitable trends run while preserving tight risk stops.",
   "preferred_sectors": [
     "Financials",
-    "Healthcare",
-    "Technology",
-    "Utilities",
-    "Consumer Non-Cyclical"
+    "Healthcare Technology",
+    "Consumer",
+    "Real Estate",
+    "Forex"
   ],
   "styles": [
-    "Momentum Trend-Following",
-    "Consolidation Breakout",
-    "Multi-Asset Systematic"
+    "Momentum",
+    "Trend Following",
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Aggressive Growth within Hard Risk Caps",
-  "updated_at": "2026-08-13T21:43:43.587834+00:00",
+  "risk_posture": "Aggressive Growth with Strict Loss Discipline",
+  "updated_at": "2026-08-13T22:24:53.598888+00:00",
   "model": "gemini-flash-latest"
 }
