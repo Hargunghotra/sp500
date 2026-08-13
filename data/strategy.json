@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize total portfolio return by cycling capital out of stagnant forex trades into high-opportunity bullish equities showing strong earnings upside and upward trend momentum.",
+  "thesis": "Capitalize on high-opportunity consolidation setups in trending equities and forex, aggressively rotating capital out of underperforming assets into top-tier opportunity scores.",
   "preferred_sectors": [
     "Financials",
-    "Healthcare",
-    "Consumer Staples",
+    "Real Estate",
+    "Technology",
     "Utilities"
   ],
   "styles": [
     "Momentum",
     "Breakout",
-    "Value"
+    "Trend Following"
   ],
-  "risk_posture": "Aggressive",
-  "updated_at": "2026-08-13T14:14:27.610555+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-13T15:14:36.653200+00:00",
   "model": "gemini-flash-latest"
 }

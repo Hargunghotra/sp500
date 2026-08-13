@@ -1,5 +1,5 @@
 {
-  "balance": 19382.23,
+  "balance": 20172.93,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -51,16 +51,6 @@
       "take_profit": 76.57,
       "opened_at": "2026-08-11T20:24:42.091259+00:00"
     },
-    "MCD": {
-      "symbol": "MCD",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 11.0,
-      "avg_price": 275.060089,
-      "stop_loss": 266.81,
-      "take_profit": 291.56,
-      "opened_at": "2026-08-12T18:34:42.010252+00:00"
-    },
     "EA": {
       "symbol": "EA",
       "asset_class": "equity",
@@ -110,9 +100,51 @@
       "stop_loss": 1.14213,
       "take_profit": 1.17674,
       "opened_at": "2026-08-13T12:47:06.049409+00:00"
+    },
+    "PRU": {
+      "symbol": "PRU",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 18.0,
+      "avg_price": 123.410004,
+      "stop_loss": 119.71,
+      "take_profit": 130.81,
+      "opened_at": "2026-08-13T15:14:37.052583+00:00"
     }
   },
   "trades": [
+    {
+      "id": "3737c2402218",
+      "ticker": "MCD",
+      "type": "SELL",
+      "price": 273.825012,
+      "shares": 11.0,
+      "date": "2026-08-13T15:14:38.738634+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Cutting lagging non-performing position to release capital into higher opportunity score setups.",
+      "confidence": 0.75,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 266.81,
+      "take_profit": 291.56,
+      "realized_pnl": -13.59
+    },
+    {
+      "id": "86c3a2dcc043",
+      "ticker": "PRU",
+      "type": "BUY",
+      "price": 123.410004,
+      "shares": 18.0,
+      "date": "2026-08-13T15:14:37.052615+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top tier candidate with score 10.0, opportunity score 9.236, bullish sentiment and consolidation breakout potential.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 119.71,
+      "take_profit": 130.81,
+      "realized_pnl": null
+    },
     {
       "id": "9b4cea998052",
       "ticker": "USDCHF=X",
@@ -3358,5 +3390,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 232.42
+  "realized_pnl": 218.83
 }
