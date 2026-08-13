@@ -1,5 +1,5 @@
 {
-  "balance": 18462.79,
+  "balance": 21484.62,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -71,16 +71,6 @@
       "take_profit": 78.34,
       "opened_at": "2026-08-13T12:47:03.318181+00:00"
     },
-    "AUDUSD=X": {
-      "symbol": "AUDUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 4281.024144,
-      "avg_price": 0.705916,
-      "stop_loss": 0.69886,
-      "take_profit": 0.72003,
-      "opened_at": "2026-08-13T12:47:04.770306+00:00"
-    },
     "PRU": {
       "symbol": "PRU",
       "asset_class": "equity",
@@ -123,6 +113,22 @@
     }
   },
   "trades": [
+    {
+      "id": "f3e44727ad53",
+      "ticker": "AUDUSD=X",
+      "type": "SELL",
+      "price": 0.705866,
+      "shares": 4281.024144,
+      "date": "2026-08-13T18:05:37.823809+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Liquidating flat forex holding to free up position capacity for higher-ranked equity opportunities.",
+      "confidence": 0.72,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.69886,
+      "take_profit": 0.72003,
+      "realized_pnl": -0.22
+    },
     {
       "id": "fae98d5d97f1",
       "ticker": "USDCHF=X",
@@ -3512,5 +3518,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 218.12
+  "realized_pnl": 217.9
 }

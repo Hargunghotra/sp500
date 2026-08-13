@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively press winning positions in momentum-backed financials, utilities, and tech while pruning non-performing lagger assets to reallocate capital into top opportunity score candidates.",
+  "thesis": "Aggressively trim stagnant forex positions to stay under open ticker limits and redeploy available capital into top-ranked bullish equity setups with high opportunity scores.",
   "preferred_sectors": [
     "Financials",
-    "Technology",
-    "Utilities",
-    "Forex"
+    "Real Estate",
+    "Healthcare",
+    "Utilities"
   ],
   "styles": [
     "Momentum",
-    "Trend-Following",
-    "Quality Growth"
+    "Trend Following",
+    "Quality Value"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-13T17:11:17.656797+00:00",
+  "risk_posture": "Aggressive",
+  "updated_at": "2026-08-13T18:05:37.247200+00:00",
   "model": "gemini-flash-latest"
 }
