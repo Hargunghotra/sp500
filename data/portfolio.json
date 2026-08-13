@@ -1,5 +1,5 @@
 {
-  "balance": 20217.55,
+  "balance": 28583.54,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -61,26 +61,6 @@
       "take_profit": 291.56,
       "opened_at": "2026-08-12T18:34:42.010252+00:00"
     },
-    "PRU": {
-      "symbol": "PRU",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 24.0,
-      "avg_price": 122.739998,
-      "stop_loss": 119.06,
-      "take_profit": 130.1,
-      "opened_at": "2026-08-12T20:30:06.703562+00:00"
-    },
-    "CFG": {
-      "symbol": "CFG",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 36.0,
-      "avg_price": 73.910004,
-      "stop_loss": 71.69,
-      "take_profit": 78.34,
-      "opened_at": "2026-08-12T23:35:33.009885+00:00"
-    },
     "EA": {
       "symbol": "EA",
       "asset_class": "equity",
@@ -90,16 +70,6 @@
       "stop_loss": 203.41,
       "take_profit": 222.28,
       "opened_at": "2026-08-13T09:00:35.999552+00:00"
-    },
-    "GD": {
-      "symbol": "GD",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 7.0,
-      "avg_price": 394.209991,
-      "stop_loss": 382.38,
-      "take_profit": 417.86,
-      "opened_at": "2026-08-13T09:00:38.989004+00:00"
     },
     "AES": {
       "symbol": "AES",
@@ -123,6 +93,54 @@
     }
   },
   "trades": [
+    {
+      "id": "81e41f64516c",
+      "ticker": "PRU",
+      "type": "SELL",
+      "price": 122.739998,
+      "shares": 24.0,
+      "date": "2026-08-13T11:58:09.780326+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Reallocating flat capital (opp score 6.846) into higher scoring candidates.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 119.06,
+      "take_profit": 130.1,
+      "realized_pnl": -0.0
+    },
+    {
+      "id": "b6326a99c56a",
+      "ticker": "CFG",
+      "type": "SELL",
+      "price": 73.910004,
+      "shares": 36.0,
+      "date": "2026-08-13T11:58:07.153227+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Pruning lower opp score position (6.873) to free slot capacity for top-tier FX majors.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 71.69,
+      "take_profit": 78.34,
+      "realized_pnl": -0.0
+    },
+    {
+      "id": "80e7b1d9548e",
+      "ticker": "GD",
+      "type": "SELL",
+      "price": 394.209991,
+      "shares": 7.0,
+      "date": "2026-08-13T11:58:04.399369+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Rotating capital from lower opportunity score (6.875) equity into higher edge forex trend setups.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 382.38,
+      "take_profit": 417.86,
+      "realized_pnl": 0.0
+    },
     {
       "id": "400cfb0ff1d4",
       "ticker": "USDCHF=X",

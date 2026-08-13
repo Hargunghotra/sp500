@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize equity growth by holding high-performing financial and healthcare momentum winners while expanding multi-asset diversification into top-tier forex trends.",
+  "thesis": "Aggressively trim lower-tier opportunity score holdings to free up slots and recycle capital into top-performing equity winners and high-scoring forex momentum setups.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
-    "Utilities",
+    "Technology",
     "Forex"
   ],
   "styles": [
-    "Momentum Trend-Following",
-    "Quality Growth",
-    "Cross-Asset Rotation"
+    "Momentum Trend Following",
+    "Capital Recycling",
+    "Multi-Asset Aggressive Alpha"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-13T11:10:35.163738+00:00",
+  "risk_posture": "AGGRESSIVE",
+  "updated_at": "2026-08-13T11:58:03.749684+00:00",
   "model": "gemini-flash-latest"
 }
