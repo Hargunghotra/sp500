@@ -1,18 +1,17 @@
 {
-  "thesis": "Maintain full allocation across high-conviction consolidating equities and forex momentum trades displaying strong relative strength and constructive consolidation patterns above key moving averages. Let winners run toward profit targets while maintaining strict trailing risk bounds.",
+  "thesis": "Maintain high-conviction exposure across top-ranked momentum and consolidation breakout candidates in regional financials, consumer staples, technology, and defensive forex. With current open positions aligning with the market's highest opportunity scores and displaying positive upward traction, we let winning positions ride toward take-profit targets while keeping hard stop-loss risk controls tightly locked.",
   "preferred_sectors": [
-    "Financials",
-    "Healthcare",
-    "Consumer Staples",
-    "Utilities",
-    "Communication Services"
+    "Financial Services",
+    "Technology / Life Sciences",
+    "Consumer Defensive",
+    "Forex Majors"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Consolidation Breakout"
+    "Consolidation Breakout",
+    "Trend Following"
   ],
-  "risk_posture": "Disciplined Aggressive",
-  "updated_at": "2026-08-13T23:09:38.020449+00:00",
+  "risk_posture": "Aggressive Growth with Strict Risk Caps",
+  "updated_at": "2026-08-13T23:55:44.454608+00:00",
   "model": "gemini-flash-latest"
 }
