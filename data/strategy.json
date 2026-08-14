@@ -1,17 +1,17 @@
 {
-  "thesis": "Maintain full exposure across leading large-cap financials, defensives, and momentum equities while letting established winners ride towards their respective price targets. With market breadth overwhelmingly positive and consolidating patterns dominant, existing positions maintain strong technical scores and robust risk-reward profiles.",
+  "thesis": "Aggressively harvest momentum across core equity leaders while cutting lagging forex positions. Maintain heavy exposure to outperforming financial and healthcare names while expanding into defensive consumer staples with strong opportunity scores.",
   "preferred_sectors": [
-    "Financial Services",
+    "Financials",
     "Healthcare",
-    "Consumer Defensive",
+    "Consumer Staples",
     "Utilities"
   ],
   "styles": [
+    "Momentum",
     "Trend Following",
-    "Breakout Momentum",
-    "Consolidation Expansion"
+    "Swing Trading"
   ],
-  "risk_posture": "Aggressive Growth with Strict Trailing Risk Controls",
-  "updated_at": "2026-08-14T11:29:54.180405+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-14T12:07:34.907361+00:00",
   "model": "gemini-flash-latest"
 }

@@ -1,5 +1,5 @@
 {
-  "balance": 18910.47,
+  "balance": 21405.49,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -101,16 +101,6 @@
       "take_profit": 222.28,
       "opened_at": "2026-08-13T17:11:18.027677+00:00"
     },
-    "USDCHF=X": {
-      "symbol": "USDCHF=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 3074.08,
-      "avg_price": 0.81325,
-      "stop_loss": 0.80512,
-      "take_profit": 0.82952,
-      "opened_at": "2026-08-13T17:11:21.326454+00:00"
-    },
     "KVUE": {
       "symbol": "KVUE",
       "asset_class": "equity",
@@ -123,6 +113,22 @@
     }
   },
   "trades": [
+    {
+      "id": "bd14b896dca0",
+      "ticker": "USDCHF=X",
+      "type": "SELL",
+      "price": 0.81163,
+      "shares": 3074.08,
+      "date": "2026-08-14T12:07:35.255114+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Exit underperforming forex trade with negative momentum to free up portfolio capacity for high-conviction equities.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.80512,
+      "take_profit": 0.82952,
+      "realized_pnl": -4.98
+    },
     {
       "id": "98a1f024da04",
       "ticker": "KVUE",
@@ -3544,5 +3550,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 217.9
+  "realized_pnl": 212.92
 }
