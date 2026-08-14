@@ -1,17 +1,18 @@
 {
-  "thesis": "Maintain high-conviction momentum and consolidate positions across top-ranking financial, technology, defensive consumer, and stable currency assets. The portfolio currently holds leading opportunity score names in strong UP trends; let winners run with disciplined stop management toward take-profit targets.",
+  "thesis": "Maintain high-conviction exposure across top-ranked momentum and consolidating leadership stocks (financials, healthcare, consumer, tech/gaming) and stable FX carry while preserving book capacity. With market breadth fully skewed to uptrends (100 UP / 0 DOWN) and all 12 current positions displaying strong technical stability near support, we hold all active positions to let winning trends run toward designated take-profit targets.",
   "preferred_sectors": [
     "Financials",
-    "Healthcare/Technology",
-    "Utilities/Real Estate",
+    "Healthcare",
+    "Consumer Staples",
+    "Technology",
     "Forex"
   ],
   "styles": [
     "Trend Following",
     "Momentum",
-    "Breakout Swing"
+    "Breakout Consolidation"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-08-14T08:55:57.946608+00:00",
+  "risk_posture": "Aggressive Growth within Hard Capacity Limits",
+  "updated_at": "2026-08-14T10:46:52.015522+00:00",
   "model": "gemini-flash-latest"
 }
