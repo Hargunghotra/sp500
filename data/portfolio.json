@@ -1,5 +1,5 @@
 {
-  "balance": 21757.64,
+  "balance": 19165.64,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -110,9 +110,35 @@
       "stop_loss": 29.38,
       "take_profit": 32.11,
       "opened_at": "2026-08-14T20:54:11.430549+00:00"
+    },
+    "KVUE": {
+      "symbol": "KVUE",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 135.0,
+      "avg_price": 19.200001,
+      "stop_loss": 18.62,
+      "take_profit": 20.35,
+      "opened_at": "2026-08-14T21:40:23.533976+00:00"
     }
   },
   "trades": [
+    {
+      "id": "d9ff7d3100d4",
+      "ticker": "KVUE",
+      "type": "BUY",
+      "price": 19.200001,
+      "shares": 135.0,
+      "date": "2026-08-14T21:40:23.534006+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score (8.989), strong consolidation above 50-day SMA, bullish sentiment with imminent upside catalyst. Fits well within single trade cash allocation limits.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 18.62,
+      "take_profit": 20.35,
+      "realized_pnl": null
+    },
     {
       "id": "79d5335a2365",
       "ticker": "RF",

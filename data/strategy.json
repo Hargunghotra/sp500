@@ -1,18 +1,17 @@
 {
-  "thesis": "Aggressively harvest sub-par and lagging positions while reducing excessive concentration in regional banking. Redeploy liquid capital into top-ranked, consolidating momentum setups in defensive and real estate sectors (PSA, INVH) while letting existing equity gainers run to target.",
+  "thesis": "Deploy available cash into high-conviction breakout and consolidating equity leaders with top-tier opportunity scores while maintaining disciplined stop-loss risk management across existing profitable holdings.",
   "preferred_sectors": [
-    "Real Estate",
-    "Technology",
-    "Healthcare",
     "Financials",
-    "Utilities"
+    "Healthcare",
+    "Technology",
+    "Consumer Staples"
   ],
   "styles": [
+    "Momentum",
     "Trend Following",
-    "Consolidation Breakout",
-    "Momentum"
+    "Quality Value"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-08-14T20:54:09.781738+00:00",
+  "risk_posture": "Aggressive Growth within Risk Limits",
+  "updated_at": "2026-08-14T21:40:23.134316+00:00",
   "model": "gemini-flash-latest"
 }
