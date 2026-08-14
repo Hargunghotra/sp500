@@ -1,17 +1,18 @@
 {
-  "thesis": "Maximize risk-adjusted returns across a resilient multi-asset basket by holding high-momentum, consolidating trend-leaders in financials, technology, and defensive consumer/utilities, while actively protecting gains with strict stop-loss rules.",
+  "thesis": "Maintain high-conviction long momentum across quality equities and macro FX while allowing active positions to compound toward target resistances in an expansive broad-market uptrend.",
   "preferred_sectors": [
-    "Financial Services",
-    "Technology & Life Sciences",
-    "Utilities & Consumer Defensive",
-    "Forex Majors"
+    "Financials",
+    "Life Sciences & Healthcare",
+    "Utilities & Clean Energy",
+    "Entertainment & Tech",
+    "Macro FX"
   ],
   "styles": [
-    "Momentum",
-    "Trend-Following",
-    "Breakout Consolidation"
+    "Momentum Trend-Following",
+    "Consolidation Breakout",
+    "Disciplined Risk Management"
   ],
-  "risk_posture": "Disciplined Aggressive",
-  "updated_at": "2026-08-14T21:58:11.857520+00:00",
+  "risk_posture": "Aggressive Growth within Hard Risk Bounds",
+  "updated_at": "2026-08-14T23:59:09.393960+00:00",
   "model": "gemini-flash-latest"
 }
