@@ -1,5 +1,5 @@
 {
-  "balance": 18781.91,
+  "balance": 19068.98,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -101,16 +101,6 @@
       "take_profit": 33.62,
       "opened_at": "2026-08-14T13:37:31.846237+00:00"
     },
-    "INVH": {
-      "symbol": "INVH",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 82.0,
-      "avg_price": 30.450001,
-      "stop_loss": 29.54,
-      "take_profit": 32.28,
-      "opened_at": "2026-08-14T15:28:35.720270+00:00"
-    },
     "KVUE": {
       "symbol": "KVUE",
       "asset_class": "equity",
@@ -120,9 +110,51 @@
       "stop_loss": 18.67,
       "take_profit": 20.4,
       "opened_at": "2026-08-14T17:12:20.887219+00:00"
+    },
+    "AUDUSD=X": {
+      "symbol": "AUDUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 3100.0,
+      "avg_price": 0.708617,
+      "stop_loss": 0.7015,
+      "take_profit": 0.7228,
+      "opened_at": "2026-08-14T20:21:13.418551+00:00"
     }
   },
   "trades": [
+    {
+      "id": "35d6dc97bbab",
+      "ticker": "AUDUSD=X",
+      "type": "BUY",
+      "price": 0.708617,
+      "shares": 3100.0,
+      "date": "2026-08-14T20:21:13.418593+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong consolidation breakout in an established upward trend above the 50-day SMA, introducing multi-asset FX diversification.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.7015,
+      "take_profit": 0.7228,
+      "realized_pnl": null
+    },
+    {
+      "id": "1f50cc20d792",
+      "ticker": "INVH",
+      "type": "SELL",
+      "price": 30.290001,
+      "shares": 82.0,
+      "date": "2026-08-14T20:21:10.938880+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Cutting lagging underperformer with negative 20-day return to free capital and portfolio capacity for higher-momentum assets.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 29.54,
+      "take_profit": 32.28,
+      "realized_pnl": -13.12
+    },
     {
       "id": "e49660477267",
       "ticker": "KVUE",
@@ -3672,5 +3704,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 206.64
+  "realized_pnl": 193.52
 }

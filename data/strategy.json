@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on high-conviction bullish consolidation breakouts across large-cap financial, consumer, and healthcare equities while maintaining disciplined stop losses and expanding exposure up to the 12-ticker portfolio ceiling.",
+  "thesis": "Aggressively capitalize on strong upward momentum in US equities while trimming lagging, low-momentum single-family rental assets to diversify into high-edge FX trends.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
-    "Consumer Defensive",
-    "Communication Services"
+    "Technology",
+    "Forex"
   ],
   "styles": [
-    "Momentum Breakout",
-    "Consolidation Continuation",
-    "Multi-Asset Trend Following"
+    "Momentum",
+    "Breakout",
+    "Trend-Following"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-08-14T17:12:20.335733+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-14T20:21:10.407365+00:00",
   "model": "gemini-flash-latest"
 }
