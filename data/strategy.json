@@ -1,18 +1,18 @@
 {
-  "thesis": "Maximize risk-adjusted returns by riding broad upward momentum across financials, healthcare/tech, and real estate, while maintaining disciplined 3%/6% equity brackets and expanding to the maximum 12-name capacity.",
+  "thesis": "Prune redundant regional banking exposure at breakeven to diversify into high-opportunity consumer health leaders while pressing existing high-conviction winners.",
   "preferred_sectors": [
-    "Financials",
-    "Real Estate",
-    "Life Sciences",
+    "Consumer Defensive",
+    "Financial Services",
+    "Technology",
     "Utilities",
-    "Consumer"
+    "Healthcare"
   ],
   "styles": [
     "Momentum",
     "Consolidation Breakout",
-    "Trend Following"
+    "Relative Strength"
   ],
-  "risk_posture": "AGGRESSIVE",
-  "updated_at": "2026-08-14T15:28:35.443843+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-08-14T16:14:34.679539+00:00",
   "model": "gemini-flash-latest"
 }

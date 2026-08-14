@@ -1,5 +1,5 @@
 {
-  "balance": 18878.27,
+  "balance": 21322.25,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -110,19 +110,25 @@
       "stop_loss": 29.54,
       "take_profit": 32.28,
       "opened_at": "2026-08-14T15:28:35.720270+00:00"
-    },
-    "FITB": {
-      "symbol": "FITB",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 42.0,
-      "avg_price": 58.244999,
-      "stop_loss": 56.5,
-      "take_profit": 61.74,
-      "opened_at": "2026-08-14T15:28:37.757026+00:00"
     }
   },
   "trades": [
+    {
+      "id": "4163d84c6cb2",
+      "ticker": "FITB",
+      "type": "SELL",
+      "price": 58.189999,
+      "shares": 42.0,
+      "date": "2026-08-14T16:14:35.049256+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Lowest opportunity score among our seven regional banking positions; rotating capital out of redundant financial exposure to open a slot for high-ranking non-correlated assets.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 56.5,
+      "take_profit": 61.74,
+      "realized_pnl": -2.31
+    },
     {
       "id": "ac9ac47f32a7",
       "ticker": "FITB",
@@ -3640,5 +3646,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 208.95
+  "realized_pnl": 206.64
 }
