@@ -1,17 +1,19 @@
 {
-  "thesis": "Aggressively harvest momentum across core equity leaders while cutting lagging forex positions. Maintain heavy exposure to outperforming financial and healthcare names while expanding into defensive consumer staples with strong opportunity scores.",
+  "thesis": "Aggressively capture upside momentum across consolidating market leaders in equities while preserving tight risk management and balanced exposure. With 100% of shortlisted equity assets trending upward, we maintain existing winning positions across diversified financials, consumer defensive, healthcare, and utilities, while deploying available cash into the highest-opportunity consolidated breakout setup (RF) to bring portfolio capacity to 12 active names.",
   "preferred_sectors": [
-    "Financials",
+    "Financial Services",
     "Healthcare",
-    "Consumer Staples",
-    "Utilities"
+    "Consumer Defensive",
+    "Utilities",
+    "Communication Services"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Swing Trading"
+    "Trend-Following",
+    "Consolidation Breakout",
+    "Cash Flow Quality"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-14T12:07:34.907361+00:00",
+  "risk_posture": "Aggressive Growth within Hard Risk Caps",
+  "updated_at": "2026-08-14T13:37:31.514157+00:00",
   "model": "gemini-flash-latest"
 }
