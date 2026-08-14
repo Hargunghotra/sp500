@@ -1,5 +1,5 @@
 {
-  "balance": 23821.46,
+  "balance": 18878.27,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -100,9 +100,61 @@
       "stop_loss": 30.77,
       "take_profit": 33.62,
       "opened_at": "2026-08-14T13:37:31.846237+00:00"
+    },
+    "INVH": {
+      "symbol": "INVH",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 82.0,
+      "avg_price": 30.450001,
+      "stop_loss": 29.54,
+      "take_profit": 32.28,
+      "opened_at": "2026-08-14T15:28:35.720270+00:00"
+    },
+    "FITB": {
+      "symbol": "FITB",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 42.0,
+      "avg_price": 58.244999,
+      "stop_loss": 56.5,
+      "take_profit": 61.74,
+      "opened_at": "2026-08-14T15:28:37.757026+00:00"
     }
   },
   "trades": [
+    {
+      "id": "ac9ac47f32a7",
+      "ticker": "FITB",
+      "type": "BUY",
+      "price": 58.244999,
+      "shares": 42.0,
+      "date": "2026-08-14T15:28:37.757067+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong relative strength in banking, high opportunity score, and clean consolidation structure.",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 56.5,
+      "take_profit": 61.74,
+      "realized_pnl": null
+    },
+    {
+      "id": "e714586cfc3e",
+      "ticker": "INVH",
+      "type": "BUY",
+      "price": 30.450001,
+      "shares": 82.0,
+      "date": "2026-08-14T15:28:35.720313+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top-tier score in consolidating uptrend with favorable risk-to-reward and bullish sentiment.",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 29.54,
+      "take_profit": 32.28,
+      "realized_pnl": null
+    },
     {
       "id": "323ca7e273c7",
       "ticker": "KVUE",

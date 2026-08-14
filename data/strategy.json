@@ -1,17 +1,18 @@
 {
-  "thesis": "Aggressive capital rotation into high-opportunity breakout and consolidating leaders while cutting stagnant and slightly negative positions to maximize realized and unrealized PnL.",
+  "thesis": "Maximize risk-adjusted returns by riding broad upward momentum across financials, healthcare/tech, and real estate, while maintaining disciplined 3%/6% equity brackets and expanding to the maximum 12-name capacity.",
   "preferred_sectors": [
     "Financials",
     "Real Estate",
     "Life Sciences",
-    "Utilities"
+    "Utilities",
+    "Consumer"
   ],
   "styles": [
     "Momentum",
     "Consolidation Breakout",
-    "Relative Strength"
+    "Trend Following"
   ],
-  "risk_posture": "Opportunistic Aggressive",
-  "updated_at": "2026-08-14T14:37:12.793714+00:00",
+  "risk_posture": "AGGRESSIVE",
+  "updated_at": "2026-08-14T15:28:35.443843+00:00",
   "model": "gemini-flash-latest"
 }
