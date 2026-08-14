@@ -1,17 +1,18 @@
 {
-  "thesis": "Aggressively capitalize on strong upward momentum in US equities while trimming lagging, low-momentum single-family rental assets to diversify into high-edge FX trends.",
+  "thesis": "Aggressively harvest sub-par and lagging positions while reducing excessive concentration in regional banking. Redeploy liquid capital into top-ranked, consolidating momentum setups in defensive and real estate sectors (PSA, INVH) while letting existing equity gainers run to target.",
   "preferred_sectors": [
-    "Financials",
-    "Healthcare",
+    "Real Estate",
     "Technology",
-    "Forex"
+    "Healthcare",
+    "Financials",
+    "Utilities"
   ],
   "styles": [
-    "Momentum",
-    "Breakout",
-    "Trend-Following"
+    "Trend Following",
+    "Consolidation Breakout",
+    "Momentum"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-14T20:21:10.407365+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-08-14T20:54:09.781738+00:00",
   "model": "gemini-flash-latest"
 }

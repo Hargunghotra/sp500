@@ -1,5 +1,5 @@
 {
-  "balance": 19068.98,
+  "balance": 21757.64,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -91,26 +91,6 @@
       "take_profit": 222.28,
       "opened_at": "2026-08-13T17:11:18.027677+00:00"
     },
-    "RF": {
-      "symbol": "RF",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 77.0,
-      "avg_price": 31.719999,
-      "stop_loss": 30.77,
-      "take_profit": 33.62,
-      "opened_at": "2026-08-14T13:37:31.846237+00:00"
-    },
-    "KVUE": {
-      "symbol": "KVUE",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 132.0,
-      "avg_price": 19.245001,
-      "stop_loss": 18.67,
-      "take_profit": 20.4,
-      "opened_at": "2026-08-14T17:12:20.887219+00:00"
-    },
     "AUDUSD=X": {
       "symbol": "AUDUSD=X",
       "asset_class": "forex",
@@ -120,9 +100,67 @@
       "stop_loss": 0.7015,
       "take_profit": 0.7228,
       "opened_at": "2026-08-14T20:21:13.418551+00:00"
+    },
+    "INVH": {
+      "symbol": "INVH",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 76.0,
+      "avg_price": 30.290001,
+      "stop_loss": 29.38,
+      "take_profit": 32.11,
+      "opened_at": "2026-08-14T20:54:11.430549+00:00"
     }
   },
   "trades": [
+    {
+      "id": "79d5335a2365",
+      "ticker": "RF",
+      "type": "SELL",
+      "price": 31.9,
+      "shares": 77.0,
+      "date": "2026-08-14T20:54:13.391451+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Reducing heavy regional bank concentration; RF exhibits higher volatility and lower opportunity score relative to other bank holdings.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 30.77,
+      "take_profit": 33.62,
+      "realized_pnl": 13.86
+    },
+    {
+      "id": "12df4b534ad8",
+      "ticker": "INVH",
+      "type": "BUY",
+      "price": 30.290001,
+      "shares": 76.0,
+      "date": "2026-08-14T20:54:11.430591+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong trend score (9.9) and consolidating price structure near key support, offering high-yield residential real estate exposure.",
+      "confidence": 0.83,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 29.38,
+      "take_profit": 32.11,
+      "realized_pnl": null
+    },
+    {
+      "id": "2344edf839b9",
+      "ticker": "KVUE",
+      "type": "SELL",
+      "price": 19.200001,
+      "shares": 132.0,
+      "date": "2026-08-14T20:54:10.088714+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Underperforming position showing negative PnL and lagging momentum compared to stronger market candidates. Freeing capital for higher opportunity setups.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 18.67,
+      "take_profit": 20.4,
+      "realized_pnl": -5.94
+    },
     {
       "id": "35d6dc97bbab",
       "ticker": "AUDUSD=X",
@@ -3704,5 +3742,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 193.52
+  "realized_pnl": 201.44
 }
