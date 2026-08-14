@@ -1,5 +1,5 @@
 {
-  "balance": 21322.25,
+  "balance": 18781.91,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -110,9 +110,35 @@
       "stop_loss": 29.54,
       "take_profit": 32.28,
       "opened_at": "2026-08-14T15:28:35.720270+00:00"
+    },
+    "KVUE": {
+      "symbol": "KVUE",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 132.0,
+      "avg_price": 19.245001,
+      "stop_loss": 18.67,
+      "take_profit": 20.4,
+      "opened_at": "2026-08-14T17:12:20.887219+00:00"
     }
   },
   "trades": [
+    {
+      "id": "e49660477267",
+      "ticker": "KVUE",
+      "type": "BUY",
+      "price": 19.245001,
+      "shares": 132.0,
+      "date": "2026-08-14T17:12:20.887252+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top unowned consolidation setup with opportunity score 8.991, bullish momentum above 50-day SMA, and strong risk/reward profile. Fits portfolio limit as the 12th position within max 12% cash sizing.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 18.67,
+      "take_profit": 20.4,
+      "realized_pnl": null
+    },
     {
       "id": "4163d84c6cb2",
       "ticker": "FITB",

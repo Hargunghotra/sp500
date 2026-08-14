@@ -1,18 +1,17 @@
 {
-  "thesis": "Prune redundant regional banking exposure at breakeven to diversify into high-opportunity consumer health leaders while pressing existing high-conviction winners.",
+  "thesis": "Capitalize on high-conviction bullish consolidation breakouts across large-cap financial, consumer, and healthcare equities while maintaining disciplined stop losses and expanding exposure up to the 12-ticker portfolio ceiling.",
   "preferred_sectors": [
+    "Financials",
+    "Healthcare",
     "Consumer Defensive",
-    "Financial Services",
-    "Technology",
-    "Utilities",
-    "Healthcare"
+    "Communication Services"
   ],
   "styles": [
-    "Momentum",
-    "Consolidation Breakout",
-    "Relative Strength"
+    "Momentum Breakout",
+    "Consolidation Continuation",
+    "Multi-Asset Trend Following"
   ],
   "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-08-14T16:14:34.679539+00:00",
+  "updated_at": "2026-08-14T17:12:20.335733+00:00",
   "model": "gemini-flash-latest"
 }
