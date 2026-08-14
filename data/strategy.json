@@ -1,17 +1,17 @@
 {
-  "thesis": "Deploy available cash into high-conviction breakout and consolidating equity leaders with top-tier opportunity scores while maintaining disciplined stop-loss risk management across existing profitable holdings.",
+  "thesis": "Maximize risk-adjusted returns across a resilient multi-asset basket by holding high-momentum, consolidating trend-leaders in financials, technology, and defensive consumer/utilities, while actively protecting gains with strict stop-loss rules.",
   "preferred_sectors": [
-    "Financials",
-    "Healthcare",
-    "Technology",
-    "Consumer Staples"
+    "Financial Services",
+    "Technology & Life Sciences",
+    "Utilities & Consumer Defensive",
+    "Forex Majors"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Quality Value"
+    "Trend-Following",
+    "Breakout Consolidation"
   ],
-  "risk_posture": "Aggressive Growth within Risk Limits",
-  "updated_at": "2026-08-14T21:40:23.134316+00:00",
+  "risk_posture": "Disciplined Aggressive",
+  "updated_at": "2026-08-14T21:58:11.857520+00:00",
   "model": "gemini-flash-latest"
 }
