@@ -1,17 +1,17 @@
 {
-  "thesis": "Maintain high-conviction exposure across top-ranked momentum and consolidation breakout candidates in regional financials, consumer staples, technology, and defensive forex. With current open positions aligning with the market's highest opportunity scores and displaying positive upward traction, we let winning positions ride toward take-profit targets while keeping hard stop-loss risk controls tightly locked.",
+  "thesis": "Maintain high-conviction momentum and consolidate positions across top-ranking financial, technology, defensive consumer, and stable currency assets. The portfolio currently holds leading opportunity score names in strong UP trends; let winners run with disciplined stop management toward take-profit targets.",
   "preferred_sectors": [
-    "Financial Services",
-    "Technology / Life Sciences",
-    "Consumer Defensive",
-    "Forex Majors"
+    "Financials",
+    "Healthcare/Technology",
+    "Utilities/Real Estate",
+    "Forex"
   ],
   "styles": [
+    "Trend Following",
     "Momentum",
-    "Consolidation Breakout",
-    "Trend Following"
+    "Breakout Swing"
   ],
-  "risk_posture": "Aggressive Growth with Strict Risk Caps",
-  "updated_at": "2026-08-13T23:55:44.454608+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-08-14T08:55:57.946608+00:00",
   "model": "gemini-flash-latest"
 }
