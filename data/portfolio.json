@@ -1,5 +1,5 @@
 {
-  "balance": 18963.05,
+  "balance": 23821.46,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -81,16 +81,6 @@
       "take_profit": 130.81,
       "opened_at": "2026-08-13T15:14:37.052583+00:00"
     },
-    "PSA": {
-      "symbol": "PSA",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 7.0,
-      "avg_price": 326.890015,
-      "stop_loss": 317.08,
-      "take_profit": 346.5,
-      "opened_at": "2026-08-13T16:09:59.202318+00:00"
-    },
     "EA": {
       "symbol": "EA",
       "asset_class": "equity",
@@ -100,16 +90,6 @@
       "stop_loss": 203.41,
       "take_profit": 222.28,
       "opened_at": "2026-08-13T17:11:18.027677+00:00"
-    },
-    "KVUE": {
-      "symbol": "KVUE",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 134.0,
-      "avg_price": 19.2101,
-      "stop_loss": 18.63,
-      "take_profit": 20.36,
-      "opened_at": "2026-08-13T19:18:03.530368+00:00"
     },
     "RF": {
       "symbol": "RF",
@@ -123,6 +103,38 @@
     }
   },
   "trades": [
+    {
+      "id": "323ca7e273c7",
+      "ticker": "KVUE",
+      "type": "SELL",
+      "price": 19.181499,
+      "shares": 134.0,
+      "date": "2026-08-14T14:37:15.577017+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Cutting minor loss and dead weight with lower relative opportunity score to unlock capital for stronger momentum setups.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 18.63,
+      "take_profit": 20.36,
+      "realized_pnl": -3.83
+    },
+    {
+      "id": "648ceb39006e",
+      "ticker": "PSA",
+      "type": "SELL",
+      "price": 326.869995,
+      "shares": 7.0,
+      "date": "2026-08-14T14:37:13.725654+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Flat performance and sub-optimal risk-reward relative to top-tier financial and residential real estate candidates.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 317.08,
+      "take_profit": 346.5,
+      "realized_pnl": -0.14
+    },
     {
       "id": "2c9995451efd",
       "ticker": "RF",
@@ -3576,5 +3588,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 212.92
+  "realized_pnl": 208.95
 }
