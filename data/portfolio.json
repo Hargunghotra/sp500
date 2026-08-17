@@ -1,5 +1,5 @@
 {
-  "balance": 18882.74,
+  "balance": 19925.35,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -81,26 +81,6 @@
       "take_profit": 0.7228,
       "opened_at": "2026-08-14T20:21:13.418551+00:00"
     },
-    "RF": {
-      "symbol": "RF",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 85.0,
-      "avg_price": 31.9,
-      "stop_loss": 30.94,
-      "take_profit": 33.81,
-      "opened_at": "2026-08-17T09:55:03.394358+00:00"
-    },
-    "FITB": {
-      "symbol": "FITB",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 43.0,
-      "avg_price": 58.060001,
-      "stop_loss": 56.32,
-      "take_profit": 61.54,
-      "opened_at": "2026-08-17T09:55:05.906088+00:00"
-    },
     "PPL": {
       "symbol": "PPL",
       "asset_class": "equity",
@@ -111,18 +91,134 @@
       "take_profit": 38.12,
       "opened_at": "2026-08-17T15:02:40.656081+00:00"
     },
-    "GBPUSD=X": {
-      "symbol": "GBPUSD=X",
+    "EURUSD=X": {
+      "symbol": "EURUSD=X",
       "asset_class": "forex",
       "side": "LONG",
-      "quantity": 1800.0,
-      "avg_price": 1.355638,
-      "stop_loss": 1.3421,
-      "take_profit": 1.3828,
-      "opened_at": "2026-08-17T15:38:12.195272+00:00"
+      "quantity": 1950.0,
+      "avg_price": 1.158078,
+      "stop_loss": 1.1465,
+      "take_profit": 1.1812,
+      "opened_at": "2026-08-17T18:21:14.643883+00:00"
+    },
+    "MMM": {
+      "symbol": "MMM",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 12.0,
+      "avg_price": 180.690002,
+      "stop_loss": 175.27,
+      "take_profit": 191.53,
+      "opened_at": "2026-08-17T18:21:17.820184+00:00"
+    },
+    "MRK": {
+      "symbol": "MRK",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 16.0,
+      "avg_price": 135.710007,
+      "stop_loss": 131.64,
+      "take_profit": 143.85,
+      "opened_at": "2026-08-17T18:21:19.448527+00:00"
     }
   },
   "trades": [
+    {
+      "id": "a40c2b5ab6d3",
+      "ticker": "MRK",
+      "type": "BUY",
+      "price": 135.710007,
+      "shares": 16.0,
+      "date": "2026-08-17T18:21:19.448559+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Pristine technical score of 10.0, +9.09% 20-day return, and strong defensive healthcare growth profile.",
+      "confidence": 0.83,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 131.64,
+      "take_profit": 143.85,
+      "realized_pnl": null
+    },
+    {
+      "id": "853dd1d96e33",
+      "ticker": "MMM",
+      "type": "BUY",
+      "price": 180.690002,
+      "shares": 12.0,
+      "date": "2026-08-17T18:21:17.820216+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Exceptional +13.56% 20-day momentum, 9.8 score, and strong institutional upgrade tailwind.",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 175.27,
+      "take_profit": 191.53,
+      "realized_pnl": null
+    },
+    {
+      "id": "ae47fa79d5af",
+      "ticker": "GBPUSD=X",
+      "type": "SELL",
+      "price": 1.354536,
+      "shares": 1800.0,
+      "date": "2026-08-17T18:21:15.987077+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Flat-to-negative FX holding lacking relative momentum compared to EURUSD and equity leaders. Exiting to free up an open slot.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.3421,
+      "take_profit": 1.3828,
+      "realized_pnl": -1.98
+    },
+    {
+      "id": "7e9a61d80e17",
+      "ticker": "EURUSD=X",
+      "type": "BUY",
+      "price": 1.158078,
+      "shares": 1950.0,
+      "date": "2026-08-17T18:21:14.643918+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top-tier FX candidate with 9.8 score and 8.594 opportunity score, consolidating above key moving average.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.1465,
+      "take_profit": 1.1812,
+      "realized_pnl": null
+    },
+    {
+      "id": "d8c485be9429",
+      "ticker": "FITB",
+      "type": "SELL",
+      "price": 58.044998,
+      "shares": 43.0,
+      "date": "2026-08-17T18:21:13.212373+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Stagnant trade at cost basis with high sector duplication. Liquidating to rotate into higher-alpha non-financial momentum names.",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 56.32,
+      "take_profit": 61.54,
+      "realized_pnl": -0.65
+    },
+    {
+      "id": "6f73c5d5a71f",
+      "ticker": "RF",
+      "type": "SELL",
+      "price": 31.84,
+      "shares": 85.0,
+      "date": "2026-08-17T18:21:11.605161+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Underperforming position showing negative returns and contributing to severe sector redundancy in regional banking. Cutting immediately to unlock capital.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 30.94,
+      "take_profit": 33.81,
+      "realized_pnl": -5.1
+    },
     {
       "id": "cb51ffd00ac0",
       "ticker": "GBPUSD=X",
@@ -3896,5 +3992,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 171.25
+  "realized_pnl": 163.52
 }

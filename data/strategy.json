@@ -1,17 +1,19 @@
 {
-  "thesis": "Capitalize on high-breadth momentum across equities and G10 currencies while maintaining strict risk limits and letting winning trends compound.",
+  "thesis": "Aggressively optimize capital efficiency by de-risking excessive regional banking concentration and cutting stagnant/negative positions, redeploying cash into top-ranked momentum industrials, large-cap pharma leaders, and high-probability FX breakout trends while letting high-performing core winners run.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
+    "Industrials",
     "Utilities",
     "Forex"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Consolidation Breakout"
+    "Breakout",
+    "Multi-Asset Rotation"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-17T15:38:11.643674+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-08-17T18:21:11.049445+00:00",
   "model": "gemini-flash-latest"
 }
