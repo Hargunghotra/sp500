@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on strong market breadth and bullish momentum by maintaining core winners across financials, life sciences, and defensive income assets while expanding high-opportunity regional financial leaders.",
+  "thesis": "Capitalize on broad market momentum across high-scoring consolidating equities and strong currency pairs while preserving capital through strict trailing stops and profit targets.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
     "Utilities",
-    "Real Estate"
+    "Forex"
   ],
   "styles": [
+    "Trend Following",
     "Momentum",
-    "Breakout",
-    "Trend Following"
+    "Breakout"
   ],
-  "risk_posture": "Aggressive Growth within Hard Risk Caps",
-  "updated_at": "2026-08-17T09:55:03.138066+00:00",
+  "risk_posture": "Aggressive Growth with Disciplined Risk Management",
+  "updated_at": "2026-08-17T10:19:44.888878+00:00",
   "model": "gemini-flash-latest"
 }
