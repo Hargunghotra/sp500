@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively optimize capital allocation in an overwhelmingly bullish breadth environment (100 UP / 0 DOWN) by pruning lagging and stagnant positions (MMM, PPL) to make room for superior consolidating breakout setups with top opportunity scores (FITB, TFC).",
+  "thesis": "Broad market breadth remains overwhelmingly bullish with 100% of tracked names in UP trend. Regional financial institutions and consolidating breakout equities present prime asymmetric risk/reward setups. We maintain all active winning positions while expanding book capacity to the 12-ticker maximum by initiating high-opportunity momentum positions in top-ranked regional banking leaders.",
   "preferred_sectors": [
-    "Financials",
+    "Financial Services",
     "Healthcare",
     "Utilities",
-    "Forex"
+    "Forex Majors"
   ],
   "styles": [
     "Momentum",
-    "Trend Continuation",
-    "Consolidation Breakout"
+    "Consolidation Breakout",
+    "Multi-Asset Trend Following"
   ],
-  "risk_posture": "Aggressive Growth with Disciplined Risk Management",
-  "updated_at": "2026-08-17T20:17:12.502649+00:00",
+  "risk_posture": "Aggressive Growth within Hard Risk Bounds",
+  "updated_at": "2026-08-17T21:14:36.239007+00:00",
   "model": "gemini-flash-latest"
 }
