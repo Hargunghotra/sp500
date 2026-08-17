@@ -1,18 +1,18 @@
 {
-  "thesis": "Maintain high-conviction long momentum across quality equities and macro FX while allowing active positions to compound toward target resistances in an expansive broad-market uptrend.",
+  "thesis": "Maximize realized and unrealized alpha by aggressively cutting stagnant and sentiment-degraded holdings, letting profitable core positions trend toward profit targets, and rotating freed capital into top-ranked consolidation breakouts across equities and FX.",
   "preferred_sectors": [
     "Financials",
-    "Life Sciences & Healthcare",
-    "Utilities & Clean Energy",
-    "Entertainment & Tech",
-    "Macro FX"
+    "Healthcare",
+    "Forex",
+    "Utilities",
+    "Real Estate"
   ],
   "styles": [
-    "Momentum Trend-Following",
+    "Momentum",
     "Consolidation Breakout",
-    "Disciplined Risk Management"
+    "Multi-Asset Trend Following"
   ],
-  "risk_posture": "Aggressive Growth within Hard Risk Bounds",
-  "updated_at": "2026-08-14T23:59:09.393960+00:00",
+  "risk_posture": "Aggressive Growth with Disciplined Risk Management",
+  "updated_at": "2026-08-17T08:29:12.271957+00:00",
   "model": "gemini-flash-latest"
 }
