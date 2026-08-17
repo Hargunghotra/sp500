@@ -1,5 +1,5 @@
 {
-  "balance": 23861.84,
+  "balance": 18653.76,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -100,9 +100,61 @@
       "stop_loss": 18.62,
       "take_profit": 20.35,
       "opened_at": "2026-08-14T21:40:23.533976+00:00"
+    },
+    "RF": {
+      "symbol": "RF",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 85.0,
+      "avg_price": 31.9,
+      "stop_loss": 30.94,
+      "take_profit": 33.81,
+      "opened_at": "2026-08-17T09:55:03.394358+00:00"
+    },
+    "FITB": {
+      "symbol": "FITB",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 43.0,
+      "avg_price": 58.060001,
+      "stop_loss": 56.32,
+      "take_profit": 61.54,
+      "opened_at": "2026-08-17T09:55:05.906088+00:00"
     }
   },
   "trades": [
+    {
+      "id": "08d02809bfcd",
+      "ticker": "FITB",
+      "type": "BUY",
+      "price": 58.060001,
+      "shares": 43.0,
+      "date": "2026-08-17T09:55:05.906124+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong consolidation pattern above the 50-day SMA, bullish sentiment, and favorable risk-reward profile. (qty capped to 43.0 by 12% cash rule)",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 56.32,
+      "take_profit": 61.54,
+      "realized_pnl": null
+    },
+    {
+      "id": "3603e891c396",
+      "ticker": "RF",
+      "type": "BUY",
+      "price": 31.9,
+      "shares": 85.0,
+      "date": "2026-08-17T09:55:03.394386+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score (8.839), confirmed upward trend with solid support structure and positive sector momentum.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 30.94,
+      "take_profit": 33.81,
+      "realized_pnl": null
+    },
     {
       "id": "8b08c336635a",
       "ticker": "EA",
