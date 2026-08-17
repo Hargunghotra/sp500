@@ -1,19 +1,17 @@
 {
-  "thesis": "Aggressively optimize capital efficiency by de-risking excessive regional banking concentration and cutting stagnant/negative positions, redeploying cash into top-ranked momentum industrials, large-cap pharma leaders, and high-probability FX breakout trends while letting high-performing core winners run.",
+  "thesis": "Aggressively optimize capital allocation in an overwhelmingly bullish breadth environment (100 UP / 0 DOWN) by pruning lagging and stagnant positions (MMM, PPL) to make room for superior consolidating breakout setups with top opportunity scores (FITB, TFC).",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
-    "Industrials",
     "Utilities",
     "Forex"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Breakout",
-    "Multi-Asset Rotation"
+    "Trend Continuation",
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-08-17T18:21:11.049445+00:00",
+  "risk_posture": "Aggressive Growth with Disciplined Risk Management",
+  "updated_at": "2026-08-17T20:17:12.502649+00:00",
   "model": "gemini-flash-latest"
 }

@@ -1,5 +1,5 @@
 {
-  "balance": 19925.35,
+  "balance": 24244.87,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -81,16 +81,6 @@
       "take_profit": 0.7228,
       "opened_at": "2026-08-14T20:21:13.418551+00:00"
     },
-    "PPL": {
-      "symbol": "PPL",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 60.0,
-      "avg_price": 35.959999,
-      "stop_loss": 34.88,
-      "take_profit": 38.12,
-      "opened_at": "2026-08-17T15:02:40.656081+00:00"
-    },
     "EURUSD=X": {
       "symbol": "EURUSD=X",
       "asset_class": "forex",
@@ -100,16 +90,6 @@
       "stop_loss": 1.1465,
       "take_profit": 1.1812,
       "opened_at": "2026-08-17T18:21:14.643883+00:00"
-    },
-    "MMM": {
-      "symbol": "MMM",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 12.0,
-      "avg_price": 180.690002,
-      "stop_loss": 175.27,
-      "take_profit": 191.53,
-      "opened_at": "2026-08-17T18:21:17.820184+00:00"
     },
     "MRK": {
       "symbol": "MRK",
@@ -123,6 +103,38 @@
     }
   },
   "trades": [
+    {
+      "id": "6934a1ba5b7b",
+      "ticker": "MMM",
+      "type": "SELL",
+      "price": 180.210007,
+      "shares": 12.0,
+      "date": "2026-08-17T20:17:14.978394+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Pruning slight loser and dead weight in volatile pattern to free up portfolio capacity for higher-ranked consolidating setups.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 175.27,
+      "take_profit": 191.53,
+      "realized_pnl": -5.76
+    },
+    {
+      "id": "ec517bf66cf8",
+      "ticker": "PPL",
+      "type": "SELL",
+      "price": 35.950001,
+      "shares": 60.0,
+      "date": "2026-08-17T20:17:13.035191+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Exiting flat utility position showing stagnant momentum to reallocate capital into high opportunity-score financial leaders.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 34.88,
+      "take_profit": 38.12,
+      "realized_pnl": -0.6
+    },
     {
       "id": "a40c2b5ab6d3",
       "ticker": "MRK",
@@ -3992,5 +4004,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 163.52
+  "realized_pnl": 157.16
 }
