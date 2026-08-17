@@ -1,5 +1,5 @@
 {
-  "balance": 18653.76,
+  "balance": 21322.89,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -81,26 +81,6 @@
       "take_profit": 0.7228,
       "opened_at": "2026-08-14T20:21:13.418551+00:00"
     },
-    "INVH": {
-      "symbol": "INVH",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 76.0,
-      "avg_price": 30.290001,
-      "stop_loss": 29.38,
-      "take_profit": 32.11,
-      "opened_at": "2026-08-14T20:54:11.430549+00:00"
-    },
-    "KVUE": {
-      "symbol": "KVUE",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 135.0,
-      "avg_price": 19.200001,
-      "stop_loss": 18.62,
-      "take_profit": 20.35,
-      "opened_at": "2026-08-14T21:40:23.533976+00:00"
-    },
     "RF": {
       "symbol": "RF",
       "asset_class": "equity",
@@ -120,9 +100,67 @@
       "stop_loss": 56.32,
       "take_profit": 61.54,
       "opened_at": "2026-08-17T09:55:05.906088+00:00"
+    },
+    "PPL": {
+      "symbol": "PPL",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 60.0,
+      "avg_price": 35.959999,
+      "stop_loss": 34.88,
+      "take_profit": 38.12,
+      "opened_at": "2026-08-17T15:02:40.656081+00:00"
     }
   },
   "trades": [
+    {
+      "id": "9e1245c07183",
+      "ticker": "KVUE",
+      "type": "SELL",
+      "price": 18.889999,
+      "shares": 135.0,
+      "date": "2026-08-17T15:02:42.413444+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Deteriorating position with negative PnL and lower relative momentum; pruning dead weight to maintain top-tier book quality.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 18.62,
+      "take_profit": 20.35,
+      "realized_pnl": -41.85
+    },
+    {
+      "id": "4fc288205e04",
+      "ticker": "PPL",
+      "type": "BUY",
+      "price": 35.959999,
+      "shares": 60.0,
+      "date": "2026-08-17T15:02:40.656122+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High-scoring utility consolidation with favorable risk-reward and strong analyst sentiment.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 34.88,
+      "take_profit": 38.12,
+      "realized_pnl": null
+    },
+    {
+      "id": "9e51d89b3a50",
+      "ticker": "INVH",
+      "type": "SELL",
+      "price": 29.955,
+      "shares": 76.0,
+      "date": "2026-08-17T15:02:38.334117+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Negative return profile and lagging performance; cutting losing position to free up capital and risk budget for higher-momentum opportunities.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 29.38,
+      "take_profit": 32.11,
+      "realized_pnl": -25.46
+    },
     {
       "id": "08d02809bfcd",
       "ticker": "FITB",
@@ -3832,5 +3870,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 238.56
+  "realized_pnl": 171.25
 }
