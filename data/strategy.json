@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize realized and unrealized alpha by concentrating capital in high-scoring, upward-trending assets across equities and major FX pairs. Aggressively eliminate underperforming and lagging positions (INVH, KVUE) to free up risk capacity, while holding winning regional financials/utilities and initiating fresh long exposure in top-ranked consolidating setups (GBPUSD=X and PPL).",
+  "thesis": "Capitalize on high-breadth momentum across equities and G10 currencies while maintaining strict risk limits and letting winning trends compound.",
   "preferred_sectors": [
     "Financials",
-    "Utilities",
     "Healthcare",
+    "Utilities",
     "Forex"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Breakout Consolidation"
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Aggressive Growth within Hard Risk Caps",
-  "updated_at": "2026-08-17T15:02:37.573577+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-17T15:38:11.643674+00:00",
   "model": "gemini-flash-latest"
 }
