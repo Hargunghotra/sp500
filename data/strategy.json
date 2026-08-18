@@ -1,18 +1,17 @@
 {
-  "thesis": "Capitalize on strong market-wide UP breadth by maintaining high-conviction momentum and consolidation breakouts in regional banking, financials, and consumer sectors while deploying dry powder into high-ranking pipeline setups.",
+  "thesis": "Aggressively trim lagging equities and de-concentrate sector exposure while rotating capital into high-opportunity multi-asset breakout leaders across financials, analytics, and G10 FX pairs.",
   "preferred_sectors": [
     "Financials",
-    "Healthcare",
-    "Consumer Defensive",
-    "Utilities",
-    "Forex"
+    "Information Services",
+    "Forex Majors",
+    "Utilities & Energy"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Consolidation Breakout"
+    "Breakout"
   ],
-  "risk_posture": "Aggressive Growth within Risk Caps",
-  "updated_at": "2026-08-18T10:44:39.478147+00:00",
+  "risk_posture": "Aggressive Growth within Hard Limits",
+  "updated_at": "2026-08-18T19:38:48.898929+00:00",
   "model": "gemini-flash-latest"
 }
