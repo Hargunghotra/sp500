@@ -1,5 +1,5 @@
 {
-  "balance": 24342.46,
+  "balance": 19228.41,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -100,9 +100,61 @@
       "stop_loss": 0.70153,
       "take_profit": 0.72279,
       "opened_at": "2026-08-18T21:57:54.672862+00:00"
+    },
+    "FITB": {
+      "symbol": "FITB",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 45.0,
+      "avg_price": 57.290001,
+      "stop_loss": 55.57,
+      "take_profit": 60.73,
+      "opened_at": "2026-08-18T22:43:09.891102+00:00"
+    },
+    "RF": {
+      "symbol": "RF",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 80.0,
+      "avg_price": 31.700001,
+      "stop_loss": 30.75,
+      "take_profit": 33.6,
+      "opened_at": "2026-08-18T22:43:12.928549+00:00"
     }
   },
   "trades": [
+    {
+      "id": "d06e59c1aeaf",
+      "ticker": "RF",
+      "type": "BUY",
+      "price": 31.700001,
+      "shares": 80.0,
+      "date": "2026-08-18T22:43:12.928586+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Exceptional opportunity score of 9.046 with strong 20-day momentum (+2.86%) and clean consolidation above support.",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 30.75,
+      "take_profit": 33.6,
+      "realized_pnl": null
+    },
+    {
+      "id": "5ff4041837b1",
+      "ticker": "FITB",
+      "type": "BUY",
+      "price": 57.290001,
+      "shares": 45.0,
+      "date": "2026-08-18T22:43:09.891130+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High conviction regional bank play with an opportunity score of 9.156, consolidating right above the 50 SMA with bullish sentiment.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 55.57,
+      "take_profit": 60.73,
+      "realized_pnl": null
+    },
     {
       "id": "3217d707244d",
       "ticker": "PRU",

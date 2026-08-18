@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize portfolio alpha by pressing high-conviction momentum leaders in regional banking, specialty healthcare, and utility defensives while harvesting maturing trades to fund top-ranked consolidating setups.",
+  "thesis": "Capitalize on strong uptrend breadth across equities and major G10 currencies by maintaining profitable core swing positions and expanding into top-ranked regional banking momentum setups.",
   "preferred_sectors": [
-    "Financial Services",
-    "Life Sciences",
+    "Financials",
+    "Healthcare",
     "Utilities",
-    "Major Forex"
+    "Forex Majors"
   ],
   "styles": [
-    "Momentum",
-    "Trend Continuation",
-    "Support-Resistance Reversal"
+    "Trend Following",
+    "Momentum Breakout",
+    "Swing Trading"
   ],
-  "risk_posture": "Aggressive Growth with Tight Risk Management",
-  "updated_at": "2026-08-18T22:18:26.951438+00:00",
+  "risk_posture": "Aggressive Growth within Defined Risk Limits",
+  "updated_at": "2026-08-18T22:43:09.487982+00:00",
   "model": "gemini-flash-latest"
 }
