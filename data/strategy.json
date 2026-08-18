@@ -1,18 +1,18 @@
 {
-  "thesis": "Maximize realized and unrealized gains across a multi-asset book by rotating out of lower-opportunity and over-concentrated holdings into high-conviction breakout and consolidation setups with favorable risk-reward profiles.",
+  "thesis": "Capitalize on strong market-wide UP breadth by maintaining high-conviction momentum and consolidation breakouts in regional banking, financials, and consumer sectors while deploying dry powder into high-ranking pipeline setups.",
   "preferred_sectors": [
-    "Real Estate",
-    "Consumer Non-Cyclical",
     "Financials",
-    "Technology",
+    "Healthcare",
+    "Consumer Defensive",
+    "Utilities",
     "Forex"
   ],
   "styles": [
     "Momentum",
-    "Breakout Swing",
-    "Active Rotation"
+    "Trend Following",
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Aggressive Growth within Hard Risk Caps",
-  "updated_at": "2026-08-18T10:02:52.211059+00:00",
+  "risk_posture": "Aggressive Growth within Risk Caps",
+  "updated_at": "2026-08-18T10:44:39.478147+00:00",
   "model": "gemini-flash-latest"
 }

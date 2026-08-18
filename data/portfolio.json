@@ -1,5 +1,5 @@
 {
-  "balance": 23565.67,
+  "balance": 18389.47,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -100,9 +100,61 @@
       "stop_loss": 55.87,
       "take_profit": 61.06,
       "opened_at": "2026-08-17T21:14:36.744059+00:00"
+    },
+    "KVUE": {
+      "symbol": "KVUE",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 140.0,
+      "avg_price": 19.200001,
+      "stop_loss": 18.62,
+      "take_profit": 20.35,
+      "opened_at": "2026-08-18T10:44:39.918475+00:00"
+    },
+    "RF": {
+      "symbol": "RF",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 78.0,
+      "avg_price": 31.9,
+      "stop_loss": 30.94,
+      "take_profit": 33.81,
+      "opened_at": "2026-08-18T10:44:41.996396+00:00"
     }
   },
   "trades": [
+    {
+      "id": "e3b2080a70b9",
+      "ticker": "RF",
+      "type": "BUY",
+      "price": 31.9,
+      "shares": 78.0,
+      "date": "2026-08-18T10:44:41.996431+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Regional bank breakout setup with high score of 9.8 and strong momentum alignment with current winning book. (qty capped to 78.0 by 12% cash rule)",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 30.94,
+      "take_profit": 33.81,
+      "realized_pnl": null
+    },
+    {
+      "id": "c4fb13de584a",
+      "ticker": "KVUE",
+      "type": "BUY",
+      "price": 19.200001,
+      "shares": 140.0,
+      "date": "2026-08-18T10:44:39.918504+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score of 8.989, bullish sentiment, consolidating tight above 50-day SMA, offering excellent risk/reward.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 18.62,
+      "take_profit": 20.35,
+      "realized_pnl": null
+    },
     {
       "id": "3757da42223b",
       "ticker": "MRK",
