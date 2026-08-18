@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively trim lagging equities and de-concentrate sector exposure while rotating capital into high-opportunity multi-asset breakout leaders across financials, analytics, and G10 FX pairs.",
+  "thesis": "Exploit strong multi-asset upside momentum across consolidating financials, utility infrastructure, and stable G10 currencies while maintaining tight stop protection and deploying surplus cash into high opportunity-score leaders.",
   "preferred_sectors": [
-    "Financials",
-    "Information Services",
-    "Forex Majors",
-    "Utilities & Energy"
+    "Financial Services",
+    "Utilities",
+    "G10 Forex",
+    "Healthcare"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Breakout"
+    "Breakout",
+    "Trend-Following"
   ],
-  "risk_posture": "Aggressive Growth within Hard Limits",
-  "updated_at": "2026-08-18T19:38:48.898929+00:00",
+  "risk_posture": "Aggressive Growth within Hard Caps",
+  "updated_at": "2026-08-18T20:39:08.847502+00:00",
   "model": "gemini-flash-latest"
 }
