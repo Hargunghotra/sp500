@@ -1,18 +1,17 @@
 {
-  "thesis": "Maintain high-conviction long momentum across quality equities and macro FX while allowing active positions to compound toward target resistances in an expansive broad-market uptrend.",
+  "thesis": "Maintain fully diversified multi-asset momentum portfolio across top-performing regional financials, defensive equities, and major currency pairs. Hold winning momentum runs toward profit targets while keeping tight trailing risk control across the book.",
   "preferred_sectors": [
     "Financials",
-    "Life Sciences & Healthcare",
-    "Utilities & Clean Energy",
-    "Entertainment & Tech",
-    "Macro FX"
+    "Healthcare",
+    "Utilities",
+    "Forex"
   ],
   "styles": [
-    "Momentum Trend-Following",
-    "Consolidation Breakout",
-    "Disciplined Risk Management"
+    "Momentum",
+    "Trend Following",
+    "Multi-Asset"
   ],
-  "risk_posture": "Aggressive Growth within Hard Risk Bounds",
-  "updated_at": "2026-08-14T23:59:09.393960+00:00",
+  "risk_posture": "Aggressive Growth with Strict Risk Caps",
+  "updated_at": "2026-08-17T23:11:50.861163+00:00",
   "model": "gemini-flash-latest"
 }
