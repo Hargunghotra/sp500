@@ -1,17 +1,18 @@
 {
-  "thesis": "Maintain fully diversified multi-asset momentum portfolio across top-performing regional financials, defensive equities, and major currency pairs. Hold winning momentum runs toward profit targets while keeping tight trailing risk control across the book.",
+  "thesis": "Maximize realized and unrealized gains across a multi-asset book by rotating out of lower-opportunity and over-concentrated holdings into high-conviction breakout and consolidation setups with favorable risk-reward profiles.",
   "preferred_sectors": [
+    "Real Estate",
+    "Consumer Non-Cyclical",
     "Financials",
-    "Healthcare",
-    "Utilities",
+    "Technology",
     "Forex"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Multi-Asset"
+    "Breakout Swing",
+    "Active Rotation"
   ],
-  "risk_posture": "Aggressive Growth with Strict Risk Caps",
-  "updated_at": "2026-08-17T23:11:50.861163+00:00",
+  "risk_posture": "Aggressive Growth within Hard Risk Caps",
+  "updated_at": "2026-08-18T10:02:52.211059+00:00",
   "model": "gemini-flash-latest"
 }
