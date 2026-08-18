@@ -1,17 +1,18 @@
 {
-  "thesis": "Maximize equity growth by rotating out of stagnant forex pairs testing overhead resistance and deploying freed capital into top-ranked bullish equities showing strong consolidation bases and momentum continuation.",
+  "thesis": "Rotate out of lagging and redundant regional bank exposures showing negative momentum (FITB, RF) to reduce sector concentration and redeploy capital into high-scoring major FX breakout pairs (EUR/USD, AUD/USD) while holding top-performing equity winners across tech, healthcare, and utilities.",
   "preferred_sectors": [
-    "Financials",
+    "Financial Services",
     "Healthcare",
     "Utilities",
-    "Information Services"
+    "Forex G10"
   ],
   "styles": [
     "Momentum",
-    "Consolidation Breakout",
-    "Trend Following"
+    "Trend Following",
+    "Mean Reversion",
+    "Cross-Asset Relative Strength"
   ],
-  "risk_posture": "Aggressive Growth with Strict Capital Preservation",
-  "updated_at": "2026-08-18T21:47:10.628814+00:00",
+  "risk_posture": "Aggressive Growth within Hard Risk Bounds",
+  "updated_at": "2026-08-18T21:57:49.695293+00:00",
   "model": "gemini-flash-latest"
 }

@@ -1,5 +1,5 @@
 {
-  "balance": 19119.7,
+  "balance": 19660.75,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -61,26 +61,6 @@
       "take_profit": 130.81,
       "opened_at": "2026-08-13T15:14:37.052583+00:00"
     },
-    "FITB": {
-      "symbol": "FITB",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 50.0,
-      "avg_price": 57.599998,
-      "stop_loss": 55.87,
-      "take_profit": 61.06,
-      "opened_at": "2026-08-17T21:14:36.744059+00:00"
-    },
-    "RF": {
-      "symbol": "RF",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 78.0,
-      "avg_price": 31.9,
-      "stop_loss": 30.94,
-      "take_profit": 33.81,
-      "opened_at": "2026-08-18T10:44:41.996396+00:00"
-    },
     "GBPUSD=X": {
       "symbol": "GBPUSD=X",
       "asset_class": "forex",
@@ -120,9 +100,93 @@
       "stop_loss": 262.98,
       "take_profit": 287.38,
       "opened_at": "2026-08-18T21:47:16.837344+00:00"
+    },
+    "EURUSD=X": {
+      "symbol": "EURUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 2000.0,
+      "avg_price": 1.157943,
+      "stop_loss": 1.14636,
+      "take_profit": 1.1811,
+      "opened_at": "2026-08-18T21:57:52.988621+00:00"
+    },
+    "AUDUSD=X": {
+      "symbol": "AUDUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 3500.0,
+      "avg_price": 0.708617,
+      "stop_loss": 0.70153,
+      "take_profit": 0.72279,
+      "opened_at": "2026-08-18T21:57:54.672862+00:00"
     }
   },
   "trades": [
+    {
+      "id": "395643407c02",
+      "ticker": "AUDUSD=X",
+      "type": "BUY",
+      "price": 0.708617,
+      "shares": 3500.0,
+      "date": "2026-08-18T21:57:54.672892+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Commodity currency momentum play with 9.8 score, clear UP trend above SMA50, and compelling risk-reward structure.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.70153,
+      "take_profit": 0.72279,
+      "realized_pnl": null
+    },
+    {
+      "id": "3c21f208be91",
+      "ticker": "EURUSD=X",
+      "type": "BUY",
+      "price": 1.157943,
+      "shares": 2000.0,
+      "date": "2026-08-18T21:57:52.988652+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong G10 FX candidate with 9.8 technical score, UP trend, and high relative opportunity score (8.601) breaking toward upper range.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.14636,
+      "take_profit": 1.1811,
+      "realized_pnl": null
+    },
+    {
+      "id": "a2c8f58b4528",
+      "ticker": "RF",
+      "type": "SELL",
+      "price": 31.700001,
+      "shares": 78.0,
+      "date": "2026-08-18T21:57:51.798506+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Underperforming position creating unnecessary drawdown drag; liquidating to diversify asset class exposure into stronger macro trends.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 30.94,
+      "take_profit": 33.81,
+      "realized_pnl": -15.6
+    },
+    {
+      "id": "5fbd13804804",
+      "ticker": "FITB",
+      "type": "SELL",
+      "price": 57.290001,
+      "shares": 50.0,
+      "date": "2026-08-18T21:57:50.153177+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Negative return profile and sector overconcentration in regional banks; cutting dead weight to free up capacity for top-ranked momentum setups.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 55.87,
+      "take_profit": 61.06,
+      "realized_pnl": -15.5
+    },
     {
       "id": "693005a9ec08",
       "ticker": "JNJ",
@@ -4248,5 +4312,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 131.2
+  "realized_pnl": 100.1
 }
