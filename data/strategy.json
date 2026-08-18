@@ -1,17 +1,17 @@
 {
-  "thesis": "Exploit strong multi-asset upside momentum across consolidating financials, utility infrastructure, and stable G10 currencies while maintaining tight stop protection and deploying surplus cash into high opportunity-score leaders.",
+  "thesis": "Maximize equity growth by rotating out of stagnant forex pairs testing overhead resistance and deploying freed capital into top-ranked bullish equities showing strong consolidation bases and momentum continuation.",
   "preferred_sectors": [
-    "Financial Services",
+    "Financials",
+    "Healthcare",
     "Utilities",
-    "G10 Forex",
-    "Healthcare"
+    "Information Services"
   ],
   "styles": [
     "Momentum",
-    "Breakout",
-    "Trend-Following"
+    "Consolidation Breakout",
+    "Trend Following"
   ],
-  "risk_posture": "Aggressive Growth within Hard Caps",
-  "updated_at": "2026-08-18T20:39:08.847502+00:00",
+  "risk_posture": "Aggressive Growth with Strict Capital Preservation",
+  "updated_at": "2026-08-18T21:47:10.628814+00:00",
   "model": "gemini-flash-latest"
 }

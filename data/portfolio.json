@@ -1,5 +1,5 @@
 {
-  "balance": 19533.94,
+  "balance": 19119.7,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -61,26 +61,6 @@
       "take_profit": 130.81,
       "opened_at": "2026-08-13T15:14:37.052583+00:00"
     },
-    "AUDUSD=X": {
-      "symbol": "AUDUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 3100.0,
-      "avg_price": 0.708617,
-      "stop_loss": 0.7015,
-      "take_profit": 0.7228,
-      "opened_at": "2026-08-14T20:21:13.418551+00:00"
-    },
-    "EURUSD=X": {
-      "symbol": "EURUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 1950.0,
-      "avg_price": 1.158078,
-      "stop_loss": 1.1465,
-      "take_profit": 1.1812,
-      "opened_at": "2026-08-17T18:21:14.643883+00:00"
-    },
     "FITB": {
       "symbol": "FITB",
       "asset_class": "equity",
@@ -120,9 +100,93 @@
       "stop_loss": 132.18,
       "take_profit": 144.45,
       "opened_at": "2026-08-18T20:39:10.918117+00:00"
+    },
+    "MCO": {
+      "symbol": "MCO",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 5.0,
+      "avg_price": 485.790009,
+      "stop_loss": 471.22,
+      "take_profit": 514.94,
+      "opened_at": "2026-08-18T21:47:13.421068+00:00"
+    },
+    "JNJ": {
+      "symbol": "JNJ",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 9.0,
+      "avg_price": 271.109985,
+      "stop_loss": 262.98,
+      "take_profit": 287.38,
+      "opened_at": "2026-08-18T21:47:16.837344+00:00"
     }
   },
   "trades": [
+    {
+      "id": "693005a9ec08",
+      "ticker": "JNJ",
+      "type": "BUY",
+      "price": 271.109985,
+      "shares": 9.0,
+      "date": "2026-08-18T21:47:16.837379+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Score 10.0 with strong healthcare sector rotation tailwinds, +8.18 percent 20-day return, and trading well above SMA50. (qty capped to 9.0 by 12% cash rule)",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 262.98,
+      "take_profit": 287.38,
+      "realized_pnl": null
+    },
+    {
+      "id": "17865b250dc0",
+      "ticker": "AUDUSD=X",
+      "type": "SELL",
+      "price": 0.708617,
+      "shares": 3100.0,
+      "date": "2026-08-18T21:47:15.432356+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Forex position has stalled at overhead resistance with negligible upside momentum; freeing up portfolio capacity.",
+      "confidence": 0.74,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.7015,
+      "take_profit": 0.7228,
+      "realized_pnl": -0.0
+    },
+    {
+      "id": "2b4125b6369a",
+      "ticker": "MCO",
+      "type": "BUY",
+      "price": 485.790009,
+      "shares": 5.0,
+      "date": "2026-08-18T21:47:13.421105+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High-quality consolidation setup with 3.15 percent support cushion and strong institutional ratings franchise catalyst.",
+      "confidence": 0.81,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 471.22,
+      "take_profit": 514.94,
+      "realized_pnl": null
+    },
+    {
+      "id": "5719f128e109",
+      "ticker": "EURUSD=X",
+      "type": "SELL",
+      "price": 1.157943,
+      "shares": 1950.0,
+      "date": "2026-08-18T21:47:10.947891+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Price is stalling right at resistance with 0.0 percent distance remaining; rotating out of flat FX exposure into higher-alpha equities.",
+      "confidence": 0.75,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.1465,
+      "take_profit": 1.1812,
+      "realized_pnl": -0.26
+    },
     {
       "id": "6ddad7d790ed",
       "ticker": "AWK",
@@ -4184,5 +4248,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 131.46
+  "realized_pnl": 131.2
 }
