@@ -1,18 +1,17 @@
 {
-  "thesis": "Rotate out of lagging and redundant regional bank exposures showing negative momentum (FITB, RF) to reduce sector concentration and redeploy capital into high-scoring major FX breakout pairs (EUR/USD, AUD/USD) while holding top-performing equity winners across tech, healthcare, and utilities.",
+  "thesis": "Maximize portfolio alpha by pressing high-conviction momentum leaders in regional banking, specialty healthcare, and utility defensives while harvesting maturing trades to fund top-ranked consolidating setups.",
   "preferred_sectors": [
     "Financial Services",
-    "Healthcare",
+    "Life Sciences",
     "Utilities",
-    "Forex G10"
+    "Major Forex"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Mean Reversion",
-    "Cross-Asset Relative Strength"
+    "Trend Continuation",
+    "Support-Resistance Reversal"
   ],
-  "risk_posture": "Aggressive Growth within Hard Risk Bounds",
-  "updated_at": "2026-08-18T21:57:49.695293+00:00",
+  "risk_posture": "Aggressive Growth with Tight Risk Management",
+  "updated_at": "2026-08-18T22:18:26.951438+00:00",
   "model": "gemini-flash-latest"
 }

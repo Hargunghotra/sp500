@@ -1,5 +1,5 @@
 {
-  "balance": 19660.75,
+  "balance": 24342.46,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -51,16 +51,6 @@
       "take_profit": 15.59,
       "opened_at": "2026-08-13T10:03:15.920450+00:00"
     },
-    "PRU": {
-      "symbol": "PRU",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 18.0,
-      "avg_price": 123.410004,
-      "stop_loss": 119.71,
-      "take_profit": 130.81,
-      "opened_at": "2026-08-13T15:14:37.052583+00:00"
-    },
     "GBPUSD=X": {
       "symbol": "GBPUSD=X",
       "asset_class": "forex",
@@ -91,16 +81,6 @@
       "take_profit": 514.94,
       "opened_at": "2026-08-18T21:47:13.421068+00:00"
     },
-    "JNJ": {
-      "symbol": "JNJ",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 9.0,
-      "avg_price": 271.109985,
-      "stop_loss": 262.98,
-      "take_profit": 287.38,
-      "opened_at": "2026-08-18T21:47:16.837344+00:00"
-    },
     "EURUSD=X": {
       "symbol": "EURUSD=X",
       "asset_class": "forex",
@@ -123,6 +103,38 @@
     }
   },
   "trades": [
+    {
+      "id": "3217d707244d",
+      "ticker": "PRU",
+      "type": "SELL",
+      "price": 124.540001,
+      "shares": 18.0,
+      "date": "2026-08-18T22:18:30.410143+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Take profit on established green position to free capital and a portfolio slot for higher-ranked setups.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 119.71,
+      "take_profit": 130.81,
+      "realized_pnl": 20.34
+    },
+    {
+      "id": "15ff6d5b4bbb",
+      "ticker": "JNJ",
+      "type": "SELL",
+      "price": 271.109985,
+      "shares": 9.0,
+      "date": "2026-08-18T22:18:27.868987+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Reallocate flat-performing large-cap capital into top opportunity score candidates exhibiting tighter consolidation.",
+      "confidence": 0.75,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 262.98,
+      "take_profit": 287.38,
+      "realized_pnl": 0.0
+    },
     {
       "id": "395643407c02",
       "ticker": "AUDUSD=X",
@@ -4312,5 +4324,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 100.1
+  "realized_pnl": 120.44
 }
