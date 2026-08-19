@@ -1,17 +1,17 @@
 {
-  "thesis": "Maintain fully diversified multi-asset momentum portfolio across top-performing regional financials, defensive equities, and major currency pairs. Hold winning momentum runs toward profit targets while keeping tight trailing risk control across the book.",
+  "thesis": "Capitalize on strong uptrend breadth across equities and major G10 currencies by maintaining profitable core swing positions and expanding into top-ranked regional banking momentum setups.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
     "Utilities",
-    "Forex"
+    "Forex Majors"
   ],
   "styles": [
-    "Momentum",
     "Trend Following",
-    "Multi-Asset"
+    "Momentum Breakout",
+    "Swing Trading"
   ],
-  "risk_posture": "Aggressive Growth with Strict Risk Caps",
-  "updated_at": "2026-08-17T23:11:50.861163+00:00",
+  "risk_posture": "Aggressive Growth within Defined Risk Limits",
+  "updated_at": "2026-08-18T22:43:09.487982+00:00",
   "model": "gemini-flash-latest"
 }
