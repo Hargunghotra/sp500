@@ -1,5 +1,5 @@
 {
-  "balance": 19283.52,
+  "balance": 19559.61,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -101,18 +101,50 @@
       "take_profit": 256.27,
       "opened_at": "2026-08-19T22:49:14.228032+00:00"
     },
-    "LINK-USD": {
-      "symbol": "LINK-USD",
-      "asset_class": "crypto",
+    "AES": {
+      "symbol": "AES",
+      "asset_class": "equity",
       "side": "LONG",
-      "quantity": 245.067187,
-      "avg_price": 10.73,
-      "stop_loss": 10.19,
-      "take_profit": 11.8,
-      "opened_at": "2026-08-19T22:49:17.201641+00:00"
+      "quantity": 157.0,
+      "avg_price": 14.7,
+      "stop_loss": 14.26,
+      "take_profit": 15.58,
+      "opened_at": "2026-08-19T23:35:09.515612+00:00"
     }
   },
   "trades": [
+    {
+      "id": "9597f39fab7a",
+      "ticker": "LINK-USD",
+      "type": "SELL",
+      "price": 10.544,
+      "shares": 245.067187,
+      "date": "2026-08-19T23:35:11.811969+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Cutting lagging crypto asset with negative unrealized PnL to eliminate deadweight and free capital for higher-conviction opportunities.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "crypto",
+      "stop_loss": 10.19,
+      "take_profit": 11.8,
+      "realized_pnl": -45.58
+    },
+    {
+      "id": "ae2b1dc2cb73",
+      "ticker": "AES",
+      "type": "BUY",
+      "price": 14.7,
+      "shares": 157.0,
+      "date": "2026-08-19T23:35:09.515638+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score setup in energy transition utility with strong support cushion and bullish sentiment.",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 14.26,
+      "take_profit": 15.58,
+      "realized_pnl": null
+    },
     {
       "id": "94828c6500ec",
       "ticker": "LINK-USD",
@@ -4542,5 +4574,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -157.62
+  "realized_pnl": -203.2
 }
