@@ -1,36 +1,6 @@
 {
-  "balance": 24186.36,
+  "balance": 24659.15,
   "positions": {
-    "MTB": {
-      "symbol": "MTB",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 7.0,
-      "avg_price": 250.449997,
-      "stop_loss": 242.94,
-      "take_profit": 265.48,
-      "opened_at": "2026-08-10T12:30:25.674130+00:00"
-    },
-    "USB": {
-      "symbol": "USB",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 25.0,
-      "avg_price": 63.939999,
-      "stop_loss": 62.02,
-      "take_profit": 67.78,
-      "opened_at": "2026-08-10T12:30:27.842172+00:00"
-    },
-    "PNC": {
-      "symbol": "PNC",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 9.0,
-      "avg_price": 251.550003,
-      "stop_loss": 244.0,
-      "take_profit": 266.64,
-      "opened_at": "2026-08-10T16:41:42.556593+00:00"
-    },
     "TECH": {
       "symbol": "TECH",
       "asset_class": "equity",
@@ -100,9 +70,109 @@
       "stop_loss": 0.70153,
       "take_profit": 0.72279,
       "opened_at": "2026-08-18T21:57:54.672862+00:00"
+    },
+    "GD": {
+      "symbol": "GD",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 7.0,
+      "avg_price": 392.309998,
+      "stop_loss": 380.54,
+      "take_profit": 415.85,
+      "opened_at": "2026-08-19T20:12:28.338335+00:00"
+    },
+    "PSA": {
+      "symbol": "PSA",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 7.0,
+      "avg_price": 325.209991,
+      "stop_loss": 315.45,
+      "take_profit": 344.72,
+      "opened_at": "2026-08-19T20:12:30.242464+00:00"
     }
   },
   "trades": [
+    {
+      "id": "f806389d425c",
+      "ticker": "PNC",
+      "type": "SELL",
+      "price": 245.889999,
+      "shares": 9.0,
+      "date": "2026-08-19T20:12:36.166679+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Deteriorating price action, slipped below 50-day SMA, down-trend confirmed with negative 20-day returns and stagnant opportunity score.",
+      "confidence": 0.95,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 244.0,
+      "take_profit": 266.64,
+      "realized_pnl": -50.94
+    },
+    {
+      "id": "3441a242659c",
+      "ticker": "USB",
+      "type": "SELL",
+      "price": 62.761002,
+      "shares": 25.0,
+      "date": "2026-08-19T20:12:33.730891+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Persistent negative return (-2.65% 20d) and zero distance to support. Cutting losses early to maintain book velocity.",
+      "confidence": 0.92,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 62.02,
+      "take_profit": 67.78,
+      "realized_pnl": -29.47
+    },
+    {
+      "id": "92857606bb45",
+      "ticker": "MTB",
+      "type": "SELL",
+      "price": 244.770004,
+      "shares": 7.0,
+      "date": "2026-08-19T20:12:32.310999+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Position sitting on support with negative PnL and weak relative momentum. Liquidating to liberate dry powder for higher-conviction leaders.",
+      "confidence": 0.92,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 242.94,
+      "take_profit": 265.48,
+      "realized_pnl": -39.76
+    },
+    {
+      "id": "2c9abe958e63",
+      "ticker": "PSA",
+      "type": "BUY",
+      "price": 325.209991,
+      "shares": 7.0,
+      "date": "2026-08-19T20:12:30.242495+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score (9.193), strong support base with +4.33% 20-day momentum and clean uptrend pattern. (qty capped to 7.0 by 12% cash rule)",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 315.45,
+      "take_profit": 344.72,
+      "realized_pnl": null
+    },
+    {
+      "id": "a08117871e57",
+      "ticker": "GD",
+      "type": "BUY",
+      "price": 392.309998,
+      "shares": 7.0,
+      "date": "2026-08-19T20:12:28.338363+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Exceptional setup: opportunity score 9.293, consolidating near resistance in strong defense sector uptrend with bullish sentiment.",
+      "confidence": 0.9,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 380.54,
+      "take_profit": 415.85,
+      "realized_pnl": null
+    },
     {
       "id": "6ca12a0d6005",
       "ticker": "RF",
@@ -4388,5 +4458,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -35.66
+  "realized_pnl": -155.83
 }

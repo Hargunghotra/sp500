@@ -1,17 +1,19 @@
 {
-  "thesis": "Capitalize on strong uptrend breadth across equities and major G10 currencies by maintaining profitable core swing positions and expanding into top-ranked regional banking momentum setups.",
+  "thesis": "Aggressive rotation out of underperforming regional banking stocks into high relative-strength equities and consolidating FX pairs. Capital is systematically reallocated to top opportunity score setups in defense, healthcare, real estate, and anti-dollar currency momentum.",
   "preferred_sectors": [
-    "Financials",
+    "Aerospace & Defense",
     "Healthcare",
+    "Real Estate",
     "Utilities",
-    "Forex Majors"
+    "Forex"
   ],
   "styles": [
+    "Momentum",
     "Trend Following",
-    "Momentum Breakout",
-    "Swing Trading"
+    "Breakout",
+    "Mean Reversion"
   ],
-  "risk_posture": "Aggressive Growth within Defined Risk Limits",
-  "updated_at": "2026-08-18T22:43:09.487982+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-19T20:12:27.916599+00:00",
   "model": "gemini-flash-latest"
 }
