@@ -1,5 +1,5 @@
 {
-  "balance": 19228.41,
+  "balance": 24186.36,
   "positions": {
     "MTB": {
       "symbol": "MTB",
@@ -100,29 +100,41 @@
       "stop_loss": 0.70153,
       "take_profit": 0.72279,
       "opened_at": "2026-08-18T21:57:54.672862+00:00"
-    },
-    "FITB": {
-      "symbol": "FITB",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 45.0,
-      "avg_price": 57.290001,
-      "stop_loss": 55.57,
-      "take_profit": 60.73,
-      "opened_at": "2026-08-18T22:43:09.891102+00:00"
-    },
-    "RF": {
-      "symbol": "RF",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 80.0,
-      "avg_price": 31.700001,
-      "stop_loss": 30.75,
-      "take_profit": 33.6,
-      "opened_at": "2026-08-18T22:43:12.928549+00:00"
     }
   },
   "trades": [
+    {
+      "id": "6ca12a0d6005",
+      "ticker": "RF",
+      "type": "SELL",
+      "price": 30.75,
+      "shares": 80.0,
+      "date": "2026-08-19T17:57:17.862681+00:00",
+      "pattern": "SL/TP exit",
+      "reasoning": "Stop-loss hit @ 30.75 (SL 30.75)",
+      "confidence": 1.0,
+      "source": "stop_loss",
+      "asset_class": "equity",
+      "stop_loss": null,
+      "take_profit": null,
+      "realized_pnl": -76.0
+    },
+    {
+      "id": "ba78a96bb5b2",
+      "ticker": "FITB",
+      "type": "SELL",
+      "price": 55.509998,
+      "shares": 45.0,
+      "date": "2026-08-19T17:57:16.253240+00:00",
+      "pattern": "SL/TP exit",
+      "reasoning": "Stop-loss hit @ 55.509998 (SL 55.57)",
+      "confidence": 1.0,
+      "source": "stop_loss",
+      "asset_class": "equity",
+      "stop_loss": null,
+      "take_profit": null,
+      "realized_pnl": -80.1
+    },
     {
       "id": "d06e59c1aeaf",
       "ticker": "RF",
@@ -4376,5 +4388,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": 120.44
+  "realized_pnl": -35.66
 }
