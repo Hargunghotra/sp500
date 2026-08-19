@@ -1,5 +1,5 @@
 {
-  "balance": 24659.15,
+  "balance": 19283.52,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -10,16 +10,6 @@
       "stop_loss": 70.07,
       "take_profit": 76.57,
       "opened_at": "2026-08-11T20:24:42.091259+00:00"
-    },
-    "AES": {
-      "symbol": "AES",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 179.0,
-      "avg_price": 14.71,
-      "stop_loss": 14.27,
-      "take_profit": 15.59,
-      "opened_at": "2026-08-13T10:03:15.920450+00:00"
     },
     "GBPUSD=X": {
       "symbol": "GBPUSD=X",
@@ -90,9 +80,103 @@
       "stop_loss": 315.45,
       "take_profit": 344.72,
       "opened_at": "2026-08-19T20:12:30.242464+00:00"
+    },
+    "INVH": {
+      "symbol": "INVH",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 90.0,
+      "avg_price": 30.200001,
+      "stop_loss": 29.29,
+      "take_profit": 32.01,
+      "opened_at": "2026-08-19T22:49:12.314677+00:00"
+    },
+    "DGX": {
+      "symbol": "DGX",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 11.0,
+      "avg_price": 241.759995,
+      "stop_loss": 234.51,
+      "take_profit": 256.27,
+      "opened_at": "2026-08-19T22:49:14.228032+00:00"
+    },
+    "LINK-USD": {
+      "symbol": "LINK-USD",
+      "asset_class": "crypto",
+      "side": "LONG",
+      "quantity": 245.067187,
+      "avg_price": 10.73,
+      "stop_loss": 10.19,
+      "take_profit": 11.8,
+      "opened_at": "2026-08-19T22:49:17.201641+00:00"
     }
   },
   "trades": [
+    {
+      "id": "94828c6500ec",
+      "ticker": "LINK-USD",
+      "type": "BUY",
+      "price": 10.73,
+      "shares": 245.067187,
+      "date": "2026-08-19T22:49:17.201674+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Leading crypto asset demonstrating massive relative strength (+26.88% 20d return) and perfect score (10.0), offering rapid upside potential. (qty capped to 245.067187 by 12% cash rule)",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "crypto",
+      "stop_loss": 10.19,
+      "take_profit": 11.8,
+      "realized_pnl": null
+    },
+    {
+      "id": "e9c3e19724f2",
+      "ticker": "DGX",
+      "type": "BUY",
+      "price": 241.759995,
+      "shares": 11.0,
+      "date": "2026-08-19T22:49:14.228071+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Healthcare momentum leader with +15.22% 20-day return, top score of 10.0, and bullish analyst sentiment.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 234.51,
+      "take_profit": 256.27,
+      "realized_pnl": null
+    },
+    {
+      "id": "e75ec009dd4b",
+      "ticker": "INVH",
+      "type": "BUY",
+      "price": 30.200001,
+      "shares": 90.0,
+      "date": "2026-08-19T22:49:12.314714+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score (8.897) with a clean consolidation pattern and bullish fundamental backdrop in residential REIT space.",
+      "confidence": 0.83,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 29.29,
+      "take_profit": 32.01,
+      "realized_pnl": null
+    },
+    {
+      "id": "3c02f5a86f19",
+      "ticker": "AES",
+      "type": "SELL",
+      "price": 14.7,
+      "shares": 179.0,
+      "date": "2026-08-19T22:49:10.057403+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Cutting flat, low-momentum utility holding displaying negligible 20-day return (0.11%) and minimal upside relative to high-velocity alternative candidates.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 14.27,
+      "take_profit": 15.59,
+      "realized_pnl": -1.79
+    },
     {
       "id": "f806389d425c",
       "ticker": "PNC",
@@ -4458,5 +4542,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -155.83
+  "realized_pnl": -157.62
 }

@@ -1,19 +1,18 @@
 {
-  "thesis": "Aggressive rotation out of underperforming regional banking stocks into high relative-strength equities and consolidating FX pairs. Capital is systematically reallocated to top opportunity score setups in defense, healthcare, real estate, and anti-dollar currency momentum.",
+  "thesis": "Aggressively capture multi-asset momentum by letting profitable forex and large-cap equity trends compound, pruning sluggish and zero-momentum assets, and rotating available liquidity into top-ranked consolidations and momentum breakouts across equities and high-relative-strength crypto.",
   "preferred_sectors": [
-    "Aerospace & Defense",
+    "Technology",
+    "Defense & Industrials",
+    "Real Estate / REITs",
     "Healthcare",
-    "Real Estate",
-    "Utilities",
-    "Forex"
+    "Crypto Assets"
   ],
   "styles": [
-    "Momentum",
+    "Momentum Breakout",
     "Trend Following",
-    "Breakout",
-    "Mean Reversion"
+    "Multi-Asset Rotation"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-19T20:12:27.916599+00:00",
+  "risk_posture": "Aggressive Growth within Hard Risk Bounds",
+  "updated_at": "2026-08-19T22:49:09.645797+00:00",
   "model": "gemini-flash-latest"
 }
