@@ -1,5 +1,5 @@
 {
-  "balance": 20242.79,
+  "balance": 19858.67,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -101,18 +101,50 @@
       "take_profit": 18.71,
       "opened_at": "2026-08-20T08:23:44.754750+00:00"
     },
-    "SYY": {
-      "symbol": "SYY",
-      "asset_class": "equity",
+    "NZDUSD=X": {
+      "symbol": "NZDUSD=X",
+      "asset_class": "forex",
       "side": "LONG",
-      "quantity": 24.0,
-      "avg_price": 84.239998,
-      "stop_loss": 81.71,
-      "take_profit": 89.29,
-      "opened_at": "2026-08-20T16:20:32.883410+00:00"
+      "quantity": 4000.0,
+      "avg_price": 0.594389,
+      "stop_loss": 0.5884,
+      "take_profit": 0.6063,
+      "opened_at": "2026-08-20T21:40:58.283924+00:00"
     }
   },
   "trades": [
+    {
+      "id": "956676ab68e8",
+      "ticker": "SYY",
+      "type": "SELL",
+      "price": 83.059998,
+      "shares": 24.0,
+      "date": "2026-08-20T21:41:00.813648+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Cutting lagging underperforming equity position down -1.40% to eliminate dead weight and rotate capital into top momentum setups.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 81.71,
+      "take_profit": 89.29,
+      "realized_pnl": -28.32
+    },
+    {
+      "id": "6ce1c7c24b2f",
+      "ticker": "NZDUSD=X",
+      "type": "BUY",
+      "price": 0.594389,
+      "shares": 4000.0,
+      "date": "2026-08-20T21:40:58.283950+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High-scoring G10 currency pair with 9.9 technical rating, breaking out with solid 20-day return momentum above 50 SMA.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.5884,
+      "take_profit": 0.6063,
+      "realized_pnl": null
+    },
     {
       "id": "2c6e28de17fb",
       "ticker": "SYY",
@@ -4638,5 +4670,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -226.4
+  "realized_pnl": -254.72
 }

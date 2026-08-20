@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively trim lagging equity allocations to fund high-conviction breakout momentum plays while riding established FX and equity gainers toward profit targets.",
+  "thesis": "Aggressively capitalize on strong trend continuation across consolidating equities and major currency pairs while cutting laggards to optimize risk-adjusted returns and preserve cash capital.",
   "preferred_sectors": [
-    "Materials",
-    "Consumer Staples",
-    "Financials",
-    "Utilities"
+    "Industrials",
+    "Real Estate",
+    "Utilities",
+    "Forex"
   ],
   "styles": [
-    "Momentum Breakouts",
-    "Trend Following",
-    "Relative Strength"
+    "Momentum",
+    "Trend Continuation",
+    "Breakout"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-08-20T16:20:27.837015+00:00",
+  "risk_posture": "Aggressive",
+  "updated_at": "2026-08-20T21:40:57.862834+00:00",
   "model": "gemini-flash-latest"
 }
