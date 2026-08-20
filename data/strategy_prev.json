@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on strong uptrend breadth across equities and major G10 currencies by maintaining profitable core swing positions and expanding into top-ranked regional banking momentum setups.",
+  "thesis": "Aggressively maximize risk-adjusted equity returns by maintaining exposure to high-opportunity score breakout setups in equities and major FX trends while cutting lagging crypto assets that show relative weakness.",
   "preferred_sectors": [
-    "Financials",
-    "Healthcare",
     "Utilities",
-    "Forex Majors"
+    "Defense",
+    "Real Estate",
+    "Forex"
   ],
   "styles": [
+    "Momentum",
     "Trend Following",
-    "Momentum Breakout",
-    "Swing Trading"
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Aggressive Growth within Defined Risk Limits",
-  "updated_at": "2026-08-18T22:43:09.487982+00:00",
+  "risk_posture": "AGGRESSIVE",
+  "updated_at": "2026-08-19T23:35:09.043306+00:00",
   "model": "gemini-flash-latest"
 }
