@@ -1,18 +1,18 @@
 {
-  "thesis": "Maintain broad exposure across leading uptrend equities and major FX pairs while executing disciplined rotation into high-opportunity consolidating setups. With broad market momentum firmly bullish, max out risk capacity up to the 12-ticker cap by adding high-ranked utility value while letting existing profitable swings compound toward targets.",
+  "thesis": "Maximize capital efficiency and unrealized gains across multi-asset momentum and breakout leaders while keeping risk tightly controlled at the 12-position capacity limit. All current holdings maintain positive technical structure and are trending above key support levels.",
   "preferred_sectors": [
+    "Technology",
+    "Industrials",
     "Utilities",
-    "Defense & Aerospace",
-    "Financials",
-    "Healthcare",
-    "Forex"
+    "Forex G10",
+    "Financials"
   ],
   "styles": [
-    "Trend Following",
-    "Momentum",
-    "Consolidation Breakout"
+    "Momentum Trend-Following",
+    "Consolidation Breakout",
+    "Multi-Asset Relative Strength"
   ],
-  "risk_posture": "MODERATE_AGGRESSIVE",
-  "updated_at": "2026-08-20T08:23:44.457297+00:00",
+  "risk_posture": "Controlled Aggressive",
+  "updated_at": "2026-08-20T09:03:45.217852+00:00",
   "model": "gemini-flash-latest"
 }
