@@ -1,5 +1,5 @@
 {
-  "balance": 17265.11,
+  "balance": 20242.79,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -61,26 +61,6 @@
       "take_profit": 0.72279,
       "opened_at": "2026-08-18T21:57:54.672862+00:00"
     },
-    "GD": {
-      "symbol": "GD",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 7.0,
-      "avg_price": 392.309998,
-      "stop_loss": 380.54,
-      "take_profit": 415.85,
-      "opened_at": "2026-08-19T20:12:28.338335+00:00"
-    },
-    "PSA": {
-      "symbol": "PSA",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 7.0,
-      "avg_price": 325.209991,
-      "stop_loss": 315.45,
-      "take_profit": 344.72,
-      "opened_at": "2026-08-19T20:12:30.242464+00:00"
-    },
     "INVH": {
       "symbol": "INVH",
       "asset_class": "equity",
@@ -120,9 +100,67 @@
       "stop_loss": 17.12,
       "take_profit": 18.71,
       "opened_at": "2026-08-20T08:23:44.754750+00:00"
+    },
+    "SYY": {
+      "symbol": "SYY",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 24.0,
+      "avg_price": 84.239998,
+      "stop_loss": 81.71,
+      "take_profit": 89.29,
+      "opened_at": "2026-08-20T16:20:32.883410+00:00"
     }
   },
   "trades": [
+    {
+      "id": "2c6e28de17fb",
+      "ticker": "SYY",
+      "type": "BUY",
+      "price": 84.239998,
+      "shares": 24.0,
+      "date": "2026-08-20T16:20:32.883446+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High-scoring consumer staple holding tight consolidation support with positive sentiment and clean risk/reward profile.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 81.71,
+      "take_profit": 89.29,
+      "realized_pnl": null
+    },
+    {
+      "id": "8e2d6e32551f",
+      "ticker": "GD",
+      "type": "SELL",
+      "price": 390.165009,
+      "shares": 7.0,
+      "date": "2026-08-20T16:20:31.007591+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Cutting minor unrealized loss to free up an open position slot and reallocate capital into top-ranked momentum opportunities.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 380.54,
+      "take_profit": 415.85,
+      "realized_pnl": -15.01
+    },
+    {
+      "id": "6b9d51f92dec",
+      "ticker": "PSA",
+      "type": "SELL",
+      "price": 324.040009,
+      "shares": 7.0,
+      "date": "2026-08-20T16:20:28.443057+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Exiting negative performer in REIT sector to eliminate drag and deploy capital into higher opportunity score setups.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 315.45,
+      "take_profit": 344.72,
+      "realized_pnl": -8.19
+    },
     {
       "id": "40da968674ec",
       "ticker": "PCG",
@@ -4600,5 +4638,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -203.2
+  "realized_pnl": -226.4
 }
