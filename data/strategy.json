@@ -1,17 +1,18 @@
 {
-  "thesis": "Aggressively maximize risk-adjusted equity returns by maintaining exposure to high-opportunity score breakout setups in equities and major FX trends while cutting lagging crypto assets that show relative weakness.",
+  "thesis": "Maintain broad exposure across leading uptrend equities and major FX pairs while executing disciplined rotation into high-opportunity consolidating setups. With broad market momentum firmly bullish, max out risk capacity up to the 12-ticker cap by adding high-ranked utility value while letting existing profitable swings compound toward targets.",
   "preferred_sectors": [
     "Utilities",
-    "Defense",
-    "Real Estate",
+    "Defense & Aerospace",
+    "Financials",
+    "Healthcare",
     "Forex"
   ],
   "styles": [
-    "Momentum",
     "Trend Following",
+    "Momentum",
     "Consolidation Breakout"
   ],
-  "risk_posture": "AGGRESSIVE",
-  "updated_at": "2026-08-19T23:35:09.043306+00:00",
+  "risk_posture": "MODERATE_AGGRESSIVE",
+  "updated_at": "2026-08-20T08:23:44.457297+00:00",
   "model": "gemini-flash-latest"
 }
