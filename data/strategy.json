@@ -1,18 +1,17 @@
 {
-  "thesis": "Aggressive trend and momentum capture across equities and major cross-currency pairs with active stop management to lock in unrealized gains and deploy remaining dry powder into top opportunity score candidates.",
+  "thesis": "Aggressively trim dead weight and downtrending pairs to free capital, maintain winning positions across equities and FX trends, and rotate cash into top-ranked momentum setups with high opportunity scores.",
   "preferred_sectors": [
     "Financials",
-    "Utilities",
-    "Forex",
-    "Industrials",
-    "Real Estate"
+    "Consumer Defensive",
+    "Healthcare",
+    "Major FX"
   ],
   "styles": [
+    "Momentum",
     "Trend Following",
-    "Momentum Breakout",
-    "Multi-Asset Long"
+    "Swing Trading"
   ],
-  "risk_posture": "Controlled Aggressive",
-  "updated_at": "2026-08-21T09:51:05.609523+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-08-21T17:19:58.044094+00:00",
   "model": "gemini-flash-latest"
 }

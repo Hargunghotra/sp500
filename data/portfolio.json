@@ -1,5 +1,5 @@
 {
-  "balance": 18034.24,
+  "balance": 25161.93,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -20,16 +20,6 @@
       "stop_loss": 1.3395,
       "take_profit": 1.38,
       "opened_at": "2026-08-18T20:39:09.241664+00:00"
-    },
-    "AWK": {
-      "symbol": "AWK",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 18.0,
-      "avg_price": 136.270004,
-      "stop_loss": 132.18,
-      "take_profit": 144.45,
-      "opened_at": "2026-08-18T20:39:10.918117+00:00"
     },
     "MCO": {
       "symbol": "MCO",
@@ -81,16 +71,6 @@
       "take_profit": 15.58,
       "opened_at": "2026-08-19T23:35:09.515612+00:00"
     },
-    "PCG": {
-      "symbol": "PCG",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 130.0,
-      "avg_price": 17.65,
-      "stop_loss": 17.12,
-      "take_profit": 18.71,
-      "opened_at": "2026-08-20T08:23:44.754750+00:00"
-    },
     "NZDUSD=X": {
       "symbol": "NZDUSD=X",
       "asset_class": "forex",
@@ -110,19 +90,57 @@
       "stop_loss": 336.22,
       "take_profit": 367.42,
       "opened_at": "2026-08-21T00:00:08.479656+00:00"
-    },
-    "EURGBP=X": {
-      "symbol": "EURGBP=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 2800.0,
-      "avg_price": 0.85679,
-      "stop_loss": 0.84822,
-      "take_profit": 0.87393,
-      "opened_at": "2026-08-21T09:51:06.278054+00:00"
     }
   },
   "trades": [
+    {
+      "id": "71e59376acdd",
+      "ticker": "AWK",
+      "type": "SELL",
+      "price": 135.910004,
+      "shares": 18.0,
+      "date": "2026-08-21T17:20:03.966015+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Lagging utility asset showing negative return profile and low relative opportunity score (5.62). Liquidating to rotate into higher momentum leaders.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 132.18,
+      "take_profit": 144.45,
+      "realized_pnl": -6.48
+    },
+    {
+      "id": "28b888726fcb",
+      "ticker": "PCG",
+      "type": "SELL",
+      "price": 17.565001,
+      "shares": 130.0,
+      "date": "2026-08-21T17:20:01.537289+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Underperforming position with negative 20-day return and deteriorating risk-reward profile compared to market leaders.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 17.12,
+      "take_profit": 18.71,
+      "realized_pnl": -11.05
+    },
+    {
+      "id": "fa892d59fc59",
+      "ticker": "EURGBP=X",
+      "type": "SELL",
+      "price": 0.85638,
+      "shares": 2800.0,
+      "date": "2026-08-21T17:19:58.382824+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Confirmed DOWN trend against long posture. Eliminating counter-trend forex exposure immediately.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.84822,
+      "take_profit": 0.87393,
+      "realized_pnl": -1.15
+    },
     {
       "id": "777a58e6d84d",
       "ticker": "EURGBP=X",
@@ -4760,5 +4778,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -259.78
+  "realized_pnl": -278.46
 }
