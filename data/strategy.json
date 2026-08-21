@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively trim dead weight and downtrending pairs to free capital, maintain winning positions across equities and FX trends, and rotate cash into top-ranked momentum setups with high opportunity scores.",
+  "thesis": "Aggressive multi-asset growth rotation capitalizing on broad market upside and consolidating high-momentum equities while riding profitable trend-continuation forex longs. Deploy available cash into the highest opportunity-score breakout candidates up to the maximum 12 open position cap.",
   "preferred_sectors": [
-    "Financials",
+    "Financial Services",
+    "Technology",
     "Consumer Defensive",
-    "Healthcare",
-    "Major FX"
+    "Forex Majors"
   ],
   "styles": [
-    "Momentum",
-    "Trend Following",
-    "Swing Trading"
+    "Momentum Breakout",
+    "Consolidation Continuation",
+    "Multi-Asset Trend Following"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-08-21T17:19:58.044094+00:00",
+  "risk_posture": "Aggressive Growth within Hard Risk Caps",
+  "updated_at": "2026-08-21T20:41:40.933738+00:00",
   "model": "gemini-flash-latest"
 }

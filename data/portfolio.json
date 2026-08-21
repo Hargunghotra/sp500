@@ -1,5 +1,5 @@
 {
-  "balance": 25161.93,
+  "balance": 17311.29,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -90,9 +90,87 @@
       "stop_loss": 336.22,
       "take_profit": 367.42,
       "opened_at": "2026-08-21T00:00:08.479656+00:00"
+    },
+    "MA": {
+      "symbol": "MA",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 5.0,
+      "avg_price": 580.60498,
+      "stop_loss": 563.19,
+      "take_profit": 615.44,
+      "opened_at": "2026-08-21T20:41:42.164503+00:00"
+    },
+    "NDAQ": {
+      "symbol": "NDAQ",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 27.0,
+      "avg_price": 98.220001,
+      "stop_loss": 95.27,
+      "take_profit": 104.11,
+      "opened_at": "2026-08-21T20:41:44.838310+00:00"
+    },
+    "PEP": {
+      "symbol": "PEP",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 16.0,
+      "avg_price": 143.479996,
+      "stop_loss": 139.18,
+      "take_profit": 152.09,
+      "opened_at": "2026-08-21T20:41:46.956094+00:00"
     }
   },
   "trades": [
+    {
+      "id": "c59a8d4015af",
+      "ticker": "PEP",
+      "type": "BUY",
+      "price": 143.479996,
+      "shares": 16.0,
+      "date": "2026-08-21T20:41:46.956129+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High-conviction defensive growth play breaking consolidation upward with strong institutional cash flow backing and 9.021 opportunity score. (qty capped to 16.0 by 12% cash rule)",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 139.18,
+      "take_profit": 152.09,
+      "realized_pnl": null
+    },
+    {
+      "id": "58ee0206e218",
+      "ticker": "NDAQ",
+      "type": "BUY",
+      "price": 98.220001,
+      "shares": 27.0,
+      "date": "2026-08-21T20:41:44.838346+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong bullish momentum in consolidating financial sector asset with 9.466 opportunity score and solid support baseline. (qty capped to 27.0 by 12% cash rule)",
+      "confidence": 0.9,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 95.27,
+      "take_profit": 104.11,
+      "realized_pnl": null
+    },
+    {
+      "id": "80573a582e5e",
+      "ticker": "MA",
+      "type": "BUY",
+      "price": 580.60498,
+      "shares": 5.0,
+      "date": "2026-08-21T20:41:42.164540+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top ranked opportunity score (9.559) with perfect 10.0 technical setup in an UP-trend consolidation pattern with positive catalysts.",
+      "confidence": 0.92,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 563.19,
+      "take_profit": 615.44,
+      "realized_pnl": null
+    },
     {
       "id": "71e59376acdd",
       "ticker": "AWK",
