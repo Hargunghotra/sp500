@@ -1,5 +1,5 @@
 {
-  "balance": 20433.25,
+  "balance": 18034.24,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -110,9 +110,35 @@
       "stop_loss": 336.22,
       "take_profit": 367.42,
       "opened_at": "2026-08-21T00:00:08.479656+00:00"
+    },
+    "EURGBP=X": {
+      "symbol": "EURGBP=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 2800.0,
+      "avg_price": 0.85679,
+      "stop_loss": 0.84822,
+      "take_profit": 0.87393,
+      "opened_at": "2026-08-21T09:51:06.278054+00:00"
     }
   },
   "trades": [
+    {
+      "id": "777a58e6d84d",
+      "ticker": "EURGBP=X",
+      "type": "BUY",
+      "price": 0.85679,
+      "shares": 2800.0,
+      "date": "2026-08-21T09:51:06.278091+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top unowned opportunity score at 8.486, holding strong trend support at 0.8568 with favorable risk/reward.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.84822,
+      "take_profit": 0.87393,
+      "realized_pnl": null
+    },
     {
       "id": "2f98d4500b89",
       "ticker": "WAB",

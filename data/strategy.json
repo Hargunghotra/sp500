@@ -1,18 +1,18 @@
 {
-  "thesis": "Aggressively capitalize on broad market upside and FX trend-continuation while pruning stagnant positions to recycle capital into top relative-strength setups.",
+  "thesis": "Aggressive trend and momentum capture across equities and major cross-currency pairs with active stop management to lock in unrealized gains and deploy remaining dry powder into top opportunity score candidates.",
   "preferred_sectors": [
-    "Forex",
-    "Life Sciences",
-    "Real Estate",
+    "Financials",
     "Utilities",
-    "Financial Services"
+    "Forex",
+    "Industrials",
+    "Real Estate"
   ],
   "styles": [
     "Trend Following",
     "Momentum Breakout",
-    "Capital Rotation"
+    "Multi-Asset Long"
   ],
-  "risk_posture": "Opportunistic Aggressive",
-  "updated_at": "2026-08-21T08:24:19.857500+00:00",
+  "risk_posture": "Controlled Aggressive",
+  "updated_at": "2026-08-21T09:51:05.609523+00:00",
   "model": "gemini-flash-latest"
 }
