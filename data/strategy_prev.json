@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively maximize risk-adjusted equity returns by maintaining exposure to high-opportunity score breakout setups in equities and major FX trends while cutting lagging crypto assets that show relative weakness.",
+  "thesis": "Maximize risk-adjusted returns across a diversified multi-asset basket by holding high-performing equities and resilient FX pairs while adding top-ranked equity breakout candidates within strict capital allocation limits.",
   "preferred_sectors": [
+    "Financials",
+    "Industrials",
     "Utilities",
-    "Defense",
-    "Real Estate",
-    "Forex"
+    "G10 Forex"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Consolidation Breakout"
+    "Breakout"
   ],
-  "risk_posture": "AGGRESSIVE",
-  "updated_at": "2026-08-19T23:35:09.043306+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-08-21T00:00:08.174182+00:00",
   "model": "gemini-flash-latest"
 }
