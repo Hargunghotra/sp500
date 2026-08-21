@@ -1,17 +1,18 @@
 {
-  "thesis": "Maximize risk-adjusted returns across a diversified multi-asset basket by holding high-performing equities and resilient FX pairs while adding top-ranked equity breakout candidates within strict capital allocation limits.",
+  "thesis": "Aggressively capitalize on broad market upside and FX trend-continuation while pruning stagnant positions to recycle capital into top relative-strength setups.",
   "preferred_sectors": [
-    "Financials",
-    "Industrials",
+    "Forex",
+    "Life Sciences",
+    "Real Estate",
     "Utilities",
-    "G10 Forex"
+    "Financial Services"
   ],
   "styles": [
-    "Momentum",
     "Trend Following",
-    "Breakout"
+    "Momentum Breakout",
+    "Capital Rotation"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-08-21T00:00:08.174182+00:00",
+  "risk_posture": "Opportunistic Aggressive",
+  "updated_at": "2026-08-21T08:24:19.857500+00:00",
   "model": "gemini-flash-latest"
 }

@@ -1,5 +1,5 @@
 {
-  "balance": 18094.77,
+  "balance": 20433.25,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -101,16 +101,6 @@
       "take_profit": 0.6063,
       "opened_at": "2026-08-20T21:40:58.283924+00:00"
     },
-    "WAB": {
-      "symbol": "WAB",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 8.0,
-      "avg_price": 292.309998,
-      "stop_loss": 283.54,
-      "take_profit": 309.85,
-      "opened_at": "2026-08-20T22:23:56.354877+00:00"
-    },
     "NSC": {
       "symbol": "NSC",
       "asset_class": "equity",
@@ -123,6 +113,22 @@
     }
   },
   "trades": [
+    {
+      "id": "2f98d4500b89",
+      "ticker": "WAB",
+      "type": "SELL",
+      "price": 292.309998,
+      "shares": 8.0,
+      "date": "2026-08-21T08:24:20.337188+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Underperforming relative momentum with negative 20-day return (-1.80%) and lowest opportunity score (4.54); rotating capital to open capacity for higher-ranked setups.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 283.54,
+      "take_profit": 309.85,
+      "realized_pnl": -0.0
+    },
     {
       "id": "faf1e15f6079",
       "ticker": "NSC",
