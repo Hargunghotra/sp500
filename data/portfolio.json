@@ -1,5 +1,5 @@
 {
-  "balance": 20174.49,
+  "balance": 18094.77,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -110,9 +110,35 @@
       "stop_loss": 283.54,
       "take_profit": 309.85,
       "opened_at": "2026-08-20T22:23:56.354877+00:00"
+    },
+    "NSC": {
+      "symbol": "NSC",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 6.0,
+      "avg_price": 346.619995,
+      "stop_loss": 336.22,
+      "take_profit": 367.42,
+      "opened_at": "2026-08-21T00:00:08.479656+00:00"
     }
   },
   "trades": [
+    {
+      "id": "faf1e15f6079",
+      "ticker": "NSC",
+      "type": "BUY",
+      "price": 346.619995,
+      "shares": 6.0,
+      "date": "2026-08-21T00:00:08.479687+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top unowned equity setup with high opportunity score (7.96), 4.04% support buffer, and solid structural uptrend.",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 336.22,
+      "take_profit": 367.42,
+      "realized_pnl": null
+    },
     {
       "id": "7deff014b21d",
       "ticker": "DGX",

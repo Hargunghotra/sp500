@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressive multi-asset growth capturing high-momentum uptrends and top-tier opportunity scores across equities and macro forex pairs, while eliminating stagnant and deteriorating positions.",
+  "thesis": "Maximize risk-adjusted returns across a diversified multi-asset basket by holding high-performing equities and resilient FX pairs while adding top-ranked equity breakout candidates within strict capital allocation limits.",
   "preferred_sectors": [
+    "Financials",
     "Industrials",
-    "Technology",
     "Utilities",
-    "G10 Currencies"
+    "G10 Forex"
   ],
   "styles": [
-    "Momentum Breakout",
+    "Momentum",
     "Trend Following",
-    "Relative Strength"
+    "Breakout"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-20T22:23:56.040473+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-08-21T00:00:08.174182+00:00",
   "model": "gemini-flash-latest"
 }
