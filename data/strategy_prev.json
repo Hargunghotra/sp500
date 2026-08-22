@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize risk-adjusted returns across a diversified multi-asset basket by holding high-performing equities and resilient FX pairs while adding top-ranked equity breakout candidates within strict capital allocation limits.",
+  "thesis": "Aggressive multi-asset growth rotation capitalizing on broad market upside and consolidating high-momentum equities while riding profitable trend-continuation forex longs. Deploy available cash into the highest opportunity-score breakout candidates up to the maximum 12 open position cap.",
   "preferred_sectors": [
-    "Financials",
-    "Industrials",
-    "Utilities",
-    "G10 Forex"
+    "Financial Services",
+    "Technology",
+    "Consumer Defensive",
+    "Forex Majors"
   ],
   "styles": [
-    "Momentum",
-    "Trend Following",
-    "Breakout"
+    "Momentum Breakout",
+    "Consolidation Continuation",
+    "Multi-Asset Trend Following"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-08-21T00:00:08.174182+00:00",
+  "risk_posture": "Aggressive Growth within Hard Risk Caps",
+  "updated_at": "2026-08-21T20:41:40.933738+00:00",
   "model": "gemini-flash-latest"
 }
