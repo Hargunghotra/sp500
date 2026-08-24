@@ -1,18 +1,17 @@
 {
-  "thesis": "Maintain full exposure across winning momentum positions in equities and foreign exchange while utilizing remaining cash capacity to initiate a top-ranked breakout healthcare candidate (STE), bringing portfolio utilization to the 12-ticker maximum limit.",
+  "thesis": "Maintain full exposure across our high-performing multi-asset book where all 12 open positions are currently positive and in confirmed UP trends above their 50-day moving averages. Protect capital by keeping disciplined stop losses and allowing winning equity and FX momentum swings to mature toward their respective take-profit thresholds.",
   "preferred_sectors": [
     "Healthcare",
     "Financials",
-    "Forex",
-    "Industrials",
-    "Real Estate"
+    "Real Estate",
+    "G10 Forex"
   ],
   "styles": [
-    "Momentum",
     "Trend Following",
-    "Consolidation Breakout"
+    "Momentum",
+    "Breakout Continuation"
   ],
-  "risk_posture": "Aggressive Growth within Hard Risk Caps",
-  "updated_at": "2026-08-24T18:24:42.414743+00:00",
+  "risk_posture": "BULLISH_AGGRESSIVE",
+  "updated_at": "2026-08-24T19:44:12.448672+00:00",
   "model": "gemini-flash-latest"
 }
