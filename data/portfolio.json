@@ -1,5 +1,5 @@
 {
-  "balance": 17311.29,
+  "balance": 20291.34,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -91,16 +91,6 @@
       "take_profit": 367.42,
       "opened_at": "2026-08-21T00:00:08.479656+00:00"
     },
-    "MA": {
-      "symbol": "MA",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 5.0,
-      "avg_price": 580.60498,
-      "stop_loss": 563.19,
-      "take_profit": 615.44,
-      "opened_at": "2026-08-21T20:41:42.164503+00:00"
-    },
     "NDAQ": {
       "symbol": "NDAQ",
       "asset_class": "equity",
@@ -123,6 +113,22 @@
     }
   },
   "trades": [
+    {
+      "id": "38bad5144139",
+      "ticker": "MA",
+      "type": "SELL",
+      "price": 596.01001,
+      "shares": 5.0,
+      "date": "2026-08-24T17:54:31.438581+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Locking in a +2.66% gain as sentiment turns bearish and opportunity score drops to 5.80; freeing a slot and capital for higher-ranked setups.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 563.19,
+      "take_profit": 615.44,
+      "realized_pnl": 77.03
+    },
     {
       "id": "c59a8d4015af",
       "ticker": "PEP",
@@ -4856,5 +4862,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -278.46
+  "realized_pnl": -201.43
 }
