@@ -1,5 +1,5 @@
 {
-  "balance": 20291.34,
+  "balance": 17927.44,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -110,9 +110,35 @@
       "stop_loss": 139.18,
       "take_profit": 152.09,
       "opened_at": "2026-08-21T20:41:46.956094+00:00"
+    },
+    "STE": {
+      "symbol": "STE",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 10.0,
+      "avg_price": 236.389999,
+      "stop_loss": 229.3,
+      "take_profit": 250.57,
+      "opened_at": "2026-08-24T18:24:42.703831+00:00"
     }
   },
   "trades": [
+    {
+      "id": "3db878552a92",
+      "ticker": "STE",
+      "type": "BUY",
+      "price": 236.389999,
+      "shares": 10.0,
+      "date": "2026-08-24T18:24:42.703861+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top ranked unowned candidate with high opportunity score (9.484), bullish sentiment, strong 20-day momentum (8.24%), and tight consolidation above SMA50.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 229.3,
+      "take_profit": 250.57,
+      "realized_pnl": null
+    },
     {
       "id": "38bad5144139",
       "ticker": "MA",

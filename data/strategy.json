@@ -1,17 +1,18 @@
 {
-  "thesis": "Rotate out of decelerating large-cap financial positions into top-ranked healthcare and medical technology momentum leaders while holding high-conviction consolidating forex pairs and equity winners.",
+  "thesis": "Maintain full exposure across winning momentum positions in equities and foreign exchange while utilizing remaining cash capacity to initiate a top-ranked breakout healthcare candidate (STE), bringing portfolio utilization to the 12-ticker maximum limit.",
   "preferred_sectors": [
     "Healthcare",
-    "Financial Services",
-    "Utilities",
-    "Forex"
+    "Financials",
+    "Forex",
+    "Industrials",
+    "Real Estate"
   ],
   "styles": [
+    "Momentum",
     "Trend Following",
-    "Momentum Breakout",
-    "Capital Rotation"
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-24T17:54:31.101761+00:00",
+  "risk_posture": "Aggressive Growth within Hard Risk Caps",
+  "updated_at": "2026-08-24T18:24:42.414743+00:00",
   "model": "gemini-flash-latest"
 }
