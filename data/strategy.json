@@ -1,17 +1,18 @@
 {
-  "thesis": "Maintain full exposure across our high-performing multi-asset book where all 12 open positions are currently positive and in confirmed UP trends above their 50-day moving averages. Protect capital by keeping disciplined stop losses and allowing winning equity and FX momentum swings to mature toward their respective take-profit thresholds.",
+  "thesis": "Rotate out of extended winners reaching take-profit thresholds and redeploy into top-ranked consolidating momentum leaders across equities and strong FX trends.",
   "preferred_sectors": [
     "Healthcare",
-    "Financials",
     "Real Estate",
-    "G10 Forex"
+    "Consumer Staples",
+    "Financials",
+    "Forex"
   ],
   "styles": [
-    "Trend Following",
     "Momentum",
-    "Breakout Continuation"
+    "Trend Following",
+    "Mean Reversion Consolidation Breakouts"
   ],
-  "risk_posture": "BULLISH_AGGRESSIVE",
-  "updated_at": "2026-08-24T19:44:12.448672+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-08-24T20:00:22.883244+00:00",
   "model": "gemini-flash-latest"
 }
