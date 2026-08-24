@@ -1,5 +1,5 @@
 {
-  "balance": 20359.51,
+  "balance": 18084.72,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -110,9 +110,35 @@
       "stop_loss": 18.84,
       "take_profit": 20.6,
       "opened_at": "2026-08-24T22:15:13.523928+00:00"
+    },
+    "PSA": {
+      "symbol": "PSA",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 7.0,
+      "avg_price": 324.970001,
+      "stop_loss": 315.22,
+      "take_profit": 344.47,
+      "opened_at": "2026-08-24T23:24:25.545568+00:00"
     }
   },
   "trades": [
+    {
+      "id": "301751a9a531",
+      "ticker": "PSA",
+      "type": "BUY",
+      "price": 324.970001,
+      "shares": 7.0,
+      "date": "2026-08-24T23:24:25.545596+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top ranked unowned equity setup with an opportunity score of 8.789, steady uptrend above SMA50, bullish sentiment, and favorable consolidation near support.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 315.22,
+      "take_profit": 344.47,
+      "realized_pnl": null
+    },
     {
       "id": "96191f88fb47",
       "ticker": "PEP",

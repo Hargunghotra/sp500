@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize risk-adjusted alpha across equities and FX by maintaining high-momentum winners, taking profit on deteriorating sentiment names hitting resistance, and reallocating capital into top-ranked consolidating breakout candidates.",
+  "thesis": "Capitalize on strong multi-asset uptrends by letting profitable swing and momentum positions ride toward technical targets, while expanding equity exposure to high-scoring consolidating breakouts within risk limits.",
   "preferred_sectors": [
-    "Healthcare",
     "Real Estate",
+    "Healthcare",
     "Financials",
     "Forex Major USD Crosses"
   ],
   "styles": [
     "Momentum",
-    "Trend-Following",
-    "Breakout Swing"
+    "Trend Following",
+    "Consolidation Breakout"
   ],
   "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-08-24T22:15:13.171370+00:00",
+  "updated_at": "2026-08-24T23:24:25.213396+00:00",
   "model": "gemini-flash-latest"
 }
