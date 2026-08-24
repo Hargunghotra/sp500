@@ -1,18 +1,17 @@
 {
-  "thesis": "Rotate out of extended winners reaching take-profit thresholds and redeploy into top-ranked consolidating momentum leaders across equities and strong FX trends.",
+  "thesis": "Maximize risk-adjusted alpha across equities and FX by maintaining high-momentum winners, taking profit on deteriorating sentiment names hitting resistance, and reallocating capital into top-ranked consolidating breakout candidates.",
   "preferred_sectors": [
     "Healthcare",
     "Real Estate",
-    "Consumer Staples",
     "Financials",
-    "Forex"
+    "Forex Major USD Crosses"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Mean Reversion Consolidation Breakouts"
+    "Trend-Following",
+    "Breakout Swing"
   ],
   "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-08-24T20:00:22.883244+00:00",
+  "updated_at": "2026-08-24T22:15:13.171370+00:00",
   "model": "gemini-flash-latest"
 }
