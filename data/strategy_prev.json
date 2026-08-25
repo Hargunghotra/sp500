@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressive multi-asset growth rotation capitalizing on broad market upside and consolidating high-momentum equities while riding profitable trend-continuation forex longs. Deploy available cash into the highest opportunity-score breakout candidates up to the maximum 12 open position cap.",
+  "thesis": "Capitalize on strong multi-asset uptrends by letting profitable swing and momentum positions ride toward technical targets, while expanding equity exposure to high-scoring consolidating breakouts within risk limits.",
   "preferred_sectors": [
-    "Financial Services",
-    "Technology",
-    "Consumer Defensive",
-    "Forex Majors"
+    "Real Estate",
+    "Healthcare",
+    "Financials",
+    "Forex Major USD Crosses"
   ],
   "styles": [
-    "Momentum Breakout",
-    "Consolidation Continuation",
-    "Multi-Asset Trend Following"
+    "Momentum",
+    "Trend Following",
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Aggressive Growth within Hard Risk Caps",
-  "updated_at": "2026-08-21T20:41:40.933738+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-08-24T23:24:25.213396+00:00",
   "model": "gemini-flash-latest"
 }
