@@ -1,17 +1,18 @@
 {
-  "thesis": "Aggressive rotation out of stagnant and negative momentum equity holdings into top-tier momentum and consolidation breakouts, while maintaining strong trending forex dollar-short exposure and high-conviction industrial/tech compounders.",
+  "thesis": "Maintain high-conviction multi-asset momentum across trending equities and G10 FX majors while deploying remaining capital into high-opportunity consumer staples consolidation breakouts.",
   "preferred_sectors": [
-    "Technology",
-    "Consumer Staples",
-    "Industrials",
-    "Forex Majors"
+    "Healthcare",
+    "Real Estate",
+    "Forex",
+    "Consumer Defensive",
+    "Industrials"
   ],
   "styles": [
-    "Momentum Breakout",
-    "Consolidation Continuation",
-    "Trend Following"
+    "Trend Following",
+    "Momentum",
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Aggressive Growth within Hard Risk Bounds",
-  "updated_at": "2026-08-25T23:17:24.759820+00:00",
+  "risk_posture": "Aggressive Growth within Risk Caps",
+  "updated_at": "2026-08-25T23:39:09.150077+00:00",
   "model": "gemini-flash-latest"
 }

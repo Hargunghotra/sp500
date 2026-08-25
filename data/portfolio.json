@@ -1,5 +1,5 @@
 {
-  "balance": 20839.64,
+  "balance": 18346.07,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -110,9 +110,35 @@
       "stop_loss": 931.21,
       "take_profit": 1017.61,
       "opened_at": "2026-08-25T23:17:28.073104+00:00"
+    },
+    "KVUE": {
+      "symbol": "KVUE",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 129.0,
+      "avg_price": 19.33,
+      "stop_loss": 18.75,
+      "take_profit": 20.49,
+      "opened_at": "2026-08-25T23:39:09.607520+00:00"
     }
   },
   "trades": [
+    {
+      "id": "0f5ccd251ee4",
+      "ticker": "KVUE",
+      "type": "BUY",
+      "price": 19.33,
+      "shares": 129.0,
+      "date": "2026-08-25T23:39:09.607553+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score (8.676), strong technical consolidation above 50 SMA, bullish sentiment, and favorable risk-reward near support.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 18.75,
+      "take_profit": 20.49,
+      "realized_pnl": null
+    },
     {
       "id": "4caa18ed7c9e",
       "ticker": "PSA",
