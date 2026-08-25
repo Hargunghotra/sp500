@@ -1,5 +1,5 @@
 {
-  "balance": 18084.72,
+  "balance": 20839.64,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -101,28 +101,66 @@
       "take_profit": 250.57,
       "opened_at": "2026-08-24T18:24:42.703831+00:00"
     },
-    "KVUE": {
-      "symbol": "KVUE",
+    "COST": {
+      "symbol": "COST",
       "asset_class": "equity",
       "side": "LONG",
-      "quantity": 125.0,
-      "avg_price": 19.43,
-      "stop_loss": 18.84,
-      "take_profit": 20.6,
-      "opened_at": "2026-08-24T22:15:13.523928+00:00"
-    },
-    "PSA": {
-      "symbol": "PSA",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 7.0,
-      "avg_price": 324.970001,
-      "stop_loss": 315.22,
-      "take_profit": 344.47,
-      "opened_at": "2026-08-24T23:24:25.545568+00:00"
+      "quantity": 2.0,
+      "avg_price": 960.01001,
+      "stop_loss": 931.21,
+      "take_profit": 1017.61,
+      "opened_at": "2026-08-25T23:17:28.073104+00:00"
     }
   },
   "trades": [
+    {
+      "id": "4caa18ed7c9e",
+      "ticker": "PSA",
+      "type": "SELL",
+      "price": 322.670013,
+      "shares": 7.0,
+      "date": "2026-08-25T23:17:30.154142+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Cutting lagging REIT showing negative momentum (-2.36% 20d return) and unrealized loss to unlock capital for higher-alpha opportunities.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 315.22,
+      "take_profit": 344.47,
+      "realized_pnl": -16.1
+    },
+    {
+      "id": "b998413b347e",
+      "ticker": "COST",
+      "type": "BUY",
+      "price": 960.01001,
+      "shares": 2.0,
+      "date": "2026-08-25T23:17:28.073140+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top opportunity score consolidation setup with strong bullish sentiment and clean support holding above the 50-day SMA.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 931.21,
+      "take_profit": 1017.61,
+      "realized_pnl": null
+    },
+    {
+      "id": "ef0cbeb97d70",
+      "ticker": "KVUE",
+      "type": "SELL",
+      "price": 19.33,
+      "shares": 125.0,
+      "date": "2026-08-25T23:17:25.687770+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Exiting underperforming consumer name with negative 20-day return to redeploy into high-momentum market leaders.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 18.84,
+      "take_profit": 20.6,
+      "realized_pnl": -12.5
+    },
     {
       "id": "301751a9a531",
       "ticker": "PSA",
@@ -4952,5 +4990,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -65.24
+  "realized_pnl": -93.84
 }

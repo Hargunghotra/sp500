@@ -1,18 +1,17 @@
 {
-  "thesis": "Maximize realized and unrealized portfolio yield by riding established bullish trends across high-scoring equities and G10 FX majors while keeping hard stop-loss floors trailing beneath key support levels. The book is currently fully populated with top-tier momentum and consolidation-breakout names; all active positions are profitable or flat, warranting patience to allow gains to compound toward take-profit targets.",
+  "thesis": "Aggressive rotation out of stagnant and negative momentum equity holdings into top-tier momentum and consolidation breakouts, while maintaining strong trending forex dollar-short exposure and high-conviction industrial/tech compounders.",
   "preferred_sectors": [
-    "Healthcare",
-    "Real Estate",
-    "Financial Services",
-    "Forex Majors",
-    "Industrials"
+    "Technology",
+    "Consumer Staples",
+    "Industrials",
+    "Forex Majors"
   ],
   "styles": [
-    "Momentum",
-    "Trend Following",
-    "Consolidation Breakout"
+    "Momentum Breakout",
+    "Consolidation Continuation",
+    "Trend Following"
   ],
-  "risk_posture": "Aggressive Growth within Hard Risk Caps",
-  "updated_at": "2026-08-25T08:28:50.232719+00:00",
+  "risk_posture": "Aggressive Growth within Hard Risk Bounds",
+  "updated_at": "2026-08-25T23:17:24.759820+00:00",
   "model": "gemini-flash-latest"
 }
