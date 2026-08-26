@@ -1,17 +1,18 @@
 {
-  "thesis": "Capitalize on strong multi-asset uptrends by letting profitable swing and momentum positions ride toward technical targets, while expanding equity exposure to high-scoring consolidating breakouts within risk limits.",
+  "thesis": "Maintain high-conviction multi-asset momentum across trending equities and G10 FX majors while deploying remaining capital into high-opportunity consumer staples consolidation breakouts.",
   "preferred_sectors": [
-    "Real Estate",
     "Healthcare",
-    "Financials",
-    "Forex Major USD Crosses"
+    "Real Estate",
+    "Forex",
+    "Consumer Defensive",
+    "Industrials"
   ],
   "styles": [
-    "Momentum",
     "Trend Following",
+    "Momentum",
     "Consolidation Breakout"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-08-24T23:24:25.213396+00:00",
+  "risk_posture": "Aggressive Growth within Risk Caps",
+  "updated_at": "2026-08-25T23:39:09.150077+00:00",
   "model": "gemini-flash-latest"
 }
