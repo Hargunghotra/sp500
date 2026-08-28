@@ -1,5 +1,5 @@
 {
-  "balance": 18346.07,
+  "balance": 20976.77,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -40,16 +40,6 @@
       "stop_loss": 0.70153,
       "take_profit": 0.72279,
       "opened_at": "2026-08-18T21:57:54.672862+00:00"
-    },
-    "INVH": {
-      "symbol": "INVH",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 90.0,
-      "avg_price": 30.200001,
-      "stop_loss": 29.29,
-      "take_profit": 32.01,
-      "opened_at": "2026-08-19T22:49:12.314677+00:00"
     },
     "AES": {
       "symbol": "AES",
@@ -123,6 +113,22 @@
     }
   },
   "trades": [
+    {
+      "id": "c1f37b03882e",
+      "ticker": "INVH",
+      "type": "SELL",
+      "price": 29.23,
+      "shares": 90.0,
+      "date": "2026-08-28T10:59:10.370861+00:00",
+      "pattern": "SL/TP exit",
+      "reasoning": "Stop-loss hit @ 29.23 (SL 29.29)",
+      "confidence": 1.0,
+      "source": "stop_loss",
+      "asset_class": "equity",
+      "stop_loss": null,
+      "take_profit": null,
+      "realized_pnl": -87.3
+    },
     {
       "id": "0f5ccd251ee4",
       "ticker": "KVUE",
@@ -5016,5 +5022,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -93.84
+  "realized_pnl": -181.14
 }
