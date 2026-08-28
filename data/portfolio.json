@@ -1,5 +1,5 @@
 {
-  "balance": 20976.77,
+  "balance": 27334.36,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -51,26 +51,6 @@
       "take_profit": 15.58,
       "opened_at": "2026-08-19T23:35:09.515612+00:00"
     },
-    "NZDUSD=X": {
-      "symbol": "NZDUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 4000.0,
-      "avg_price": 0.594389,
-      "stop_loss": 0.5884,
-      "take_profit": 0.6063,
-      "opened_at": "2026-08-20T21:40:58.283924+00:00"
-    },
-    "NSC": {
-      "symbol": "NSC",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 6.0,
-      "avg_price": 346.619995,
-      "stop_loss": 336.22,
-      "take_profit": 367.42,
-      "opened_at": "2026-08-21T00:00:08.479656+00:00"
-    },
     "NDAQ": {
       "symbol": "NDAQ",
       "asset_class": "equity",
@@ -81,26 +61,6 @@
       "take_profit": 104.11,
       "opened_at": "2026-08-21T20:41:44.838310+00:00"
     },
-    "STE": {
-      "symbol": "STE",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 10.0,
-      "avg_price": 236.389999,
-      "stop_loss": 229.3,
-      "take_profit": 250.57,
-      "opened_at": "2026-08-24T18:24:42.703831+00:00"
-    },
-    "COST": {
-      "symbol": "COST",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 2.0,
-      "avg_price": 960.01001,
-      "stop_loss": 931.21,
-      "take_profit": 1017.61,
-      "opened_at": "2026-08-25T23:17:28.073104+00:00"
-    },
     "KVUE": {
       "symbol": "KVUE",
       "asset_class": "equity",
@@ -110,9 +70,99 @@
       "stop_loss": 18.75,
       "take_profit": 20.49,
       "opened_at": "2026-08-25T23:39:09.607520+00:00"
+    },
+    "BLK": {
+      "symbol": "BLK",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 2.0,
+      "avg_price": 1163.199951,
+      "stop_loss": 1128.3,
+      "take_profit": 1233.0,
+      "opened_at": "2026-08-28T19:41:46.880891+00:00"
     }
   },
   "trades": [
+    {
+      "id": "753e161055c1",
+      "ticker": "NSC",
+      "type": "SELL",
+      "price": 348.119995,
+      "shares": 6.0,
+      "date": "2026-08-28T19:41:55.841761+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Locking in modest profits amid emerging bearish headlines and lower relative opportunity score.",
+      "confidence": 0.75,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 336.22,
+      "take_profit": 367.42,
+      "realized_pnl": 9.0
+    },
+    {
+      "id": "191d0db61a0d",
+      "ticker": "STE",
+      "type": "SELL",
+      "price": 233.809998,
+      "shares": 10.0,
+      "date": "2026-08-28T19:41:53.406965+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Stalled momentum and negative unrealized PnL; rotating out into higher opportunity-score leaders.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 229.3,
+      "take_profit": 250.57,
+      "realized_pnl": -25.8
+    },
+    {
+      "id": "79ebbc5ee30a",
+      "ticker": "COST",
+      "type": "SELL",
+      "price": 945.434998,
+      "shares": 2.0,
+      "date": "2026-08-28T19:41:51.275313+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Underperforming the broader market with negative 20-day returns and lagging price action; cutting loss to free up capital.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 931.21,
+      "take_profit": 1017.61,
+      "realized_pnl": -29.15
+    },
+    {
+      "id": "e98980bbd4c4",
+      "ticker": "NZDUSD=X",
+      "type": "SELL",
+      "price": 0.591576,
+      "shares": 4000.0,
+      "date": "2026-08-28T19:41:49.365223+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Weakest FX holding in the book; closing out to concentrate forex exposure in stronger outperformers (AUDUSD, GBPUSD).",
+      "confidence": 0.75,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.5884,
+      "take_profit": 0.6063,
+      "realized_pnl": -11.25
+    },
+    {
+      "id": "0fecd3a389be",
+      "ticker": "BLK",
+      "type": "BUY",
+      "price": 1163.199951,
+      "shares": 2.0,
+      "date": "2026-08-28T19:41:46.880920+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top ranked asset with 9.428 opportunity score, strong bullish sentiment, and tight consolidation near new highs.",
+      "confidence": 0.9,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 1128.3,
+      "take_profit": 1233.0,
+      "realized_pnl": null
+    },
     {
       "id": "c1f37b03882e",
       "ticker": "INVH",
@@ -5022,5 +5072,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -181.14
+  "realized_pnl": -238.34
 }
