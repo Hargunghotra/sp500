@@ -1,18 +1,17 @@
 {
-  "thesis": "Maintain high-conviction multi-asset momentum across trending equities and G10 FX majors while deploying remaining capital into high-opportunity consumer staples consolidation breakouts.",
+  "thesis": "Aggressively cut underperforming positions and dead-weight laggards to rotate available capital into top-tier momentum and high-conviction breakout consolidation setups across Financials, Healthcare, and strong FX runners.",
   "preferred_sectors": [
+    "Financials",
     "Healthcare",
-    "Real Estate",
-    "Forex",
-    "Consumer Defensive",
-    "Industrials"
+    "Technology",
+    "Forex"
   ],
   "styles": [
-    "Trend Following",
     "Momentum",
-    "Consolidation Breakout"
+    "Consolidation Breakout",
+    "Trend Following"
   ],
-  "risk_posture": "Aggressive Growth within Risk Caps",
-  "updated_at": "2026-08-25T23:39:09.150077+00:00",
+  "risk_posture": "Aggressive Growth",
+  "updated_at": "2026-08-28T19:41:46.594344+00:00",
   "model": "gemini-flash-latest"
 }
