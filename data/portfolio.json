@@ -1,5 +1,5 @@
 {
-  "balance": 27334.36,
+  "balance": 21787.7,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -61,28 +61,144 @@
       "take_profit": 104.11,
       "opened_at": "2026-08-21T20:41:44.838310+00:00"
     },
-    "KVUE": {
-      "symbol": "KVUE",
+    "ELV": {
+      "symbol": "ELV",
       "asset_class": "equity",
       "side": "LONG",
-      "quantity": 129.0,
-      "avg_price": 19.33,
-      "stop_loss": 18.75,
-      "take_profit": 20.49,
-      "opened_at": "2026-08-25T23:39:09.607520+00:00"
+      "quantity": 7.0,
+      "avg_price": 403.339996,
+      "stop_loss": 391.24,
+      "take_profit": 427.54,
+      "opened_at": "2026-09-01T19:56:14.835287+00:00"
     },
-    "BLK": {
-      "symbol": "BLK",
+    "APD": {
+      "symbol": "APD",
       "asset_class": "equity",
       "side": "LONG",
-      "quantity": 2.0,
-      "avg_price": 1163.199951,
-      "stop_loss": 1128.3,
-      "take_profit": 1233.0,
-      "opened_at": "2026-08-28T19:41:46.880891+00:00"
+      "quantity": 9.0,
+      "avg_price": 304.809998,
+      "stop_loss": 295.67,
+      "take_profit": 323.1,
+      "opened_at": "2026-09-01T19:56:17.752860+00:00"
+    },
+    "CAH": {
+      "symbol": "CAH",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 10.0,
+      "avg_price": 238.710007,
+      "stop_loss": 231.55,
+      "take_profit": 253.03,
+      "opened_at": "2026-09-01T19:56:20.493556+00:00"
+    },
+    "EG": {
+      "symbol": "EG",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 6.0,
+      "avg_price": 378.160004,
+      "stop_loss": 366.82,
+      "take_profit": 400.85,
+      "opened_at": "2026-09-01T19:56:22.815052+00:00"
     }
   },
   "trades": [
+    {
+      "id": "dca67fde7644",
+      "ticker": "KVUE",
+      "type": "SELL",
+      "price": 18.745001,
+      "shares": 129.0,
+      "date": "2026-09-01T19:56:27.407151+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Breached stop-loss trigger at 18.75 with downward trend and deteriorating relative strength. Exiting to protect capital.",
+      "confidence": 0.95,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 18.75,
+      "take_profit": 20.49,
+      "realized_pnl": -75.46
+    },
+    {
+      "id": "0ae7aadc47a3",
+      "ticker": "BLK",
+      "type": "SELL",
+      "price": 1128.97998,
+      "shares": 2.0,
+      "date": "2026-09-01T19:56:24.850402+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Hit stop-loss threshold at 1128.30 with -3.00% loss and stalling momentum. Cutting dead weight.",
+      "confidence": 0.92,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 1128.3,
+      "take_profit": 1233.0,
+      "realized_pnl": -68.44
+    },
+    {
+      "id": "b8a0717f4cc2",
+      "ticker": "EG",
+      "type": "BUY",
+      "price": 378.160004,
+      "shares": 6.0,
+      "date": "2026-09-01T19:56:22.815089+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Solid uptrend consolidation with 9.5 score and strong fundamental insurance sector support. (qty capped to 6.0 by 12% cash rule)",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 366.82,
+      "take_profit": 400.85,
+      "realized_pnl": null
+    },
+    {
+      "id": "0c1a364a39b8",
+      "ticker": "CAH",
+      "type": "BUY",
+      "price": 238.710007,
+      "shares": 10.0,
+      "date": "2026-09-01T19:56:20.493597+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score (9.00), 9.9 score rating, and tight consolidation with strong healthcare tailwinds. (qty capped to 10.0 by 12% cash rule)",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 231.55,
+      "take_profit": 253.03,
+      "realized_pnl": null
+    },
+    {
+      "id": "9a066e306802",
+      "ticker": "APD",
+      "type": "BUY",
+      "price": 304.809998,
+      "shares": 9.0,
+      "date": "2026-09-01T19:56:17.752899+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong materials momentum, 9.7 technical score, bullish news flow, and clean consolidation structure.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 295.67,
+      "take_profit": 323.1,
+      "realized_pnl": null
+    },
+    {
+      "id": "a0637d474899",
+      "ticker": "ELV",
+      "type": "BUY",
+      "price": 403.339996,
+      "shares": 7.0,
+      "date": "2026-09-01T19:56:14.835352+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top opportunity score (9.37) with robust bullish sentiment, consolidating near breakout level above SMA50.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 391.24,
+      "take_profit": 427.54,
+      "realized_pnl": null
+    },
     {
       "id": "753e161055c1",
       "ticker": "NSC",
@@ -5072,5 +5188,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -238.34
+  "realized_pnl": -382.24
 }
