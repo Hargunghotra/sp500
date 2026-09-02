@@ -1,26 +1,6 @@
 {
-  "balance": 16891.02,
+  "balance": 22686.54,
   "positions": {
-    "TECH": {
-      "symbol": "TECH",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 75.0,
-      "avg_price": 72.1884,
-      "stop_loss": 70.07,
-      "take_profit": 76.57,
-      "opened_at": "2026-08-11T20:24:42.091259+00:00"
-    },
-    "EURUSD=X": {
-      "symbol": "EURUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 2000.0,
-      "avg_price": 1.157943,
-      "stop_loss": 1.14636,
-      "take_profit": 1.1811,
-      "opened_at": "2026-08-18T21:57:52.988621+00:00"
-    },
     "AUDUSD=X": {
       "symbol": "AUDUSD=X",
       "asset_class": "forex",
@@ -120,9 +100,67 @@
       "stop_loss": 103.52,
       "take_profit": 113.12,
       "opened_at": "2026-09-02T21:57:22.712100+00:00"
+    },
+    "BNY": {
+      "symbol": "BNY",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 12.0,
+      "avg_price": 162.039993,
+      "stop_loss": 157.18,
+      "take_profit": 171.76,
+      "opened_at": "2026-09-02T23:41:31.923932+00:00"
     }
   },
   "trades": [
+    {
+      "id": "38a5fd26f95b",
+      "ticker": "EURUSD=X",
+      "type": "SELL",
+      "price": 1.158749,
+      "shares": 2000.0,
+      "date": "2026-09-02T23:41:33.530002+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Sub-0.10% return over 15 days indicates lack of directional momentum. Exiting pair to free an open position slot and redeploy capital into high-conviction equities.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.14636,
+      "take_profit": 1.1811,
+      "realized_pnl": 1.61
+    },
+    {
+      "id": "ca25573c2654",
+      "ticker": "BNY",
+      "type": "BUY",
+      "price": 162.039993,
+      "shares": 12.0,
+      "date": "2026-09-02T23:41:31.923974+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong uptrend well above 50-day SMA with 9.9 asset score and bullish institutional flow. Consolidating cleanly before next leg higher.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 157.18,
+      "take_profit": 171.76,
+      "realized_pnl": null
+    },
+    {
+      "id": "9ad112951a87",
+      "ticker": "TECH",
+      "type": "SELL",
+      "price": 72.300003,
+      "shares": 75.0,
+      "date": "2026-09-02T23:41:29.156585+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Capital is stagnant after holding for over three weeks with only 0.15% return and price directly pinned against immediate overhead resistance. Liquidating to free $5,422.50 into higher momentum names.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 70.07,
+      "take_profit": 76.57,
+      "realized_pnl": 8.37
+    },
     {
       "id": "b8b505eda8eb",
       "ticker": "SBUX",
@@ -5336,5 +5374,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -459.57
+  "realized_pnl": -449.59
 }

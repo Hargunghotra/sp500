@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively prune lagging positions, protect capital, and deploy available liquidity into top-scoring equity candidates exhibiting strong consolidation breakouts and bullish sentiment.",
+  "thesis": "Maximize capital velocity by cutting stagnant legacy holdings that tie up buying power and rotating immediately into high-relative-strength breakout equity setups displaying tight consolidation and strong institutional scoring.",
   "preferred_sectors": [
+    "Financials",
     "Healthcare",
-    "Consumer Defensive",
-    "Utilities",
-    "Consumer Cyclical"
+    "Industrials",
+    "Utilities"
   ],
   "styles": [
     "Momentum",
-    "Consolidation Breakout",
-    "Trend Following"
+    "Trend Following",
+    "Swing Trading"
   ],
   "risk_posture": "Disciplined Aggressive",
-  "updated_at": "2026-09-02T21:57:15.491855+00:00",
+  "updated_at": "2026-09-02T23:41:28.863000+00:00",
   "model": "gemini-flash-latest"
 }
