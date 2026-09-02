@@ -1,5 +1,5 @@
 {
-  "balance": 21787.7,
+  "balance": 22034.44,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -10,16 +10,6 @@
       "stop_loss": 70.07,
       "take_profit": 76.57,
       "opened_at": "2026-08-11T20:24:42.091259+00:00"
-    },
-    "GBPUSD=X": {
-      "symbol": "GBPUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 1800.0,
-      "avg_price": 1.352997,
-      "stop_loss": 1.3395,
-      "take_profit": 1.38,
-      "opened_at": "2026-08-18T20:39:09.241664+00:00"
     },
     "EURUSD=X": {
       "symbol": "EURUSD=X",
@@ -50,16 +40,6 @@
       "stop_loss": 14.26,
       "take_profit": 15.58,
       "opened_at": "2026-08-19T23:35:09.515612+00:00"
-    },
-    "NDAQ": {
-      "symbol": "NDAQ",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 27.0,
-      "avg_price": 98.220001,
-      "stop_loss": 95.27,
-      "take_profit": 104.11,
-      "opened_at": "2026-08-21T20:41:44.838310+00:00"
     },
     "ELV": {
       "symbol": "ELV",
@@ -100,9 +80,93 @@
       "stop_loss": 366.82,
       "take_profit": 400.85,
       "opened_at": "2026-09-01T19:56:22.815052+00:00"
+    },
+    "AWK": {
+      "symbol": "AWK",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 18.0,
+      "avg_price": 138.595001,
+      "stop_loss": 134.44,
+      "take_profit": 146.91,
+      "opened_at": "2026-09-02T19:30:58.745772+00:00"
+    },
+    "BNY": {
+      "symbol": "BNY",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 14.0,
+      "avg_price": 162.350006,
+      "stop_loss": 157.48,
+      "take_profit": 172.09,
+      "opened_at": "2026-09-02T19:31:01.126805+00:00"
     }
   },
   "trades": [
+    {
+      "id": "9c709acad438",
+      "ticker": "NDAQ",
+      "type": "SELL",
+      "price": 95.809998,
+      "shares": 27.0,
+      "date": "2026-09-02T19:31:05.487974+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Lagging performer with negative PnL (-2.43%) hovering close to its stop-loss level, with the lowest opportunity score (4.052) among equity candidates. Freeing capital for higher-conviction setups.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 95.27,
+      "take_profit": 104.11,
+      "realized_pnl": -65.07
+    },
+    {
+      "id": "047801d04d2c",
+      "ticker": "GBPUSD=X",
+      "type": "SELL",
+      "price": 1.3486,
+      "shares": 1800.0,
+      "date": "2026-09-02T19:31:03.430797+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Negative return and sluggish price action near immediate resistance with very low distance to support. Reallocating capital to higher potential equities.",
+      "confidence": 0.75,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.3395,
+      "take_profit": 1.38,
+      "realized_pnl": -7.92
+    },
+    {
+      "id": "4a2253e0cf1b",
+      "ticker": "BNY",
+      "type": "BUY",
+      "price": 162.350006,
+      "shares": 14.0,
+      "date": "2026-09-02T19:31:01.126835+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High-conviction financial custody leader with 9.007 opportunity score, 3.15% cushion to support, and strong multi-month relative momentum. (qty capped to 14.0 by 12% cash rule)",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 157.48,
+      "take_profit": 172.09,
+      "realized_pnl": null
+    },
+    {
+      "id": "2ed473174dda",
+      "ticker": "AWK",
+      "type": "BUY",
+      "price": 138.595001,
+      "shares": 18.0,
+      "date": "2026-09-02T19:30:58.745800+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score (9.179) with 9.9 fundamental score, bullish sentiment, consolidating uptrend, and reasonable distance to support.",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 134.44,
+      "take_profit": 146.91,
+      "realized_pnl": null
+    },
     {
       "id": "dca67fde7644",
       "ticker": "KVUE",
@@ -5188,5 +5252,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -382.24
+  "realized_pnl": -455.23
 }
