@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively cut underperforming positions and dead-weight laggards to rotate available capital into top-tier momentum and high-conviction breakout consolidation setups across Financials, Healthcare, and strong FX runners.",
+  "thesis": "Aggressively cut underperforming positions hitting trailing stop thresholds (KVUE, BLK) to free capital, maintain winning momentum across high-opportunity equities and forex pairs, and deploy cash into top-ranked consolidating breakout candidates across Healthcare, Materials, and FX.",
   "preferred_sectors": [
-    "Financials",
     "Healthcare",
-    "Technology",
+    "Basic Materials",
+    "Financial Services",
     "Forex"
   ],
   "styles": [
     "Momentum",
-    "Consolidation Breakout",
-    "Trend Following"
+    "Trend Following",
+    "Breakout Consolidation"
   ],
   "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-08-28T19:41:46.594344+00:00",
+  "updated_at": "2026-09-01T19:56:14.626161+00:00",
   "model": "gemini-flash-latest"
 }
