@@ -1,5 +1,5 @@
 {
-  "balance": 22034.44,
+  "balance": 16891.02,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -91,18 +91,102 @@
       "take_profit": 146.91,
       "opened_at": "2026-09-02T19:30:58.745772+00:00"
     },
-    "BNY": {
-      "symbol": "BNY",
+    "KVUE": {
+      "symbol": "KVUE",
       "asset_class": "equity",
       "side": "LONG",
-      "quantity": 14.0,
-      "avg_price": 162.350006,
-      "stop_loss": 157.48,
-      "take_profit": 172.09,
-      "opened_at": "2026-09-02T19:31:01.126805+00:00"
+      "quantity": 138.0,
+      "avg_price": 19.129999,
+      "stop_loss": 18.56,
+      "take_profit": 20.28,
+      "opened_at": "2026-09-02T21:57:16.581589+00:00"
+    },
+    "HSIC": {
+      "symbol": "HSIC",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 28.0,
+      "avg_price": 90.389999,
+      "stop_loss": 87.68,
+      "take_profit": 95.81,
+      "opened_at": "2026-09-02T21:57:20.781268+00:00"
+    },
+    "SBUX": {
+      "symbol": "SBUX",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 21.0,
+      "avg_price": 106.720001,
+      "stop_loss": 103.52,
+      "take_profit": 113.12,
+      "opened_at": "2026-09-02T21:57:22.712100+00:00"
     }
   },
   "trades": [
+    {
+      "id": "b8b505eda8eb",
+      "ticker": "SBUX",
+      "type": "BUY",
+      "price": 106.720001,
+      "shares": 21.0,
+      "date": "2026-09-02T21:57:22.712132+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Score 9.8 consolidation setup with attractive risk-to-reward ratio and upside room to resistance. (qty capped to 21.0 by 12% cash rule)",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 103.52,
+      "take_profit": 113.12,
+      "realized_pnl": null
+    },
+    {
+      "id": "55fa21697607",
+      "ticker": "HSIC",
+      "type": "BUY",
+      "price": 90.389999,
+      "shares": 28.0,
+      "date": "2026-09-02T21:57:20.781301+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Flawless base score (10.0), bullish institutional consensus, and positive moving average structure. (qty capped to 28.0 by 12% cash rule)",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 87.68,
+      "take_profit": 95.81,
+      "realized_pnl": null
+    },
+    {
+      "id": "4196b4a4e93f",
+      "ticker": "BNY",
+      "type": "SELL",
+      "price": 162.039993,
+      "shares": 14.0,
+      "date": "2026-09-02T21:57:18.742463+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Aggressively cut underperforming asset in negative PnL with negative earnings sentiment to free allocation capacity.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 157.48,
+      "take_profit": 172.09,
+      "realized_pnl": -4.34
+    },
+    {
+      "id": "0c6b537b4255",
+      "ticker": "KVUE",
+      "type": "BUY",
+      "price": 19.129999,
+      "shares": 138.0,
+      "date": "2026-09-02T21:57:16.581617+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score (9.094) consolidating near key support with strong bullish catalyst backdrop.",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 18.56,
+      "take_profit": 20.28,
+      "realized_pnl": null
+    },
     {
       "id": "9c709acad438",
       "ticker": "NDAQ",
@@ -5252,5 +5336,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -455.23
+  "realized_pnl": -459.57
 }

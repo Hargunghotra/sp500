@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressive rotation out of underperforming equity and deadweight forex positions into top-ranked consolidating momentum leaders in defensive utilities and custody financials, while maintaining profitable runners and respecting portfolio risk limits.",
+  "thesis": "Aggressively prune lagging positions, protect capital, and deploy available liquidity into top-scoring equity candidates exhibiting strong consolidation breakouts and bullish sentiment.",
   "preferred_sectors": [
-    "Utilities",
-    "Financial Services",
     "Healthcare",
-    "Forex"
+    "Consumer Defensive",
+    "Utilities",
+    "Consumer Cyclical"
   ],
   "styles": [
-    "Momentum Breakout",
-    "Consolidation Base",
+    "Momentum",
+    "Consolidation Breakout",
     "Trend Following"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-09-02T19:30:58.463339+00:00",
+  "risk_posture": "Disciplined Aggressive",
+  "updated_at": "2026-09-02T21:57:15.491855+00:00",
   "model": "gemini-flash-latest"
 }
