@@ -1,5 +1,5 @@
 {
-  "balance": 22686.54,
+  "balance": 27498.05,
   "positions": {
     "AUDUSD=X": {
       "symbol": "AUDUSD=X",
@@ -31,16 +31,6 @@
       "take_profit": 427.54,
       "opened_at": "2026-09-01T19:56:14.835287+00:00"
     },
-    "APD": {
-      "symbol": "APD",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 9.0,
-      "avg_price": 304.809998,
-      "stop_loss": 295.67,
-      "take_profit": 323.1,
-      "opened_at": "2026-09-01T19:56:17.752860+00:00"
-    },
     "CAH": {
       "symbol": "CAH",
       "asset_class": "equity",
@@ -71,16 +61,6 @@
       "take_profit": 146.91,
       "opened_at": "2026-09-02T19:30:58.745772+00:00"
     },
-    "KVUE": {
-      "symbol": "KVUE",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 138.0,
-      "avg_price": 19.129999,
-      "stop_loss": 18.56,
-      "take_profit": 20.28,
-      "opened_at": "2026-09-02T21:57:16.581589+00:00"
-    },
     "HSIC": {
       "symbol": "HSIC",
       "asset_class": "equity",
@@ -91,16 +71,6 @@
       "take_profit": 95.81,
       "opened_at": "2026-09-02T21:57:20.781268+00:00"
     },
-    "SBUX": {
-      "symbol": "SBUX",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 21.0,
-      "avg_price": 106.720001,
-      "stop_loss": 103.52,
-      "take_profit": 113.12,
-      "opened_at": "2026-09-02T21:57:22.712100+00:00"
-    },
     "BNY": {
       "symbol": "BNY",
       "asset_class": "equity",
@@ -110,9 +80,83 @@
       "stop_loss": 157.18,
       "take_profit": 171.76,
       "opened_at": "2026-09-02T23:41:31.923932+00:00"
+    },
+    "TECH": {
+      "symbol": "TECH",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 37.0,
+      "avg_price": 72.43,
+      "stop_loss": 70.26,
+      "take_profit": 76.78,
+      "opened_at": "2026-09-04T21:26:24.918098+00:00"
     }
   },
   "trades": [
+    {
+      "id": "ff8c003eac55",
+      "ticker": "KVUE",
+      "type": "SELL",
+      "price": 18.74,
+      "shares": 138.0,
+      "date": "2026-09-04T21:26:37.840106+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Position in established downtrend sitting at immediate support with negative PnL (-2.04%); liquidating to avoid further downside and deploy into top setups.",
+      "confidence": 0.89,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 18.56,
+      "take_profit": 20.28,
+      "realized_pnl": -53.82
+    },
+    {
+      "id": "82fa1e39f2c3",
+      "ticker": "SBUX",
+      "type": "SELL",
+      "price": 104.470001,
+      "shares": 21.0,
+      "date": "2026-09-04T21:26:33.729268+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Underperforming holding with negative return, negative PnL (-2.11%), and breakdown below 50 SMA into a downtrend; cutting dead weight to free capital.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 103.52,
+      "take_profit": 113.12,
+      "realized_pnl": -47.25
+    },
+    {
+      "id": "6b26b9303e97",
+      "ticker": "APD",
+      "type": "SELL",
+      "price": 301.269989,
+      "shares": 9.0,
+      "date": "2026-09-04T21:26:29.606115+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Sub-par momentum and negative unrealized PnL with low relative opportunity score compared to candidate universe; freeing cash for higher conviction targets.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 295.67,
+      "take_profit": 323.1,
+      "realized_pnl": -31.86
+    },
+    {
+      "id": "4798f75ac580",
+      "ticker": "TECH",
+      "type": "BUY",
+      "price": 72.43,
+      "shares": 37.0,
+      "date": "2026-09-04T21:26:24.918126+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top opportunity score of 9.33 in consolidation right at support (0.54% dist) with strong trend structure and 10.0 score.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 70.26,
+      "take_profit": 76.78,
+      "realized_pnl": null
+    },
     {
       "id": "38a5fd26f95b",
       "ticker": "EURUSD=X",
@@ -5374,5 +5418,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -449.59
+  "realized_pnl": -582.52
 }
