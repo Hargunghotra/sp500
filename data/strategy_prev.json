@@ -1,9 +1,10 @@
 {
-  "thesis": "Maximize capital velocity by cutting stagnant legacy holdings that tie up buying power and rotating immediately into high-relative-strength breakout equity setups displaying tight consolidation and strong institutional scoring.",
+  "thesis": "Rotate capital from deteriorating technical setups and underperforming positions into high-opportunity consolidating leaders with strong upward momentum and favorable risk-reward across equities.",
   "preferred_sectors": [
     "Financials",
     "Healthcare",
-    "Industrials",
+    "Technology",
+    "Energy",
     "Utilities"
   ],
   "styles": [
@@ -11,7 +12,7 @@
     "Trend Following",
     "Swing Trading"
   ],
-  "risk_posture": "Disciplined Aggressive",
-  "updated_at": "2026-09-02T23:41:28.863000+00:00",
+  "risk_posture": "Aggressive Growth with Strict Risk Caps",
+  "updated_at": "2026-09-04T21:26:23.902738+00:00",
   "model": "gemini-flash-latest"
 }
