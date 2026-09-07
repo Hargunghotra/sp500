@@ -1,18 +1,18 @@
 {
-  "thesis": "Rotate capital from deteriorating technical setups and underperforming positions into high-opportunity consolidating leaders with strong upward momentum and favorable risk-reward across equities.",
+  "thesis": "Aggressively harvest profits on positions tagging resistance targets (AUDUSD=X) and cull low-edge, sentiment-compromised laggards (ELV) to redeploy capital into high opportunity-score equity breakouts and low-beta FX trends.",
   "preferred_sectors": [
     "Financials",
-    "Healthcare",
-    "Technology",
     "Energy",
-    "Utilities"
+    "Utilities",
+    "Healthcare",
+    "Forex"
   ],
   "styles": [
-    "Momentum",
+    "Momentum Breakout",
     "Trend Following",
-    "Swing Trading"
+    "Capital Recycling"
   ],
-  "risk_posture": "Aggressive Growth with Strict Risk Caps",
-  "updated_at": "2026-09-04T21:26:23.902738+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-09-07T21:37:50.469665+00:00",
   "model": "gemini-flash-latest"
 }

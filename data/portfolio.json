@@ -1,16 +1,6 @@
 {
-  "balance": 27498.05,
+  "balance": 24285.33,
   "positions": {
-    "AUDUSD=X": {
-      "symbol": "AUDUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 3500.0,
-      "avg_price": 0.708617,
-      "stop_loss": 0.70153,
-      "take_profit": 0.72279,
-      "opened_at": "2026-08-18T21:57:54.672862+00:00"
-    },
     "AES": {
       "symbol": "AES",
       "asset_class": "equity",
@@ -20,16 +10,6 @@
       "stop_loss": 14.26,
       "take_profit": 15.58,
       "opened_at": "2026-08-19T23:35:09.515612+00:00"
-    },
-    "ELV": {
-      "symbol": "ELV",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 7.0,
-      "avg_price": 403.339996,
-      "stop_loss": 391.24,
-      "take_profit": 427.54,
-      "opened_at": "2026-09-01T19:56:14.835287+00:00"
     },
     "CAH": {
       "symbol": "CAH",
@@ -90,9 +70,119 @@
       "stop_loss": 70.26,
       "take_profit": 76.78,
       "opened_at": "2026-09-04T21:26:24.918098+00:00"
+    },
+    "JPM": {
+      "symbol": "JPM",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 9.0,
+      "avg_price": 358.640015,
+      "stop_loss": 347.88,
+      "take_profit": 380.16,
+      "opened_at": "2026-09-07T21:37:50.701011+00:00"
+    },
+    "EQT": {
+      "symbol": "EQT",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 52.0,
+      "avg_price": 55.169998,
+      "stop_loss": 53.51,
+      "take_profit": 58.48,
+      "opened_at": "2026-09-07T21:37:53.397342+00:00"
+    },
+    "RJF": {
+      "symbol": "RJF",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 14.0,
+      "avg_price": 178.289993,
+      "stop_loss": 172.94,
+      "take_profit": 188.99,
+      "opened_at": "2026-09-07T21:37:56.116184+00:00"
     }
   },
   "trades": [
+    {
+      "id": "ede64bbcdd7c",
+      "ticker": "ELV",
+      "type": "SELL",
+      "price": 407.5,
+      "shares": 7.0,
+      "date": "2026-09-07T21:38:01.777539+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Unrealized gain achieved, but thesis momentum is deteriorating with negative headline sentiment and an inferior opportunity score (5.24). Freeing capital for higher-alpha opportunities.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 391.24,
+      "take_profit": 427.54,
+      "realized_pnl": 29.12
+    },
+    {
+      "id": "bcac4ddcc250",
+      "ticker": "AUDUSD=X",
+      "type": "SELL",
+      "price": 0.722126,
+      "shares": 3500.0,
+      "date": "2026-09-07T21:38:00.090660+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Position has surged into target resistance zone with 0.0% distance to resistance left and unrealized gains locked in. Taking full profits to reallocate into higher-score setups.",
+      "confidence": 0.9,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.70153,
+      "take_profit": 0.72279,
+      "realized_pnl": 47.28
+    },
+    {
+      "id": "f0c89f17bed6",
+      "ticker": "RJF",
+      "type": "BUY",
+      "price": 178.289993,
+      "shares": 14.0,
+      "date": "2026-09-07T21:37:56.116215+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High composite score of 9.8 with bullish financial sector sentiment and constructive chart consolidation above 50-day moving average. (qty capped to 14.0 by 12% cash rule)",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 172.94,
+      "take_profit": 188.99,
+      "realized_pnl": null
+    },
+    {
+      "id": "afffaf841944",
+      "ticker": "EQT",
+      "type": "BUY",
+      "price": 55.169998,
+      "shares": 52.0,
+      "date": "2026-09-07T21:37:53.397377+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong energy momentum with 6.7% 20-day return, consolidating cleanly with an opportunity score of 9.11 and supportive technical buffer. (qty capped to 52.0 by 12% cash rule)",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 53.51,
+      "take_profit": 58.48,
+      "realized_pnl": null
+    },
+    {
+      "id": "8636a92a7dcf",
+      "ticker": "JPM",
+      "type": "BUY",
+      "price": 358.640015,
+      "shares": 9.0,
+      "date": "2026-09-07T21:37:50.701038+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top-tier banking leader with UP trend, bullish news sentiment, and an attractive 9.29 opportunity score consolidating above its 50 SMA.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 347.88,
+      "take_profit": 380.16,
+      "realized_pnl": null
+    },
     {
       "id": "ff8c003eac55",
       "ticker": "KVUE",
@@ -5418,5 +5508,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -582.52
+  "realized_pnl": -506.12
 }
