@@ -1,5 +1,5 @@
 {
-  "balance": 24642.6,
+  "balance": 21769.95,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -31,16 +31,6 @@
       "take_profit": 146.91,
       "opened_at": "2026-09-02T19:30:58.745772+00:00"
     },
-    "HSIC": {
-      "symbol": "HSIC",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 28.0,
-      "avg_price": 90.389999,
-      "stop_loss": 87.68,
-      "take_profit": 95.81,
-      "opened_at": "2026-09-02T21:57:20.781268+00:00"
-    },
     "BNY": {
       "symbol": "BNY",
       "asset_class": "equity",
@@ -71,16 +61,6 @@
       "take_profit": 58.48,
       "opened_at": "2026-09-07T21:37:53.397342+00:00"
     },
-    "RJF": {
-      "symbol": "RJF",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 14.0,
-      "avg_price": 178.289993,
-      "stop_loss": 172.94,
-      "take_profit": 188.99,
-      "opened_at": "2026-09-07T21:37:56.116184+00:00"
-    },
     "EURUSD=X": {
       "symbol": "EURUSD=X",
       "asset_class": "forex",
@@ -100,9 +80,119 @@
       "stop_loss": 89.87,
       "take_profit": 98.21,
       "opened_at": "2026-09-08T16:47:19.589571+00:00"
+    },
+    "GBPUSD=X": {
+      "symbol": "GBPUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 2000.0,
+      "avg_price": 1.353986,
+      "stop_loss": 1.3404,
+      "take_profit": 1.3811,
+      "opened_at": "2026-09-08T22:02:09.556145+00:00"
+    },
+    "GILD": {
+      "symbol": "GILD",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 17.0,
+      "avg_price": 146.639999,
+      "stop_loss": 142.24,
+      "take_profit": 155.44,
+      "opened_at": "2026-09-08T22:02:12.451052+00:00"
+    },
+    "BTC-USD": {
+      "symbol": "BTC-USD",
+      "asset_class": "crypto",
+      "side": "LONG",
+      "quantity": 0.0335,
+      "avg_price": 78554.6875,
+      "stop_loss": 74626.95,
+      "take_profit": 86410.15,
+      "opened_at": "2026-09-08T22:02:17.562528+00:00"
     }
   },
   "trades": [
+    {
+      "id": "fc1079988e34",
+      "ticker": "RJF",
+      "type": "SELL",
+      "price": 176.550003,
+      "shares": 14.0,
+      "date": "2026-09-08T22:02:20.137710+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Deteriorating price action (-0.98% PnL, -1.42% 20-day return); liquidating dead weight to free ticker capacity.",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 172.94,
+      "take_profit": 188.99,
+      "realized_pnl": -24.36
+    },
+    {
+      "id": "ee7043db831f",
+      "ticker": "BTC-USD",
+      "type": "BUY",
+      "price": 78554.6875,
+      "shares": 0.0335,
+      "date": "2026-09-08T22:02:17.562562+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Powerful trend breakout (+13.41% 20d return) trading well clear of SMA50; initiating crypto allocation for high beta upside. (qty capped to 0.0335 by 12% cash rule)",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "crypto",
+      "stop_loss": 74626.95,
+      "take_profit": 86410.15,
+      "realized_pnl": null
+    },
+    {
+      "id": "caeba6130063",
+      "ticker": "HSIC",
+      "type": "SELL",
+      "price": 88.860001,
+      "shares": 28.0,
+      "date": "2026-09-08T22:02:14.944091+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Cutting bottom performer with -1.69% unrealized loss to preserve capital and redeploy into top-tier opportunity scores.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 87.68,
+      "take_profit": 95.81,
+      "realized_pnl": -42.84
+    },
+    {
+      "id": "facf36db8e89",
+      "ticker": "GILD",
+      "type": "BUY",
+      "price": 146.639999,
+      "shares": 17.0,
+      "date": "2026-09-08T22:02:12.451088+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Strong momentum breakout (+10.21% 20d return) supported by bullish FDA catalysts and leadership in biopharma. (qty capped to 17.0 by 12% cash rule)",
+      "confidence": 0.87,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 142.24,
+      "take_profit": 155.44,
+      "realized_pnl": null
+    },
+    {
+      "id": "62023d739e6e",
+      "ticker": "GBPUSD=X",
+      "type": "BUY",
+      "price": 1.353986,
+      "shares": 2000.0,
+      "date": "2026-09-08T22:02:09.556175+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Exceptional composite score (9.9) and high opportunity score (8.501) with clean consolidation right on support.",
+      "confidence": 0.83,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.3404,
+      "take_profit": 1.3811,
+      "realized_pnl": null
+    },
     {
       "id": "95f34fd32dd0",
       "ticker": "TRV",
@@ -5604,5 +5694,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -540.03
+  "realized_pnl": -607.23
 }

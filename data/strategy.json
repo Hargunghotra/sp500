@@ -1,18 +1,17 @@
 {
-  "thesis": "Aggressively prune dead weight and underperforming financial holdings to eliminate negative momentum, lock in capital, and rotate into high-conviction breakout setups in healthcare and communication infrastructure while letting profitable momentum winners ride toward target prices.",
+  "thesis": "Aggressively prune lagging and negative-drift holdings, lock in capital, and reallocate across equities, forex, and high-beta crypto trends exhibiting superior momentum and risk-reward asymmetry.",
   "preferred_sectors": [
     "Healthcare",
-    "Utilities",
-    "Infrastructure",
-    "Energy"
+    "Energy Infrastructure",
+    "Forex Major Trends",
+    "Layer-1 Crypto"
   ],
   "styles": [
-    "Momentum",
-    "Breakout",
-    "Trend-Following",
-    "Mean-Reversion Support Rebound"
+    "Momentum Breakout",
+    "Trend Following",
+    "Relative Strength"
   ],
-  "risk_posture": "Controlled Aggressive",
-  "updated_at": "2026-09-08T16:47:18.994813+00:00",
+  "risk_posture": "Aggressive Growth within Hard Risk Caps",
+  "updated_at": "2026-09-08T22:02:09.292787+00:00",
   "model": "gemini-flash-latest"
 }
