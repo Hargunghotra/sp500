@@ -1,17 +1,18 @@
 {
-  "thesis": "Maximize realized and unrealized PnL by running an aggressive multi-asset book. Trim or cut stagnant and sub-performing equities near overhead resistance or showing momentum decay, while holding strong uptrending core leaders. Reallocate liquid cash into high-conviction breakout setups across equities and high-performing forex pairs within strict risk limits.",
+  "thesis": "Aggressively prune dead weight and underperforming financial holdings to eliminate negative momentum, lock in capital, and rotate into high-conviction breakout setups in healthcare and communication infrastructure while letting profitable momentum winners ride toward target prices.",
   "preferred_sectors": [
-    "Financials",
     "Healthcare",
-    "Energy",
-    "G10 Currencies"
+    "Utilities",
+    "Infrastructure",
+    "Energy"
   ],
   "styles": [
     "Momentum",
     "Breakout",
-    "Swing Trading"
+    "Trend-Following",
+    "Mean-Reversion Support Rebound"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-09-07T23:45:39.648090+00:00",
+  "risk_posture": "Controlled Aggressive",
+  "updated_at": "2026-09-08T16:47:18.994813+00:00",
   "model": "gemini-flash-latest"
 }

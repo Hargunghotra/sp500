@@ -1,5 +1,5 @@
 {
-  "balance": 21381.11,
+  "balance": 24642.6,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -61,16 +61,6 @@
       "take_profit": 76.78,
       "opened_at": "2026-09-04T21:26:24.918098+00:00"
     },
-    "JPM": {
-      "symbol": "JPM",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 9.0,
-      "avg_price": 358.640015,
-      "stop_loss": 347.88,
-      "take_profit": 380.16,
-      "opened_at": "2026-09-07T21:37:50.701011+00:00"
-    },
     "EQT": {
       "symbol": "EQT",
       "asset_class": "equity",
@@ -91,16 +81,6 @@
       "take_profit": 188.99,
       "opened_at": "2026-09-07T21:37:56.116184+00:00"
     },
-    "TRV": {
-      "symbol": "TRV",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 7.0,
-      "avg_price": 369.350006,
-      "stop_loss": 358.25,
-      "take_profit": 391.5,
-      "opened_at": "2026-09-07T23:45:39.957893+00:00"
-    },
     "EURUSD=X": {
       "symbol": "EURUSD=X",
       "asset_class": "forex",
@@ -110,9 +90,67 @@
       "stop_loss": 1.1515,
       "take_profit": 1.1865,
       "opened_at": "2026-09-07T23:45:41.601281+00:00"
+    },
+    "MDT": {
+      "symbol": "MDT",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 27.0,
+      "avg_price": 92.650002,
+      "stop_loss": 89.87,
+      "take_profit": 98.21,
+      "opened_at": "2026-09-08T16:47:19.589571+00:00"
     }
   },
   "trades": [
+    {
+      "id": "95f34fd32dd0",
+      "ticker": "TRV",
+      "type": "SELL",
+      "price": 366.179993,
+      "shares": 7.0,
+      "date": "2026-09-08T16:47:24.267413+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Cutting deteriorating dead weight. Negative 20-day trend (-2.51%) and lagging opportunity score (5.589) warrant freeing capital for higher-edge candidates.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 358.25,
+      "take_profit": 391.5,
+      "realized_pnl": -22.19
+    },
+    {
+      "id": "4390564045d6",
+      "ticker": "JPM",
+      "type": "SELL",
+      "price": 355.530609,
+      "shares": 9.0,
+      "date": "2026-09-08T16:47:22.200929+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Exiting lagging position with negative 20-day return (-1.18%) and low relative opportunity score (6.622) to reduce financial sector concentration.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 347.88,
+      "take_profit": 380.16,
+      "realized_pnl": -27.98
+    },
+    {
+      "id": "9ae5e45d7512",
+      "ticker": "MDT",
+      "type": "BUY",
+      "price": 92.650002,
+      "shares": 27.0,
+      "date": "2026-09-08T16:47:19.589602+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High-conviction rotation into leading healthcare equipment provider; opportunity score 9.122, trend UP, +3.62% 20-day return, and strong bullish sentiment.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 89.87,
+      "take_profit": 98.21,
+      "realized_pnl": null
+    },
     {
       "id": "197468f1d690",
       "ticker": "EG",
@@ -5566,5 +5604,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -489.86
+  "realized_pnl": -540.03
 }
