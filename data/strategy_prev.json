@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize realized and unrealized PnL by running an aggressive multi-asset book. Trim or cut stagnant and sub-performing equities near overhead resistance or showing momentum decay, while holding strong uptrending core leaders. Reallocate liquid cash into high-conviction breakout setups across equities and high-performing forex pairs within strict risk limits.",
+  "thesis": "Aggressively prune lagging and negative-drift holdings, lock in capital, and reallocate across equities, forex, and high-beta crypto trends exhibiting superior momentum and risk-reward asymmetry.",
   "preferred_sectors": [
-    "Financials",
     "Healthcare",
-    "Energy",
-    "G10 Currencies"
+    "Energy Infrastructure",
+    "Forex Major Trends",
+    "Layer-1 Crypto"
   ],
   "styles": [
-    "Momentum",
-    "Breakout",
-    "Swing Trading"
+    "Momentum Breakout",
+    "Trend Following",
+    "Relative Strength"
   ],
-  "risk_posture": "Aggressive Growth",
-  "updated_at": "2026-09-07T23:45:39.648090+00:00",
+  "risk_posture": "Aggressive Growth within Hard Risk Caps",
+  "updated_at": "2026-09-08T22:02:09.292787+00:00",
   "model": "gemini-flash-latest"
 }
