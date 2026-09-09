@@ -1,17 +1,18 @@
 {
-  "thesis": "Aggressively prune underperforming dead-weight equities displaying negative momentum or deteriorating setups, while rotating into high opportunity-score consolidating names near major support with strong trend confirmation. Hold productive winners in defensive/utility sectors and steady FX pairs while optimizing slot capacity.",
+  "thesis": "Capitalize on strong market breadth (99 UP trends) by rotating capital into high opportunity-score consolidating breakout candidates, holding steady gainers in utilities, infrastructure, and core macro FX, and keeping crypto exposure strictly controlled while expanding into high-conviction equity leaders.",
   "preferred_sectors": [
     "Utilities",
-    "Real Estate / Infrastructure",
-    "Financial Services",
-    "Forex"
+    "Financials",
+    "Technology & Research Tools",
+    "Infrastructure",
+    "Logistics & Industrials"
   ],
   "styles": [
-    "Momentum",
-    "Consolidation Breakout",
-    "Trend Following"
+    "Momentum Breakout",
+    "Trend Following",
+    "Multi-Asset Rotation"
   ],
   "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-09-09T21:57:31.947975+00:00",
+  "updated_at": "2026-09-09T23:41:50.037149+00:00",
   "model": "gemini-flash-latest"
 }

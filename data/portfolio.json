@@ -1,5 +1,5 @@
 {
-  "balance": 27111.77,
+  "balance": 19396.23,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -90,9 +90,87 @@
       "stop_loss": 170.17,
       "take_profit": 185.96,
       "opened_at": "2026-09-09T21:57:32.230126+00:00"
+    },
+    "EXPD": {
+      "symbol": "EXPD",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 14.0,
+      "avg_price": 188.309998,
+      "stop_loss": 182.66,
+      "take_profit": 199.61,
+      "opened_at": "2026-09-09T23:41:50.297192+00:00"
+    },
+    "BRK-B": {
+      "symbol": "BRK-B",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 5.0,
+      "avg_price": 506.720001,
+      "stop_loss": 491.52,
+      "take_profit": 537.12,
+      "opened_at": "2026-09-09T23:41:51.812760+00:00"
+    },
+    "BKR": {
+      "symbol": "BKR",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 40.0,
+      "avg_price": 63.639999,
+      "stop_loss": 61.73,
+      "take_profit": 67.46,
+      "opened_at": "2026-09-09T23:41:53.104199+00:00"
     }
   },
   "trades": [
+    {
+      "id": "72328bc92a5c",
+      "ticker": "BKR",
+      "type": "BUY",
+      "price": 63.639999,
+      "shares": 40.0,
+      "date": "2026-09-09T23:41:53.104233+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Energy sector strength, strong multi-year contract catalysts, score 9.2, UP trend above 50 SMA ($60.14). Sized at ~$2,545, filling the 12th open position slot.",
+      "confidence": 0.81,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 61.73,
+      "take_profit": 67.46,
+      "realized_pnl": null
+    },
+    {
+      "id": "0035b0128f11",
+      "ticker": "BRK-B",
+      "type": "BUY",
+      "price": 506.720001,
+      "shares": 5.0,
+      "date": "2026-09-09T23:41:51.812796+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top-tier quality mega-cap consolidating above 50-day SMA ($503.50), opportunity score 8.533. Sized within cash limit (~$2,533) to bring portfolio to 11 active positions.",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 491.52,
+      "take_profit": 537.12,
+      "realized_pnl": null
+    },
+    {
+      "id": "0a710a18ed75",
+      "ticker": "EXPD",
+      "type": "BUY",
+      "price": 188.309998,
+      "shares": 14.0,
+      "date": "2026-09-09T23:41:50.297223+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Outstanding momentum (+6.26% 20d return), UP trend, tight consolidation above 50 SMA ($179.33), score 9.9 and opportunity score 8.606. Sized under 12% cash cap (~$2,636).",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 182.66,
+      "take_profit": 199.61,
+      "realized_pnl": null
+    },
     {
       "id": "019aaeccc881",
       "ticker": "EQT",
