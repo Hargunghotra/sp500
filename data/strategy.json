@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively prune lagging and negative-drift holdings, lock in capital, and reallocate across equities, forex, and high-beta crypto trends exhibiting superior momentum and risk-reward asymmetry.",
+  "thesis": "Aggressively prune underperforming dead-weight equities displaying negative momentum or deteriorating setups, while rotating into high opportunity-score consolidating names near major support with strong trend confirmation. Hold productive winners in defensive/utility sectors and steady FX pairs while optimizing slot capacity.",
   "preferred_sectors": [
-    "Healthcare",
-    "Energy Infrastructure",
-    "Forex Major Trends",
-    "Layer-1 Crypto"
+    "Utilities",
+    "Real Estate / Infrastructure",
+    "Financial Services",
+    "Forex"
   ],
   "styles": [
-    "Momentum Breakout",
-    "Trend Following",
-    "Relative Strength"
+    "Momentum",
+    "Consolidation Breakout",
+    "Trend Following"
   ],
-  "risk_posture": "Aggressive Growth within Hard Risk Caps",
-  "updated_at": "2026-09-08T22:02:09.292787+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-09-09T21:57:31.947975+00:00",
   "model": "gemini-flash-latest"
 }
