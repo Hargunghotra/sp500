@@ -1,18 +1,17 @@
 {
-  "thesis": "Capitalize on strong market breadth (99 UP trends) by rotating capital into high opportunity-score consolidating breakout candidates, holding steady gainers in utilities, infrastructure, and core macro FX, and keeping crypto exposure strictly controlled while expanding into high-conviction equity leaders.",
+  "thesis": "Aggressively cut underperforming positions and dead-weight crypto/equity holdings that lag in opportunity score, while holding high-conviction consolidating winners and recycling capital into top-ranked equities and forex momentum setups with favorable risk-reward profiles.",
   "preferred_sectors": [
+    "Financial Services",
+    "Industrial Logistics",
     "Utilities",
-    "Financials",
-    "Technology & Research Tools",
-    "Infrastructure",
-    "Logistics & Industrials"
+    "Forex"
   ],
   "styles": [
     "Momentum Breakout",
-    "Trend Following",
-    "Multi-Asset Rotation"
+    "Consolidation Expansion",
+    "Trend Following"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-09-09T23:41:50.037149+00:00",
+  "risk_posture": "Aggressive Growth within Hard Risk Bounds",
+  "updated_at": "2026-09-10T19:16:45.773586+00:00",
   "model": "gemini-flash-latest"
 }
