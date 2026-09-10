@@ -1,17 +1,18 @@
 {
-  "thesis": "Aggressively prune lagging and negative-drift holdings, lock in capital, and reallocate across equities, forex, and high-beta crypto trends exhibiting superior momentum and risk-reward asymmetry.",
+  "thesis": "Capitalize on strong market breadth (99 UP trends) by rotating capital into high opportunity-score consolidating breakout candidates, holding steady gainers in utilities, infrastructure, and core macro FX, and keeping crypto exposure strictly controlled while expanding into high-conviction equity leaders.",
   "preferred_sectors": [
-    "Healthcare",
-    "Energy Infrastructure",
-    "Forex Major Trends",
-    "Layer-1 Crypto"
+    "Utilities",
+    "Financials",
+    "Technology & Research Tools",
+    "Infrastructure",
+    "Logistics & Industrials"
   ],
   "styles": [
     "Momentum Breakout",
     "Trend Following",
-    "Relative Strength"
+    "Multi-Asset Rotation"
   ],
-  "risk_posture": "Aggressive Growth within Hard Risk Caps",
-  "updated_at": "2026-09-08T22:02:09.292787+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-09-09T23:41:50.037149+00:00",
   "model": "gemini-flash-latest"
 }
