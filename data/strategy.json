@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively cut underperforming positions and dead-weight crypto/equity holdings that lag in opportunity score, while holding high-conviction consolidating winners and recycling capital into top-ranked equities and forex momentum setups with favorable risk-reward profiles.",
+  "thesis": "Aggressively trim stagnant and negative momentum positions to free capital, maintain trending winners, and deploy dry powder into elite consolidating large-cap leaders exhibiting high relative strength and top opportunity scores.",
   "preferred_sectors": [
-    "Financial Services",
-    "Industrial Logistics",
-    "Utilities",
-    "Forex"
+    "Financials",
+    "Insurance",
+    "Specialized REITs",
+    "Industrials"
   ],
   "styles": [
-    "Momentum Breakout",
-    "Consolidation Expansion",
+    "Momentum",
+    "Consolidation Breakout",
     "Trend Following"
   ],
-  "risk_posture": "Aggressive Growth within Hard Risk Bounds",
-  "updated_at": "2026-09-10T19:16:45.773586+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-09-11T19:17:57.570759+00:00",
   "model": "gemini-flash-latest"
 }

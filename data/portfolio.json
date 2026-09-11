@@ -1,5 +1,5 @@
 {
-  "balance": 26570.16,
+  "balance": 21235.18,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -10,16 +10,6 @@
       "stop_loss": 14.26,
       "take_profit": 15.58,
       "opened_at": "2026-08-19T23:35:09.515612+00:00"
-    },
-    "AWK": {
-      "symbol": "AWK",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 18.0,
-      "avg_price": 138.595001,
-      "stop_loss": 134.44,
-      "take_profit": 146.91,
-      "opened_at": "2026-09-02T19:30:58.745772+00:00"
     },
     "BNY": {
       "symbol": "BNY",
@@ -90,9 +80,103 @@
       "stop_loss": 356.16,
       "take_profit": 389.21,
       "opened_at": "2026-09-10T19:16:46.272457+00:00"
+    },
+    "AIZ": {
+      "symbol": "AIZ",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 10.0,
+      "avg_price": 282.839996,
+      "stop_loss": 274.35,
+      "take_profit": 299.81,
+      "opened_at": "2026-09-11T19:17:58.053053+00:00"
+    },
+    "JPM": {
+      "symbol": "JPM",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 7.0,
+      "avg_price": 356.649902,
+      "stop_loss": 345.95,
+      "take_profit": 378.05,
+      "opened_at": "2026-09-11T19:18:02.127414+00:00"
+    },
+    "AMT": {
+      "symbol": "AMT",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 14.0,
+      "avg_price": 177.875,
+      "stop_loss": 172.54,
+      "take_profit": 188.55,
+      "opened_at": "2026-09-11T19:18:04.243594+00:00"
     }
   },
   "trades": [
+    {
+      "id": "ebb7b3a1f6f7",
+      "ticker": "AWK",
+      "type": "SELL",
+      "price": 137.789993,
+      "shares": 18.0,
+      "date": "2026-09-11T19:18:06.903160+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Underperforming utility holding with negative unrealized return and deteriorating opportunity score (6.357). Cutting dead weight to free capital for higher-alpha opportunities.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 134.44,
+      "take_profit": 146.91,
+      "realized_pnl": -14.49
+    },
+    {
+      "id": "6b1f299b3bce",
+      "ticker": "AMT",
+      "type": "BUY",
+      "price": 177.875,
+      "shares": 14.0,
+      "date": "2026-09-11T19:18:04.243631+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Robust REIT consolidation with 3.17% cushion to support and strong bullish momentum supporting an upside breakout. (qty capped to 14.0 by 12% cash rule)",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 172.54,
+      "take_profit": 188.55,
+      "realized_pnl": null
+    },
+    {
+      "id": "fc9e3700a491",
+      "ticker": "JPM",
+      "type": "BUY",
+      "price": 356.649902,
+      "shares": 7.0,
+      "date": "2026-09-11T19:18:02.127456+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Financial sector bellwether with a 9.8 score and 9.082 opportunity score consolidating right above 50-day SMA. (qty capped to 7.0 by 12% cash rule)",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 345.95,
+      "take_profit": 378.05,
+      "realized_pnl": null
+    },
+    {
+      "id": "d17c26c21d56",
+      "ticker": "AIZ",
+      "type": "BUY",
+      "price": 282.839996,
+      "shares": 10.0,
+      "date": "2026-09-11T19:17:58.053085+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score of 9.279 with strong bullish sentiment, sound support buffer, and high-quality consolidation pattern.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 274.35,
+      "take_profit": 299.81,
+      "realized_pnl": null
+    },
     {
       "id": "ab335558535c",
       "ticker": "BTC-USD",
@@ -5866,5 +5950,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -948.77
+  "realized_pnl": -963.26
 }
