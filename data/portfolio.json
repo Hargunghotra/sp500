@@ -1,5 +1,5 @@
 {
-  "balance": 21269.32,
+  "balance": 23617.9,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -100,19 +100,25 @@
       "stop_loss": 172.54,
       "take_profit": 188.55,
       "opened_at": "2026-09-11T19:18:04.243594+00:00"
-    },
-    "NTRS": {
-      "symbol": "NTRS",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 13.0,
-      "avg_price": 189.190002,
-      "stop_loss": 183.51,
-      "take_profit": 200.54,
-      "opened_at": "2026-09-11T23:37:55.330819+00:00"
     }
   },
   "trades": [
+    {
+      "id": "ca01a8d6d6a6",
+      "ticker": "NTRS",
+      "type": "SELL",
+      "price": 180.660004,
+      "shares": 13.0,
+      "date": "2026-09-14T19:31:40.792681+00:00",
+      "pattern": "SL/TP exit",
+      "reasoning": "Stop-loss hit @ 180.660004 (SL 183.51)",
+      "confidence": 1.0,
+      "source": "stop_loss",
+      "asset_class": "equity",
+      "stop_loss": null,
+      "take_profit": null,
+      "realized_pnl": -110.89
+    },
     {
       "id": "9ce676980ee1",
       "ticker": "JPM",
@@ -5982,5 +5988,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -966.2
+  "realized_pnl": -1077.09
 }
