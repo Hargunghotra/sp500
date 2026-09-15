@@ -1,5 +1,5 @@
 {
-  "balance": 23617.9,
+  "balance": 25471.9,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -10,16 +10,6 @@
       "stop_loss": 14.26,
       "take_profit": 15.58,
       "opened_at": "2026-08-19T23:35:09.515612+00:00"
-    },
-    "BNY": {
-      "symbol": "BNY",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 12.0,
-      "avg_price": 162.039993,
-      "stop_loss": 157.18,
-      "take_profit": 171.76,
-      "opened_at": "2026-09-02T23:41:31.923932+00:00"
     },
     "TECH": {
       "symbol": "TECH",
@@ -103,6 +93,22 @@
     }
   },
   "trades": [
+    {
+      "id": "28ef5f00e8a2",
+      "ticker": "BNY",
+      "type": "SELL",
+      "price": 154.5,
+      "shares": 12.0,
+      "date": "2026-09-15T17:23:27.455490+00:00",
+      "pattern": "SL/TP exit",
+      "reasoning": "Stop-loss hit @ 154.5 (SL 157.18)",
+      "confidence": 1.0,
+      "source": "stop_loss",
+      "asset_class": "equity",
+      "stop_loss": null,
+      "take_profit": null,
+      "realized_pnl": -90.48
+    },
     {
       "id": "ca01a8d6d6a6",
       "ticker": "NTRS",
@@ -5988,5 +5994,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1077.09
+  "realized_pnl": -1167.57
 }
