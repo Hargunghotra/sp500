@@ -1,5 +1,5 @@
 {
-  "balance": 25471.9,
+  "balance": 30715.64,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -20,26 +20,6 @@
       "stop_loss": 70.26,
       "take_profit": 76.78,
       "opened_at": "2026-09-04T21:26:24.918098+00:00"
-    },
-    "EURUSD=X": {
-      "symbol": "EURUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 2238.646458,
-      "avg_price": 1.163196,
-      "stop_loss": 1.1515,
-      "take_profit": 1.1865,
-      "opened_at": "2026-09-07T23:45:41.601281+00:00"
-    },
-    "GBPUSD=X": {
-      "symbol": "GBPUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 2000.0,
-      "avg_price": 1.353986,
-      "stop_loss": 1.3404,
-      "take_profit": 1.3811,
-      "opened_at": "2026-09-08T22:02:09.556145+00:00"
     },
     "EXPD": {
       "symbol": "EXPD",
@@ -93,6 +73,38 @@
     }
   },
   "trades": [
+    {
+      "id": "ef2255b7f9d9",
+      "ticker": "GBPUSD=X",
+      "type": "SELL",
+      "price": 1.338097,
+      "shares": 2000.0,
+      "date": "2026-09-16T20:16:27.395941+00:00",
+      "pattern": "SL/TP exit",
+      "reasoning": "Stop-loss hit @ 1.338097 (SL 1.3404)",
+      "confidence": 1.0,
+      "source": "stop_loss",
+      "asset_class": "forex",
+      "stop_loss": null,
+      "take_profit": null,
+      "realized_pnl": -31.78
+    },
+    {
+      "id": "56cf8501ca52",
+      "ticker": "EURUSD=X",
+      "type": "SELL",
+      "price": 1.14692,
+      "shares": 2238.646458,
+      "date": "2026-09-16T20:16:25.292713+00:00",
+      "pattern": "SL/TP exit",
+      "reasoning": "Stop-loss hit @ 1.14692 (SL 1.1515)",
+      "confidence": 1.0,
+      "source": "stop_loss",
+      "asset_class": "forex",
+      "stop_loss": null,
+      "take_profit": null,
+      "realized_pnl": -36.44
+    },
     {
       "id": "28ef5f00e8a2",
       "ticker": "BNY",
@@ -5994,5 +6006,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1167.57
+  "realized_pnl": -1235.79
 }
