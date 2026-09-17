@@ -1,17 +1,18 @@
 {
-  "thesis": "Rotate capital from stagnating, sentiment-impaired financials into high-opportunity breakout equity and leading crypto momentum, while letting top-performing insurance and logistics compound.",
+  "thesis": "Aggressively prune sluggish capital to rotate into top opportunity score setups across defensive growth equities and trending macro currencies while letting proven winners run.",
   "preferred_sectors": [
-    "Financial Services",
-    "Crypto",
-    "Industrials",
-    "Utilities"
+    "Consumer Defensive",
+    "Healthcare",
+    "Financials",
+    "Utilities",
+    "Forex"
   ],
   "styles": [
-    "Momentum",
     "Trend Following",
-    "Quality Value"
+    "Momentum",
+    "Breakout Quality"
   ],
-  "risk_posture": "Aggressive Growth with Disciplined Risk Management",
-  "updated_at": "2026-09-11T23:37:54.845970+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-09-16T23:04:59.138080+00:00",
   "model": "gemini-flash-latest"
 }
