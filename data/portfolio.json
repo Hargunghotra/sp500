@@ -1,5 +1,5 @@
 {
-  "balance": 25242.14,
+  "balance": 23217.8,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -41,26 +41,6 @@
       "take_profit": 389.21,
       "opened_at": "2026-09-10T19:16:46.272457+00:00"
     },
-    "MDT": {
-      "symbol": "MDT",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 35.0,
-      "avg_price": 92.599998,
-      "stop_loss": 89.82,
-      "take_profit": 98.16,
-      "opened_at": "2026-09-16T23:05:01.344981+00:00"
-    },
-    "USDCAD=X": {
-      "symbol": "USDCAD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 2066.827518,
-      "avg_price": 1.39885,
-      "stop_loss": 1.38486,
-      "take_profit": 1.42683,
-      "opened_at": "2026-09-16T23:05:03.231858+00:00"
-    },
     "WAT": {
       "symbol": "WAT",
       "asset_class": "equity",
@@ -90,9 +70,119 @@
       "stop_loss": 31.06,
       "take_profit": 33.95,
       "opened_at": "2026-09-18T16:37:43.404613+00:00"
+    },
+    "TECH": {
+      "symbol": "TECH",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 38.0,
+      "avg_price": 72.370003,
+      "stop_loss": 70.2,
+      "take_profit": 76.71,
+      "opened_at": "2026-09-18T23:35:08.808351+00:00"
+    },
+    "AUDUSD=X": {
+      "symbol": "AUDUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 4000.0,
+      "avg_price": 0.712149,
+      "stop_loss": 0.70503,
+      "take_profit": 0.72639,
+      "opened_at": "2026-09-18T23:35:11.299087+00:00"
+    },
+    "AIZ": {
+      "symbol": "AIZ",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 9.0,
+      "avg_price": 282.230011,
+      "stop_loss": 273.76,
+      "take_profit": 299.16,
+      "opened_at": "2026-09-18T23:35:12.626869+00:00"
     }
   },
   "trades": [
+    {
+      "id": "8cb8f39aca1e",
+      "ticker": "MDT",
+      "type": "SELL",
+      "price": 92.129997,
+      "shares": 35.0,
+      "date": "2026-09-18T23:35:15.601548+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Cutting dead weight position showing negative return momentum and low opportunity score relative to shortlisted candidates.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 89.82,
+      "take_profit": 98.16,
+      "realized_pnl": -16.45
+    },
+    {
+      "id": "55511c3aa352",
+      "ticker": "AIZ",
+      "type": "BUY",
+      "price": 282.230011,
+      "shares": 9.0,
+      "date": "2026-09-18T23:35:12.626900+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Initiating position on strong insurer trading 0.63% above support with 1.94% runway to resistance and 9.4 technical score. (qty capped to 9.0 by 12% cash rule)",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 273.76,
+      "take_profit": 299.16,
+      "realized_pnl": null
+    },
+    {
+      "id": "7ebeecfa61a0",
+      "ticker": "AUDUSD=X",
+      "type": "BUY",
+      "price": 0.712149,
+      "shares": 4000.0,
+      "date": "2026-09-18T23:35:11.299119+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Adding top forex candidate sitting tight to support (0.47%) offering a 1.40% room to resistance in an established uptrend.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.70503,
+      "take_profit": 0.72639,
+      "realized_pnl": null
+    },
+    {
+      "id": "c3d546360ee7",
+      "ticker": "TECH",
+      "type": "BUY",
+      "price": 72.370003,
+      "shares": 38.0,
+      "date": "2026-09-18T23:35:08.808387+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Entering perfect score 10.0 equity setup testing support with high opportunity score of 8.524.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 70.2,
+      "take_profit": 76.71,
+      "realized_pnl": null
+    },
+    {
+      "id": "4dd4f3a4d9ee",
+      "ticker": "USDCAD=X",
+      "type": "SELL",
+      "price": 1.3982,
+      "shares": 2066.827518,
+      "date": "2026-09-18T23:35:07.236623+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Exiting flat position pinned right beneath resistance (0.04% away) to free capital for superior reward-to-risk setups.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.38486,
+      "take_profit": 1.42683,
+      "realized_pnl": -1.34
+    },
     {
       "id": "00073593fe77",
       "ticker": "AIZ",
@@ -6186,5 +6276,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1326.75
+  "realized_pnl": -1344.54
 }
