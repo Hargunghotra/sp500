@@ -1,18 +1,17 @@
 {
-  "thesis": "Aggressively prune sluggish capital to rotate into top opportunity score setups across defensive growth equities and trending macro currencies while letting proven winners run.",
+  "thesis": "Aggressively prune sluggish and resistance-bound positions to redeploy cash into top-scoring momentum and consolidating breakout setups across equities and forex while maintaining disciplined multi-asset risk parameters.",
   "preferred_sectors": [
-    "Consumer Defensive",
-    "Healthcare",
     "Financials",
-    "Utilities",
+    "Healthcare",
+    "Industrials",
     "Forex"
   ],
   "styles": [
-    "Trend Following",
     "Momentum",
-    "Breakout Quality"
+    "Consolidation Breakout",
+    "Swing Trading"
   ],
   "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-09-16T23:04:59.138080+00:00",
+  "updated_at": "2026-09-18T23:35:06.992126+00:00",
   "model": "gemini-flash-latest"
 }
