@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively cut underperforming positions and downtrending equities to recycle capital into top-ranking momentum and consolidation breakout opportunities across equities and forex while letting established winners run.",
+  "thesis": "Aggressively harvest lagging capital and rotate into top-tier opportunity setups displaying strong multi-asset upward momentum and favorable support alignment.",
   "preferred_sectors": [
-    "Healthcare",
-    "Consumer Staples",
     "Technology",
-    "G10 Currencies"
+    "Real Estate",
+    "Forex",
+    "Crypto"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Relative Strength"
+    "Swing Trading",
+    "Multi-Asset Rotation"
   ],
   "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-09-22T20:18:54.845643+00:00",
+  "updated_at": "2026-09-22T23:04:19.652128+00:00",
   "model": "gemini-flash-latest"
 }
