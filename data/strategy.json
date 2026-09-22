@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively prune sluggish and resistance-bound positions to redeploy cash into top-scoring momentum and consolidating breakout setups across equities and forex while maintaining disciplined multi-asset risk parameters.",
+  "thesis": "Aggressively cut underperforming positions and downtrending equities to recycle capital into top-ranking momentum and consolidation breakout opportunities across equities and forex while letting established winners run.",
   "preferred_sectors": [
-    "Financials",
     "Healthcare",
-    "Industrials",
-    "Forex"
+    "Consumer Staples",
+    "Technology",
+    "G10 Currencies"
   ],
   "styles": [
     "Momentum",
-    "Consolidation Breakout",
-    "Swing Trading"
+    "Trend Following",
+    "Relative Strength"
   ],
   "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-09-18T23:35:06.992126+00:00",
+  "updated_at": "2026-09-22T20:18:54.845643+00:00",
   "model": "gemini-flash-latest"
 }
