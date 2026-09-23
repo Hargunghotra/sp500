@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively prune sluggish and resistance-bound positions to redeploy cash into top-scoring momentum and consolidating breakout setups across equities and forex while maintaining disciplined multi-asset risk parameters.",
+  "thesis": "Aggressively harvest lagging capital and rotate into top-tier opportunity setups displaying strong multi-asset upward momentum and favorable support alignment.",
   "preferred_sectors": [
-    "Financials",
-    "Healthcare",
-    "Industrials",
-    "Forex"
+    "Technology",
+    "Real Estate",
+    "Forex",
+    "Crypto"
   ],
   "styles": [
     "Momentum",
-    "Consolidation Breakout",
-    "Swing Trading"
+    "Swing Trading",
+    "Multi-Asset Rotation"
   ],
   "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-09-18T23:35:06.992126+00:00",
+  "updated_at": "2026-09-22T23:04:19.652128+00:00",
   "model": "gemini-flash-latest"
 }
