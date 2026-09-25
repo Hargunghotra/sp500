@@ -1,17 +1,18 @@
 {
-  "thesis": "Aggressively harvest lagging capital and rotate into top-tier opportunity setups displaying strong multi-asset upward momentum and favorable support alignment.",
+  "thesis": "Maximize equity and realized gains by locking in profits on positions nearing price targets, cutting underperforming equity dead weight, and redeploying cash into top-ranked consolidating setups and market-leading momentum names across equities, FX, and crypto.",
   "preferred_sectors": [
+    "Financials",
+    "Consumer Staples",
     "Technology",
-    "Real Estate",
-    "Forex",
+    "Healthcare",
     "Crypto"
   ],
   "styles": [
-    "Momentum",
-    "Swing Trading",
-    "Multi-Asset Rotation"
+    "Momentum Breakout",
+    "Consolidation Expansion",
+    "Trend Following"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-09-22T23:04:19.652128+00:00",
+  "risk_posture": "Aggressive Growth with Strict Capital Preservation",
+  "updated_at": "2026-09-25T20:52:19.638322+00:00",
   "model": "gemini-flash-latest"
 }
