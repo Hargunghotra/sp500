@@ -1,18 +1,18 @@
 {
-  "thesis": "Maximize equity and realized gains by locking in profits on positions nearing price targets, cutting underperforming equity dead weight, and redeploying cash into top-ranked consolidating setups and market-leading momentum names across equities, FX, and crypto.",
+  "thesis": "Capitalize on high-breadth equity uptrends while maintaining profitable multi-asset exposure across FX and crypto. Protect active gains and deploy surplus liquidity into top-ranked consolidating equities demonstrating high relative strength and favorable risk-reward profiles.",
   "preferred_sectors": [
-    "Financials",
     "Consumer Staples",
-    "Technology",
+    "Industrials",
+    "Utilities",
     "Healthcare",
-    "Crypto"
+    "Information Technology"
   ],
   "styles": [
-    "Momentum Breakout",
-    "Consolidation Expansion",
-    "Trend Following"
+    "Momentum",
+    "Consolidation Breakout",
+    "Multi-Asset Trend Following"
   ],
-  "risk_posture": "Aggressive Growth with Strict Capital Preservation",
-  "updated_at": "2026-09-25T20:52:19.638322+00:00",
+  "risk_posture": "Aggressive Growth within Hard Limits",
+  "updated_at": "2026-09-25T23:40:41.859173+00:00",
   "model": "gemini-flash-latest"
 }

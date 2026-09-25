@@ -1,5 +1,5 @@
 {
-  "balance": 22348.39,
+  "balance": 17415.45,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -100,9 +100,61 @@
       "stop_loss": 330.84,
       "take_profit": 361.53,
       "opened_at": "2026-09-25T20:52:26.107653+00:00"
+    },
+    "PG": {
+      "symbol": "PG",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 18.0,
+      "avg_price": 146.229996,
+      "stop_loss": 141.84,
+      "take_profit": 155.01,
+      "opened_at": "2026-09-25T23:40:42.107645+00:00"
+    },
+    "IEX": {
+      "symbol": "IEX",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 10.0,
+      "avg_price": 230.080002,
+      "stop_loss": 223.18,
+      "take_profit": 243.88,
+      "opened_at": "2026-09-25T23:40:44.611023+00:00"
     }
   },
   "trades": [
+    {
+      "id": "54397c3285b1",
+      "ticker": "IEX",
+      "type": "BUY",
+      "price": 230.080002,
+      "shares": 10.0,
+      "date": "2026-09-25T23:40:44.611059+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High-quality industrial consolidating just above SMA50 with bullish sentiment and strong upside potential. (qty capped to 10.0 by 12% cash rule)",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 223.18,
+      "take_profit": 243.88,
+      "realized_pnl": null
+    },
+    {
+      "id": "7b04b97a5a69",
+      "ticker": "PG",
+      "type": "BUY",
+      "price": 146.229996,
+      "shares": 18.0,
+      "date": "2026-09-25T23:40:42.107677+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High-scoring consumer staple breakout setup with 8.936 opportunity score and tight consolidation near support.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 141.84,
+      "take_profit": 155.01,
+      "realized_pnl": null
+    },
     {
       "id": "c266d2a4701f",
       "ticker": "VTRS",
