@@ -1,17 +1,18 @@
 {
-  "thesis": "Aggressively harvest lagging capital and rotate into top-tier opportunity setups displaying strong multi-asset upward momentum and favorable support alignment.",
+  "thesis": "Capitalize on high-breadth equity uptrends while maintaining profitable multi-asset exposure across FX and crypto. Protect active gains and deploy surplus liquidity into top-ranked consolidating equities demonstrating high relative strength and favorable risk-reward profiles.",
   "preferred_sectors": [
-    "Technology",
-    "Real Estate",
-    "Forex",
-    "Crypto"
+    "Consumer Staples",
+    "Industrials",
+    "Utilities",
+    "Healthcare",
+    "Information Technology"
   ],
   "styles": [
     "Momentum",
-    "Swing Trading",
-    "Multi-Asset Rotation"
+    "Consolidation Breakout",
+    "Multi-Asset Trend Following"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-09-22T23:04:19.652128+00:00",
+  "risk_posture": "Aggressive Growth within Hard Limits",
+  "updated_at": "2026-09-25T23:40:41.859173+00:00",
   "model": "gemini-flash-latest"
 }
