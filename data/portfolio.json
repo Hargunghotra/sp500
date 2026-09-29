@@ -1,5 +1,5 @@
 {
-  "balance": 22947.69,
+  "balance": 25260.77,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -71,16 +71,6 @@
       "take_profit": 72.95,
       "opened_at": "2026-09-25T20:52:20.086688+00:00"
     },
-    "AAPL": {
-      "symbol": "AAPL",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 7.0,
-      "avg_price": 341.070007,
-      "stop_loss": 330.84,
-      "take_profit": 361.53,
-      "opened_at": "2026-09-25T20:52:26.107653+00:00"
-    },
     "PG": {
       "symbol": "PG",
       "asset_class": "equity",
@@ -103,6 +93,22 @@
     }
   },
   "trades": [
+    {
+      "id": "0510f0aa7573",
+      "ticker": "AAPL",
+      "type": "SELL",
+      "price": 330.439911,
+      "shares": 7.0,
+      "date": "2026-09-29T19:30:34.658929+00:00",
+      "pattern": "SL/TP exit",
+      "reasoning": "Stop-loss hit @ 330.439911 (SL 330.84)",
+      "confidence": 1.0,
+      "source": "stop_loss",
+      "asset_class": "equity",
+      "stop_loss": null,
+      "take_profit": null,
+      "realized_pnl": -74.41
+    },
     {
       "id": "141077b93748",
       "ticker": "MET",
@@ -6660,5 +6666,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1646.77
+  "realized_pnl": -1721.18
 }
