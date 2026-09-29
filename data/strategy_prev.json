@@ -1,18 +1,18 @@
 {
-  "thesis": "Capitalize on high-breadth equity uptrends while maintaining profitable multi-asset exposure across FX and crypto. Protect active gains and deploy surplus liquidity into top-ranked consolidating equities demonstrating high relative strength and favorable risk-reward profiles.",
+  "thesis": "Aggressively manage portfolio turnover by cutting underperforming names and locking in near-target winners to redeploy capital into high opportunity-score consolidation setups and momentum leaders.",
   "preferred_sectors": [
+    "Energy",
     "Consumer Staples",
-    "Industrials",
     "Utilities",
-    "Healthcare",
-    "Information Technology"
+    "Forex",
+    "Industrials"
   ],
   "styles": [
     "Momentum",
-    "Consolidation Breakout",
-    "Multi-Asset Trend Following"
+    "Trend Following",
+    "Mean Reversion Consolidation"
   ],
-  "risk_posture": "Aggressive Growth within Hard Limits",
-  "updated_at": "2026-09-25T23:40:41.859173+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-09-28T21:57:59.906254+00:00",
   "model": "gemini-flash-latest"
 }
