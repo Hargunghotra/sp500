@@ -1,5 +1,5 @@
 {
-  "balance": 21564.63,
+  "balance": 23979.75,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -90,19 +90,25 @@
       "stop_loss": 322.25,
       "take_profit": 352.15,
       "opened_at": "2026-10-02T14:14:21.929117+00:00"
-    },
-    "ADA-USD": {
-      "symbol": "ADA-USD",
-      "asset_class": "crypto",
-      "side": "LONG",
-      "quantity": 10151.809697,
-      "avg_price": 0.25474,
-      "stop_loss": 0.242,
-      "take_profit": 0.2802,
-      "opened_at": "2026-10-02T14:14:24.022388+00:00"
     }
   },
   "trades": [
+    {
+      "id": "1d1feeabf2b1",
+      "ticker": "ADA-USD",
+      "type": "SELL",
+      "price": 0.2379,
+      "shares": 10151.809697,
+      "date": "2026-10-02T19:16:37.551128+00:00",
+      "pattern": "SL/TP exit",
+      "reasoning": "Stop-loss hit @ 0.2379 (SL 0.242)",
+      "confidence": 1.0,
+      "source": "stop_loss",
+      "asset_class": "crypto",
+      "stop_loss": null,
+      "take_profit": null,
+      "realized_pnl": -170.96
+    },
     {
       "id": "13ecbcd51a1f",
       "ticker": "PG",
@@ -6788,5 +6794,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1865.69
+  "realized_pnl": -2036.65
 }
