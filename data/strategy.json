@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively cut underperforming positions in deteriorating technical trends, protect and let winners run across FX and equities, and deploy available capital into top-ranked breakout and consolidating momentum assets across equities and crypto.",
+  "thesis": "Aggressively cut underperforming positions showing negative returns and deteriorating relative momentum (AME, NDSN) while letting winning positions run with adjusted protective stops. Redeploy liquid capital into high-opportunity consolidating breakout equities displaying top trend scores and favorable support-to-resistance profiles.",
   "preferred_sectors": [
+    "Healthcare",
+    "Consumer Staples",
     "Industrials",
-    "Technology",
-    "Crypto",
     "Forex"
   ],
   "styles": [
     "Momentum",
     "Trend-Following",
-    "Breakout"
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-10-02T14:14:15.605470+00:00",
+  "risk_posture": "Aggressive Growth within Risk Caps",
+  "updated_at": "2026-10-09T14:46:21.016192+00:00",
   "model": "gemini-flash-latest"
 }
