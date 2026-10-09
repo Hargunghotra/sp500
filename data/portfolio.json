@@ -1,5 +1,5 @@
 {
-  "balance": 16829.6,
+  "balance": 20006.43,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -40,16 +40,6 @@
       "stop_loss": 1.3925,
       "take_profit": 1.4347,
       "opened_at": "2026-09-22T23:04:21.446515+00:00"
-    },
-    "IEX": {
-      "symbol": "IEX",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 10.0,
-      "avg_price": 230.080002,
-      "stop_loss": 223.18,
-      "take_profit": 243.88,
-      "opened_at": "2026-09-25T23:40:44.611023+00:00"
     },
     "FAST": {
       "symbol": "FAST",
@@ -101,28 +91,108 @@
       "take_profit": 1246.31,
       "opened_at": "2026-10-09T19:49:17.249671+00:00"
     },
-    "VLTO": {
-      "symbol": "VLTO",
+    "ECL": {
+      "symbol": "ECL",
       "asset_class": "equity",
       "side": "LONG",
-      "quantity": 26.0,
-      "avg_price": 97.040001,
-      "stop_loss": 94.13,
-      "take_profit": 102.86,
-      "opened_at": "2026-10-09T19:49:19.449143+00:00"
+      "quantity": 7.0,
+      "avg_price": 281.829987,
+      "stop_loss": 273.37,
+      "take_profit": 298.74,
+      "opened_at": "2026-10-09T23:40:33.450830+00:00"
     },
-    "USDJPY=X": {
-      "symbol": "USDJPY=X",
-      "asset_class": "forex",
+    "PFE": {
+      "symbol": "PFE",
+      "asset_class": "equity",
       "side": "LONG",
-      "quantity": 14.499188,
-      "avg_price": 158.281006,
-      "stop_loss": 156.7,
-      "take_profit": 161.45,
-      "opened_at": "2026-10-09T19:49:21.268137+00:00"
+      "quantity": 71.0,
+      "avg_price": 28.280001,
+      "stop_loss": 27.43,
+      "take_profit": 29.98,
+      "opened_at": "2026-10-09T23:40:36.519997+00:00"
     }
   },
   "trades": [
+    {
+      "id": "5db810337840",
+      "ticker": "IEX",
+      "type": "SELL",
+      "price": 234.289993,
+      "shares": 10.0,
+      "date": "2026-10-09T23:40:39.177997+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Locking in realized gains of +1.83% as the ticker pattern degraded to Volatile and opportunity score retreated below 6.0.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 223.18,
+      "take_profit": 243.88,
+      "realized_pnl": 42.1
+    },
+    {
+      "id": "ef1768fab76b",
+      "ticker": "PFE",
+      "type": "BUY",
+      "price": 28.280001,
+      "shares": 71.0,
+      "date": "2026-10-09T23:40:36.520032+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong defensive uptrend above SMA50 with 9.7 technical score and 8.14 opportunity score.",
+      "confidence": 0.75,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 27.43,
+      "take_profit": 29.98,
+      "realized_pnl": null
+    },
+    {
+      "id": "384d651e54de",
+      "ticker": "ECL",
+      "type": "BUY",
+      "price": 281.829987,
+      "shares": 7.0,
+      "date": "2026-10-09T23:40:33.450866+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High-opportunity consolidation breakout candidate with 9.7 score, 4.39% support cushion, and UP trend.",
+      "confidence": 0.77,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 273.37,
+      "take_profit": 298.74,
+      "realized_pnl": null
+    },
+    {
+      "id": "163cca124212",
+      "ticker": "USDJPY=X",
+      "type": "SELL",
+      "price": 158.246002,
+      "shares": 14.499188,
+      "date": "2026-10-09T23:40:31.229008+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Stalled near resistance with negative unrealized PnL; clearing forex clutter to redeploy into high-scoring equity candidates.",
+      "confidence": 0.74,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 156.7,
+      "take_profit": 161.45,
+      "realized_pnl": -0.51
+    },
+    {
+      "id": "ee5ba309cdd7",
+      "ticker": "VLTO",
+      "type": "SELL",
+      "price": 96.93,
+      "shares": 26.0,
+      "date": "2026-10-09T23:40:27.482192+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Position is flat to negative (-0.11%) and pinned against immediate resistance (0.08% away); freeing capital for higher momentum setups.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 94.13,
+      "take_profit": 102.86,
+      "realized_pnl": -2.86
+    },
     {
       "id": "bcb300d0e697",
       "ticker": "USDJPY=X",
@@ -6968,5 +7038,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -2231.46
+  "realized_pnl": -2192.73
 }

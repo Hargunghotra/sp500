@@ -1,17 +1,17 @@
 {
-  "thesis": "Capitalize on solid multi-asset upside momentum across consolidating large-cap leaders and resilient USD currency trends. All open positions are currently profitable and tracking positively toward their objectives. We maintain positions on current winners while deploying idle cash into top opportunity candidates (LLY, VLTO, USDJPY=X) up to the 12-ticker portfolio limit.",
+  "thesis": "Aggressively recycle underperforming and deteriorating positions into high-opportunity consolidating breakouts across leading US equities and strong FX trends.",
   "preferred_sectors": [
+    "Technology",
     "Healthcare",
-    "Industrials",
-    "Forex",
+    "Materials",
     "Consumer Staples"
   ],
   "styles": [
+    "Momentum",
     "Trend-Following",
-    "Breakout Momentum",
-    "Relative Strength"
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Aggressive Growth within Risk Caps",
-  "updated_at": "2026-10-09T19:49:16.623268+00:00",
+  "risk_posture": "Disciplined Aggressive",
+  "updated_at": "2026-10-09T23:40:26.825454+00:00",
   "model": "gemini-flash-latest"
 }
