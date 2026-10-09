@@ -1,5 +1,5 @@
 {
-  "balance": 23999.11,
+  "balance": 16829.6,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -90,9 +90,87 @@
       "stop_loss": 177.72,
       "take_profit": 194.21,
       "opened_at": "2026-10-09T14:46:25.377325+00:00"
+    },
+    "LLY": {
+      "symbol": "LLY",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 2.0,
+      "avg_price": 1175.76001,
+      "stop_loss": 1140.49,
+      "take_profit": 1246.31,
+      "opened_at": "2026-10-09T19:49:17.249671+00:00"
+    },
+    "VLTO": {
+      "symbol": "VLTO",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 26.0,
+      "avg_price": 97.040001,
+      "stop_loss": 94.13,
+      "take_profit": 102.86,
+      "opened_at": "2026-10-09T19:49:19.449143+00:00"
+    },
+    "USDJPY=X": {
+      "symbol": "USDJPY=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 14.499188,
+      "avg_price": 158.281006,
+      "stop_loss": 156.7,
+      "take_profit": 161.45,
+      "opened_at": "2026-10-09T19:49:21.268137+00:00"
     }
   },
   "trades": [
+    {
+      "id": "bcb300d0e697",
+      "ticker": "USDJPY=X",
+      "type": "BUY",
+      "price": 158.281006,
+      "shares": 14.499188,
+      "date": "2026-10-09T19:49:21.268170+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong macro dollar momentum pair displaying clear uptrend above SMA50 (157.67) and 8.186 opportunity score. (qty capped to 14.499188 by 12% cash rule)",
+      "confidence": 0.79,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 156.7,
+      "take_profit": 161.45,
+      "realized_pnl": null
+    },
+    {
+      "id": "7d7246030e82",
+      "ticker": "VLTO",
+      "type": "BUY",
+      "price": 97.040001,
+      "shares": 26.0,
+      "date": "2026-10-09T19:49:19.449179+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Exceptional technical setup with 9.7 score, upward trend momentum, and consolidating base ready for multi-week expansion. (qty capped to 26.0 by 12% cash rule)",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 94.13,
+      "take_profit": 102.86,
+      "realized_pnl": null
+    },
+    {
+      "id": "cef39daf1205",
+      "ticker": "LLY",
+      "type": "BUY",
+      "price": 1175.76001,
+      "shares": 2.0,
+      "date": "2026-10-09T19:49:17.249700+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Premier large-cap pharma leader with a 5.38% 20-day return, consolidating tight to support with top-tier opportunity score.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 1140.49,
+      "take_profit": 1246.31,
+      "realized_pnl": null
+    },
     {
       "id": "1c5934883121",
       "ticker": "AME",
