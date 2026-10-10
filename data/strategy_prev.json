@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively cut underperforming positions in deteriorating technical trends, protect and let winners run across FX and equities, and deploy available capital into top-ranked breakout and consolidating momentum assets across equities and crypto.",
+  "thesis": "Aggressively recycle underperforming and deteriorating positions into high-opportunity consolidating breakouts across leading US equities and strong FX trends.",
   "preferred_sectors": [
-    "Industrials",
     "Technology",
-    "Crypto",
-    "Forex"
+    "Healthcare",
+    "Materials",
+    "Consumer Staples"
   ],
   "styles": [
     "Momentum",
     "Trend-Following",
-    "Breakout"
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-10-02T14:14:15.605470+00:00",
+  "risk_posture": "Disciplined Aggressive",
+  "updated_at": "2026-10-09T23:40:26.825454+00:00",
   "model": "gemini-flash-latest"
 }
