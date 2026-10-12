@@ -1,5 +1,5 @@
 {
-  "balance": 20006.43,
+  "balance": 18037.34,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -10,16 +10,6 @@
       "stop_loss": 14.26,
       "take_profit": 15.58,
       "opened_at": "2026-08-19T23:35:09.515612+00:00"
-    },
-    "TECH": {
-      "symbol": "TECH",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 38.0,
-      "avg_price": 72.370003,
-      "stop_loss": 70.2,
-      "take_profit": 76.71,
-      "opened_at": "2026-09-18T23:35:08.808351+00:00"
     },
     "USDCHF=X": {
       "symbol": "USDCHF=X",
@@ -110,9 +100,77 @@
       "stop_loss": 27.43,
       "take_profit": 29.98,
       "opened_at": "2026-10-09T23:40:36.519997+00:00"
+    },
+    "UHS": {
+      "symbol": "UHS",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 13.0,
+      "avg_price": 180.410004,
+      "stop_loss": 175.0,
+      "take_profit": 191.23,
+      "opened_at": "2026-10-12T17:05:43.608473+00:00"
+    },
+    "AAPL": {
+      "symbol": "AAPL",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 7.0,
+      "avg_price": 339.714996,
+      "stop_loss": 329.52,
+      "take_profit": 360.1,
+      "opened_at": "2026-10-12T17:05:45.538615+00:00"
     }
   },
   "trades": [
+    {
+      "id": "6f1f3129d6ed",
+      "ticker": "AAPL",
+      "type": "BUY",
+      "price": 339.714996,
+      "shares": 7.0,
+      "date": "2026-10-12T17:05:45.538654+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Flawless score of 10.0, consolidating near highs with minimal resistance and high probability trend continuation.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 329.52,
+      "take_profit": 360.1,
+      "realized_pnl": null
+    },
+    {
+      "id": "308f25ba2425",
+      "ticker": "UHS",
+      "type": "BUY",
+      "price": 180.410004,
+      "shares": 13.0,
+      "date": "2026-10-12T17:05:43.608514+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top-tier opportunity score (8.393) in strong UP trend consolidation pattern with 4.13% 20-day return.",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 175.0,
+      "take_profit": 191.23,
+      "realized_pnl": null
+    },
+    {
+      "id": "d251534936b9",
+      "ticker": "TECH",
+      "type": "SELL",
+      "price": 72.480003,
+      "shares": 38.0,
+      "date": "2026-10-12T17:05:41.427177+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Underperforming flat position stagnant at +0.15% after several weeks; cutting dead weight to redeploy $2,750 into higher velocity breakout leaders.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 70.2,
+      "take_profit": 76.71,
+      "realized_pnl": 4.18
+    },
     {
       "id": "5db810337840",
       "ticker": "IEX",
@@ -7038,5 +7096,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -2192.73
+  "realized_pnl": -2188.55
 }
