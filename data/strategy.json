@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressive rotation to maximize equity and PnL by eliminating underperforming assets and trend breaks, while deploying freed capital into top-ranked consolidation setups with high upside-to-risk profiles.",
+  "thesis": "Maximize risk-adjusted returns by letting profitable momentum runners trend toward take-profit milestones while deploying idle cash into top opportunity score breakouts across Forex and Equities up to the 12-position risk cap.",
   "preferred_sectors": [
-    "Technology",
-    "Industrials",
     "Forex",
-    "Healthcare"
+    "Technology",
+    "Healthcare",
+    "Industrials"
   ],
   "styles": [
     "Trend-Following",
-    "Consolidation Breakout",
-    "Momentum"
+    "Momentum",
+    "Consolidation-Breakout"
   ],
-  "risk_posture": "Aggressive Growth within Risk Caps",
-  "updated_at": "2026-10-13T15:22:53.646696+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-10-13T23:56:34.098007+00:00",
   "model": "gemini-flash-latest"
 }
