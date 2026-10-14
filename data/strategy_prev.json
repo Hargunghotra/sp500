@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively prune stagnant positions to unlock liquidity and allocate capital toward top-ranked consolidation breakouts with strong momentum and structural uptrends.",
+  "thesis": "Maximize risk-adjusted returns by letting profitable momentum runners trend toward take-profit milestones while deploying idle cash into top opportunity score breakouts across Forex and Equities up to the 12-position risk cap.",
   "preferred_sectors": [
-    "Healthcare",
+    "Forex",
     "Technology",
-    "Industrials",
-    "Forex"
+    "Healthcare",
+    "Industrials"
   ],
   "styles": [
+    "Trend-Following",
     "Momentum",
-    "Breakout",
-    "Trend Following"
+    "Consolidation-Breakout"
   ],
-  "risk_posture": "Aggressive Growth with Disciplined Risk Management",
-  "updated_at": "2026-10-12T17:05:40.831551+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-10-13T23:56:34.098007+00:00",
   "model": "gemini-flash-latest"
 }
