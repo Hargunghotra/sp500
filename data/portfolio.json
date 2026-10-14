@@ -1,5 +1,5 @@
 {
-  "balance": 20227.71,
+  "balance": 18334.75,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -91,16 +91,6 @@
       "take_profit": 360.1,
       "opened_at": "2026-10-12T17:05:45.538615+00:00"
     },
-    "USDJPY=X": {
-      "symbol": "USDJPY=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 16.0,
-      "avg_price": 158.332993,
-      "stop_loss": 156.75,
-      "take_profit": 161.5,
-      "opened_at": "2026-10-13T23:56:34.686810+00:00"
-    },
     "TECH": {
       "symbol": "TECH",
       "asset_class": "equity",
@@ -110,9 +100,77 @@
       "stop_loss": 70.3,
       "take_profit": 76.83,
       "opened_at": "2026-10-13T23:56:36.677990+00:00"
+    },
+    "USDCHF=X": {
+      "symbol": "USDCHF=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 2885.0,
+      "avg_price": 0.83179,
+      "stop_loss": 0.8235,
+      "take_profit": 0.8484,
+      "opened_at": "2026-10-14T23:57:10.487774+00:00"
+    },
+    "TMO": {
+      "symbol": "TMO",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 3.0,
+      "avg_price": 673.200012,
+      "stop_loss": 653.0,
+      "take_profit": 713.59,
+      "opened_at": "2026-10-14T23:57:14.570061+00:00"
     }
   },
   "trades": [
+    {
+      "id": "757884f698f2",
+      "ticker": "TMO",
+      "type": "BUY",
+      "price": 673.200012,
+      "shares": 3.0,
+      "date": "2026-10-14T23:57:14.570097+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Elite healthcare leader displaying strong +3.82% 20-day momentum and a tight consolidation base near highs.",
+      "confidence": 0.81,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 653.0,
+      "take_profit": 713.59,
+      "realized_pnl": null
+    },
+    {
+      "id": "af92ff1d793c",
+      "ticker": "USDJPY=X",
+      "type": "SELL",
+      "price": 157.897003,
+      "shares": 16.0,
+      "date": "2026-10-14T23:57:12.761064+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Underperforming position slipping into negative PnL with deteriorating momentum near local resistance; liquidating immediately to clear capital and risk capacity.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 156.75,
+      "take_profit": 161.5,
+      "realized_pnl": -6.98
+    },
+    {
+      "id": "ea6a7075adfc",
+      "ticker": "USDCHF=X",
+      "type": "BUY",
+      "price": 0.83179,
+      "shares": 2885.0,
+      "date": "2026-10-14T23:57:10.487808+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top-tier FX candidate with perfect 10 score, strong consolidation pattern, and bullish alignment above SMA50.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.8235,
+      "take_profit": 0.8484,
+      "realized_pnl": null
+    },
     {
       "id": "a1673f9e07e4",
       "ticker": "USDCHF=X",
@@ -7166,5 +7224,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -2166.26
+  "realized_pnl": -2173.24
 }
