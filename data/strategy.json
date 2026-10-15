@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively harvest gains into resistance and rotate capital out of exhausted momentum into fresh, high-opportunity consolidation setups in top-performing equities and resilient FX pairs.",
+  "thesis": "Aggressively cut underperforming positions and dead weight, lock in gains on names meeting take-profit targets, and rotate freed capital into top-ranking consolidating uptrends in equity and forex.",
   "preferred_sectors": [
-    "Healthcare",
     "Technology",
-    "Industrials",
+    "Healthcare",
+    "Financial Services",
     "Forex"
   ],
   "styles": [
     "Momentum",
-    "Breakout Rotation",
-    "Swing Trading"
+    "Consolidation Breakout",
+    "Trend Following"
   ],
   "risk_posture": "Controlled Aggressive",
-  "updated_at": "2026-10-15T13:00:14.626141+00:00",
+  "updated_at": "2026-10-15T20:27:48.869723+00:00",
   "model": "gemini-flash-latest"
 }

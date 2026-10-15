@@ -1,5 +1,5 @@
 {
-  "balance": 21152.29,
+  "balance": 27597.24,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -20,36 +20,6 @@
       "stop_loss": 1.3925,
       "take_profit": 1.4347,
       "opened_at": "2026-09-22T23:04:21.446515+00:00"
-    },
-    "FAST": {
-      "symbol": "FAST",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 65.0,
-      "avg_price": 50.625,
-      "stop_loss": 49.1,
-      "take_profit": 53.66,
-      "opened_at": "2026-10-02T14:14:15.814101+00:00"
-    },
-    "RMD": {
-      "symbol": "RMD",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 13.0,
-      "avg_price": 229.195007,
-      "stop_loss": 222.32,
-      "take_profit": 242.95,
-      "opened_at": "2026-10-09T14:46:21.389249+00:00"
-    },
-    "BDX": {
-      "symbol": "BDX",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 13.0,
-      "avg_price": 183.220001,
-      "stop_loss": 177.72,
-      "take_profit": 194.21,
-      "opened_at": "2026-10-09T14:46:25.377325+00:00"
     },
     "ECL": {
       "symbol": "ECL",
@@ -110,9 +80,83 @@
       "stop_loss": 653.0,
       "take_profit": 713.59,
       "opened_at": "2026-10-14T23:57:14.570061+00:00"
+    },
+    "USDJPY=X": {
+      "symbol": "USDJPY=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 15.8,
+      "avg_price": 158.076996,
+      "stop_loss": 156.49,
+      "take_profit": 161.24,
+      "opened_at": "2026-10-15T20:27:49.371317+00:00"
     }
   },
   "trades": [
+    {
+      "id": "38f4577b2b67",
+      "ticker": "FAST",
+      "type": "SELL",
+      "price": 50.380001,
+      "shares": 65.0,
+      "date": "2026-10-15T20:27:55.324370+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Thesis broken: confirmed DOWN trend, lagging momentum, and poor opportunity score (2.66). Exiting to eliminate dead weight and free capital.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 49.1,
+      "take_profit": 53.66,
+      "realized_pnl": -15.92
+    },
+    {
+      "id": "fba4c86edea9",
+      "ticker": "RMD",
+      "type": "SELL",
+      "price": 242.229996,
+      "shares": 13.0,
+      "date": "2026-10-15T20:27:53.645955+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Take-profit objective fulfilled (+5.69% gain, at $242.23 vs $242.95 target). Securing gains to boost portfolio cash and recovery.",
+      "confidence": 0.9,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 222.32,
+      "take_profit": 242.95,
+      "realized_pnl": 169.45
+    },
+    {
+      "id": "d617cd265e62",
+      "ticker": "BDX",
+      "type": "SELL",
+      "price": 193.759995,
+      "shares": 13.0,
+      "date": "2026-10-15T20:27:51.747077+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Take-profit target reached (+5.75% unrealized gain, within 0.2% of final TP). Locking in realized profit to redeploy into high-momentum candidates.",
+      "confidence": 0.9,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 177.72,
+      "take_profit": 194.21,
+      "realized_pnl": 137.02
+    },
+    {
+      "id": "e57d9dd1e369",
+      "ticker": "USDJPY=X",
+      "type": "BUY",
+      "price": 158.076996,
+      "shares": 15.8,
+      "date": "2026-10-15T20:27:49.371344+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top ranked FX setup: robust UP trend, tight consolidation above SMA50, and 8.55 opportunity score.",
+      "confidence": 0.83,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 156.49,
+      "take_profit": 161.24,
+      "realized_pnl": null
+    },
     {
       "id": "dcb96a57d429",
       "ticker": "PG",
@@ -7230,5 +7274,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -2074.78
+  "realized_pnl": -1784.23
 }
