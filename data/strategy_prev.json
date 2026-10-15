@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize risk-adjusted returns by letting profitable momentum runners trend toward take-profit milestones while deploying idle cash into top opportunity score breakouts across Forex and Equities up to the 12-position risk cap.",
+  "thesis": "Aggressively manage portfolio health by lopping off sluggish and losing positions like USDJPY=X while letting core trend winners compound toward take-profit milestones. Reinvest freed dry powder into top-ranked consolidation breakouts in high-momentum equities and resilient FX pairs.",
   "preferred_sectors": [
-    "Forex",
-    "Technology",
     "Healthcare",
-    "Industrials"
+    "Technology",
+    "Industrials",
+    "Forex"
   ],
   "styles": [
-    "Trend-Following",
-    "Momentum",
-    "Consolidation-Breakout"
+    "Momentum Trend-Following",
+    "Breakout Trading",
+    "Disciplined Risk Management"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-10-13T23:56:34.098007+00:00",
+  "risk_posture": "AGGRESSIVE",
+  "updated_at": "2026-10-14T23:57:10.057762+00:00",
   "model": "gemini-flash-latest"
 }
