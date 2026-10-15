@@ -1,5 +1,5 @@
 {
-  "thesis": "Aggressively manage portfolio health by lopping off sluggish and losing positions like USDJPY=X while letting core trend winners compound toward take-profit milestones. Reinvest freed dry powder into top-ranked consolidation breakouts in high-momentum equities and resilient FX pairs.",
+  "thesis": "Aggressively harvest gains into resistance and rotate capital out of exhausted momentum into fresh, high-opportunity consolidation setups in top-performing equities and resilient FX pairs.",
   "preferred_sectors": [
     "Healthcare",
     "Technology",
@@ -7,11 +7,11 @@
     "Forex"
   ],
   "styles": [
-    "Momentum Trend-Following",
-    "Breakout Trading",
-    "Disciplined Risk Management"
+    "Momentum",
+    "Breakout Rotation",
+    "Swing Trading"
   ],
-  "risk_posture": "AGGRESSIVE",
-  "updated_at": "2026-10-14T23:57:10.057762+00:00",
+  "risk_posture": "Controlled Aggressive",
+  "updated_at": "2026-10-15T13:00:14.626141+00:00",
   "model": "gemini-flash-latest"
 }
