@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively cut underperforming positions while riding strong uptrend momentum across equities and strong dollar FX pairs. Capital is reallocated into high-opportunity consolidating breakout equities displaying solid support structure.",
+  "thesis": "Maximize risk-adjusted returns by letting resilient momentum and breakout winners run across high-breadth equities and forex, while deploying the remaining slot into USDCHF to exploit strong USD continuation trends.",
   "preferred_sectors": [
-    "Technology",
     "Healthcare",
-    "Financial Services",
-    "Forex"
+    "Information Technology",
+    "Forex",
+    "Industrials"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Breakout Swing"
+    "Trend-Following",
+    "Breakout Continuation"
   ],
-  "risk_posture": "Aggressive Growth with Strict Capital Preservation",
-  "updated_at": "2026-10-15T23:09:16.813041+00:00",
+  "risk_posture": "Aggressive Growth within Risk Caps",
+  "updated_at": "2026-10-16T12:47:43.759148+00:00",
   "model": "gemini-flash-latest"
 }
