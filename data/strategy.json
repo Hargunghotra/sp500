@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively cut underperforming assets showing trend breakdowns and redeploy freed capital into top-ranked consolidation breakouts with positive momentum and clean risk-reward setups.",
+  "thesis": "Maximize risk-adjusted returns by ruthlessly cutting lagging dollar-bloc forex deadweight and rotating into top-tier consolidating and high-momentum industrial and healthcare equity leaders. Protect accumulated profits across existing equity winners via disciplined trailing stops.",
   "preferred_sectors": [
-    "Forex",
+    "Industrials",
     "Healthcare",
     "Technology",
-    "Industrial"
+    "Forex Majors"
   ],
   "styles": [
-    "Trend Following",
     "Momentum Breakout",
-    "Relative Strength"
+    "Consolidation Expansion",
+    "Trend Following"
   ],
-  "risk_posture": "Controlled Aggressive",
-  "updated_at": "2026-10-16T19:58:08.828287+00:00",
+  "risk_posture": "Aggressive Growth within Hard Caps",
+  "updated_at": "2026-10-16T22:18:17.545765+00:00",
   "model": "gemini-flash-latest"
 }
