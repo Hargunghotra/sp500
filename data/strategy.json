@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize risk-adjusted returns by letting resilient momentum and breakout winners run across high-breadth equities and forex, while deploying the remaining slot into USDCHF to exploit strong USD continuation trends.",
+  "thesis": "Aggressively cut underperforming assets showing trend breakdowns and redeploy freed capital into top-ranked consolidation breakouts with positive momentum and clean risk-reward setups.",
   "preferred_sectors": [
-    "Healthcare",
-    "Information Technology",
     "Forex",
-    "Industrials"
+    "Healthcare",
+    "Technology",
+    "Industrial"
   ],
   "styles": [
-    "Momentum",
-    "Trend-Following",
-    "Breakout Continuation"
+    "Trend Following",
+    "Momentum Breakout",
+    "Relative Strength"
   ],
-  "risk_posture": "Aggressive Growth within Risk Caps",
-  "updated_at": "2026-10-16T12:47:43.759148+00:00",
+  "risk_posture": "Controlled Aggressive",
+  "updated_at": "2026-10-16T19:58:08.828287+00:00",
   "model": "gemini-flash-latest"
 }
