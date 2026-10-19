@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively cut underperforming equity holdings experiencing thesis decay to maintain strict capital efficiency and rotate freed capacity into top-ranked momentum setups exhibiting high consolidation breakouts and strong relative strength.",
+  "thesis": "Maximize risk-adjusted returns by letting resilient UP-trend winners run across equities and FX while deploying available cash into top-ranked consolidating breakouts with tight risk parameters.",
   "preferred_sectors": [
     "Forex",
-    "Technology",
     "Healthcare",
-    "Industrials"
+    "Industrials",
+    "Technology"
   ],
   "styles": [
-    "Momentum",
     "Trend Following",
-    "Breakout Swing"
+    "Momentum",
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Aggressive Growth within Hard Risk Caps",
-  "updated_at": "2026-10-19T20:36:30.004300+00:00",
+  "risk_posture": "Controlled Aggressive",
+  "updated_at": "2026-10-19T23:56:40.591093+00:00",
   "model": "gemini-flash-latest"
 }
