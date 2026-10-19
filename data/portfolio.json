@@ -1,5 +1,5 @@
 {
-  "balance": 19065.55,
+  "balance": 21444.15,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -110,19 +110,25 @@
       "stop_loss": 189.93,
       "take_profit": 207.55,
       "opened_at": "2026-10-16T22:18:22.697916+00:00"
-    },
-    "A": {
-      "symbol": "A",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 14.0,
-      "avg_price": 172.970001,
-      "stop_loss": 167.78,
-      "take_profit": 183.35,
-      "opened_at": "2026-10-16T22:18:24.548220+00:00"
     }
   },
   "trades": [
+    {
+      "id": "911cc6ade873",
+      "ticker": "A",
+      "type": "SELL",
+      "price": 169.899994,
+      "shares": 14.0,
+      "date": "2026-10-19T20:36:30.389035+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Cutting deteriorating position showing -1.77% unrealized loss and weak opportunity score of 5.95 to eliminate dead weight and free an open ticker slot for higher-ranked setups.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 167.78,
+      "take_profit": 183.35,
+      "realized_pnl": -42.98
+    },
     {
       "id": "b7bc466abdd7",
       "ticker": "A",
@@ -7480,5 +7486,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1924.25
+  "realized_pnl": -1967.23
 }
