@@ -1,17 +1,18 @@
 {
-  "thesis": "Maximize risk-adjusted returns by letting resilient UP-trend winners run across equities and FX while deploying available cash into top-ranked consolidating breakouts with tight risk parameters.",
+  "thesis": "Capitalize on broad equity market momentum while maintaining disciplined USD forex carries. With broad market breadth heavily skewed toward UP trends (97 vs 3) and crypto in persistent downtrends, our strategy concentrates capital in top-ranked UP-trend equities and USD resilience. We aggressively press top-tier winner AES while letting established winners (PFE, EG, ECL, AAPL) run toward profit targets with active stop protection, keeping dead weight on a tight leash.",
   "preferred_sectors": [
-    "Forex",
     "Healthcare",
     "Industrials",
-    "Technology"
+    "Technology",
+    "Utilities",
+    "Forex"
   ],
   "styles": [
-    "Trend Following",
     "Momentum",
-    "Consolidation Breakout"
+    "Trend Following",
+    "Winner-Pyramiding"
   ],
-  "risk_posture": "Controlled Aggressive",
-  "updated_at": "2026-10-19T23:56:40.591093+00:00",
+  "risk_posture": "Aggressive Growth within Hard Risk Caps",
+  "updated_at": "2026-10-20T13:08:25.688037+00:00",
   "model": "gemini-flash-latest"
 }
