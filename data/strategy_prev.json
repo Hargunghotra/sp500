@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize risk-adjusted returns by ruthlessly cutting lagging dollar-bloc forex deadweight and rotating into top-tier consolidating and high-momentum industrial and healthcare equity leaders. Protect accumulated profits across existing equity winners via disciplined trailing stops.",
+  "thesis": "Maximize risk-adjusted returns by letting resilient UP-trend winners run across equities and FX while deploying available cash into top-ranked consolidating breakouts with tight risk parameters.",
   "preferred_sectors": [
-    "Industrials",
+    "Forex",
     "Healthcare",
-    "Technology",
-    "Forex Majors"
+    "Industrials",
+    "Technology"
   ],
   "styles": [
-    "Momentum Breakout",
-    "Consolidation Expansion",
-    "Trend Following"
+    "Trend Following",
+    "Momentum",
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Aggressive Growth within Hard Caps",
-  "updated_at": "2026-10-16T22:18:17.545765+00:00",
+  "risk_posture": "Controlled Aggressive",
+  "updated_at": "2026-10-19T23:56:40.591093+00:00",
   "model": "gemini-flash-latest"
 }
