@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively manage capital by cutting deteriorating thesis-broken assets, letting multi-asset momentum winners run toward take-profit levels, and rotating freed capital into top-ranked consolidation setups with positive expectancy.",
+  "thesis": "Exploit overwhelming bullish market breadth (98 UP vs 2 DOWN) by letting existing high-momentum winners run, ruthlessly pruning multi-day stagnant dead weight to release cash, and rotating into prime consolidating breakout setups across multi-asset classes.",
   "preferred_sectors": [
-    "Industrial",
-    "Technology",
+    "Forex",
+    "Industrial Technology",
     "Healthcare",
-    "Forex"
+    "Financials"
   ],
   "styles": [
     "Momentum",
-    "Breakout",
-    "Trend-Following"
+    "Consolidation Breakout",
+    "Trend Following"
   ],
-  "risk_posture": "Disciplined Aggressive",
-  "updated_at": "2026-10-20T21:05:52.741397+00:00",
+  "risk_posture": "Aggressive Growth within Risk Caps",
+  "updated_at": "2026-10-20T23:52:39.140384+00:00",
   "model": "gemini-flash-latest"
 }
