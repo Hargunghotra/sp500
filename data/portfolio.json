@@ -1,5 +1,5 @@
 {
-  "balance": 16700.34,
+  "balance": 17344.33,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -11,16 +11,6 @@
       "take_profit": 15.86,
       "opened_at": "2026-08-19T23:35:09.515612+00:00"
     },
-    "USDCAD=X": {
-      "symbol": "USDCAD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 1877.808911,
-      "avg_price": 1.40657,
-      "stop_loss": 1.3925,
-      "take_profit": 1.4347,
-      "opened_at": "2026-09-22T23:04:21.446515+00:00"
-    },
     "ECL": {
       "symbol": "ECL",
       "asset_class": "equity",
@@ -30,16 +20,6 @@
       "stop_loss": 273.37,
       "take_profit": 298.74,
       "opened_at": "2026-10-09T23:40:33.450830+00:00"
-    },
-    "PFE": {
-      "symbol": "PFE",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 71.0,
-      "avg_price": 28.280001,
-      "stop_loss": 27.43,
-      "take_profit": 29.98,
-      "opened_at": "2026-10-09T23:40:36.519997+00:00"
     },
     "AAPL": {
       "symbol": "AAPL",
@@ -120,9 +100,93 @@
       "stop_loss": 0.8187,
       "take_profit": 0.8435,
       "opened_at": "2026-10-19T23:56:41.154630+00:00"
+    },
+    "CPAY": {
+      "symbol": "CPAY",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 5.0,
+      "avg_price": 409.0,
+      "stop_loss": 396.73,
+      "take_profit": 433.54,
+      "opened_at": "2026-10-20T18:00:07.779488+00:00"
+    },
+    "LYV": {
+      "symbol": "LYV",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 12.0,
+      "avg_price": 174.854996,
+      "stop_loss": 169.61,
+      "take_profit": 185.35,
+      "opened_at": "2026-10-20T18:00:09.466193+00:00"
     }
   },
   "trades": [
+    {
+      "id": "ca4a22a2d47b",
+      "ticker": "LYV",
+      "type": "BUY",
+      "price": 174.854996,
+      "shares": 12.0,
+      "date": "2026-10-20T18:00:09.466222+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Bullish trend consolidation resting 4.58% above support with 2.95% 20-day trend strength and score of 9.3.",
+      "confidence": 0.73,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 169.61,
+      "take_profit": 185.35,
+      "realized_pnl": null
+    },
+    {
+      "id": "380f7fe39336",
+      "ticker": "CPAY",
+      "type": "BUY",
+      "price": 409.0,
+      "shares": 5.0,
+      "date": "2026-10-20T18:00:07.779516+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong consolidation above SMA50 with 4.08% 20-day momentum and 8.328 opportunity score; positioned right at breakout level.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 396.73,
+      "take_profit": 433.54,
+      "realized_pnl": null
+    },
+    {
+      "id": "bb64550b44aa",
+      "ticker": "USDCAD=X",
+      "type": "SELL",
+      "price": 1.406,
+      "shares": 1877.808911,
+      "date": "2026-10-20T18:00:05.632715+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Holding for nearly four weeks with negative return and zero upward momentum; sitting directly on support with elevated opportunity cost. Liquidating to free cash.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.3925,
+      "take_profit": 1.4347,
+      "realized_pnl": -1.07
+    },
+    {
+      "id": "ce0f127bccb2",
+      "ticker": "PFE",
+      "type": "SELL",
+      "price": 30.240101,
+      "shares": 71.0,
+      "date": "2026-10-20T17:57:19.803490+00:00",
+      "pattern": "SL/TP exit",
+      "reasoning": "Take-profit hit @ 30.240101 (TP 29.98)",
+      "confidence": 1.0,
+      "source": "take_profit",
+      "asset_class": "equity",
+      "stop_loss": null,
+      "take_profit": null,
+      "realized_pnl": 139.17
+    },
     {
       "id": "fb0afb65bc8a",
       "ticker": "AES",
@@ -7528,5 +7592,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1967.23
+  "realized_pnl": -1829.13
 }
