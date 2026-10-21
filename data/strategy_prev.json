@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize risk-adjusted returns by letting resilient UP-trend winners run across equities and FX while deploying available cash into top-ranked consolidating breakouts with tight risk parameters.",
+  "thesis": "Exploit overwhelming bullish market breadth (98 UP vs 2 DOWN) by letting existing high-momentum winners run, ruthlessly pruning multi-day stagnant dead weight to release cash, and rotating into prime consolidating breakout setups across multi-asset classes.",
   "preferred_sectors": [
     "Forex",
+    "Industrial Technology",
     "Healthcare",
-    "Industrials",
-    "Technology"
+    "Financials"
   ],
   "styles": [
-    "Trend Following",
     "Momentum",
-    "Consolidation Breakout"
+    "Consolidation Breakout",
+    "Trend Following"
   ],
-  "risk_posture": "Controlled Aggressive",
-  "updated_at": "2026-10-19T23:56:40.591093+00:00",
+  "risk_posture": "Aggressive Growth within Risk Caps",
+  "updated_at": "2026-10-20T23:52:39.140384+00:00",
   "model": "gemini-flash-latest"
 }
