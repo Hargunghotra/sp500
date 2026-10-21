@@ -1,5 +1,5 @@
 {
-  "balance": 19518.47,
+  "balance": 18076.43,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -81,16 +81,6 @@
       "take_profit": 207.55,
       "opened_at": "2026-10-16T22:18:22.697916+00:00"
     },
-    "USDCHF=X": {
-      "symbol": "USDCHF=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 3023.0,
-      "avg_price": 0.82693,
-      "stop_loss": 0.8187,
-      "take_profit": 0.8435,
-      "opened_at": "2026-10-19T23:56:41.154630+00:00"
-    },
     "CPAY": {
       "symbol": "CPAY",
       "asset_class": "equity",
@@ -110,9 +100,77 @@
       "stop_loss": 1.39256,
       "take_profit": 1.43476,
       "opened_at": "2026-10-20T23:52:39.646861+00:00"
+    },
+    "TDY": {
+      "symbol": "TDY",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 3.0,
+      "avg_price": 632.210022,
+      "stop_loss": 613.24,
+      "take_profit": 670.14,
+      "opened_at": "2026-10-21T13:18:23.661321+00:00"
+    },
+    "AAPL": {
+      "symbol": "AAPL",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 6.0,
+      "avg_price": 339.5,
+      "stop_loss": 329.32,
+      "take_profit": 359.87,
+      "opened_at": "2026-10-21T13:18:27.860823+00:00"
     }
   },
   "trades": [
+    {
+      "id": "edecd16d0d61",
+      "ticker": "AAPL",
+      "type": "BUY",
+      "price": 339.5,
+      "shares": 6.0,
+      "date": "2026-10-21T13:18:27.860855+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Score 9.9 with strong consolidation pattern above rising 50-day SMA; favorable risk/reward positioning with tight downside support buffer.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 329.32,
+      "take_profit": 359.87,
+      "realized_pnl": null
+    },
+    {
+      "id": "83015220ff48",
+      "ticker": "TDY",
+      "type": "BUY",
+      "price": 632.210022,
+      "shares": 3.0,
+      "date": "2026-10-21T13:18:23.661358+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score 8.138, established UP trend trading above 50-day SMA, 4.44% cushion above support, breaking out from consolidation.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 613.24,
+      "take_profit": 670.14,
+      "realized_pnl": null
+    },
+    {
+      "id": "6ebf1ae64fc1",
+      "ticker": "USDCHF=X",
+      "type": "SELL",
+      "price": 0.82421,
+      "shares": 3023.0,
+      "date": "2026-10-21T13:18:20.628738+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Lagging negative performer threatening nearby support with 0.06% buffer; cutting to reduce redundant triple long-USD exposure and release capital.",
+      "confidence": 0.75,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.8187,
+      "take_profit": 0.8435,
+      "realized_pnl": -8.22
+    },
     {
       "id": "447adefe0bb1",
       "ticker": "AAPL",
@@ -7630,5 +7688,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1831.41
+  "realized_pnl": -1839.63
 }
