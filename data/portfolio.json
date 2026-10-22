@@ -1,5 +1,5 @@
 {
-  "balance": 22762.07,
+  "balance": 22532.0,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -41,16 +41,6 @@
       "take_profit": 713.59,
       "opened_at": "2026-10-14T23:57:14.570061+00:00"
     },
-    "USDJPY=X": {
-      "symbol": "USDJPY=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 15.8,
-      "avg_price": 158.076996,
-      "stop_loss": 156.49,
-      "take_profit": 161.24,
-      "opened_at": "2026-10-15T20:27:49.371317+00:00"
-    },
     "FAST": {
       "symbol": "FAST",
       "asset_class": "equity",
@@ -81,16 +71,6 @@
       "take_profit": 433.54,
       "opened_at": "2026-10-20T18:00:07.779488+00:00"
     },
-    "USDCAD=X": {
-      "symbol": "USDCAD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 1635.0,
-      "avg_price": 1.40663,
-      "stop_loss": 1.39256,
-      "take_profit": 1.43476,
-      "opened_at": "2026-10-20T23:52:39.646861+00:00"
-    },
     "AAPL": {
       "symbol": "AAPL",
       "asset_class": "equity",
@@ -100,9 +80,93 @@
       "stop_loss": 329.32,
       "take_profit": 359.87,
       "opened_at": "2026-10-21T13:18:27.860823+00:00"
+    },
+    "USDCHF=X": {
+      "symbol": "USDCHF=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 3292.0,
+      "avg_price": 0.82004,
+      "stop_loss": 0.8118,
+      "take_profit": 0.8364,
+      "opened_at": "2026-10-22T21:10:19.306686+00:00"
+    },
+    "DD": {
+      "symbol": "DD",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 17.0,
+      "avg_price": 135.100006,
+      "stop_loss": 131.05,
+      "take_profit": 143.21,
+      "opened_at": "2026-10-22T21:10:22.846519+00:00"
     }
   },
   "trades": [
+    {
+      "id": "87f2d2c63261",
+      "ticker": "USDJPY=X",
+      "type": "SELL",
+      "price": 156.753998,
+      "shares": 15.8,
+      "date": "2026-10-22T21:10:25.871517+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Thesis broken; price is trading below its 50-day SMA in an established DOWN trend with negative 20-day returns. Exiting to stop losses and redeploy capital.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 156.49,
+      "take_profit": 161.24,
+      "realized_pnl": -20.9
+    },
+    {
+      "id": "8364aafdbe8b",
+      "ticker": "USDCAD=X",
+      "type": "SELL",
+      "price": 1.4003,
+      "shares": 1635.0,
+      "date": "2026-10-22T21:10:24.423647+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Trend has deteriorated to DOWN and price sits below the 50-day SMA. Liquidating dead weight to free position slots and capital.",
+      "confidence": 0.87,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.39256,
+      "take_profit": 1.43476,
+      "realized_pnl": -10.35
+    },
+    {
+      "id": "28b6293dca6e",
+      "ticker": "DD",
+      "type": "BUY",
+      "price": 135.100006,
+      "shares": 17.0,
+      "date": "2026-10-22T21:10:22.846561+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "High opportunity score (8.155) consolidating in UP trend with strong 20-day momentum (+3.75%) and close support cushion. (qty capped to 17.0 by 12% cash rule)",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 131.05,
+      "take_profit": 143.21,
+      "realized_pnl": null
+    },
+    {
+      "id": "83ffd557c6b4",
+      "ticker": "USDCHF=X",
+      "type": "BUY",
+      "price": 0.82004,
+      "shares": 3292.0,
+      "date": "2026-10-22T21:10:19.306720+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top forex candidate showing UP trend and consolidation directly at support (0.0% dist) with 1.9% room to resistance and 8.4 opportunity score.",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.8118,
+      "take_profit": 0.8364,
+      "realized_pnl": null
+    },
     {
       "id": "d2373407ab12",
       "ticker": "TDY",
@@ -7700,5 +7764,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1720.07
+  "realized_pnl": -1751.32
 }
