@@ -1,17 +1,17 @@
 {
-  "thesis": "Exploit overwhelming bullish market breadth (98 UP vs 2 DOWN) by letting existing high-momentum winners run, ruthlessly pruning multi-day stagnant dead weight to release cash, and rotating into prime consolidating breakout setups across multi-asset classes.",
+  "thesis": "Aggressively prune lagging dollar-correlated positions and dead weight to redeploy surplus cash into top-tier trending equity leaders breaking out of consolidation.",
   "preferred_sectors": [
-    "Forex",
-    "Industrial Technology",
+    "Technology",
     "Healthcare",
-    "Financials"
+    "Industrials",
+    "Forex"
   ],
   "styles": [
-    "Momentum",
-    "Consolidation Breakout",
-    "Trend Following"
+    "Trend Following",
+    "Momentum Breakout",
+    "Multi-Asset Long-Only"
   ],
-  "risk_posture": "Aggressive Growth within Risk Caps",
-  "updated_at": "2026-10-20T23:52:39.140384+00:00",
+  "risk_posture": "Controlled Aggressive",
+  "updated_at": "2026-10-21T13:18:20.321586+00:00",
   "model": "gemini-flash-latest"
 }
