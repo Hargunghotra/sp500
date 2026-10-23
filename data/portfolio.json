@@ -1,5 +1,5 @@
 {
-  "balance": 18140.23,
+  "balance": 20354.71,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -41,16 +41,6 @@
       "take_profit": 54.08,
       "opened_at": "2026-10-16T22:18:20.269351+00:00"
     },
-    "CPAY": {
-      "symbol": "CPAY",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 5.0,
-      "avg_price": 409.0,
-      "stop_loss": 396.73,
-      "take_profit": 433.54,
-      "opened_at": "2026-10-20T18:00:07.779488+00:00"
-    },
     "AAPL": {
       "symbol": "AAPL",
       "asset_class": "equity",
@@ -81,16 +71,6 @@
       "take_profit": 143.21,
       "opened_at": "2026-10-22T21:10:22.846519+00:00"
     },
-    "REG": {
-      "symbol": "REG",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 32.0,
-      "avg_price": 74.379997,
-      "stop_loss": 72.15,
-      "take_profit": 78.84,
-      "opened_at": "2026-10-23T12:59:04.442754+00:00"
-    },
     "TDY": {
       "symbol": "TDY",
       "asset_class": "equity",
@@ -120,9 +100,67 @@
       "stop_loss": 29.81,
       "take_profit": 32.58,
       "opened_at": "2026-10-23T20:41:47.557669+00:00"
+    },
+    "EVRG": {
+      "symbol": "EVRG",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 26.0,
+      "avg_price": 84.43,
+      "stop_loss": 81.9,
+      "take_profit": 89.5,
+      "opened_at": "2026-10-23T23:31:28.995579+00:00"
     }
   },
   "trades": [
+    {
+      "id": "3c65737ea7b5",
+      "ticker": "CPAY",
+      "type": "SELL",
+      "price": 408.459991,
+      "shares": 5.0,
+      "date": "2026-10-23T23:31:32.673723+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Stagnant performance with negative unrealized PnL and lower relative opportunity score; exiting dead weight to redeploy into high-beta momentum leaders.",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 396.73,
+      "take_profit": 433.54,
+      "realized_pnl": -2.7
+    },
+    {
+      "id": "512505052e67",
+      "ticker": "EVRG",
+      "type": "BUY",
+      "price": 84.43,
+      "shares": 26.0,
+      "date": "2026-10-23T23:31:28.995614+00:00",
+      "pattern": "Volatile",
+      "reasoning": "High composite score of 9.7 with strong +8.19% 20d momentum trading safely above key moving averages.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 81.9,
+      "take_profit": 89.5,
+      "realized_pnl": null
+    },
+    {
+      "id": "938e0441f2bd",
+      "ticker": "REG",
+      "type": "SELL",
+      "price": 73.980003,
+      "shares": 32.0,
+      "date": "2026-10-23T23:31:25.077578+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Negative unrealized PnL and price directly hitting resistance (0.54% distance); selling to free capital and portfolio capacity for stronger setups.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 72.15,
+      "take_profit": 78.84,
+      "realized_pnl": -12.8
+    },
     {
       "id": "b7c8f6f8f64a",
       "ticker": "NWSA",
@@ -7944,5 +7982,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1762.42
+  "realized_pnl": -1777.92
 }
