@@ -1,17 +1,17 @@
 {
-  "thesis": "Maximize realized and unrealized alpha by concentrating capital in high-scoring breakout/consolidation setups while cutting stagnant or negative momentum positions. Rotate freed capital into top-ranked equities in strong uptrends while avoiding severely deteriorating crypto and counter-trend FX.",
+  "thesis": "Aggressively prune breakdown names while pressing profitable trends across equities and FX. Reallocate freed liquidity into consolidating breakout setups showing superior opportunity scores and favorable risk/reward ratios.",
   "preferred_sectors": [
-    "Industrials",
-    "Materials",
     "Technology",
-    "Healthcare"
+    "Forex",
+    "Industrials",
+    "Utilities"
   ],
   "styles": [
+    "Momentum",
     "Trend Following",
-    "Momentum Breakout",
-    "Relative Strength"
+    "Mean Reversion at Support"
   ],
-  "risk_posture": "Aggressive Growth within Risk Bounds",
-  "updated_at": "2026-10-23T12:59:01.168268+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-10-23T17:37:22.764295+00:00",
   "model": "gemini-flash-latest"
 }
