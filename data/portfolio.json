@@ -1,5 +1,5 @@
 {
-  "balance": 22532.0,
+  "balance": 22300.82,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -31,16 +31,6 @@
       "take_profit": 76.83,
       "opened_at": "2026-10-13T23:56:36.677990+00:00"
     },
-    "TMO": {
-      "symbol": "TMO",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 3.0,
-      "avg_price": 673.200012,
-      "stop_loss": 653.0,
-      "take_profit": 713.59,
-      "opened_at": "2026-10-14T23:57:14.570061+00:00"
-    },
     "FAST": {
       "symbol": "FAST",
       "asset_class": "equity",
@@ -50,16 +40,6 @@
       "stop_loss": 49.49,
       "take_profit": 54.08,
       "opened_at": "2026-10-16T22:18:20.269351+00:00"
-    },
-    "DOV": {
-      "symbol": "DOV",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 14.0,
-      "avg_price": 195.800003,
-      "stop_loss": 189.93,
-      "take_profit": 207.55,
-      "opened_at": "2026-10-16T22:18:22.697916+00:00"
     },
     "CPAY": {
       "symbol": "CPAY",
@@ -100,9 +80,93 @@
       "stop_loss": 131.05,
       "take_profit": 143.21,
       "opened_at": "2026-10-22T21:10:22.846519+00:00"
+    },
+    "LYV": {
+      "symbol": "LYV",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 15.0,
+      "avg_price": 174.5,
+      "stop_loss": 169.26,
+      "take_profit": 184.97,
+      "opened_at": "2026-10-23T12:59:01.518847+00:00"
+    },
+    "REG": {
+      "symbol": "REG",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 32.0,
+      "avg_price": 74.379997,
+      "stop_loss": 72.15,
+      "take_profit": 78.84,
+      "opened_at": "2026-10-23T12:59:04.442754+00:00"
     }
   },
   "trades": [
+    {
+      "id": "a4e70ac66a01",
+      "ticker": "TMO",
+      "type": "SELL",
+      "price": 676.539978,
+      "shares": 3.0,
+      "date": "2026-10-23T12:59:07.089035+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Negative 20-day return (-0.27%) and lowest opportunity score (5.413) across held equities. Reallocating into top-tier setups.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 653.0,
+      "take_profit": 713.59,
+      "realized_pnl": 10.02
+    },
+    {
+      "id": "b9b723b28963",
+      "ticker": "DOV",
+      "type": "SELL",
+      "price": 195.490005,
+      "shares": 14.0,
+      "date": "2026-10-23T12:59:05.638339+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Negative return since entry with lowest relative score (8.5) and weak opportunity score (5.604) among equity holdings; cutting dead weight to free capital.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 189.93,
+      "take_profit": 207.55,
+      "realized_pnl": -4.34
+    },
+    {
+      "id": "4607a36b0d3a",
+      "ticker": "REG",
+      "type": "BUY",
+      "price": 74.379997,
+      "shares": 32.0,
+      "date": "2026-10-23T12:59:04.442784+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Strong consolidation pattern, 0% distance to resistance breakout, solid 4.81% buffer to support, opp score 8.02. (qty capped to 32.0 by 12% cash rule)",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 72.15,
+      "take_profit": 78.84,
+      "realized_pnl": null
+    },
+    {
+      "id": "f3e426526fd2",
+      "ticker": "LYV",
+      "type": "BUY",
+      "price": 174.5,
+      "shares": 15.0,
+      "date": "2026-10-23T12:59:01.518881+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top unowned consolidation opportunity (score 9.3, opp score 8.061) cleanly positioned above SMA50 with low resistance overhead.",
+      "confidence": 0.87,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 169.26,
+      "take_profit": 184.97,
+      "realized_pnl": null
+    },
     {
       "id": "87f2d2c63261",
       "ticker": "USDJPY=X",
@@ -7764,5 +7828,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1751.32
+  "realized_pnl": -1745.64
 }

@@ -1,19 +1,17 @@
 {
-  "thesis": "Aggressively cut underperforming and broken FX long positions that have turned into down trends below their 50-day moving averages. Retain and press high-performing momentum and consolidation equity winners, while rotating available capital into top-ranked UP-trend consolidation setups exhibiting favorable support/resistance asymmetry across equities and forex.",
+  "thesis": "Maximize realized and unrealized alpha by concentrating capital in high-scoring breakout/consolidation setups while cutting stagnant or negative momentum positions. Rotate freed capital into top-ranked equities in strong uptrends while avoiding severely deteriorating crypto and counter-trend FX.",
   "preferred_sectors": [
+    "Industrials",
     "Materials",
-    "Communication Services",
-    "Real Estate",
-    "Forex",
-    "Technology"
+    "Technology",
+    "Healthcare"
   ],
   "styles": [
-    "Trend-Following",
-    "Breakout/Consolidation",
-    "Momentum",
-    "Asymmetric Risk-Reward"
+    "Trend Following",
+    "Momentum Breakout",
+    "Relative Strength"
   ],
-  "risk_posture": "Aggressive Growth within Risk Caps",
-  "updated_at": "2026-10-22T21:10:18.992828+00:00",
+  "risk_posture": "Aggressive Growth within Risk Bounds",
+  "updated_at": "2026-10-23T12:59:01.168268+00:00",
   "model": "gemini-flash-latest"
 }
