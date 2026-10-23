@@ -1,17 +1,19 @@
 {
-  "thesis": "Aggressively prune lagging dollar-correlated positions and dead weight to redeploy surplus cash into top-tier trending equity leaders breaking out of consolidation.",
+  "thesis": "Aggressively cut underperforming and broken FX long positions that have turned into down trends below their 50-day moving averages. Retain and press high-performing momentum and consolidation equity winners, while rotating available capital into top-ranked UP-trend consolidation setups exhibiting favorable support/resistance asymmetry across equities and forex.",
   "preferred_sectors": [
-    "Technology",
-    "Healthcare",
-    "Industrials",
-    "Forex"
+    "Materials",
+    "Communication Services",
+    "Real Estate",
+    "Forex",
+    "Technology"
   ],
   "styles": [
-    "Trend Following",
-    "Momentum Breakout",
-    "Multi-Asset Long-Only"
+    "Trend-Following",
+    "Breakout/Consolidation",
+    "Momentum",
+    "Asymmetric Risk-Reward"
   ],
-  "risk_posture": "Controlled Aggressive",
-  "updated_at": "2026-10-21T13:18:20.321586+00:00",
+  "risk_posture": "Aggressive Growth within Risk Caps",
+  "updated_at": "2026-10-22T21:10:18.992828+00:00",
   "model": "gemini-flash-latest"
 }
