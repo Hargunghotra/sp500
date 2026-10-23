@@ -1,17 +1,18 @@
 {
-  "thesis": "Aggressively prune breakdown names while pressing profitable trends across equities and FX. Reallocate freed liquidity into consolidating breakout setups showing superior opportunity scores and favorable risk/reward ratios.",
+  "thesis": "Maximize capital velocity and risk-adjusted equity by holding top-performing equity winners, pruning non-performing and counter-trend forex holdings, and rotating liberated liquidity into top momentum breakouts in equities while avoiding broad crypto downtrends.",
   "preferred_sectors": [
-    "Technology",
-    "Forex",
     "Industrials",
+    "Insurance",
+    "Communication Services",
+    "Technology",
     "Utilities"
   ],
   "styles": [
-    "Momentum",
     "Trend Following",
-    "Mean Reversion at Support"
+    "Momentum Breakout",
+    "Relative Strength"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-10-23T17:37:22.764295+00:00",
+  "risk_posture": "Aggressive Growth within Hard Caps",
+  "updated_at": "2026-10-23T20:41:41.169603+00:00",
   "model": "gemini-flash-latest"
 }
