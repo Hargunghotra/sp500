@@ -1,18 +1,18 @@
 {
-  "thesis": "Maximize portfolio returns by pruning underperforming and stagnant positions facing overhead resistance, pressing established winners, and recycling capital into high-momentum equities with strong support buffers and clean runway.",
+  "thesis": "Capitalize on solid uptrends across equity and strong dollar forex pairs while steering clear of broad crypto weakness. Protect unrealized profits on working swing positions and deploy available dry powder into high-conviction consolidating breakouts within risk limits.",
   "preferred_sectors": [
-    "Technology",
-    "Energy",
+    "Forex",
     "Utilities",
+    "Materials",
     "Industrials",
-    "Financials"
+    "Technology"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Breakout Swing"
+    "Swing Breakout"
   ],
-  "risk_posture": "Aggressive Growth with Disciplined Risk Management",
-  "updated_at": "2026-10-23T23:31:24.406807+00:00",
+  "risk_posture": "Disciplined Aggressive",
+  "updated_at": "2026-10-26T14:43:50.221771+00:00",
   "model": "gemini-flash-latest"
 }

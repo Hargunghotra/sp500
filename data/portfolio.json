@@ -1,5 +1,5 @@
 {
-  "balance": 20354.71,
+  "balance": 17913.17,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -110,9 +110,35 @@
       "stop_loss": 81.9,
       "take_profit": 89.5,
       "opened_at": "2026-10-23T23:31:28.995579+00:00"
+    },
+    "USDCAD=X": {
+      "symbol": "USDCAD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 1738.0,
+      "avg_price": 1.4048,
+      "stop_loss": 1.3908,
+      "take_profit": 1.4329,
+      "opened_at": "2026-10-26T14:43:50.777172+00:00"
     }
   },
   "trades": [
+    {
+      "id": "72c77fd01906",
+      "ticker": "USDCAD=X",
+      "type": "BUY",
+      "price": 1.4048,
+      "shares": 1738.0,
+      "date": "2026-10-26T14:43:50.777199+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top ranked non-owned candidate with UP trend, solid opportunity score (8.385), consolidating cleanly above its 50-day SMA with favorable USD strength dynamics.",
+      "confidence": 0.84,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.3908,
+      "take_profit": 1.4329,
+      "realized_pnl": null
+    },
     {
       "id": "3c65737ea7b5",
       "ticker": "CPAY",
