@@ -1,5 +1,5 @@
 {
-  "balance": 17913.17,
+  "balance": 20360.37,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -91,16 +91,6 @@
       "take_profit": 77.73,
       "opened_at": "2026-10-23T20:41:45.648638+00:00"
     },
-    "NWSA": {
-      "symbol": "NWSA",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 80.0,
-      "avg_price": 30.735001,
-      "stop_loss": 29.81,
-      "take_profit": 32.58,
-      "opened_at": "2026-10-23T20:41:47.557669+00:00"
-    },
     "EVRG": {
       "symbol": "EVRG",
       "asset_class": "equity",
@@ -123,6 +113,22 @@
     }
   },
   "trades": [
+    {
+      "id": "1a7921246ffd",
+      "ticker": "NWSA",
+      "type": "SELL",
+      "price": 30.59,
+      "shares": 80.0,
+      "date": "2026-10-26T20:12:05.562446+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Liquidate underperforming negative position to eliminate dead weight and free up an allocation slot for top-tier opportunity score candidates.",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 0.0,
+      "take_profit": 0.0,
+      "realized_pnl": -11.6
+    },
     {
       "id": "72c77fd01906",
       "ticker": "USDCAD=X",
@@ -8008,5 +8014,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1777.92
+  "realized_pnl": -1789.52
 }

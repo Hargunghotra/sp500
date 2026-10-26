@@ -1,18 +1,18 @@
 {
-  "thesis": "Capitalize on solid uptrends across equity and strong dollar forex pairs while steering clear of broad crypto weakness. Protect unrealized profits on working swing positions and deploy available dry powder into high-conviction consolidating breakouts within risk limits.",
+  "thesis": "Maximize realized and unrealized alpha by cutting sluggish and losing equity exposure, protecting prevailing winners across equities and resilient FX pairs, and reallocating capital to high-opportunity score consolidating names in upward trends. Entirely avoid crypto assets due to persistent multi-week downtrends.",
   "preferred_sectors": [
-    "Forex",
-    "Utilities",
-    "Materials",
     "Industrials",
-    "Technology"
+    "Technology",
+    "Utilities",
+    "Real Estate",
+    "Forex"
   ],
   "styles": [
     "Momentum",
     "Trend Following",
-    "Swing Breakout"
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Disciplined Aggressive",
-  "updated_at": "2026-10-26T14:43:50.221771+00:00",
+  "risk_posture": "Aggressive Capital Rotation within Strict Risk Caps",
+  "updated_at": "2026-10-26T20:12:05.194616+00:00",
   "model": "gemini-flash-latest"
 }
