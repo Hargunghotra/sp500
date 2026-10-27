@@ -1,5 +1,5 @@
 {
-  "balance": 17958.35,
+  "balance": 20346.89,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -81,16 +81,6 @@
       "take_profit": 665.19,
       "opened_at": "2026-10-23T17:37:24.752301+00:00"
     },
-    "WRB": {
-      "symbol": "WRB",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 33.0,
-      "avg_price": 73.330002,
-      "stop_loss": 71.13,
-      "take_profit": 77.73,
-      "opened_at": "2026-10-23T20:41:45.648638+00:00"
-    },
     "EVRG": {
       "symbol": "EVRG",
       "asset_class": "equity",
@@ -123,6 +113,22 @@
     }
   },
   "trades": [
+    {
+      "id": "c47ae37d92c9",
+      "ticker": "WRB",
+      "type": "SELL",
+      "price": 72.379997,
+      "shares": 33.0,
+      "date": "2026-10-27T22:50:30.746413+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Underperforming position posting negative return (-1.30%) with decaying momentum. Selling cleanly eliminates the book's sole loser, frees capital, and opens a slot under the 12-ticker limit.",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 71.13,
+      "take_profit": 77.73,
+      "realized_pnl": -31.35
+    },
     {
       "id": "9b2fa740ef4f",
       "ticker": "RVTY",
@@ -8072,5 +8078,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1796.12
+  "realized_pnl": -1827.47
 }

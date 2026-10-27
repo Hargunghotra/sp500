@@ -1,18 +1,17 @@
 {
-  "thesis": "Aggressively defend capital by cutting losing positions that break trend, hold winning momentum names across equities and forex, and redeploy cash into the top-ranked consolidation and momentum setups.",
+  "thesis": "Aggressively prune lagging positions and capital-inefficient holdings while riding momentum across high-conviction equity and FX trends. Strict stop management preserves capital and rotates liquidity into top opportunity-score assets.",
   "preferred_sectors": [
-    "Technology",
+    "Forex",
     "Industrials",
-    "Utilities",
-    "Healthcare",
-    "Real Estate"
+    "Technology",
+    "Utilities"
   ],
   "styles": [
     "Momentum",
-    "Trend-Following",
-    "Consolidation Breakout"
+    "Trend Following",
+    "Swing Trading"
   ],
   "risk_posture": "Disciplined Aggressive",
-  "updated_at": "2026-10-26T23:53:56.333472+00:00",
+  "updated_at": "2026-10-27T22:50:30.259688+00:00",
   "model": "gemini-flash-latest"
 }
