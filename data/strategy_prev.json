@@ -1,18 +1,18 @@
 {
-  "thesis": "Maximize portfolio returns by pruning underperforming and stagnant positions facing overhead resistance, pressing established winners, and recycling capital into high-momentum equities with strong support buffers and clean runway.",
+  "thesis": "Aggressively defend capital by cutting losing positions that break trend, hold winning momentum names across equities and forex, and redeploy cash into the top-ranked consolidation and momentum setups.",
   "preferred_sectors": [
     "Technology",
-    "Energy",
-    "Utilities",
     "Industrials",
-    "Financials"
+    "Utilities",
+    "Healthcare",
+    "Real Estate"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Breakout Swing"
+    "Trend-Following",
+    "Consolidation Breakout"
   ],
-  "risk_posture": "Aggressive Growth with Disciplined Risk Management",
-  "updated_at": "2026-10-23T23:31:24.406807+00:00",
+  "risk_posture": "Disciplined Aggressive",
+  "updated_at": "2026-10-26T23:53:56.333472+00:00",
   "model": "gemini-flash-latest"
 }
