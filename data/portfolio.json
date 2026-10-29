@@ -1,5 +1,5 @@
 {
-  "balance": 22347.81,
+  "balance": 24460.76,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -10,16 +10,6 @@
       "stop_loss": 14.45,
       "take_profit": 15.86,
       "opened_at": "2026-08-19T23:35:09.515612+00:00"
-    },
-    "ECL": {
-      "symbol": "ECL",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 7.0,
-      "avg_price": 281.829987,
-      "stop_loss": 273.37,
-      "take_profit": 298.74,
-      "opened_at": "2026-10-09T23:40:33.450830+00:00"
     },
     "TECH": {
       "symbol": "TECH",
@@ -103,6 +93,22 @@
     }
   },
   "trades": [
+    {
+      "id": "238f7f150308",
+      "ticker": "ECL",
+      "type": "SELL",
+      "price": 301.850006,
+      "shares": 7.0,
+      "date": "2026-10-29T19:52:17.411337+00:00",
+      "pattern": "SL/TP exit",
+      "reasoning": "Take-profit hit @ 301.850006 (TP 298.74)",
+      "confidence": 1.0,
+      "source": "take_profit",
+      "asset_class": "equity",
+      "stop_loss": null,
+      "take_profit": null,
+      "realized_pnl": 140.14
+    },
     {
       "id": "b89452a8b4f2",
       "ticker": "TDY",
@@ -8084,5 +8090,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1709.17
+  "realized_pnl": -1569.03
 }
