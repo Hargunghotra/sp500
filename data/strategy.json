@@ -1,17 +1,17 @@
 {
-  "thesis": "Aggressively prune lagging positions and capital-inefficient holdings while riding momentum across high-conviction equity and FX trends. Strict stop management preserves capital and rotates liquidity into top opportunity-score assets.",
+  "thesis": "Aggressively capitalize on clean UP-trend consolidation breakouts across multi-asset classes while maintaining hard risk caps. Protect and trail winners across equities and foreign exchange, avoiding deteriorating crypto assets in macro downtrends.",
   "preferred_sectors": [
-    "Forex",
-    "Industrials",
     "Technology",
-    "Utilities"
+    "Financials",
+    "Industrials",
+    "Forex"
   ],
   "styles": [
-    "Momentum",
     "Trend Following",
-    "Swing Trading"
+    "Momentum Breakout",
+    "Multi-Asset Tactical"
   ],
-  "risk_posture": "Disciplined Aggressive",
-  "updated_at": "2026-10-27T22:50:30.259688+00:00",
+  "risk_posture": "Moderately Aggressive",
+  "updated_at": "2026-10-29T23:43:07.681355+00:00",
   "model": "gemini-flash-latest"
 }

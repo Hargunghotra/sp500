@@ -1,5 +1,5 @@
 {
-  "balance": 24460.76,
+  "balance": 17019.82,
   "positions": {
     "AES": {
       "symbol": "AES",
@@ -90,9 +90,87 @@
       "stop_loss": 155.58,
       "take_profit": 170.01,
       "opened_at": "2026-10-26T23:53:59.477290+00:00"
+    },
+    "EXPD": {
+      "symbol": "EXPD",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 14.0,
+      "avg_price": 198.389999,
+      "stop_loss": 192.44,
+      "take_profit": 210.29,
+      "opened_at": "2026-10-29T23:43:07.967469+00:00"
+    },
+    "USDJPY=X": {
+      "symbol": "USDJPY=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 16.494637,
+      "avg_price": 157.748001,
+      "stop_loss": 156.17,
+      "take_profit": 160.9,
+      "opened_at": "2026-10-29T23:43:10.452327+00:00"
+    },
+    "JPM": {
+      "symbol": "JPM",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 6.0,
+      "avg_price": 343.579987,
+      "stop_loss": 333.27,
+      "take_profit": 364.19,
+      "opened_at": "2026-10-29T23:43:11.879929+00:00"
     }
   },
   "trades": [
+    {
+      "id": "e490f4961c8e",
+      "ticker": "JPM",
+      "type": "BUY",
+      "price": 343.579987,
+      "shares": 6.0,
+      "date": "2026-10-29T23:43:11.879966+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Market leader in financials showing zero distance to resistance breakout, trading well above 50-day SMA with 8.264 opportunity score. (qty capped to 6.0 by 12% cash rule)",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 333.27,
+      "take_profit": 364.19,
+      "realized_pnl": null
+    },
+    {
+      "id": "32953fcfc6f8",
+      "ticker": "USDJPY=X",
+      "type": "BUY",
+      "price": 157.748001,
+      "shares": 16.494637,
+      "date": "2026-10-29T23:43:10.452370+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Premier forex trend candidate in an established UP trend consolidating just 0.49% beneath resistance with 8.432 opportunity score. (qty capped to 16.494637 by 12% cash rule)",
+      "confidence": 0.83,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 156.17,
+      "take_profit": 160.9,
+      "realized_pnl": null
+    },
+    {
+      "id": "b395b114ee03",
+      "ticker": "EXPD",
+      "type": "BUY",
+      "price": 198.389999,
+      "shares": 14.0,
+      "date": "2026-10-29T23:43:07.967505+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top-tier industrial setup with 9.9 technical score and 8.547 opportunity score; consolidating within 0.63% of resistance breakout.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 192.44,
+      "take_profit": 210.29,
+      "realized_pnl": null
+    },
     {
       "id": "238f7f150308",
       "ticker": "ECL",
