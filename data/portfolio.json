@@ -1,16 +1,6 @@
 {
-  "balance": 17019.82,
+  "balance": 24759.99,
   "positions": {
-    "AES": {
-      "symbol": "AES",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 307.0,
-      "avg_price": 14.827036,
-      "stop_loss": 14.45,
-      "take_profit": 15.86,
-      "opened_at": "2026-08-19T23:35:09.515612+00:00"
-    },
     "TECH": {
       "symbol": "TECH",
       "asset_class": "equity",
@@ -81,16 +71,6 @@
       "take_profit": 78.09,
       "opened_at": "2026-10-26T23:53:56.657960+00:00"
     },
-    "RVTY": {
-      "symbol": "RVTY",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 15.0,
-      "avg_price": 160.389999,
-      "stop_loss": 155.58,
-      "take_profit": 170.01,
-      "opened_at": "2026-10-26T23:53:59.477290+00:00"
-    },
     "EXPD": {
       "symbol": "EXPD",
       "asset_class": "equity",
@@ -101,28 +81,124 @@
       "take_profit": 210.29,
       "opened_at": "2026-10-29T23:43:07.967469+00:00"
     },
-    "USDJPY=X": {
-      "symbol": "USDJPY=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 16.494637,
-      "avg_price": 157.748001,
-      "stop_loss": 156.17,
-      "take_profit": 160.9,
-      "opened_at": "2026-10-29T23:43:10.452327+00:00"
-    },
-    "JPM": {
-      "symbol": "JPM",
+    "WSM": {
+      "symbol": "WSM",
       "asset_class": "equity",
       "side": "LONG",
-      "quantity": 6.0,
-      "avg_price": 343.579987,
-      "stop_loss": 333.27,
-      "take_profit": 364.19,
-      "opened_at": "2026-10-29T23:43:11.879929+00:00"
+      "quantity": 7.0,
+      "avg_price": 255.554993,
+      "stop_loss": 247.88,
+      "take_profit": 270.88,
+      "opened_at": "2026-10-30T14:44:09.170369+00:00"
+    },
+    "KMI": {
+      "symbol": "KMI",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 60.0,
+      "avg_price": 34.014999,
+      "stop_loss": 32.99,
+      "take_profit": 36.05,
+      "opened_at": "2026-10-30T14:44:10.679698+00:00"
     }
   },
   "trades": [
+    {
+      "id": "ba2de1b34d81",
+      "ticker": "JPM",
+      "type": "SELL",
+      "price": 339.494995,
+      "shares": 6.0,
+      "date": "2026-10-30T14:44:13.710771+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Negative unrealized PnL (-1.18%), trading below 50-day SMA in a defined DOWN trend. Aggressively cutting losers.",
+      "confidence": 0.9,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 333.27,
+      "take_profit": 364.19,
+      "realized_pnl": -24.51
+    },
+    {
+      "id": "9193c39167af",
+      "ticker": "RVTY",
+      "type": "SELL",
+      "price": 158.25,
+      "shares": 15.0,
+      "date": "2026-10-30T14:44:12.134074+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Position has dropped to -1.33% unrealized loss and is underperforming stronger sector peers. Cutting dead weight.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 155.58,
+      "take_profit": 170.01,
+      "realized_pnl": -32.1
+    },
+    {
+      "id": "705ef4b23d33",
+      "ticker": "KMI",
+      "type": "BUY",
+      "price": 34.014999,
+      "shares": 60.0,
+      "date": "2026-10-30T14:44:10.679731+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Strong energy sector breakout candidate with 9.48% 20-day momentum, 9.9 quality score, and solid room to run.",
+      "confidence": 0.81,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 32.99,
+      "take_profit": 36.05,
+      "realized_pnl": null
+    },
+    {
+      "id": "124e8c16b219",
+      "ticker": "WSM",
+      "type": "BUY",
+      "price": 255.554993,
+      "shares": 7.0,
+      "date": "2026-10-30T14:44:09.170403+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Excellent 10.34% 20-day return, robust UP trend, and high technical quality (score 9.8). Sized within cash allocation limits.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 247.88,
+      "take_profit": 270.88,
+      "realized_pnl": null
+    },
+    {
+      "id": "5e43ef87ced7",
+      "ticker": "USDJPY=X",
+      "type": "SELL",
+      "price": 157.289001,
+      "shares": 16.494637,
+      "date": "2026-10-30T14:44:07.587596+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Pair has broken down into a DOWN trend and breached below its 50-day SMA with negative return. Cutting forex drag.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 156.17,
+      "take_profit": 160.9,
+      "realized_pnl": -7.57
+    },
+    {
+      "id": "31a564f8d395",
+      "ticker": "AES",
+      "type": "SELL",
+      "price": 14.8691,
+      "shares": 307.0,
+      "date": "2026-10-30T14:44:05.618002+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "AES has deteriorated into a DOWN trend and is demonstrating stagnant momentum (-0.27% 20-day return). Liquidating to free capital for top-ranked momentum setups.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 14.45,
+      "take_profit": 15.86,
+      "realized_pnl": 12.91
+    },
     {
       "id": "e490f4961c8e",
       "ticker": "JPM",
@@ -8168,5 +8244,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1569.03
+  "realized_pnl": -1620.3
 }

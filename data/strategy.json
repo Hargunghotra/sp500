@@ -1,17 +1,18 @@
 {
-  "thesis": "Aggressively capitalize on clean UP-trend consolidation breakouts across multi-asset classes while maintaining hard risk caps. Protect and trail winners across equities and foreign exchange, avoiding deteriorating crypto assets in macro downtrends.",
+  "thesis": "Aggressively prune lagging and downtrending positions (JPM, USDJPY, RVTY, AES) to eliminate capital drag, protect equity, and rotate into high-momentum, top opportunity-ranked equity and FX breakout setups (PTC, GBPUSD=X, WSM, KMI) while allowing established equity winners to run.",
   "preferred_sectors": [
     "Technology",
-    "Financials",
-    "Industrials",
-    "Forex"
+    "Forex",
+    "Consumer Discretionary",
+    "Energy",
+    "Industrials"
   ],
   "styles": [
-    "Trend Following",
     "Momentum Breakout",
-    "Multi-Asset Tactical"
+    "Trend Following",
+    "Relative Strength"
   ],
-  "risk_posture": "Moderately Aggressive",
-  "updated_at": "2026-10-29T23:43:07.681355+00:00",
+  "risk_posture": "Aggressive Growth within Risk Caps",
+  "updated_at": "2026-10-30T14:44:05.270643+00:00",
   "model": "gemini-flash-latest"
 }
