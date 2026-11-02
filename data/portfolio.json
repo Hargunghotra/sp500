@@ -1,5 +1,5 @@
 {
-  "balance": 24759.99,
+  "balance": 26321.98,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -30,26 +30,6 @@
       "stop_loss": 329.32,
       "take_profit": 359.87,
       "opened_at": "2026-10-21T13:18:27.860823+00:00"
-    },
-    "USDCHF=X": {
-      "symbol": "USDCHF=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 3292.0,
-      "avg_price": 0.82004,
-      "stop_loss": 0.8118,
-      "take_profit": 0.8364,
-      "opened_at": "2026-10-22T21:10:19.306686+00:00"
-    },
-    "DD": {
-      "symbol": "DD",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 17.0,
-      "avg_price": 135.100006,
-      "stop_loss": 131.05,
-      "take_profit": 143.21,
-      "opened_at": "2026-10-22T21:10:22.846519+00:00"
     },
     "EVRG": {
       "symbol": "EVRG",
@@ -91,18 +71,108 @@
       "take_profit": 270.88,
       "opened_at": "2026-10-30T14:44:09.170369+00:00"
     },
-    "KMI": {
-      "symbol": "KMI",
+    "PTC": {
+      "symbol": "PTC",
       "asset_class": "equity",
       "side": "LONG",
-      "quantity": 60.0,
-      "avg_price": 34.014999,
-      "stop_loss": 32.99,
-      "take_profit": 36.05,
-      "opened_at": "2026-10-30T14:44:10.679698+00:00"
+      "quantity": 15.0,
+      "avg_price": 195.210007,
+      "stop_loss": 189.35,
+      "take_profit": 206.92,
+      "opened_at": "2026-11-02T17:35:22.494272+00:00"
+    },
+    "AES": {
+      "symbol": "AES",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 175.0,
+      "avg_price": 14.9035,
+      "stop_loss": 14.45,
+      "take_profit": 15.8,
+      "opened_at": "2026-11-02T17:35:23.865090+00:00"
     }
   },
   "trades": [
+    {
+      "id": "834142a0a869",
+      "ticker": "DD",
+      "type": "SELL",
+      "price": 142.404999,
+      "shares": 17.0,
+      "date": "2026-11-02T17:35:27.772237+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Harvesting gains at +5.42% as price tests overhead resistance just shy of original take-profit target to reallocate to higher-conviction consolidations.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 131.05,
+      "take_profit": 143.21,
+      "realized_pnl": 124.18
+    },
+    {
+      "id": "f73fa79df2df",
+      "ticker": "KMI",
+      "type": "SELL",
+      "price": 33.055,
+      "shares": 60.0,
+      "date": "2026-11-02T17:35:26.483106+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Lagging position down nearly 3% and pressing against stop-loss support with declining relative momentum; exiting to preserve capital.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 32.99,
+      "take_profit": 36.05,
+      "realized_pnl": -57.6
+    },
+    {
+      "id": "92cfc9f6bd13",
+      "ticker": "USDCHF=X",
+      "type": "SELL",
+      "price": 0.81837,
+      "shares": 3292.0,
+      "date": "2026-11-02T17:35:25.202419+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Trend flipped to DOWN below 50-day SMA with negative return profile; closing position to eliminate currency drag.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 0.8118,
+      "take_profit": 0.8364,
+      "realized_pnl": -5.5
+    },
+    {
+      "id": "16750c1af027",
+      "ticker": "AES",
+      "type": "BUY",
+      "price": 14.9035,
+      "shares": 175.0,
+      "date": "2026-11-02T17:35:23.865125+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Clean uptrend consolidation with 8.621 opportunity score and excellent risk/reward close to support. (qty capped to 175.0 by 12% cash rule)",
+      "confidence": 0.86,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 14.45,
+      "take_profit": 15.8,
+      "realized_pnl": null
+    },
+    {
+      "id": "42a3a53db55b",
+      "ticker": "PTC",
+      "type": "BUY",
+      "price": 195.210007,
+      "shares": 15.0,
+      "date": "2026-11-02T17:35:22.494301+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top ranked candidate overall with 8.653 opportunity score, strong UP trend, and tight consolidation near 1% above support.",
+      "confidence": 0.89,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 189.35,
+      "take_profit": 206.92,
+      "realized_pnl": null
+    },
     {
       "id": "ba2de1b34d81",
       "ticker": "JPM",
@@ -8244,5 +8314,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1620.3
+  "realized_pnl": -1559.22
 }
