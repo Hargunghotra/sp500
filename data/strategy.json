@@ -1,18 +1,17 @@
 {
-  "thesis": "Aggressively take profits on positions reaching target levels (EVRG) and cut stagnant/negative performers (EXPD) to redeploy capital into high-opportunity breakout candidates across equities and forex while maintaining a strict risk posture against downtrending crypto.",
+  "thesis": "Aggressive rotation into high-opportunity trend leaders while ruthlessly liquidating lagging and ceiling-constrained holdings. Maintaining exposure to proven equity momentum and selective FX while completely bypassing downtrending crypto assets.",
   "preferred_sectors": [
-    "Real Estate",
-    "Consumer Discretionary",
-    "Forex Majors",
     "Utilities",
-    "Healthcare"
+    "Consumer Discretionary",
+    "Technology",
+    "Forex"
   ],
   "styles": [
     "Momentum",
-    "Trend Following",
-    "Support/Resistance Breakout"
+    "Breakout",
+    "Trend-Following"
   ],
-  "risk_posture": "Disciplined Aggressive",
-  "updated_at": "2026-11-05T15:55:04.551352+00:00",
+  "risk_posture": "Aggressive",
+  "updated_at": "2026-11-05T21:38:34.409588+00:00",
   "model": "gemini-flash-latest"
 }

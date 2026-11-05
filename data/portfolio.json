@@ -1,5 +1,5 @@
 {
-  "balance": 26250.02,
+  "balance": 20302.39,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -61,16 +61,6 @@
       "take_profit": 15.8,
       "opened_at": "2026-11-02T17:35:23.865090+00:00"
     },
-    "INVH": {
-      "symbol": "INVH",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 100.0,
-      "avg_price": 27.805,
-      "stop_loss": 26.97,
-      "take_profit": 29.47,
-      "opened_at": "2026-11-05T15:55:04.891001+00:00"
-    },
     "GBPUSD=X": {
       "symbol": "GBPUSD=X",
       "asset_class": "forex",
@@ -81,18 +71,144 @@
       "take_profit": 1.375,
       "opened_at": "2026-11-05T15:55:06.798381+00:00"
     },
-    "ORLY": {
-      "symbol": "ORLY",
+    "USDJPY=X": {
+      "symbol": "USDJPY=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 22.077396,
+      "avg_price": 157.660004,
+      "stop_loss": 156.08,
+      "take_profit": 160.81,
+      "opened_at": "2026-11-05T21:38:36.326371+00:00"
+    },
+    "DIS": {
+      "symbol": "DIS",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 25.0,
+      "avg_price": 117.220001,
+      "stop_loss": 113.7,
+      "take_profit": 124.25,
+      "opened_at": "2026-11-05T21:38:37.583148+00:00"
+    },
+    "EVRG": {
+      "symbol": "EVRG",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 31.0,
+      "avg_price": 87.410004,
+      "stop_loss": 84.79,
+      "take_profit": 92.65,
+      "opened_at": "2026-11-05T21:38:39.046592+00:00"
+    },
+    "MO": {
+      "symbol": "MO",
       "asset_class": "equity",
       "side": "LONG",
       "quantity": 30.0,
-      "avg_price": 93.410004,
-      "stop_loss": 90.61,
-      "take_profit": 99.01,
-      "opened_at": "2026-11-05T15:55:09.456045+00:00"
+      "avg_price": 77.580002,
+      "stop_loss": 75.25,
+      "take_profit": 82.23,
+      "opened_at": "2026-11-05T21:38:41.218538+00:00"
     }
   },
   "trades": [
+    {
+      "id": "471e74bd524f",
+      "ticker": "ORLY",
+      "type": "SELL",
+      "price": 91.489998,
+      "shares": 30.0,
+      "date": "2026-11-05T21:38:42.687776+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Cutting lagging position down over 2% from entry to protect capital and prevent drawdown toward stop level.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 90.61,
+      "take_profit": 99.01,
+      "realized_pnl": -57.6
+    },
+    {
+      "id": "0c2169554798",
+      "ticker": "MO",
+      "type": "BUY",
+      "price": 77.580002,
+      "shares": 30.0,
+      "date": "2026-11-05T21:38:41.218573+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Defensive dividend leader showing persistent uptrend (+8.63% over 20d) and expanding institutional interest. (qty capped to 30.0 by 12% cash rule)",
+      "confidence": 0.8,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 75.25,
+      "take_profit": 82.23,
+      "realized_pnl": null
+    },
+    {
+      "id": "e2e0cc225d30",
+      "ticker": "EVRG",
+      "type": "BUY",
+      "price": 87.410004,
+      "shares": 31.0,
+      "date": "2026-11-05T21:38:39.046626+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Perfect 10.0 technical score, solid earnings beat with raised forward EPS guidance, surging momentum. (qty capped to 31.0 by 12% cash rule)",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 84.79,
+      "take_profit": 92.65,
+      "realized_pnl": null
+    },
+    {
+      "id": "fb10b96ff6df",
+      "ticker": "DIS",
+      "type": "BUY",
+      "price": 117.220001,
+      "shares": 25.0,
+      "date": "2026-11-05T21:38:37.583180+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Strong 20-day momentum (+9.53%) with high opportunity score, breaking above SMA50 with bullish sentiment.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 113.7,
+      "take_profit": 124.25,
+      "realized_pnl": null
+    },
+    {
+      "id": "8a0271db2475",
+      "ticker": "USDJPY=X",
+      "type": "BUY",
+      "price": 157.660004,
+      "shares": 22.077396,
+      "date": "2026-11-05T21:38:36.326408+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Consolidating tightly above 50-day SMA in clear multi-month uptrend with attractive risk/reward profile. (qty capped to 22.077396 by 12% cash rule)",
+      "confidence": 0.78,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 156.08,
+      "take_profit": 160.81,
+      "realized_pnl": null
+    },
+    {
+      "id": "5b504fcd820d",
+      "ticker": "INVH",
+      "type": "SELL",
+      "price": 27.559999,
+      "shares": 100.0,
+      "date": "2026-11-05T21:38:34.723705+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Exiting dead-weight position trading right at overhead resistance (0.04% away) with negative sector supply headlines.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 26.97,
+      "take_profit": 29.47,
+      "realized_pnl": -24.5
+    },
     {
       "id": "7682d0296039",
       "ticker": "EXPD",
@@ -8410,5 +8526,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1284.0
+  "realized_pnl": -1366.1
 }
