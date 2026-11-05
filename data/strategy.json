@@ -1,16 +1,18 @@
 {
-  "thesis": "Aggressively cut underperforming positions and thesis breaks (KMI, USDCHF=X) while harvesting mature winners near resistance (DD). Redeploy capital into high-opportunity consolidating breakout setups across equities and forex (PTC, AES, GBPUSD=X) while steering clear of distressed crypto.",
+  "thesis": "Aggressively take profits on positions reaching target levels (EVRG) and cut stagnant/negative performers (EXPD) to redeploy capital into high-opportunity breakout candidates across equities and forex while maintaining a strict risk posture against downtrending crypto.",
   "preferred_sectors": [
-    "Technology",
+    "Real Estate",
+    "Consumer Discretionary",
+    "Forex Majors",
     "Utilities",
-    "Forex"
+    "Healthcare"
   ],
   "styles": [
     "Momentum",
-    "Consolidation Breakout",
-    "Trend Following"
+    "Trend Following",
+    "Support/Resistance Breakout"
   ],
-  "risk_posture": "Aggressive Growth with Strict Loss Mitigation",
-  "updated_at": "2026-11-02T17:35:22.149493+00:00",
+  "risk_posture": "Disciplined Aggressive",
+  "updated_at": "2026-11-05T15:55:04.551352+00:00",
   "model": "gemini-flash-latest"
 }

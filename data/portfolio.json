@@ -1,5 +1,5 @@
 {
-  "balance": 26321.98,
+  "balance": 26250.02,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -11,16 +11,6 @@
       "take_profit": 76.83,
       "opened_at": "2026-10-13T23:56:36.677990+00:00"
     },
-    "FAST": {
-      "symbol": "FAST",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 58.0,
-      "avg_price": 51.02,
-      "stop_loss": 49.49,
-      "take_profit": 54.08,
-      "opened_at": "2026-10-16T22:18:20.269351+00:00"
-    },
     "AAPL": {
       "symbol": "AAPL",
       "asset_class": "equity",
@@ -31,16 +21,6 @@
       "take_profit": 359.87,
       "opened_at": "2026-10-21T13:18:27.860823+00:00"
     },
-    "EVRG": {
-      "symbol": "EVRG",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 26.0,
-      "avg_price": 84.43,
-      "stop_loss": 81.9,
-      "take_profit": 89.5,
-      "opened_at": "2026-10-23T23:31:28.995579+00:00"
-    },
     "REG": {
       "symbol": "REG",
       "asset_class": "equity",
@@ -50,16 +30,6 @@
       "stop_loss": 71.46,
       "take_profit": 78.09,
       "opened_at": "2026-10-26T23:53:56.657960+00:00"
-    },
-    "EXPD": {
-      "symbol": "EXPD",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 14.0,
-      "avg_price": 198.389999,
-      "stop_loss": 192.44,
-      "take_profit": 210.29,
-      "opened_at": "2026-10-29T23:43:07.967469+00:00"
     },
     "WSM": {
       "symbol": "WSM",
@@ -90,9 +60,135 @@
       "stop_loss": 14.45,
       "take_profit": 15.8,
       "opened_at": "2026-11-02T17:35:23.865090+00:00"
+    },
+    "INVH": {
+      "symbol": "INVH",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 100.0,
+      "avg_price": 27.805,
+      "stop_loss": 26.97,
+      "take_profit": 29.47,
+      "opened_at": "2026-11-05T15:55:04.891001+00:00"
+    },
+    "GBPUSD=X": {
+      "symbol": "GBPUSD=X",
+      "asset_class": "forex",
+      "side": "LONG",
+      "quantity": 2000.0,
+      "avg_price": 1.34809,
+      "stop_loss": 1.3346,
+      "take_profit": 1.375,
+      "opened_at": "2026-11-05T15:55:06.798381+00:00"
+    },
+    "ORLY": {
+      "symbol": "ORLY",
+      "asset_class": "equity",
+      "side": "LONG",
+      "quantity": 30.0,
+      "avg_price": 93.410004,
+      "stop_loss": 90.61,
+      "take_profit": 99.01,
+      "opened_at": "2026-11-05T15:55:09.456045+00:00"
     }
   },
   "trades": [
+    {
+      "id": "7682d0296039",
+      "ticker": "EXPD",
+      "type": "SELL",
+      "price": 194.800003,
+      "shares": 14.0,
+      "date": "2026-11-05T15:55:13.260587+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Cutting underperformer and dead weight down -1.84% with low relative opportunity score (4.756) to reallocate into top-tier setups.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 192.44,
+      "take_profit": 210.29,
+      "realized_pnl": -50.26
+    },
+    {
+      "id": "060865bdd702",
+      "ticker": "EVRG",
+      "type": "SELL",
+      "price": 89.5,
+      "shares": 26.0,
+      "date": "2026-11-05T15:55:11.346059+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Target achieved: Price hit take-profit threshold with +6.04% unrealized gain. Locking in full profit to free capital.",
+      "confidence": 0.95,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 81.9,
+      "take_profit": 89.5,
+      "realized_pnl": 131.82
+    },
+    {
+      "id": "f3ceab03fa8e",
+      "ticker": "ORLY",
+      "type": "BUY",
+      "price": 93.410004,
+      "shares": 30.0,
+      "date": "2026-11-05T15:55:09.456081+00:00",
+      "pattern": "Volatile",
+      "reasoning": "Score 10.0 with bullish sentiment, robust 20-day returns (+8.60%), and consistent momentum in consumer replacement auto parts.",
+      "confidence": 0.85,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 90.61,
+      "take_profit": 99.01,
+      "realized_pnl": null
+    },
+    {
+      "id": "74c673f28b45",
+      "ticker": "GBPUSD=X",
+      "type": "BUY",
+      "price": 1.34809,
+      "shares": 2000.0,
+      "date": "2026-11-05T15:55:06.798418+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Exceptional 9.9 score forex setup in solid UP trend consolidating above 50-day moving average, providing multi-asset diversification.",
+      "confidence": 0.82,
+      "source": "ai",
+      "asset_class": "forex",
+      "stop_loss": 1.3346,
+      "take_profit": 1.375,
+      "realized_pnl": null
+    },
+    {
+      "id": "d2ce9ec8e2ac",
+      "ticker": "INVH",
+      "type": "BUY",
+      "price": 27.805,
+      "shares": 100.0,
+      "date": "2026-11-05T15:55:04.891057+00:00",
+      "pattern": "Consolidating",
+      "reasoning": "Top unowned opportunity score (9.14) in clear UP trend with strong support base (+4.55% above support) and bullish real estate momentum.",
+      "confidence": 0.88,
+      "source": "ai",
+      "asset_class": "equity",
+      "stop_loss": 26.97,
+      "take_profit": 29.47,
+      "realized_pnl": null
+    },
+    {
+      "id": "e3361f713516",
+      "ticker": "FAST",
+      "type": "SELL",
+      "price": 54.359001,
+      "shares": 58.0,
+      "date": "2026-11-05T15:52:06.361007+00:00",
+      "pattern": "SL/TP exit",
+      "reasoning": "Take-profit hit @ 54.359001 (TP 54.08)",
+      "confidence": 1.0,
+      "source": "take_profit",
+      "asset_class": "equity",
+      "stop_loss": null,
+      "take_profit": null,
+      "realized_pnl": 193.66
+    },
     {
       "id": "834142a0a869",
       "ticker": "DD",
@@ -8314,5 +8410,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1559.22
+  "realized_pnl": -1284.0
 }
