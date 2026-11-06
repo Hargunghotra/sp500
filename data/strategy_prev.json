@@ -1,16 +1,17 @@
 {
-  "thesis": "Aggressively cut underperforming positions and thesis breaks (KMI, USDCHF=X) while harvesting mature winners near resistance (DD). Redeploy capital into high-opportunity consolidating breakout setups across equities and forex (PTC, AES, GBPUSD=X) while steering clear of distressed crypto.",
+  "thesis": "Aggressive rotation into high-opportunity trend leaders while ruthlessly liquidating lagging and ceiling-constrained holdings. Maintaining exposure to proven equity momentum and selective FX while completely bypassing downtrending crypto assets.",
   "preferred_sectors": [
-    "Technology",
     "Utilities",
+    "Consumer Discretionary",
+    "Technology",
     "Forex"
   ],
   "styles": [
     "Momentum",
-    "Consolidation Breakout",
-    "Trend Following"
+    "Breakout",
+    "Trend-Following"
   ],
-  "risk_posture": "Aggressive Growth with Strict Loss Mitigation",
-  "updated_at": "2026-11-02T17:35:22.149493+00:00",
+  "risk_posture": "Aggressive",
+  "updated_at": "2026-11-05T21:38:34.409588+00:00",
   "model": "gemini-flash-latest"
 }
