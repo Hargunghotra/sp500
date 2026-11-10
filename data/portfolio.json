@@ -1,5 +1,5 @@
 {
-  "balance": 20302.39,
+  "balance": 22970.69,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -61,16 +61,6 @@
       "take_profit": 15.8,
       "opened_at": "2026-11-02T17:35:23.865090+00:00"
     },
-    "GBPUSD=X": {
-      "symbol": "GBPUSD=X",
-      "asset_class": "forex",
-      "side": "LONG",
-      "quantity": 2000.0,
-      "avg_price": 1.34809,
-      "stop_loss": 1.3346,
-      "take_profit": 1.375,
-      "opened_at": "2026-11-05T15:55:06.798381+00:00"
-    },
     "USDJPY=X": {
       "symbol": "USDJPY=X",
       "asset_class": "forex",
@@ -113,6 +103,22 @@
     }
   },
   "trades": [
+    {
+      "id": "6e266a49a453",
+      "ticker": "GBPUSD=X",
+      "type": "SELL",
+      "price": 1.334152,
+      "shares": 2000.0,
+      "date": "2026-11-10T15:52:01.925455+00:00",
+      "pattern": "SL/TP exit",
+      "reasoning": "Stop-loss hit @ 1.334152 (SL 1.3346)",
+      "confidence": 1.0,
+      "source": "stop_loss",
+      "asset_class": "forex",
+      "stop_loss": null,
+      "take_profit": null,
+      "realized_pnl": -27.88
+    },
     {
       "id": "471e74bd524f",
       "ticker": "ORLY",
@@ -8526,5 +8532,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1366.1
+  "realized_pnl": -1393.98
 }
