@@ -1,5 +1,5 @@
 {
-  "balance": 26753.58,
+  "balance": 29863.96,
   "positions": {
     "TECH": {
       "symbol": "TECH",
@@ -61,16 +61,6 @@
       "take_profit": 160.81,
       "opened_at": "2026-11-05T21:38:36.326371+00:00"
     },
-    "DIS": {
-      "symbol": "DIS",
-      "asset_class": "equity",
-      "side": "LONG",
-      "quantity": 25.0,
-      "avg_price": 117.220001,
-      "stop_loss": 113.7,
-      "take_profit": 124.25,
-      "opened_at": "2026-11-05T21:38:37.583148+00:00"
-    },
     "EVRG": {
       "symbol": "EVRG",
       "asset_class": "equity",
@@ -83,6 +73,22 @@
     }
   },
   "trades": [
+    {
+      "id": "a36698efda9c",
+      "ticker": "DIS",
+      "type": "SELL",
+      "price": 124.415001,
+      "shares": 25.0,
+      "date": "2026-11-25T18:14:24.944811+00:00",
+      "pattern": "SL/TP exit",
+      "reasoning": "Take-profit hit @ 124.415001 (TP 124.25)",
+      "confidence": 1.0,
+      "source": "take_profit",
+      "asset_class": "equity",
+      "stop_loss": null,
+      "take_profit": null,
+      "realized_pnl": 179.88
+    },
     {
       "id": "4c5a742fae39",
       "ticker": "MO",
@@ -8544,5 +8550,5 @@
       "source": "ai"
     }
   ],
-  "realized_pnl": -1727.37
+  "realized_pnl": -1547.49
 }
